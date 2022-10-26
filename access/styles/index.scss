@@ -10,11 +10,13 @@
     --text-color-white: #FFFFFF;
     --bg-color-primary: #0D0D0E;
     --bg-color-second: #E5E5E5;
+    --primary-font: 'Public Sans', sans-serif;
+    --secondary-font: 'Manrope', sans-serif;
 }
 
 html {
     margin: 0;
-    font-family: 'Public Sans', sans-serif;
+    font-family: var(--primary-font);
     font-size: 14px;
     padding: 0;
     height: 100%;
@@ -23,6 +25,16 @@ html {
 body {
     background: var(--bg-color-second);
     color: #4D4D4D;
+}
+
+h1, h2,  h4, h5, h6, a, ul, li {
+    font-family: var(--primary-font);
+}
+
+h3 {
+    font-family: var(--primary-font);
+    font-size: 40px;
+    line-height: 1.2;
 }
 
 img {
@@ -45,6 +57,10 @@ ul {
     max-width: 1440px;
     margin: auto;
     padding: 0 60px
+}
+
+button {
+    line-height: 1.5
 }
 
 
