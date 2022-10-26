@@ -16,5 +16,6 @@ jQuery(document).ready(function ($) {
 		$(".search").removeClass("is-active");
 		$('.navbar').removeClass("nav-is-active");
 		$(".close-button").removeClass("is-active");
+		
 	});
 })
