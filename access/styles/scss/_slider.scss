@@ -135,8 +135,10 @@
             }
 
             &:hover {
+                cursor: pointer;
+
                 &::after {
-                    animation: mymove 2s;
+                    animation: mymove 1s;
                 }
             }
 
@@ -159,11 +161,23 @@
 }
 
 @keyframes mymove {
-    from {
+    0% {
         width: 28px;
     }
 
-    to {
+    100% {
+        width: 100%;
+        background: #DAA622;
+    }
+
+    50% {
+
+        width: 100%;
+        background: #DAA622;
+    }
+
+    0% {
+
         width: 100%;
         background: #DAA622;
     }
