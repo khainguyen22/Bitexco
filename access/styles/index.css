@@ -199,7 +199,6 @@ button {
   padding: 0;
   margin: 0;
   justify-content: right;
-  width: 70%;
   height: 76px;
   display: flex;
   list-style-type: none;
@@ -292,6 +291,18 @@ button {
 .menu-main-container.is-active {
   left: 0;
 }
+.menu-main-container.is-active .menu-image.is-active img {
+  -webkit-animation: moveUp 2s;
+          animation: moveUp 2s;
+}
+.menu-main-container.is-active .main-menu-primary.is-active {
+  -webkit-animation: moveDown 2s;
+          animation: moveDown 2s;
+}
+.menu-main-container.is-active .sub-menu.is-active {
+  -webkit-animation: moveDown 2s;
+          animation: moveDown 2s;
+}
 
 .menu-main-container {
   position: fixed;
@@ -305,9 +316,98 @@ button {
   background-color: #fff;
 }
 .menu-main-container .menu {
-  background-color: red;
+  padding: 0 60px;
+  height: 90vh;
+}
+.menu-main-container .menu .row {
+  justify-content: space-between;
+  height: 90vh;
+}
+.menu-main-container .menu .row .menu-image {
+  border-left: 1px solid;
+}
+.menu-main-container .menu li {
+  align-items: center;
+  padding: 11px 12px;
+  height: 42px;
+  border-radius: 2px;
+  margin-bottom: 10px;
+}
+.menu-main-container .menu li a {
+  font-family: "Public Sans";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.04em;
+  color: #141518;
+  text-decoration: none;
+}
+.menu-main-container .menu li.is-active {
+  background: #F6F8FC;
+}
+.menu-main-container .menu li:hover {
+  background: #F6F8FC;
+}
+.menu-main-container .menu .main-menu-primary {
+  margin-top: 13px;
+}
+.menu-main-container .menu .main-menu-primary .main-menu-primary-lists {
+  padding: 0;
+}
+.menu-main-container .menu .main-menu-primary .main-menu-primary-lists .main-menu-primary-item a {
+  text-transform: uppercase;
+}
+.menu-main-container .menu .sub-menu {
+  margin-top: 13px;
+}
+.menu-main-container .menu .menu-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.menu-main-container .menu .menu-image img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 433px;
+  height: 540px;
 }
 
+@-webkit-keyframes moveUp {
+  0% {
+    transform: translateY(200%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes moveUp {
+  0% {
+    transform: translateY(200%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+@-webkit-keyframes moveDown {
+  0% {
+    transform: translateY(-200%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+@keyframes moveDown {
+  0% {
+    transform: translateY(-200%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
 footer {
   padding: 32px 60px 20px 60px;
   background: #000000;

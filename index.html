@@ -27,7 +27,7 @@
     <header>
         <div class="home header">
             <div class="logo">
-                <img class="img-logo" src="./access/images/icon-logo.png" alt="">
+                <!-- <img class="img-logo" src="./access/images/icon-logo.png" alt=""> -->
             </div>
             <div class="top-header home-header">
                 <ul class="nav nav-left">
@@ -121,12 +121,12 @@
                 </div>
             </div>
         </div>
-        <<<<<<< HEAD <div class="menu-main-container">
-            <div id="menu-main" class="menu container">
+        <div class="menu-main-container">
+            <div id="menu-main" class="menu">
                 <div class="row">
-                    <div class="col-2 main-menu-primary">
+                    <div class="col-3 main-menu-primary">
                         <ul class="main-menu-primary-lists">
-                            <li class="main-menu-primary-item"><a href="#">Sản xuất điện</a></li>
+                            <li class="main-menu-primary-item is-active"><a href="#">Sản xuất điện</a></li>
                             <li class="main-menu-primary-item"><a href="#">kinh doanh điện</a></li>
                             <li class="main-menu-primary-item"><a href="#">dịch vụ</a></li>
                             <li class="main-menu-primary-item"><a href="#">lĩnh vực khác</a></li>
@@ -137,7 +137,7 @@
                             <li class="main-menu-primary-item"><a href="#">liên hệ</a></li>
                         </ul>
                     </div>
-                    <div class="col-6 sub-menu">
+                    <div class="col-5 sub-menu">
                         <ul class="sub-menu-lists">
                             <li class="sub-menu-item"><a href="#">Thương hiệu Bitexco Power</a></li>
                             <li class="sub-menu-item"><a href="#">Lịch sử phát triển</a></li>
@@ -145,14 +145,12 @@
                             <li class="sub-menu-item"><a href="#">Các công ty thành viên</a></li>
                         </ul>
                     </div>
-                    <div class="col-4">
-                        3
+                    <div class="col-4 menu-image">
+                        <img src="./access/images/image73.png" alt="image73.png">
                     </div>
                 </div>
             </div>
-            </div>
-            =======
-            >>>>>>> 9b3fb56b1990e43bcac3e3a436ee4db1a8a3ecaa
+        </div>
     </header>
     <section class="home-slide">
         <div class="home-slide-carousel">
@@ -293,16 +291,27 @@
         $('.burger').addClass("is-active");
         $('.navbar').addClass("nav-is-active");
         $(".menu-main-container").addClass("is-active");
+        $('.menu-image').addClass("is-active");
+        $('.main-menu-primary').addClass("is-active");
+        $('.sub-menu').addClass("is-active");
     });
     $(document).on('click', '.burger.is-active', function () {
         $('.burger').removeClass("is-active");
         $(".menu-main-container").removeClass("is-active");
         $('.navbar').removeClass("nav-is-active");
+
+        $('.menu-image').removeClass("is-active");
+        $('.main-menu-primary').removeClass("is-active");
+        $('.sub-menu').removeClass("is-active");
     });
     $(document).on('click', '.menu-item', function () {
         $('.burger').removeClass("is-active");
         $(".menu-main-container").removeClass("is-active");
         $('.navbar').removeClass("nav-is-active");
+
+        $('.menu-image').removeClass("is-active");
+        $('.main-menu-primary').removeClass("is-active");
+        $('.sub-menu').removeClass("is-active");
     });
 
 </script>

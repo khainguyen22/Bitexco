@@ -150,7 +150,6 @@
         padding: 0;
         margin: 0;
         justify-content: right;
-        width: 70%;
         height: 76px;
         display: flex;
         list-style-type: none;
@@ -262,6 +261,23 @@
 
 .menu-main-container.is-active {
   left: 0;
+
+  .menu-image.is-active {
+    img {
+      animation: moveUp 2s;
+
+    }
+  }
+
+  .main-menu-primary.is-active {
+    animation: moveDown 2s;
+  }
+
+  .sub-menu.is-active {
+
+    animation: moveDown 2s;
+
+  }
 }
 
 .menu-main-container {
@@ -277,6 +293,100 @@
 
   // transition: all 0.4s ease-in-out;
   .menu {
-    background-color: red;
+    padding: 0 60px;
+    height: 90vh;
+
+    .row {
+      justify-content: space-between;
+      height: 90vh;
+
+      .menu-image {
+        border-left: 1px solid;
+      }
+    }
+
+    li {
+      align-items: center;
+      padding: 11px 12px;
+      height: 42px;
+      border-radius: 2px;
+      margin-bottom: 10px;
+
+      a {
+        font-family: 'Public Sans';
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 140%;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.04em;
+        color: #141518;
+        text-decoration: none;
+      }
+
+      &.is-active {
+        background: #F6F8FC;
+      }
+
+      &:hover {
+        background: #F6F8FC;
+      }
+    }
+
+    .main-menu-primary {
+      margin-top: 13px;
+
+      .main-menu-primary-lists {
+        padding: 0;
+
+        .main-menu-primary-item {
+          a {
+            text-transform: uppercase;
+          }
+        }
+      }
+    }
+
+    .sub-menu {
+      margin-top: 13px;
+    }
+
+    .menu-image {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+
+      img {
+        object-fit: contain;
+        width: 433px;
+        height: 540px;
+      }
+    }
+
+  }
+
+}
+
+
+
+
+@keyframes moveUp {
+  0% {
+    transform: translateY(200%);
+  }
+
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes moveDown {
+  0% {
+    transform: translateY(-200%);
+  }
+
+  100% {
+    transform: translateY(0%);
   }
 }
