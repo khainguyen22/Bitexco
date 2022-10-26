@@ -27,7 +27,14 @@ body {
     color: #4D4D4D;
 }
 
-h1, h2,  h4, h5, h6, a, ul, li {
+h1,
+h2,
+h4,
+h5,
+h6,
+a,
+ul,
+li {
     font-family: var(--primary-font);
 }
 
@@ -68,3 +75,4 @@ button {
 @import './scss/footer';
 @import './scss/slider';
 @import './scss/search';
+@import './scss/responsive';

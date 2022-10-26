@@ -121,7 +121,7 @@
 
   .bottom-header {
     .navbar {
-      padding: 0;
+      padding: 0 32px 0 60px;
       background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), rgba(255, 255, 255, 0.2);
       backdrop-filter: blur(10px);
       height: 76px;
@@ -349,6 +349,10 @@
 
     .sub-menu {
       margin-top: 13px;
+
+      .sub-menu-lists {
+        padding: 0;
+      }
     }
 
     .menu-image {
@@ -359,8 +363,8 @@
 
       img {
         object-fit: contain;
-        width: 433px;
-        height: 540px;
+        max-width: 433px;
+        max-height: 540px;
       }
     }
 

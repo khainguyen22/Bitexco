@@ -28,7 +28,14 @@ body {
   color: #4D4D4D;
 }
 
-h1, h2, h4, h5, h6, a, ul, li {
+h1,
+h2,
+h4,
+h5,
+h6,
+a,
+ul,
+li {
   font-family: var(--primary-font);
 }
 
@@ -173,7 +180,7 @@ button {
   z-index: 99;
 }
 .header .bottom-header .navbar {
-  padding: 0;
+  padding: 0 32px 0 60px;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), rgba(255, 255, 255, 0.2);
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
@@ -362,6 +369,9 @@ button {
 .menu-main-container .menu .sub-menu {
   margin-top: 13px;
 }
+.menu-main-container .menu .sub-menu .sub-menu-lists {
+  padding: 0;
+}
 .menu-main-container .menu .menu-image {
   display: flex;
   align-items: center;
@@ -371,8 +381,8 @@ button {
 .menu-main-container .menu .menu-image img {
   -o-object-fit: contain;
      object-fit: contain;
-  width: 433px;
-  height: 540px;
+  max-width: 433px;
+  max-height: 540px;
 }
 
 @-webkit-keyframes moveUp {
@@ -584,5 +594,55 @@ footer .footer-links .link a:hover {
   0% {
     width: 100%;
     background: #DAA622;
+  }
+}
+@media (max-width: 991px) {
+  .header .bottom-header .navbar .nav-list .nav-item {
+    padding: 28px 10px;
+  }
+  .footer.d-flex {
+    flex-wrap: wrap;
+  }
+  .footer.d-flex * {
+    margin: 0 auto;
+  }
+}
+@media (max-width: 880px) {
+  .home-header {
+    margin-bottom: -43px;
+  }
+  .menu-main-container {
+    top: 75px;
+  }
+  .menu-main-container .menu {
+    padding: 0;
+  }
+  .menu-main-container .menu .row {
+    height: auto;
+  }
+  .menu-main-container .menu .row li {
+    padding: 11px 20px;
+    border-bottom: 1px solid;
+  }
+  .menu-main-container .menu .row li:last-child {
+    border-bottom: none;
+  }
+  .menu-main-container .menu .row .menu-image {
+    display: none;
+  }
+  .header .bottom-header .navbar .nav-list .nav-item:nth-last-of-type(n + 3) {
+    display: none;
+  }
+  .home-slide .slick-dots li::before {
+    content: "" !important;
+  }
+  .home-slide .slick-dots li::after {
+    width: 28px !important;
+  }
+  .home-slide .slick-dots {
+    justify-content: center;
+  }
+  .home-slide .slick-dots li {
+    padding: 12px 10px 15px 10px;
   }
 }/*# sourceMappingURL=index.css.map */
