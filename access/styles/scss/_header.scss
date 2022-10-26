@@ -356,3 +356,10 @@
   letter-spacing: 0.01em;
   font-family: var(--primary-font);
 }
+
+@media (max-width: 1200px) {
+  .search-bar {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
