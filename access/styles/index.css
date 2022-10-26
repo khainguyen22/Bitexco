@@ -55,6 +55,19 @@ ul {
   width: 2rem;
 }
 
+footer {
+  padding: 32px 60px 20px 60px;
+  background: #000000;
+  color: var(--text-color-white);
+}
+footer .footer-links .link a {
+  color: var(--text-color-white);
+  text-decoration: none;
+}
+footer .footer-links .link a:hover {
+  color: rgb(228, 228, 228);
+}
+
 .uppercase {
   text-transform: uppercase;
 }
@@ -125,6 +138,7 @@ ul {
 .home-slide .slick-dots {
   display: flex;
   padding: 0 60px;
+  justify-content: space-between;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -175,6 +189,10 @@ ul {
   width: 100%;
   background: #DAA622;
   display: block;
+}
+.home-slide .slick-dots li.slick-active:hover::after {
+  -webkit-animation: none;
+          animation: none;
 }
 
 @-webkit-keyframes mymove {
