@@ -84,7 +84,7 @@
     .slick-dots {
         display: flex;
         padding: 0 60px;
-        // justify-content: space-between;
+        justify-content: space-between;
         position: absolute;
         bottom: 0;
         left: 0;
@@ -146,6 +146,12 @@
                     width: 100%;
                     background: #DAA622;
                     display: block;
+                }
+
+                &:hover {
+                    &::after {
+                        animation: none;
+                    }
                 }
             }
         }
