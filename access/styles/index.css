@@ -42,6 +42,12 @@ ul {
   list-style-type: none;
 }
 
+.container {
+  max-width: 1440px;
+  margin: auto;
+  padding: 0 60px;
+}
+
 .dropdown-toggle::after {
   display: none;
 }
@@ -53,6 +59,126 @@ ul {
 /* Font Awesome Icons have variable width. Added fixed width to fix that.*/
 .icon-width {
   width: 2rem;
+}
+
+.home-header {
+  height: 42px;
+  padding: 0 60px;
+  display: flex;
+  justify-content: space-between;
+  background: #0D0D0E;
+}
+
+.home-header ul li a {
+  font-size: 11px;
+  font-weight: 400;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+
+.nav-login {
+  height: 42px;
+  display: flex;
+}
+
+.img-logo {
+  margin-left: 60px;
+}
+
+.nav {
+  padding-left: 50px;
+}
+
+.icon-user {
+  width: 42px;
+  height: 42px;
+  padding: 10px;
+}
+
+.nav-login a {
+  margin-left: -10px;
+  padding: 13px 6px;
+}
+
+.nav-signup a {
+  padding: 13px 6px;
+}
+
+.btn-langue {
+  margin-left: -14px;
+  background: none;
+  border: none;
+  color: #FFFFFF;
+}
+
+.img-langue {
+  margin-left: 30px;
+  width: 39px;
+  height: 39px;
+  padding: 10px;
+}
+
+.btn-langue {
+  height: 42px;
+}
+
+/* Home Content */
+.navbar {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  height: 76px;
+  display: flex;
+  justify-content: right;
+}
+
+.nav-list {
+  padding: 0;
+  margin: 0;
+  justify-content: right;
+  width: 70%;
+  height: 76px;
+  display: flex;
+  list-style-type: none;
+}
+
+.nav-list a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.nav-list li {
+  padding: 28px 24px;
+}
+
+.nav-link {
+  padding: 13px 16px;
+}
+
+.nav-left {
+  padding-left: 0;
+  margin-left: 100px;
+}
+
+.dropdown-menu {
+  background: #000;
+}
+
+.form-search {
+  padding: 28px 30px;
+}
+
+.menu-bar {
+  /* margin: 28px 34px; */
+  margin: 28px 70px 28px 34px;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  max-height: 118px;
+  z-index: 1;
 }
 
 .uppercase {
