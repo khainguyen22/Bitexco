@@ -28,14 +28,7 @@ body {
   color: #4D4D4D;
 }
 
-h1,
-h2,
-h4,
-h5,
-h6,
-a,
-ul,
-li {
+h1, h2, h4, h5, h6, a, ul, li, input {
   font-family: var(--primary-font);
 }
 
@@ -130,12 +123,14 @@ button {
   height: 16px;
 }
 
-.nav-login a {
-  padding: 13px 6px;
+.nav-login a.nav-link {
+  padding: 0;
+  letter-spacing: 0.04em;
 }
 
 .nav-signup a {
-  padding: 13px 6px;
+  padding: 0;
+  letter-spacing: 0.04em;
 }
 
 .btn-langue {
@@ -159,6 +154,28 @@ button {
   line-height: 1.5;
   font-size: 11px;
   letter-spacing: 0.04em;
+}
+
+.img-logo {
+  max-width: 57.37px;
+}
+
+.logo {
+  position: absolute;
+  z-index: 1;
+}
+
+.nav-left {
+  margin-left: 87px;
+}
+
+.top-header .nav-item .nav-link {
+  padding: 0;
+  letter-spacing: 0.04em;
+}
+
+.top-header .nav-item + .nav-item {
+  margin-left: 32px;
 }
 
 .angle-down {
@@ -418,6 +435,54 @@ button {
     transform: translateY(0%);
   }
 }
+.search {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  z-index: 1;
+  top: 42px;
+  display: none;
+}
+.search.is-active {
+  display: block;
+}
+
+.header .bottom-header .navbar .nav-list .nav-item .search-close {
+  display: none;
+}
+
+.nav-item-icon-search.is-active svg {
+  display: none;
+}
+
+.close-button {
+  display: none;
+}
+
+.nav-item-icon-search .close-button.is-active {
+  display: block;
+}
+
+.search-bar {
+  border-bottom: 1px solid #000;
+  max-width: 1110px;
+  margin: auto;
+  margin-top: 155px;
+}
+
+.search-input {
+  border: none;
+  outline: none;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.6;
+  padding: 15px 0;
+  padding-left: 29px;
+  letter-spacing: 0.01em;
+  font-family: var(--primary-font);
+}
+
 footer {
   padding: 32px 60px 20px 60px;
   background: #000000;
