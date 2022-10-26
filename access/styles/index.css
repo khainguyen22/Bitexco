@@ -1,0 +1,198 @@
+@charset "UTF-8";
+/* globle style css*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --text-color-black: #141518;
+  --text-color-white: #FFFFFF;
+  --bg-color-primary: #0D0D0E;
+  --bg-color-second: #E5E5E5;
+}
+
+html {
+  margin: 0;
+  font-family: "Public Sans", sans-serif;
+  font-size: 14px;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  background: var(--bg-color-second);
+  color: #4D4D4D;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.dropdown-toggle::after {
+  display: none;
+}
+
+.text-decoration-none {
+  text-decoration: none !important;
+}
+
+/* Font Awesome Icons have variable width. Added fixed width to fix that.*/
+.icon-width {
+  width: 2rem;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.home-slide .home-slide-carousel.slick-vertical .slick-slide {
+  border-width: 0px;
+}
+.home-slide .home-slide-carousel .item {
+  height: 100vh;
+  position: relative;
+  text-align: center;
+}
+.home-slide .home-slide-carousel .item img {
+  height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.home-slide .home-slide-carousel .item .content {
+  position: absolute;
+  left: 60px;
+  z-index: 1;
+  bottom: 113px;
+  text-align: left;
+  max-width: 520px;
+}
+.home-slide .home-slide-carousel .item .content * {
+  color: var(--text-color-white);
+}
+.home-slide .home-slide-carousel .item .content .title {
+  font-size: 40px;
+  line-height: 1.2;
+  font-weight: 500;
+  font-family: "Manrope";
+  margin-bottom: 22px;
+}
+.home-slide .home-slide-carousel .item .content .desc-wrap {
+  margin-bottom: 32px;
+}
+.home-slide .home-slide-carousel .item .content .desc-wrap .title {
+  margin-bottom: 0;
+}
+.home-slide .home-slide-carousel .item .content .desc-left {
+  margin-right: 54px;
+}
+.home-slide .home-slide-carousel .item .content .unit {
+  font-size: 20px;
+  line-height: 1.5;
+  margin-left: 6px;
+  font-family: "Manrope";
+}
+.home-slide .home-slide-carousel .item .content .description {
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  font-family: "Public Sans", sans-serif;
+  font-weight: 400;
+}
+.home-slide .home-slide-carousel .item .content .btn-detail {
+  padding: 13px 32px;
+  font-family: "Public Sans", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 140%;
+  letter-spacing: 0.04em;
+  background: #DAA622;
+  border-radius: 2px;
+}
+.home-slide .slick-dots {
+  display: flex;
+  padding: 0 60px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  max-height: 53px;
+  background: #0D0D0E;
+  margin-bottom: 0;
+}
+.home-slide .slick-dots li {
+  padding: 12px 0 15px 0;
+}
+.home-slide .slick-dots li button {
+  display: none;
+}
+.home-slide .slick-dots li::before {
+  color: var(--text-color-white);
+}
+.home-slide .slick-dots li:nth-child(1)::before {
+  content: "Sản xuất kinh doanh";
+}
+.home-slide .slick-dots li:nth-child(2)::before {
+  content: "Dự án của chúng tôi";
+}
+.home-slide .slick-dots li:nth-child(3)::before {
+  content: "Lịch sử phát triển";
+}
+.home-slide .slick-dots li:nth-child(4)::before {
+  content: "Tin tức mới";
+}
+.home-slide .slick-dots li:nth-child(5)::before {
+  content: "Tuyển dụng";
+}
+.home-slide .slick-dots li::after {
+  margin-top: 2px;
+  content: "";
+  background: var(--text-color-white);
+  width: 28px;
+  height: 2px;
+  display: block;
+}
+.home-slide .slick-dots li:hover::after {
+  -webkit-animation: mymove 2s;
+          animation: mymove 2s;
+}
+.home-slide .slick-dots li.slick-active::after {
+  content: "";
+  width: 100%;
+  background: #DAA622;
+  display: block;
+}
+
+@-webkit-keyframes mymove {
+  from {
+    width: 28px;
+  }
+  to {
+    width: 100%;
+    background: #DAA622;
+  }
+}
+
+@keyframes mymove {
+  from {
+    width: 28px;
+  }
+  to {
+    width: 100%;
+    background: #DAA622;
+  }
+}/*# sourceMappingURL=index.css.map */
