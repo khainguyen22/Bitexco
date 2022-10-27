@@ -27,7 +27,15 @@ body {
     color: #4D4D4D;
 }
 
-h1, h2,  h4, h5, h6, a, ul, li, input {
+h1,
+h2,
+h4,
+h5,
+h6,
+a,
+ul,
+li,
+input {
     font-family: var(--primary-font);
 }
 
@@ -63,6 +71,9 @@ button {
     line-height: 1.5
 }
 
+.uppercase {
+    text-transform: uppercase;
+}
 
 @import './scss/header';
 @import './scss/footer';
