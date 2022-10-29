@@ -1,6 +1,4 @@
-.uppercase {
-    text-transform: uppercase;
-}
+
 
 .home-slide {
     .home-slide-carousel {
@@ -138,7 +136,9 @@
                 cursor: pointer;
 
                 &::after {
-                    animation: mymove 1s;
+                    width: 100%;
+                    background: #DAA622;
+                    transition: all .3s ease;
                 }
             }
 
@@ -157,28 +157,5 @@
                 }
             }
         }
-    }
-}
-
-@keyframes mymove {
-    0% {
-        width: 28px;
-    }
-
-    100% {
-        width: 100%;
-        background: #DAA622;
-    }
-
-    50% {
-
-        width: 100%;
-        background: #DAA622;
-    }
-
-    0% {
-
-        width: 100%;
-        background: #DAA622;
     }
 }
