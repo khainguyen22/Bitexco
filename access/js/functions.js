@@ -3,7 +3,11 @@ jQuery(document).ready(function ($) {
 		$('.nav-item-icon-search').addClass("is-active");
 		$('.navbar').addClass("nav-is-active");
 		$(".search").addClass("is-active");
-		$(".close-button").addClass("is-active")
+		$(".close-button").addClass("is-active");
+
+
+		$('.burger').removeClass("is-active");
+		$(".menu-main-container").removeClass("is-active");
 	});
 	$(document).on('click', '.nav-item-icon-search.is-active', function () {
 		$('.nav-item-icon-search').removeClass("is-active");
@@ -43,6 +47,9 @@ jQuery(document).ready(function ($) {
 		$('.menu-image').addClass("is-active");
 		$('.main-menu-primary').addClass("is-active");
 		$('.sub-menu').addClass("is-active");
+		$('.nav-item-icon-search').removeClass("is-active");
+		$(".search").removeClass("is-active");
+		$(".close-button").removeClass("is-active");
 	});
 	$(document).on('click', '.burger.is-active', function () {
 		$('.burger').removeClass("is-active");
