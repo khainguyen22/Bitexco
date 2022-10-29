@@ -399,35 +399,38 @@
   }
 }
 
-.search {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: #fff;
-  z-index: 1;
-  top: 42px;
-  display: none;
+header {
 
-  &.is-active {
-    display: block;
-  }
+  .search {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    z-index: 1;
+    top: 42px;
+    display: none;
 
-  .search-bar {
-    border-bottom: 1px solid #000;
-    max-width: 1110px;
-    margin: auto;
-    margin-top: 155px;
+    &.is-active {
+      display: block;
+    }
 
-    .search-input {
-      border: none;
-      outline: none;
-      font-size: 18px;
-      font-weight: 300;
-      line-height: 1.6;
-      padding: 15px 0;
-      padding-left: 29px;
-      letter-spacing: 0.01em;
-      font-family: var(--primary-font);
+    .search-bar {
+      border-bottom: 1px solid #000;
+      max-width: 1110px;
+      margin: auto;
+      margin-top: 155px;
+
+      .search-input {
+        border: none;
+        outline: none;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 1.6;
+        padding: 15px 0;
+        padding-left: 29px;
+        letter-spacing: 0.01em;
+        font-family: var(--primary-font);
+      }
     }
   }
 }

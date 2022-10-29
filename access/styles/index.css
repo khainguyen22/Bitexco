@@ -27,53 +27,200 @@ body {
   background: var(--bg-color-second);
   color: #4D4D4D;
 }
-
-h1,
-h2,
-h4,
-h5,
-h6,
-a,
-ul,
-li,
-input {
+body * {
   font-family: var(--primary-font);
 }
-
-h3 {
+body h1,
+body h2,
+body h4,
+body h5,
+body h6,
+body a,
+body ul,
+body li,
+body input {
   font-family: var(--primary-font);
+}
+body h3,
+body .size-headding-40 {
+  font-family: var(--secondary-font);
   font-size: 40px;
   line-height: 1.2;
+  font-weight: 500;
 }
-
-img {
+body h4,
+body .size-headding-32 {
+  font-family: var(--secondary-font);
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 130%;
+  color: #141518;
+}
+body h6 {
+  font-family: var(--secondary-font);
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 130%;
+  letter-spacing: 0.01em;
+  color: #141518;
+}
+body img {
   width: 100%;
 }
-
-a {
+body a {
+  text-decoration: none;
+  color: unset;
+}
+body a:hover {
   text-decoration: none;
 }
-
-a:hover {
-  text-decoration: none;
-}
-
-ul {
+body ul {
   list-style-type: none;
 }
-
-.container {
+body .container {
   max-width: 1440px;
   margin: auto;
   padding: 0 60px;
 }
-
-button {
+body button {
   line-height: 1.5;
 }
-
-.uppercase {
+body .uppercase {
   text-transform: uppercase;
+}
+body .size-text-14 {
+  font-family: var(--primary-font);
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 140%;
+  letter-spacing: 0.04em;
+}
+body .size-text-16 {
+  font-family: var(--primary-font);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  letter-spacing: 0.01em;
+}
+body input,
+body select {
+  height: 48px !important;
+  line-height: 48px !important;
+  padding: 0 16px;
+}
+body input.search,
+body select.search {
+  background-image: url("../images/Search.png");
+  background-repeat: no-repeat;
+  padding-left: 40px;
+  background-position-y: center;
+  background-position-X: 10px;
+}
+body button.btn-search,
+body button.btn-more {
+  align-items: center;
+  width: 132px;
+  height: 48px;
+  background: #DAA622;
+  border-radius: 2px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+body button.btn-search:hover,
+body button.btn-more:hover {
+  border-color: #DAA622;
+}
+body button.btn-detail {
+  border: 1px solid #DAA622;
+  font-family: var(--primary-font);
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 140%;
+  letter-spacing: 0.04em;
+  align-items: center;
+  height: 48px;
+  padding: 10px 28px;
+  text-transform: uppercase;
+  color: #DAA622;
+}
+body button.btn-detail svg {
+  margin-left: 14px;
+}
+body button.btn-detail:hover {
+  background: #DAA622;
+  color: #FFFFFF;
+}
+body button.btn-detail:hover svg * {
+  fill: #FFFFFF;
+  stroke: #FFFFFF;
+}
+body span.tag {
+  font-family: var(--primary-font);
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #434449;
+  position: relative;
+}
+body span.tag .text {
+  position: absolute;
+  left: 20px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  top: -8px;
+}
+body span.tag.tag-calender::before {
+  content: "";
+  width: 20px;
+  display: inline-flex;
+  height: 20px;
+  background-image: url("../images/Calendar.png");
+}
+body span.tag.tag-name::before {
+  content: "";
+  width: 20px;
+  display: inline-flex;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-image: url("../images/tag.png");
+}
+body span.tag.tag-file::before {
+  content: "";
+  width: 20px;
+  display: inline-flex;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-image: url("../images/Vector 157.png");
+}
+body .table {
+  font-family: var(--primary-font);
+  border-collapse: collapse;
+  width: 100%;
+}
+body .table .table-body tr {
+  height: 58px;
+  font-size: var(--primary-font);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 160%;
+  letter-spacing: 0.01em;
+  color: #141518;
+  opacity: 0.8;
+}
+body .table .table-body tr td {
+  padding: 0;
+  border-width: 0px;
+  padding: 16px 20px;
+}
+body .table .table-body tr td:first-child {
+  border-right: 1px solid #fff;
+}
+body .table .table-body tr:nth-child(2n+1) {
+  background: #F6F8FC;
 }
 
 .header .top-header {
@@ -419,7 +566,7 @@ button {
     transform: translateY(0%);
   }
 }
-.search {
+header .search {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -428,16 +575,16 @@ button {
   top: 42px;
   display: none;
 }
-.search.is-active {
+header .search.is-active {
   display: block;
 }
-.search .search-bar {
+header .search .search-bar {
   border-bottom: 1px solid #000;
   max-width: 1110px;
   margin: auto;
   margin-top: 155px;
 }
-.search .search-bar .search-input {
+header .search .search-bar .search-input {
   border: none;
   outline: none;
   font-size: 18px;
@@ -600,6 +747,67 @@ footer .footer-links .link a:hover {
 .home-slide .slick-dots li.slick-active:hover::after {
   -webkit-animation: none;
           animation: none;
+}
+
+.terms .terms-header-top {
+  position: relative;
+}
+.terms .terms-header-top h3 {
+  font-size: 40px;
+  font-weight: 500;
+  color: #fff;
+  position: absolute;
+  display: flex;
+  line-height: 48px;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%);
+}
+.terms .terms-header-top h3 span {
+  display: inline-block;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 32px;
+  position: absolute;
+  border-radius: 2px;
+  border-top: 2px solid #daa622;
+}
+.terms h5 {
+  padding: 60px 206px 40px 206px;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 36.4px;
+}
+.terms span {
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1028px;
+  position: absolute;
+  border-radius: 2px;
+  border-top: 2px solid #d1d5db;
+}
+.terms p {
+  padding: 40px 206px 0px 206px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 25.6px;
+}
+.terms .terms-container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.terms .terms-container .terms-content h6 {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 28.6px;
+  padding: 10px 206px 0px 206px;
+}
+.terms .terms-container .terms-content p {
+  padding: 10px 206px 10px 206px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 25.6px;
 }
 
 @media (max-width: 991px) {
