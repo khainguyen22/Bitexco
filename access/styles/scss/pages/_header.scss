@@ -21,7 +21,7 @@
     }
 
     .nav-left {
-      margin-left: 87px;
+      margin-left: 104px;
     }
 
     .nav-right {
@@ -96,6 +96,10 @@
         }
       }
     }
+
+    .nav-item+.nav-item {
+      margin-left: 32px;
+    }
   }
 
   .nav-item .nav-link {
@@ -103,23 +107,23 @@
     letter-spacing: 0.04em
   }
 
-  .nav-item+.nav-item {
-    margin-left: 32px;
-  }
+
 }
 
-.logo {
-  position: absolute;
-  z-index: 1;
-  left: 60px;
 
-  .img-logo {
-    max-width: 57.37px;
-  }
-}
 
 /* header bottom */
 .header {
+  .logo {
+    position: absolute;
+    z-index: 1;
+    left: 60px;
+
+    .img-logo {
+      max-width: 57.37px;
+    }
+  }
+
   position: fixed;
   top: 0;
   width: 100%;
@@ -137,7 +141,7 @@
 
       &.nav-is-active {
         background: #fff;
-        border-bottom: 1px solid;
+        border-bottom: 1px solid #D1D5DB;
 
         .nav-list .nav-item .nav-item-link {
           color: #000;
@@ -271,18 +275,18 @@
 
   .menu-image.is-active {
     img {
-      animation: moveUp 2s;
+      animation: moveUp 1s;
 
     }
   }
 
   .main-menu-primary.is-active {
-    animation: moveDown 2s;
+    animation: moveDown 1s;
   }
 
   .sub-menu.is-active {
 
-    animation: moveDown 2s;
+    animation: moveDown 1s;
 
   }
 }
@@ -308,7 +312,7 @@
       height: 90vh;
 
       .menu-image {
-        border-left: 1px solid;
+        border-left: 1px solid #D1D5DB;
       }
     }
 
@@ -381,20 +385,24 @@
 
 @keyframes moveUp {
   0% {
-    transform: translateY(200%);
+    transform: translateY(100%);
+    opacity: 0;
   }
 
   100% {
+    opacity: 1;
     transform: translateY(0%);
   }
 }
 
 @keyframes moveDown {
   0% {
-    transform: translateY(-200%);
+    opacity: 0;
+    transform: translateY(-100%);
   }
 
   100% {
+    opacity: 1;
     transform: translateY(0%);
   }
 }
@@ -415,7 +423,6 @@ header {
     }
 
     .search-bar {
-      border-bottom: 1px solid #000;
       max-width: 1110px;
       margin: auto;
       margin-top: 155px;
@@ -429,7 +436,25 @@ header {
         padding: 15px 0;
         padding-left: 29px;
         letter-spacing: 0.01em;
+        width: 90%;
         font-family: var(--primary-font);
+
+
+      }
+
+      &::after {
+        content: "";
+        width: 0px;
+        display: block;
+        height: 2px;
+      }
+
+      &:hover {
+        &::after {
+          width: 100%;
+          background-color: #0D0D0E;
+          transition: all .3s ease;
+        }
       }
     }
   }
