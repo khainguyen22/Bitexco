@@ -22,6 +22,11 @@ html {
     height: 100%;
 }
 
+.custom-container {
+    max-width: 1128px;
+    margin: auto;
+}
+
 body {
     background: var(--bg-color-second);
     color: #4D4D4D;
@@ -55,6 +60,15 @@ body {
         font-family: var(--secondary-font);
         font-weight: 600;
         font-size: 32px;
+        line-height: 130%;
+        color: #141518;
+    }
+
+    h5,
+    .size-headding-32 {
+        font-family: var(--secondary-font);
+        font-weight: 600;
+        font-size: 28px;
         line-height: 130%;
         color: #141518;
     }
@@ -263,6 +277,10 @@ body {
 
 @import './scss/custom/header';
 @import './scss/custom/footer';
-@import './scss/pages/slider';
+@import './scss/custom/slider';
 @import './scss/pages/dieu-khoan';
 @import './scss/pages/responsive';
+@import './scss/pages/dangki';
+@import './scss/pages/dangnhap';
+@import './scss/pages/quenmatkhau';
+@import './scss/pages/xacnhanquenmatkhau';
