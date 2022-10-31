@@ -48,6 +48,11 @@ body {
         font-size: 40px;
         line-height: 1.2;
         font-weight: 500;
+
+        @media(max-width:767px) {
+            font-size: 28px;
+            line-height: 130%;
+        }
     }
 
     h4,
@@ -55,6 +60,15 @@ body {
         font-family: var(--secondary-font);
         font-weight: 600;
         font-size: 32px;
+        line-height: 130%;
+        color: #141518;
+    }
+
+    h5,
+    .size-headding-28 {
+        font-family: var(--secondary-font);
+        font-weight: 600;
+        font-size: 28px;
         line-height: 130%;
         color: #141518;
     }
@@ -79,6 +93,7 @@ body {
 
         &:hover {
             text-decoration: none;
+            color: #d8d8d8;
         }
     }
 
@@ -263,6 +278,6 @@ body {
 
 @import './scss/custom/header';
 @import './scss/custom/footer';
-@import './scss/pages/slider';
+@import './scss/custom/slider';
 @import './scss/pages/dieu-khoan';
 @import './scss/pages/responsive';
