@@ -155,3 +155,31 @@
         }
     }
 }
+
+
+@media(max-width:1024px) {
+    .home-slide {
+        .home-slide-carousel .item .content {
+            left: 20px;
+        }
+
+        .slick-dots {
+            justify-content: center;
+
+            li {
+                padding: 12px 10px 15px 10px;
+
+                &::before {
+                    content: '' !important;
+                }
+
+                &::after {
+                    width: 28px !important;
+                }
+
+            }
+        }
+    }
+
+
+}

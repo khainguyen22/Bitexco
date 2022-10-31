@@ -45,6 +45,23 @@ body {
     li,
     input {
         font-family: var(--primary-font);
+        padding: 0;
+        margin: 0;
+    }
+
+    select {
+        background: unset;
+        border: unset;
+
+        &:focus {
+
+            border: unset;
+        }
+
+        &:focus-visible {
+            outline: none;
+            border: unset;
+        }
     }
 
     h3,
