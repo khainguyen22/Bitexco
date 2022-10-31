@@ -28,7 +28,7 @@ jQuery(document).ready(function ($) {
 	$('.home-slide-carousel').slick({
 		nextArrow: '<i class="fas fa-chevron-right slick-next"></i>',
 		prevArrow: '<i class="fas fa-chevron-left slick-prev"></i>',
-		autoplay: false,
+		// autoplay: true,
 		autoplaySpeed: 2500,
 		dots: true,
 		vertical: true,
