@@ -1246,4 +1246,276 @@ section.register .register-box .form-box form div.submit .register-btn.custom-bt
   section.register .register-box .reset-password-notifition p {
     color: #fff;
   }
+}
+section.banner {
+  background: url("../../../access/images/danhmucduanbanner.png");
+  min-height: 640px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+section.banner .container {
+  max-width: 1133px;
+  margin: auto;
+}
+section.banner .container .content {
+  position: absolute;
+  top: calc(50% + 11px);
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+}
+section.banner .container .content span.divider {
+  width: 32px;
+  margin: auto;
+  display: block;
+  border-top: 2px solid #daa622;
+  margin-bottom: 6px;
+}
+section.banner .container .content h3 {
+  font-family: "Manrope";
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.2;
+  margin-bottom: 12px;
+}
+section.banner .container .content p {
+  max-width: 499px;
+  margin: auto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.6;
+  letter-spacing: 0.01em;
+}
+section.banner .container .navigation {
+  position: absolute;
+  bottom: 3px;
+  left: 71px;
+}
+section.banner .container .navigation ul {
+  color: #fff;
+  text-transform: uppercase;
+}
+section.banner .container .navigation ul li {
+  display: inline-block;
+  position: relative;
+  font-weight: 60;
+  font-size: 14px;
+  line-height: 1.4;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+section.banner .container .navigation ul li:hover::after {
+  -webkit-animation: none;
+          animation: none;
+}
+section.banner .container .navigation ul li + li {
+  margin-left: 39px;
+}
+section.banner .container .navigation ul li.active::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background: #DAA622;
+  display: block;
+  bottom: -4px;
+}
+
+section.projects {
+  padding: 60px 0 80px 0;
+}
+section.projects .projects-content {
+  text-align: center;
+  max-width: 816px;
+  margin: auto;
+}
+section.projects .projects-content h3 {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.2;
+  color: #141518;
+  font-family: "Manrope";
+  max-width: 700px;
+  margin: auto;
+  margin-bottom: 16px;
+}
+section.projects .projects-content p {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 0.01em;
+  color: #434449;
+  max-width: 700px;
+  margin: auto;
+}
+section.projects .projects-content .figures {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 48px;
+  -moz-column-gap: 119px;
+       column-gap: 119px;
+}
+section.projects .projects-content .figures .figure-column {
+  display: flex;
+  width: 33.33%;
+  align-items: center;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+section.projects .projects-content .figures .figure-column h4 {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1.3;
+  font-family: "Manrope";
+  color: #141418;
+}
+section.projects .projects-content .figures .figure-column p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #434449;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+section.projects .projects-content .figures img {
+  width: 36px;
+  height: 36px;
+}
+section.projects .projects-content .figures .number-title {
+  text-align: left;
+}
+
+@media (max-width: 1200px) {
+  section.banner .container .content h3 {
+    margin-bottom: 15px;
+  }
+  section.banner .container .content p {
+    max-width: 447px;
+  }
+  section.banner .container .navigation ul li:hover::after {
+    -webkit-animation: none;
+            animation: none;
+  }
+  section.banner .container .navigation ul li.active::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background: #DAA622;
+    display: block;
+    bottom: -4px;
+  }
+}
+@media (max-width: 1024px) {
+  section.projects {
+    padding: 60px 20px 80px 20px;
+  }
+}
+@media (max-width: 880px) {
+  section.banner .container .navigation {
+    left: 0;
+  }
+  section.banner .container .navigation ul li:hover::after {
+    -webkit-animation: none;
+            animation: none;
+  }
+  section.banner .container .navigation ul li.active::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background: #DAA622;
+    display: block;
+    bottom: -4px;
+  }
+  section.projects {
+    padding: 60px 20px 80px 20px;
+  }
+  section.projects .projects-content .figures {
+    -moz-column-gap: 74px;
+         column-gap: 74px;
+  }
+}
+@media (max-width: 767px) {
+  section.banner {
+    overflow: hidden;
+    padding: 0 20px;
+    min-height: 420px;
+  }
+  section.banner .container .content {
+    top: calc(50% - 12px);
+  }
+  section.banner .container .content h3 {
+    font-size: 32px;
+  }
+  section.banner .container .content p {
+    max-width: unset;
+    min-width: 335px;
+  }
+  section.banner .container .navigation {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    left: -9px;
+  }
+  section.banner .container .navigation ul li:hover::after {
+    -webkit-animation: none;
+            animation: none;
+  }
+  section.banner .container .navigation ul li + li {
+    margin-left: 20px;
+  }
+  section.banner .container .navigation ul li.active::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background: #DAA622;
+    display: block;
+    bottom: -4px;
+  }
+  section.projects {
+    padding: 44px 20px 42px 20px;
+  }
+  section.projects .projects-content h3 {
+    font-size: 28px;
+  }
+  section.projects .projects-content .figures {
+    -moz-column-gap: 59px;
+         column-gap: 59px;
+    margin-top: 26px;
+  }
+  section.projects .projects-content .figures .figure-column {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  section.projects .projects-content .figures .figure-column h4 {
+    font-size: 28px;
+    margin-bottom: 2px;
+  }
+  section.projects .projects-content .figures .figure-column p {
+    width: unset;
+    font-size: 12px;
+  }
+  section.projects .projects-content .figures .figure-column:nth-child(2) p {
+    min-width: 75px;
+  }
+  section.projects .projects-content .figures img {
+    margin-bottom: 7px;
+  }
+  section.projects .projects-content .figures .number-title {
+    text-align: center;
+  }
+}
+section.map iframe {
+  min-height: 708px;
+  width: 100%;
+}
+section.map #content-popup {
+  display: flex;
 }/*# sourceMappingURL=index.css.map */
