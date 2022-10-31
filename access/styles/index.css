@@ -23,6 +23,11 @@ html {
   height: 100%;
 }
 
+.custom-container {
+  max-width: 1128px;
+  margin: auto;
+}
+
 body {
   background: var(--bg-color-second);
   color: #4D4D4D;
@@ -818,68 +823,141 @@ footer.footer-second .footer {
 }
 .terms .terms-header-top {
   position: relative;
+  background-image: url("../../../access/images/img-terms.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 400px;
 }
-.terms .terms-header-top h3 {
+.terms .terms-header-top div {
+  position: absolute;
+  left: 50%;
+  top: 53%;
+  transform: translateX(-50%);
+}
+.terms .terms-header-top div span {
+  width: 32px;
+  margin: auto;
+  display: block;
+  border-top: 2px solid #daa622;
+}
+.terms .terms-header-top div h3 {
   font-size: 40px;
   font-weight: 500;
   color: #fff;
-  position: absolute;
   display: flex;
   line-height: 48px;
-  left: 50%;
-  top: 50%;
-  transform: translateX(-50%);
-}
-.terms .terms-header-top h3 span {
-  display: inline-block;
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 32px;
-  position: absolute;
-  border-radius: 2px;
-  border-top: 2px solid #daa622;
+  margin-top: 5px;
 }
 .terms h5 {
-  padding: 60px 206px 40px 206px;
-  font-weight: 600;
-  font-size: 28px;
-  line-height: 36.4px;
+  letter-spacing: 0.2px;
+  margin: auto;
 }
-.terms span {
-  left: 50%;
-  transform: translateX(-50%);
-  width: 1028px;
-  position: absolute;
-  border-radius: 2px;
-  border-top: 2px solid #d1d5db;
+.terms span.divider {
+  width: 100%;
+  height: 1px;
+  background: #d1d5db;
+  display: block;
+  margin-top: 40px;
+  margin-bottom: -8px;
+}
+.terms p.first {
+  margin-top: 48px;
 }
 .terms p {
-  padding: 40px 206px 0px 206px;
+  margin: auto;
   font-weight: 300;
   font-size: 16px;
   line-height: 25.6px;
+  letter-spacing: 0.1px;
 }
-.terms .terms-container {
+.terms p + p {
+  margin-top: 28px;
+}
+.terms .term-content-box {
+  padding: 0 206px;
+  padding-top: 60px;
+}
+.terms .term-content-box .terms-container {
   max-width: 1440px;
   margin: 0 auto;
 }
-.terms .terms-container .terms-content h6 {
+.terms .term-content-box .terms-container .terms-content {
+  padding-bottom: 80px;
+}
+.terms .term-content-box .terms-container .terms-content h6 {
   font-weight: 600;
   font-size: 22px;
   line-height: 28.6px;
-  padding: 10px 206px 0px 206px;
+  letter-spacing: 0.4px;
+  margin-bottom: 1px;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 13px;
 }
-.terms .terms-container .terms-content p {
-  padding: 10px 206px 10px 206px;
+.terms .term-content-box .terms-container .terms-content p {
   font-weight: 300;
   font-size: 16px;
-  line-height: 25.6px;
+  line-height: 1.6em;
+  letter-spacing: 0.1px;
 }
 
 @media (max-width: 1024px) {
   header .header .logo {
     left: 20px;
+@media (max-width: 1200px) {
+  .terms span.divider {
+    margin-top: 38px;
+    margin-bottom: -6px;
+  }
+  .terms .term-content-box {
+    padding: 0 180px;
+    padding-top: 57px;
+  }
+}
+@media (max-width: 1200px) {
+  .terms .term-content-box {
+    padding: 0 64px;
+    padding-top: 57px;
+  }
+}
+@media (max-width: 767px) {
+  .terms .terms-header-top {
+    min-height: 300px;
+  }
+  .terms .terms-header-top div {
+    top: 41.7%;
+  }
+  .terms .terms-header-top div h3 {
+    font-size: 32px;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+  }
+  .terms span.divider {
+    margin-top: 21px;
+    margin-bottom: -22px;
+  }
+  .terms .term-content-box {
+    padding: 0 20px;
+    padding-top: 40px;
+  }
+  .terms .term-content-box .terms-container .terms-content {
+    padding-bottom: 46px;
+  }
+  .terms .term-content-box .terms-container .terms-content h6 {
+    margin-top: 27px;
+    margin-bottom: 13px;
+  }
+  .terms p {
+    margin-right: 3px;
+  }
+  .terms p + p {
+    margin-top: 30px;
+  }
+}
+@media (max-width: 1024px) {
+  .header .bottom-header .navbar .nav-list .nav-item {
+    padding: 28px 10px;
   }
   header .header .logo .img-logo {
     max-width: 47px;
@@ -1025,5 +1103,291 @@ footer .top-header.footer-mobile.home-header .navigator {
   }
   footer .footer.d-flex {
     display: none !important;
+  }
+}
+section.register .register-box {
+  display: flex;
+}
+section.register .register-box .form-box {
+  width: 50%;
+  padding: 65px 60px 0 60px;
+}
+section.register .register-box .form-box .title {
+  margin-bottom: 30px;
+}
+section.register .register-box .form-box .title h2 {
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 1.15em;
+  text-transform: capitalize;
+  font-family: "Manrope";
+}
+section.register .register-box .form-box .languages {
+  margin-top: 28px;
+  border: 1px solid #D1D5DB;
+  max-width: 148px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 42px;
+  padding: 4.5px 0 4.5px 8px;
+  border-radius: 2px;
+  position: relative;
+}
+section.register .register-box .form-box .languages::after {
+  content: "";
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border-right: 1.5px solid #434449;
+  border-bottom: 1.5px solid #434449;
+  right: 11.3px;
+  transform: rotate(45deg);
+}
+section.register .register-box .form-box .languages select {
+  border: unset;
+  line-height: 1.6 !important;
+  height: unset !important;
+  outline: unset;
+  padding: 0 4px !important;
+  margin-left: 3px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+section.register .register-box .form-box .languages select option {
+  font-weight: 500;
+  line-height: 1.6;
+  letter-spacing: 0.01em;
+}
+section.register .register-box .form-box .languages select::-ms-expand {
+  display: none;
+}
+section.register .register-box .form-box .login-logo-box .login-logo {
+  width: 49px;
+}
+section.register .register-box .form-box form label,
+section.register .register-box .form-box form input {
+  display: block;
+}
+section.register .register-box .form-box form label {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.6;
+  letter-spacing: 0.01em;
+  color: #434449;
+  margin-bottom: 4px;
+}
+section.register .register-box .form-box form input {
+  width: 100% !important;
+  margin-bottom: 25px;
+  font-size: 18px;
+  line-height: 1.6 !important;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  color: #7E8189;
+  position: relative;
+  outline: unset;
+  border: 1px solid #D1D5DB;
+  border-radius: 2px;
+}
+section.register .register-box .form-box form div.password {
+  position: relative;
+}
+section.register .register-box .form-box form div.password svg {
+  position: absolute;
+  top: calc(50% + 3px);
+  right: 10px;
+}
+section.register .register-box .form-box form div.confirm-password {
+  position: relative;
+}
+section.register .register-box .form-box form div.confirm-password svg {
+  position: absolute;
+  top: calc(50% + 3px);
+  right: 10px;
+}
+section.register .register-box .form-box form div.submit {
+  margin-top: 32px;
+}
+section.register .register-box .form-box form div.submit .register-btn {
+  width: 100% !important;
+  outline: none;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.4;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  border: unset;
+}
+section.register .register-box .form-box form div.submit .register-btn:hover {
+  background-color: #000;
+  color: #FFF;
+}
+section.register .register-box .form-box form .require {
+  color: #DD2027;
+}
+section.register .register-box .form-box .old-member {
+  text-align: center;
+  margin-top: 33px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.6;
+  letter-spacing: 0.01em;
+  color: #434449;
+}
+section.register .register-box .form-box .old-member a {
+  color: #134FA5;
+  font-weight: 500;
+}
+section.register .register-box .image {
+  max-width: 50%;
+  flex: 1;
+}
+section.register .register-box .image img {
+  height: 100vh;
+}
+
+@media (max-width: 1440px) {
+  section.register .register-box {
+    justify-content: space-between;
+  }
+  section.register .register-box .form-box {
+    padding: 65px 15px 0 165px;
+  }
+  section.register .register-box form div.password {
+    position: relative;
+  }
+  section.register .register-box .image {
+    max-width: 640px;
+  }
+}
+@media (max-width: 1200px) {
+  section.register .register-box .form-box {
+    padding: 65px 64px 0 64px;
+  }
+}
+@media (max-width: 880px) {
+  section.register::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.6;
+    top: 0;
+  }
+  section.register .register-box .form-box {
+    width: 100%;
+    max-width: 500px !important;
+    padding: 65px 20px 0 20px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9;
+  }
+  section.register .register-box .form-box .title h2 {
+    color: #Fff;
+    font-size: 36px;
+  }
+  section.register .register-box .form-box .languages {
+    border-color: #fff;
+  }
+  section.register .register-box .form-box .languages svg {
+    fill: #Fff;
+  }
+  section.register .register-box .form-box .languages::after {
+    content: "";
+    border-color: #fff;
+  }
+  section.register .register-box .form-box select {
+    background: transparent;
+    color: #fff;
+  }
+  section.register .register-box form label {
+    color: #fff !important;
+  }
+  section.register .register-box form input {
+    background: transparent;
+    color: #fff !important;
+    border-color: #fff !important;
+  }
+  section.register .register-box form input::-moz-placeholder {
+    color: #fff !important;
+  }
+  section.register .register-box form input:-ms-input-placeholder {
+    color: #fff !important;
+  }
+  section.register .register-box form input::placeholder {
+    color: #fff !important;
+  }
+  section.register .register-box form div.password svg path {
+    fill: #fff;
+  }
+  section.register .register-box form div.confirm-password svg path {
+    fill: #fff;
+  }
+  section.register .register-box .old-member span {
+    color: #fff;
+  }
+  section.register .register-box .image {
+    max-width: 100%;
+  }
+  section.register .register-box .image img {
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+.forget-password {
+  text-align: right;
+  color: #134FA5;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  line-height: 1.6;
+  margin-top: -13px;
+}
+
+section.register .register-box .form-box .title .forget-password-title {
+  text-transform: none;
+  font-family: "Manrope";
+}
+section.register .register-box .notification {
+  margin-top: 32px;
+}
+section.register .register-box .notification p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.6;
+  letter-spacing: 0.01em;
+}
+
+@media (max-width: 880px) {
+  section.register .register-box .notification p {
+    color: #fff;
+  }
+}
+section.register .register-box .reset-password-notifition {
+  margin-top: 32px;
+}
+section.register .register-box .reset-password-notifition p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.6;
+  letter-spacing: 0.01em;
+}
+section.register .register-box .form-box form div.submit .register-btn.custom-btn {
+  background-color: transparent;
+  border: 1px solid #DAA622;
+  color: #DAA622;
+}
+section.register .register-box .form-box form div.submit .register-btn.custom-btn:hover {
+  color: #fff;
+  background-color: #000;
+  border-color: #000;
+}
+
+@media (max-width: 880px) {
+  section.register .register-box .reset-password-notifition p {
+    color: #fff;
   }
 }/*# sourceMappingURL=index.css.map */

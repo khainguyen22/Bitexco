@@ -22,6 +22,11 @@ html {
     height: 100%;
 }
 
+.custom-container {
+    max-width: 1128px;
+    margin: auto;
+}
+
 body {
     background: var(--bg-color-second);
     color: #4D4D4D;
@@ -281,3 +286,7 @@ body {
 @import './scss/custom/slider';
 @import './scss/pages/dieu-khoan';
 @import './scss/pages/responsive';
+@import './scss/pages/dangki';
+@import './scss/pages/dangnhap';
+@import './scss/pages/quenmatkhau';
+@import './scss/pages/xacnhanquenmatkhau';
