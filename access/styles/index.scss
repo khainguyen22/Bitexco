@@ -106,7 +106,9 @@ body {
     }
 
     img {
-        width: 100%;
+        width: auto;
+        height: auto;
+        max-width: 100%;
     }
 
     a {
@@ -215,11 +217,19 @@ body {
 
     }
 
+    span.line-headding {
+        width: 32px;
+        margin: auto;
+        display: block;
+        border-top: 2px solid #daa622;
+    }
+
     span.tag {
         font-family: var(--primary-font);
         font-weight: 500;
         font-size: 11px;
         line-height: 150%;
+        justify-content:   space-between ;
         letter-spacing: 0.04em;
         text-transform: uppercase;
         color: #434449;
@@ -293,8 +303,17 @@ body {
             }
 
         }
+    }
 
+    .card-custom.card {
+        max-width: 393px;
+        border-radius: 2px;
+        border: unset;
+        background-color: #FFFFFF;
 
+        img {
+            max-height: 223px;
+        }
     }
 }
 
@@ -308,3 +327,4 @@ body {
 @import './scss/pages/quenmatkhau';
 @import './scss/pages/xacnhanquenmatkhau';
 @import './scss/pages/bando.scss';
+@import './scss/pages/chitietbando2';

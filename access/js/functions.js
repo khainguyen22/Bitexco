@@ -79,3 +79,4 @@ $(document).ready(function () {
 		$(this).load(file)
 	});
 });
+jQuery(document).ready(function () { jQuery(".ecommerce-gallery").lightSlider({ gallery: true, item: 1, loop: true, thumbItem: 10, thumbMargin: 12, }); });
