@@ -36,6 +36,11 @@ footer {
 
     &.footer-second {
         padding: 0px 100px;
+
+        @media(max-width:767px) {
+            padding: 0px 20px;
+        }
+
         .footer-top {
             padding: 86px 0 60px 0;
             border-bottom: 1px solid hwb(0deg 45% 50% / 20%);
