@@ -103,15 +103,19 @@ jQuery(document).ready(function ($) {
 		slidesToScroll: 1,
 		responsive: [
 			{
-				breakpoint: 1024,
+				breakpoint: 1100,
 				settings: {
-					slidesToShow: 2
+					slidesToShow: 2,
+					arrows: true,
 				}
 			},
 			{
 				breakpoint: 768,
 				settings: {
-					slidesToShow: 1
+					slidesToShow: 1,
+					arrows: false,
+					slidesToScroll: 1,
+
 				}
 			},
 		]

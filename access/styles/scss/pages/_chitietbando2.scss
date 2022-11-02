@@ -1,6 +1,10 @@
 .chitietbando2-content {
     margin-top: 121px;
 
+    @media(max-width:767px) {
+        margin-top: 66px;
+    }
+
     .line-headding {
         margin-bottom: 10px;
     }
@@ -12,6 +16,10 @@
             margin-top: 0;
             margin-bottom: 0;
         }
+
+        @media(max-width:1200px) {
+            padding: 0px;
+        }
     }
 
     .banner {
@@ -21,6 +29,11 @@
         background-size: cover;
         background-image: url('../../../access/images/Rectangle184.png');
 
+        @media(max-width:767px) {
+            height: 315px;
+            min-height: 315px;
+        }
+
         .content {
             margin: 33px;
             padding: 28px;
@@ -28,15 +41,37 @@
             img {
                 margin-bottom: 10px;
             }
+
+            @media(max-width:1200px) {
+                margin-top: 27px;
+            }
+
+            @media(max-width:767px) {
+                margin: 0px;
+                padding: 28px 0;
+            }
         }
     }
 
     .tong-quan {
         margin-top: 97px;
 
+        @media(max-width:767px) {
+            margin-top: 58px;
+        }
+
         .tong-quan-row {
             margin-top: 40px;
             width: 100%;
+
+            @media(max-width:1200px) {
+                margin-top: 34px;
+            }
+
+            @media(max-width:767px) {
+
+                margin-top: 31px;
+            }
 
             .item {
                 padding: 0;
@@ -46,14 +81,13 @@
                     @media(min-width:992px) {
                         width: 51%;
                     }
+
                 }
 
                 &-image {
                     @media(min-width:992px) {
                         width: 49%;
                     }
-
-
 
                     .lSSlideOuter {
                         position: relative;
@@ -65,12 +99,14 @@
 
                         .ecommerce-gallery {
                             li {
-                                // margin-right: 0 !important;
-
                                 img {
                                     object-fit: cover;
                                     width: 100%;
                                     height: 510px;
+
+                                    @media(max-width:767px) {
+                                        height: 353px;
+                                    }
                                 }
                             }
                         }
@@ -82,8 +118,6 @@
                                 width: 100%;
                                 height: 510px;
                             }
-
-
                         }
 
                         .lSAction {
@@ -121,6 +155,11 @@
                     color: #fff;
                     padding: 62px 110px;
 
+                    @media(max-width:767px) {
+                        padding: 43px 20px 24px;
+
+                    }
+
                     ul {
                         li {
                             margin-bottom: 20px;
@@ -140,29 +179,74 @@
         }
     }
 
+    .row {
+        margin: 0;
+    }
+
     .gioi-thieu {
         margin: 100px 0;
 
         &.container {
             padding: 100px;
             margin: 0 auto;
+
+            @media(max-width:1200px) {
+                padding: 100px 0 36px;
+            }
+
+            @media(max-width:767px) {
+                padding: 55px 0 16px;
+            }
+
         }
 
         .gioi-thieu-row {
             margin-top: 60px;
 
+            @media(max-width:767px) {
+                margin-top: 15px;
+            }
+
             &.gioi-thieu-row-1 {
+                @media(max-width:1200px) {
+                    margin-top: 38px;
+                }
+
                 .item {
                     &-content {
                         padding: 0 0 0 65px;
-                    }
 
-                    @media(max-width:991px) {
-                        &-content {
+                        @media(max-width:1200px) {
+                            padding: 0 15px 0 45px;
+                        }
+
+                        @media(max-width:991px) {
+
                             padding-left: 10px;
                             padding-right: 10px;
                         }
+
+                        @media(max-width:767px) {
+                            margin-top: 20px;
+                            padding-left: 20px;
+                            padding-right: 20px;
+                        }
                     }
+
+                    &-image img {
+
+                        @media(max-width:1200px) {
+                            padding: 0 20px 0 4px;
+                            height: 340px;
+                            object-fit: cover;
+                        }
+
+                        @media(max-width:767px) {
+                            padding: 0 4px;
+                            height: 310px;
+                        }
+                    }
+
                 }
             }
 
@@ -170,32 +254,68 @@
                 border-bottom: 1px solid #D1D5DB;
                 padding-bottom: 57px;
 
+                @media(max-width:767px) {
+                    flex-direction: column-reverse;
+                    padding-bottom: 32px;
+                }
+
                 .item {
 
                     &-content {
                         padding-left: 11px;
                         padding-right: 50px;
-                    }
 
-                    @media(max-width:991px) {
-                        &-content {
+                        @media(max-width:1200px) {
+                            padding-left: 20px;
+                        }
+
+                        @media(max-width:991px) {
                             padding-left: 10px;
                             padding-right: 10px;
                         }
+
+                        @media(max-width:767px) {
+                            padding-left: 20px;
+                            padding-right: 20px;
+                        }
                     }
+
+                    &-image img {
+                        @media(max-width:1200px) {
+                            padding-left: 20px;
+                            padding-right: 3px;
+                            height: 340px;
+                            object-fit: cover;
+                        }
+
+                        @media(max-width:991px) {
+                            padding-left: 10px;
+                            padding-right: 10px;
+                        }
+
+                        @media(max-width:767px) {
+                            padding-left: 5px;
+                            padding-right: 5px;
+                            height: 310px;
+                        }
+                    }
+
+                }
+
+                @media(max-width:1200px) {
+                    border-bottom: none;
                 }
             }
 
-            @media(max-width:991px) {
-                img {
-                    width: 100%;
-                }
-            }
         }
 
         .link-quay-lai {
             margin-top: 24px;
             color: var(--text-color-yellow);
+
+            @media(max-width:1200px) {
+                display: none;
+            }
 
             span {
                 margin-left: 14px;
@@ -203,25 +323,4 @@
         }
     }
 
-    .slider-card-wrapper {
-        background: #F6F8FC;
-
-        .container {
-            padding: 62px 85px;
-
-            h4 {
-                padding: 0 15px;
-            }
-
-            .slider-cards {
-                margin-top: 20px;
-
-                .slick-track {
-                    display: flex;
-                    justify-content: space-between;
-                }
-            }
-
-        }
-    }
 }
