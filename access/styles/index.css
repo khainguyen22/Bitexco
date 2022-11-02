@@ -1807,6 +1807,10 @@ section.banner .container .navigation ul li {
   letter-spacing: 0.04em;
   text-transform: uppercase;
 }
+section.banner .container .navigation ul li a {
+  color: #fff;
+  text-decoration: none;
+}
 section.banner .container .navigation ul li:hover::after {
   -webkit-animation: none;
           animation: none;
