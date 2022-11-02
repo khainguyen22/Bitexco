@@ -398,6 +398,32 @@ body span.tag.tag-file::before {
   background-repeat: no-repeat;
   background-image: url("../images/Vector 157.png");
 }
+body .custom-pagination li.page-item {
+  border-radius: 8px;
+  font-family: var(--primary-font);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  letter-spacing: 0.01em;
+  background: #F6F8FC;
+  border-radius: 6px;
+  margin: 0 6px;
+}
+body .custom-pagination li.page-item .page-link {
+  padding: 5px 14px;
+  background-color: unset;
+  border: unset;
+  color: #434449;
+}
+body .custom-pagination li.page-item.disable .page-link {
+  color: #7E8189;
+}
+body .custom-pagination li.page-item.active {
+  background: #FAF6F2;
+}
+body .custom-pagination li.page-item.active .page-link {
+  color: #DAA622;
+}
 body .table {
   font-family: var(--primary-font);
   border-collapse: collapse;
@@ -1245,6 +1271,23 @@ footer .top-header.footer-mobile.home-header .navigator {
 }
 .slick-arrow.slick-prev {
   left: -40px;
+}
+
+.slider-card-wrapper {
+  background: #F6F8FC;
+}
+.slider-card-wrapper .container {
+  padding: 62px 85px;
+}
+.slider-card-wrapper .container h4 {
+  padding: 0 15px;
+}
+.slider-card-wrapper .container .slider-cards {
+  margin-top: 20px;
+}
+.slider-card-wrapper .container .slider-cards .slick-track {
+  display: flex;
+  justify-content: space-between;
 }
 
 .terms .terms-header-top {

@@ -453,6 +453,39 @@ body {
 
     }
 
+    .custom-pagination {
+        li.page-item {
+            border-radius: 8px;
+            font-family: var(--primary-font);
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 160%;
+            letter-spacing: 0.01em;
+            background: #F6F8FC;
+            border-radius: 6px;
+            margin: 0 6px;
+
+            .page-link {
+                padding: 5px 14px;
+                background-color: unset;
+                border: unset;
+                color: #434449;
+            }
+
+            &.disable .page-link {
+                color: #7E8189;
+            }
+
+            &.active {
+                background: #FAF6F2;
+
+                .page-link {
+                    color: #DAA622;
+                }
+            }
+        }
+    }
+
     .table {
         font-family: var(--primary-font);
         border-collapse: collapse;

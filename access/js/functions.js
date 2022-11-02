@@ -31,13 +31,22 @@ jQuery(document).ready(function ($) {
 		autoplaySpeed: 2500,
 		dots: true,
 		vertical: true,
-		arrows: true,
-		infinite: true,
+		arrows: false,
+		infinite: false,
+		loop: false,
 		speed: 500,
 		cssEase: 'linear',
 		slidesToShow: 1,
 		slidesToScroll: 1,
 	});
+	$('.home-slide-carousel').on('wheel', (function (e) {
+		e.preventDefault();
+		if (e.originalEvent.deltaY > 0) {
+			$(this).slick('slickNext');
+		} else {
+			$(this).slick('slickPrev');
+		}
+	}));
 
 	$(document).on('click', '.burger', function () {
 		$('.burger').addClass("is-active");
