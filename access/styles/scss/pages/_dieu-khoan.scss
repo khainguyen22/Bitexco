@@ -5,25 +5,28 @@
         background-repeat: no-repeat;
         background-size: cover;
         min-height: 400px;
+
         div {
             position: absolute;
             left: 50%;
             top: 53%;
             transform: translateX(-50%);
-            span {
-            width: 32px;
-            margin: auto;
-            display: block;
-            border-top: 2px solid #daa622;
-        }
-        h3 {
-            font-size: 40px;
-            font-weight: 500;
-            color: #fff;
-            display: flex;
-            line-height: 48px;
-            margin-top: 5px;
-        }
+
+            span.line-headding {
+                width: 32px;
+                margin: auto;
+                display: block;
+                border-top: 2px solid #daa622;
+            }
+
+            h3 {
+                font-size: 40px;
+                font-weight: 500;
+                color: #fff;
+                display: flex;
+                line-height: 48px;
+                margin-top: 5px;
+            }
         }
     }
 
@@ -51,20 +54,23 @@
         font-size: 16px;
         line-height: 25.6px;
         letter-spacing: 0.1px;
-    }   
+    }
 
-    p + p {
+    p+p {
         margin-top: 28px;
     }
 
     .term-content-box {
         padding: 0 206px;
         padding-top: 60px;
+
         .terms-container {
             max-width: 1440px;
             margin: 0 auto;
+
             .terms-content {
                 padding-bottom: 80px;
+
                 h6 {
                     font-weight: 600;
                     font-size: 22px;
@@ -75,7 +81,7 @@
                     margin-top: 20px;
                     margin-bottom: 13px;
                 }
-    
+
                 p {
                     font-weight: 300;
                     font-size: 16px;
@@ -116,36 +122,42 @@
         .terms-header-top {
             min-height: 300px;
         }
+
         .terms-header-top div {
             top: 41.7%;
         }
+
         .terms-header-top div h3 {
             font-size: 32px;
             width: max-content;
         }
+
         span.divider {
             margin-top: 21px;
             margin-bottom: -22px;
         }
+
         .term-content-box {
             padding: 0 20px;
             padding-top: 40px;
+
             .terms-container {
                 .terms-content {
                     padding-bottom: 46px;
+
                     h6 {
                         margin-top: 27px;
                         margin-bottom: 13px;
                     }
                 }
             }
-        }   
+        }
 
         p {
             margin-right: 3px;
         }
 
-        p + p {
+        p+p {
             margin-top: 30px;
         }
     }

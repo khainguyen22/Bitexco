@@ -1,5 +1,4 @@
-
-
+// home slide
 .home-slide {
     .home-slide-carousel {
         &.slick-vertical .slick-slide {
@@ -14,6 +13,7 @@
             img {
                 height: 100vh;
                 object-fit: cover;
+                width: 100%;
             }
 
             .content {
@@ -30,10 +30,7 @@
                 }
 
                 .title {
-                    font-size: 40px;
-                    line-height: 1.2;
                     font-weight: 500;
-                    font-family: 'Manrope';
                     margin-bottom: 22px;
                 }
 
@@ -138,7 +135,8 @@
                 &::after {
                     width: 100%;
                     background: #DAA622;
-                    transition: all .3s ease;
+                    transition: width 1s;
+                    // transition: width 2s;
                 }
             }
 
@@ -158,4 +156,31 @@
             }
         }
     }
+}
+
+@media(max-width:1024px) {
+    .home-slide {
+        .home-slide-carousel .item .content {
+            left: 20px;
+        }
+
+        .slick-dots {
+            justify-content: center;
+
+            li {
+                padding: 12px 10px 15px 10px;
+
+                &::before {
+                    content: '' !important;
+                }
+
+                &::after {
+                    width: 28px !important;
+                }
+
+            }
+        }
+    }
+
+
 }

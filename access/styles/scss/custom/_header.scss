@@ -25,7 +25,7 @@
     }
 
     .nav-right {
-      margin-right: 5px;
+      // margin-right: 5px;
       padding-left: 50px;
       align-items: center;
 
@@ -62,37 +62,26 @@
     }
 
     .nav-langue {
-      .img-langue {
-        margin-left: 33.3px;
-        margin-right: 6.33px;
-        width: 16px;
-        height: 16px;
-      }
+      margin-left: 33.3px;
 
-      .dropdown-langue {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
+      .languages {
+        svg {
+          max-width: 16px;
+          margin-right: -2px;
 
-      .btn-langue {
-        background: none;
-        border: none;
-        color: #FFFFFF;
-        height: 42px;
-        display: flex;
-        align-items: center;
-        text-transform: uppercase;
-        line-height: 1.5;
-        font-size: 11px;
-        letter-spacing: 0.04em;
-
-        .angle-down {
-          margin-left: 4px;
+          path {
+            stroke: #fff;
+          }
         }
 
-        &.dropdown-toggle::after {
-          display: none;
+        select {
+          color: #fff;
+          padding: 0;
+
+          option {
+            color: #0D0D0E;
+            padding: 10px;
+          }
         }
       }
     }
@@ -106,11 +95,7 @@
     padding: 0;
     letter-spacing: 0.04em
   }
-
-
 }
-
-
 
 /* header bottom */
 .header {
@@ -417,6 +402,7 @@ header {
     z-index: 1;
     top: 42px;
     display: none;
+    padding: 0 49px;
 
     &.is-active {
       display: block;
@@ -438,8 +424,6 @@ header {
         letter-spacing: 0.01em;
         width: 90%;
         font-family: var(--primary-font);
-
-
       }
 
       &::after {
@@ -478,5 +462,70 @@ header {
 
   .search-close {
     display: none;
+  }
+}
+
+@media(max-width:1024px) {
+  header {
+    .header {
+      .logo {
+        left: 20px;
+
+        .img-logo {
+          max-width: 47px;
+        }
+      }
+
+      .bottom-header .navbar {
+        padding: 0 6px 0 20px;
+        height: 53px;
+
+        .nav-list .nav-item {
+          padding: 16px 10px;
+        }
+
+        .nav-list {
+          height: 50px;
+
+          .nav-item.nav-item-icon-search {
+            padding: 14px 10px;
+            margin-right: 22px;
+          }
+        }
+      }
+
+      .top-header {
+        display: none;
+      }
+
+      .bottom-header .navbar .nav-list .nav-item:nth-last-of-type(n + 3) {
+        display: none;
+      }
+    }
+
+    .menu-main-container {
+      top: 53px;
+
+      .menu {
+        padding: 0;
+
+        .sub-menu {
+          visibility: hidden;
+        }
+
+        .row {
+          height: auto;
+
+          .menu-image {
+            display: none;
+          }
+
+          li {
+            padding: 11px 20px;
+            border-bottom: 1px solid;
+          }
+        }
+      }
+    }
   }
 }
