@@ -1601,6 +1601,7 @@ section.register .register-box .image {
   flex: 1;
 }
 section.register .register-box .image img {
+  width: 100%;
   height: 100vh;
 }
 
@@ -2189,4 +2190,241 @@ section.map #content-popup {
 .chitietbando2-content .slider-card-wrapper .container .slider-cards .slick-track {
   display: flex;
   justify-content: space-between;
+}
+
+.filter-post-section {
+  padding: 60px 0 80px 0;
+}
+.filter-post-section select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+.filter-post-section .filter-post-container {
+  max-width: 1239px;
+  margin: auto;
+}
+.filter-post-section .filter-post-container .title-column {
+  text-align: center;
+  max-width: 700px;
+  margin: auto;
+  margin-bottom: 40px;
+}
+.filter-post-section .filter-post-container .title-column h3 {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.2;
+  font-family: "Manrope";
+  color: #141518;
+  margin-bottom: 16px;
+}
+.filter-post-section .filter-post-container .title-column p {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 0.01em;
+  color: #434449;
+}
+.filter-post-section .filter-post-container .form-filter form {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 16px;
+}
+.filter-post-section .filter-post-container .form-filter form .form-filter-search {
+  border: 1px solid #D1D5DB;
+  padding: 10.2px 16px 10.2px 14px;
+  border-radius: 2px;
+  margin-right: 16px;
+  width: 610px;
+  position: relative;
+}
+.filter-post-section .filter-post-container .form-filter form .form-filter-search::after {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-right: 2px solid #434449;
+  border-bottom: 2px solid #434449;
+  position: absolute;
+  right: 20px;
+  top: 45%;
+  transform: rotate(45deg) translateY(-50%);
+}
+.filter-post-section .filter-post-container .form-filter form .form-filter-search svg {
+  margin-right: 7px;
+}
+.filter-post-section .filter-post-container .form-filter form .form-filter-search input {
+  border: none;
+  outline: none;
+  font-size: 16px;
+  letter-spacing: 0.01em;
+  font-weight: 300;
+  line-height: 1.6;
+  color: #7E8189;
+  width: 80%;
+}
+.filter-post-section .filter-post-container .form-filter form .form-filter-type {
+  border: 1px solid #D1D5DB;
+  padding: 10.2px 16px 10.2px 16px;
+  border-radius: 2px;
+  width: 610px;
+  position: relative;
+}
+.filter-post-section .filter-post-container .form-filter form .form-filter-type::after {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-right: 2px solid #434449;
+  border-bottom: 2px solid #434449;
+  position: absolute;
+  right: 20px;
+  top: 45%;
+  transform: rotate(45deg) translateY(-50%);
+}
+.filter-post-section .filter-post-container .form-filter form .form-filter-type select {
+  width: 100%;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.6;
+  letter-spacing: 0.01em;
+  color: #141518;
+}
+.filter-post-section .filter-post-container .form-filter form .form-filter-type select:hover {
+  cursor: pointer;
+}
+.filter-post-section .filter-post-container .form-filter form .form-filter-area {
+  border: 1px solid #D1D5DB;
+  padding: 10.2px 16px 10.2px 14px;
+  border-radius: 2px;
+  width: 472px;
+  margin-right: 15.5px;
+  position: relative;
+}
+.filter-post-section .filter-post-container .form-filter form .form-filter-area::after {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-right: 2px solid #434449;
+  border-bottom: 2px solid #434449;
+  position: absolute;
+  right: 20px;
+  top: 45%;
+  transform: rotate(45deg) translateY(-50%);
+}
+.filter-post-section .filter-post-container .form-filter form .form-filter-area select {
+  width: 100%;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.6;
+  letter-spacing: 0.01em;
+  color: #141518;
+}
+.filter-post-section .filter-post-container .form-filter form .form-filter-area select:hover {
+  cursor: pointer;
+}
+.filter-post-section .filter-post-container .form-filter form .form-filter-company {
+  border: 1px solid #D1D5DB;
+  padding: 10.2px 16px 10.2px 16px;
+  border-radius: 2px;
+  width: 472px;
+  margin-right: 15.5px;
+  position: relative;
+}
+.filter-post-section .filter-post-container .form-filter form .form-filter-company::after {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-right: 2px solid #434449;
+  border-bottom: 2px solid #434449;
+  position: absolute;
+  right: 20px;
+  top: 45%;
+  transform: rotate(45deg) translateY(-50%);
+}
+.filter-post-section .filter-post-container .form-filter form .form-filter-company select {
+  width: 100%;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.6;
+  letter-spacing: 0.01em;
+  color: #141518;
+}
+.filter-post-section .filter-post-container .form-filter form .form-filter-company select:hover {
+  cursor: pointer;
+}
+.filter-post-section .filter-post-container .form-filter form .button-submit .btn-submit {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.4;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+.filter-post-section .filter-post-container .form-filter form .button-reset .btn-reset {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.4;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  background: transparent;
+  color: #7E8189;
+}
+.filter-post-section .filter-post-container .filter-content {
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 30px;
+}
+.filter-post-section .filter-post-container .filter-content .filter-item {
+  width: calc(33.3333333333% - 20px);
+  background: #ccc;
+  border-radius: 2px;
+}
+.filter-post-section .filter-post-container .filter-content .filter-item .item-content {
+  padding: 26px 24px 11px 21px;
+}
+.filter-post-section .filter-post-container .filter-content .filter-item .item-content .content-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.filter-post-section .filter-post-container .filter-content .filter-item .item-content .content-title h6 {
+  font-family: "Manrope";
+  font-size: 22px;
+  line-height: 1.3;
+  letter-spacing: 0.01em;
+  color: #141518;
+  margin-bottom: 18px;
+}
+.filter-post-section .filter-post-container .filter-content .filter-item .item-content .content-title p {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 0.01em;
+  color: #141518;
+}
+.filter-post-section .filter-post-container .filter-content .filter-item .item-content .filter-company,
+.filter-post-section .filter-post-container .filter-content .filter-item .item-content .content-hydro-electric,
+.filter-post-section .filter-post-container .filter-content .filter-item .item-content .content-time,
+.filter-post-section .filter-post-container .filter-content .filter-item .item-content .content-location {
+  display: flex;
+  -moz-column-gap: 8.62px;
+       column-gap: 8.62px;
+}
+.filter-post-section .filter-post-container .filter-navigation {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+.filter-post-section .filter-post-container .filter-navigation span {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 0.01em;
+  color: #434449;
+  border-radius: 8px;
+}
+.filter-post-section .filter-post-container .filter-navigation span + span {
+  margin-left: 12px;
+}
+.filter-post-section .filter-post-container .filter-navigation span.active {
+  background-color: #FAF6F2;
 }/*# sourceMappingURL=index.css.map */
