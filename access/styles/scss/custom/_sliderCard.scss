@@ -43,3 +43,25 @@
         left: -40px;
     }
 }
+
+.slider-card-wrapper {
+    background: #F6F8FC;
+
+    .container {
+        padding: 62px 85px;
+
+        h4 {
+            padding: 0 15px;
+        }
+
+        .slider-cards {
+            margin-top: 20px;
+
+            .slick-track {
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+
+    }
+}
