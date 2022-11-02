@@ -36,71 +36,79 @@ body {
 body * {
   font-family: var(--primary-font);
 }
-body a,
-body ul,
-body li,
-body input {
+
+a,
+ul,
+li,
+input {
   font-family: var(--primary-font);
   padding: 0;
   margin: 0;
 }
-body select {
+
+select {
   background: unset;
   border: unset;
 }
-body select:focus {
+select:focus {
   border: unset;
 }
-body select:focus-visible {
+select:focus-visible {
   outline: none;
   border: unset;
 }
-body h1,
-body .size-headding-54 {
+
+h1,
+.size-headding-54 {
   font-family: var(--secondary-font);
   font-weight: 600;
   font-size: 54px;
   line-height: 115%;
 }
-body h2,
-body .size-headding-48 {
+
+h2,
+.size-headding-48 {
   font-family: var(--secondary-font);
   font-weight: 500;
   font-size: 48px;
   line-height: 115%;
 }
-body h3,
-body .size-headding-40 {
+
+h3,
+.size-headding-40 {
   font-family: var(--secondary-font);
   font-size: 40px;
   line-height: 1.2;
   font-weight: 500;
 }
 @media (max-width: 767px) {
-  body h3,
-body .size-headding-40 {
+  h3,
+.size-headding-40 {
     font-size: 28px;
     line-height: 130%;
   }
 }
-body h4,
-body .size-headding-32 {
+
+h4,
+.size-headding-32 {
   font-family: var(--secondary-font);
   font-weight: 600;
   font-size: 32px;
   line-height: 130%;
   color: #141518;
 }
-body h5,
-body .size-headding-28 {
+
+h5,
+.size-headding-28 {
   font-family: var(--secondary-font);
   font-weight: 600;
   font-size: 28px;
   line-height: 130%;
   color: #141518;
 }
-body h6,
-body .size-headding-22 {
+
+h6,
+.size-headding-22 {
   font-family: var(--secondary-font);
   font-weight: 600;
   font-size: 22px;
@@ -108,56 +116,66 @@ body .size-headding-22 {
   letter-spacing: 0.01em;
   color: #141518;
 }
-body img {
+
+img {
   width: auto;
   height: auto;
   max-width: 100%;
 }
-body a {
+
+a {
   text-decoration: none;
   color: unset;
 }
-body a:hover {
+a:hover {
   text-decoration: none;
   color: #d8d8d8;
 }
-body ul {
+
+ul {
   list-style-type: none;
 }
-body .container {
+
+.container {
   max-width: 1440px;
   margin: auto;
   padding: 0 60px;
 }
-body button {
+
+button {
   line-height: 1.5;
 }
-body .uppercase {
+
+.uppercase {
   text-transform: uppercase;
 }
-body .size-text-14 {
+
+.size-text-14 {
   font-family: var(--primary-font);
   font-weight: 600;
   font-size: 14px;
   line-height: 140%;
   letter-spacing: 0.04em;
 }
-body .size-text-16 {
+
+.size-text-16 {
   font-family: var(--primary-font);
   font-weight: 400;
   font-size: 16px;
   line-height: 160%;
   letter-spacing: 0.01em;
 }
-body .size-text-18 {
+
+.size-text-18 {
   font-family: var(--primary-font);
   font-weight: 300;
   font-size: 18px;
   line-height: 160%;
   letter-spacing: 0.01em;
 }
-body input.form-control,
-body select.form-select {
+
+input.form-control,
+select.form-select {
   height: 48px !important;
   padding: 10px 16px;
   font-weight: 400;
@@ -168,29 +186,42 @@ body select.form-select {
   border-radius: 2px;
   outline: none;
 }
-body input.form-control:hover, body input.form-control:focus,
-body select.form-select:hover,
-body select.form-select:focus {
+input.form-control:hover, input.form-control:focus,
+select.form-select:hover,
+select.form-select:focus {
   border: 1px solid #7E8189;
   border-color: #7E8189;
   outline: none;
   box-shadow: none;
 }
-body input.form-control:invalid,
-body input.form-control option[value=""],
-body select.form-select:invalid,
-body select.form-select option[value=""] {
+input.form-control:invalid,
+input.form-control option[value=""],
+select.form-select:invalid,
+select.form-select option[value=""] {
   color: #7E8189 !important;
 }
-body input.form-control.search,
-body select.form-select.search {
+input.form-control.search,
+select.form-select.search {
   background-image: url("../images/Search.png");
   background-repeat: no-repeat;
   padding-left: 40px;
   background-position-y: center;
   background-position-X: 10px;
 }
-body button.btn-custom-1 {
+
+button.btn.button-size-48 {
+  max-height: 48px;
+}
+
+button.btn.button-size-40 {
+  max-height: 40px;
+}
+
+button.btn.button-size-42 {
+  max-height: 32px;
+}
+
+button.btn-custom-1 {
   background-color: #DAA622;
   border: 1px solid #DAA622;
   border-color: #DAA622 !important;
@@ -198,29 +229,30 @@ body button.btn-custom-1 {
   font-family: var(--primary-font);
   font-weight: 500;
 }
-body button.btn-custom-1.btn-custom-1-l {
+button.btn-custom-1.btn-custom-1-l {
   font-size: 16px;
   line-height: 160%;
   letter-spacing: 0.01em;
   padding: 7px 16px;
 }
-body button.btn-custom-1.btn-custom-1-m {
+button.btn-custom-1.btn-custom-1-m {
   font-size: 14px;
   line-height: 160%;
   letter-spacing: 0.01em;
   padding: 4px 12px;
 }
-body button.btn-custom-1.btn-custom-1-s {
+button.btn-custom-1.btn-custom-1-s {
   font-size: 11px;
   line-height: 150%;
   letter-spacing: 0.04em;
   padding: 2px 8px;
 }
-body button.btn-custom-1:hover {
+button.btn-custom-1:hover {
   color: #DAA622;
   background-color: unset;
 }
-body button.btn-custom-2 {
+
+button.btn-custom-2 {
   background-color: #DAA622;
   border: 1px solid #DAA622;
   border-color: #DAA622 !important;
@@ -229,28 +261,29 @@ body button.btn-custom-2 {
   font-weight: 500;
   border-radius: 100px;
 }
-body button.btn-custom-2.btn-custom-2-l {
+button.btn-custom-2.btn-custom-2-l {
   font-size: 16px;
   line-height: 160%;
   letter-spacing: 0.01em;
   padding: 7px 16px;
 }
-body button.btn-custom-2.btn-custom-2-m {
+button.btn-custom-2.btn-custom-2-m {
   font-size: 14px;
   line-height: 160%;
   letter-spacing: 0.01em;
   padding: 4px 12px;
 }
-body button.btn-custom-2.btn-custom-2-s {
+button.btn-custom-2.btn-custom-2-s {
   font-size: 11px;
   line-height: 150%;
   letter-spacing: 0.04em;
   padding: 2px 8px;
 }
-body button.btn-custom-2:hover {
+button.btn-custom-2:hover {
   color: #DAA622;
 }
-body button.btn-custom-3 {
+
+button.btn-custom-3 {
   background-color: #434449;
   border: 1px solid #434449;
   border-color: #434449 !important;
@@ -259,29 +292,30 @@ body button.btn-custom-3 {
   font-weight: 500;
   border-radius: 100px;
 }
-body button.btn-custom-3.btn-custom-3-l {
+button.btn-custom-3.btn-custom-3-l {
   font-size: 16px;
   line-height: 160%;
   letter-spacing: 0.01em;
   padding: 7px 16px;
 }
-body button.btn-custom-3.btn-custom-3-m {
+button.btn-custom-3.btn-custom-3-m {
   font-size: 14px;
   line-height: 160%;
   letter-spacing: 0.01em;
   padding: 4px 12px;
 }
-body button.btn-custom-3.btn-custom-3-s {
+button.btn-custom-3.btn-custom-3-s {
   font-size: 11px;
   line-height: 150%;
   letter-spacing: 0.04em;
   padding: 2px 8px;
 }
-body button.btn-custom-3:hover {
+button.btn-custom-3:hover {
   color: #434449;
   background-color: unset;
 }
-body button.btn-custom-4 {
+
+button.btn-custom-4 {
   background-color: #434449;
   border: 1px solid #434449;
   border-color: #434449 !important;
@@ -289,30 +323,31 @@ body button.btn-custom-4 {
   font-family: var(--primary-font);
   font-weight: 500;
 }
-body button.btn-custom-4.btn-custom-4-l {
+button.btn-custom-4.btn-custom-4-l {
   font-size: 16px;
   line-height: 160%;
   letter-spacing: 0.01em;
   padding: 7px 16px;
 }
-body button.btn-custom-4.btn-custom-4-m {
+button.btn-custom-4.btn-custom-4-m {
   font-size: 14px;
   line-height: 160%;
   letter-spacing: 0.01em;
   padding: 4px 12px;
 }
-body button.btn-custom-4.btn-custom-4-s {
+button.btn-custom-4.btn-custom-4-s {
   font-size: 11px;
   line-height: 150%;
   letter-spacing: 0.04em;
   padding: 2px 8px;
 }
-body button.btn-custom-4:hover {
+button.btn-custom-4:hover {
   background-color: unset;
   color: #434449;
 }
-body button.btn-search,
-body button.btn-more {
+
+button.btn-search,
+button.btn-more {
   align-items: center;
   width: 132px;
   height: 48px;
@@ -322,11 +357,12 @@ body button.btn-more {
   text-transform: uppercase;
   font-weight: 600;
 }
-body button.btn-search:hover,
-body button.btn-more:hover {
+button.btn-search:hover,
+button.btn-more:hover {
   border-color: #DAA622;
 }
-body button.btn-detail {
+
+button.btn-detail {
   border: 1px solid #DAA622;
   font-family: var(--primary-font);
   font-weight: 600;
@@ -339,24 +375,26 @@ body button.btn-detail {
   text-transform: uppercase;
   color: #DAA622;
 }
-body button.btn-detail svg {
+button.btn-detail svg {
   margin-left: 14px;
 }
-body button.btn-detail:hover {
+button.btn-detail:hover {
   background: #DAA622;
   color: #FFFFFF;
 }
-body button.btn-detail:hover svg * {
+button.btn-detail:hover svg * {
   fill: #FFFFFF;
   stroke: #FFFFFF;
 }
-body span.line-headding {
+
+span.line-headding {
   width: 32px;
   margin: auto;
   display: block;
   border-top: 2px solid #daa622;
 }
-body span.tag {
+
+span.tag {
   font-family: var(--primary-font);
   font-weight: 500;
   font-size: 11px;
@@ -367,7 +405,7 @@ body span.tag {
   color: #434449;
   position: relative;
 }
-body span.tag .text {
+span.tag .text {
   position: absolute;
   left: 20px;
   width: -webkit-max-content;
@@ -375,14 +413,14 @@ body span.tag .text {
   width: max-content;
   top: -8px;
 }
-body span.tag.tag-calender::before {
+span.tag.tag-calender::before {
   content: "";
   width: 20px;
   display: inline-flex;
   height: 20px;
   background-image: url("../images/Calendar.png");
 }
-body span.tag.tag-name::before {
+span.tag.tag-name::before {
   content: "";
   width: 20px;
   display: inline-flex;
@@ -390,7 +428,7 @@ body span.tag.tag-name::before {
   background-repeat: no-repeat;
   background-image: url("../images/tag.png");
 }
-body span.tag.tag-file::before {
+span.tag.tag-file::before {
   content: "";
   width: 20px;
   display: inline-flex;
@@ -398,7 +436,8 @@ body span.tag.tag-file::before {
   background-repeat: no-repeat;
   background-image: url("../images/Vector 157.png");
 }
-body .custom-pagination li.page-item {
+
+.custom-pagination li.page-item {
   border-radius: 8px;
   font-family: var(--primary-font);
   font-weight: 400;
@@ -409,27 +448,28 @@ body .custom-pagination li.page-item {
   border-radius: 6px;
   margin: 0 6px;
 }
-body .custom-pagination li.page-item .page-link {
+.custom-pagination li.page-item .page-link {
   padding: 5px 14px;
   background-color: unset;
   border: unset;
   color: #434449;
 }
-body .custom-pagination li.page-item.disable .page-link {
+.custom-pagination li.page-item.disable .page-link {
   color: #7E8189;
 }
-body .custom-pagination li.page-item.active {
+.custom-pagination li.page-item.active {
   background: #FAF6F2;
 }
-body .custom-pagination li.page-item.active .page-link {
+.custom-pagination li.page-item.active .page-link {
   color: #DAA622;
 }
-body .table {
+
+.table {
   font-family: var(--primary-font);
   border-collapse: collapse;
   width: 100%;
 }
-body .table .table-body tr {
+.table .table-body tr {
   height: 58px;
   font-size: var(--primary-font);
   font-weight: 600;
@@ -439,18 +479,19 @@ body .table .table-body tr {
   color: #141518;
   opacity: 0.8;
 }
-body .table .table-body tr td {
+.table .table-body tr td {
   padding: 0;
   border-width: 0px;
   padding: 16px 20px;
 }
-body .table .table-body tr td:first-child {
+.table .table-body tr td:first-child {
   border-right: 1px solid #fff;
 }
-body .table .table-body tr:nth-child(2n+1) {
+.table .table-body tr:nth-child(2n+1) {
   background: #F6F8FC;
 }
-body .slide-img {
+
+.slide-img {
   position: relative;
   height: 80vh;
   margin: 10px;
@@ -472,7 +513,7 @@ body .slide-img {
   -ms-transition: flex 0.3s;
   -o-transition: flex 0.3s;
 }
-body .slide-img.active {
+.slide-img.active {
   flex: 10;
 }
 
