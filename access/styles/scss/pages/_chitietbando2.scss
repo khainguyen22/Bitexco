@@ -58,6 +58,11 @@
                     .lSSlideOuter {
                         position: relative;
 
+                        .lSPager.lSGallery li.active,
+                        .lSPager.lSGallery li:hover {
+                            border-radius: 0px;
+                        }
+
                         .ecommerce-gallery {
                             li {
                                 // margin-right: 0 !important;
@@ -136,10 +141,11 @@
     }
 
     .gioi-thieu {
-        margin-top: 100px;
+        margin: 100px 0;
 
         &.container {
-            padding: 0 100px;
+            padding: 100px;
+            margin: 0 auto;
         }
 
         .gioi-thieu-row {
@@ -149,6 +155,13 @@
                 .item {
                     &-content {
                         padding: 0 0 0 65px;
+                    }
+
+                    @media(max-width:991px) {
+                        &-content {
+                            padding-left: 10px;
+                            padding-right: 10px;
+                        }
                     }
                 }
             }
@@ -163,10 +176,52 @@
                         padding-left: 11px;
                         padding-right: 50px;
                     }
+
+                    @media(max-width:991px) {
+                        &-content {
+                            padding-left: 10px;
+                            padding-right: 10px;
+                        }
+                    }
+                }
+            }
+
+            @media(max-width:991px) {
+                img {
+                    width: 100%;
+                }
+            }
+        }
+
+        .link-quay-lai {
+            margin-top: 24px;
+            color: var(--text-color-yellow);
+
+            span {
+                margin-left: 14px;
+            }
+        }
+    }
+
+    .slider-card-wrapper {
+        background: #F6F8FC;
+
+        .container {
+            padding: 62px 85px;
+
+            h4 {
+                padding: 0 15px;
+            }
+
+            .slider-cards {
+                margin-top: 20px;
+
+                .slick-track {
+                    display: flex;
+                    justify-content: space-between;
                 }
             }
 
         }
-
     }
 }

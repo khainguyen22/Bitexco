@@ -1,3 +1,4 @@
+// home slide
 .home-slide {
     .home-slide-carousel {
         &.slick-vertical .slick-slide {
@@ -12,6 +13,7 @@
             img {
                 height: 100vh;
                 object-fit: cover;
+                width: 100%;
             }
 
             .content {
@@ -155,7 +157,6 @@
         }
     }
 }
-
 
 @media(max-width:1024px) {
     .home-slide {

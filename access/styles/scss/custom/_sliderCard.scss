@@ -1,0 +1,45 @@
+.card-custom.card {
+    width: 393px !important;
+    border-radius: 2px;
+    border: unset;
+    margin: 0 15px;
+    background-color: #FFFFFF;
+
+    img.card-img-top {
+        height: 223px;
+    }
+
+    .card-body {
+        padding: 25px 20px 15px;
+
+        .card-title {
+            margin-bottom: 14px;
+        }
+
+        span.icon {
+            max-width: 24px;
+            max-height: 24px;
+        }
+
+        ul li.content {
+            margin-bottom: 10px;
+        }
+    }
+}
+
+.slick-arrow {
+    position: absolute;
+    top: 47%;
+
+    &::before {
+        font-size: 30px;
+    }
+
+    &.slick-next {
+        right: -47px;
+    }
+
+    &.slick-prev {
+        left: -40px;
+    }
+}
