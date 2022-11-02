@@ -483,6 +483,13 @@ span.tag {
             background-color: unset;
             border: unset;
             color: #434449;
+
+            &:focus,
+            &:focus-visible {
+                outline: none;
+                border: none;
+                box-shadow: none;
+            }
         }
 
         &.disable .page-link {
