@@ -22,17 +22,16 @@ jQuery(document).ready(function ($) {
 		$(".close-button").removeClass("is-active");
 
 	});
-});
 
-jQuery(document).ready(function ($) {
+	// home slider
 	$('.home-slide-carousel').slick({
 		nextArrow: '<i class="fas fa-chevron-right slick-next"></i>',
 		prevArrow: '<i class="fas fa-chevron-left slick-prev"></i>',
-		// autoplay: true,
+		autoplay: true,
 		autoplaySpeed: 2500,
 		dots: true,
 		vertical: true,
-		arrows: false,
+		arrows: true,
 		infinite: true,
 		speed: 500,
 		cssEase: 'linear',
@@ -69,14 +68,83 @@ jQuery(document).ready(function ($) {
 		$('.main-menu-primary').removeClass("is-active");
 		$('.sub-menu').removeClass("is-active");
 	});
-});
 
 
-$(document).ready(function () {
+	$('.slide-img').on('click', function () {
+		$('.slide-img').removeClass('active');
+		$(this).addClass('active');
+	});
+
 	var includes = $('[data-include]')
 	$.each(includes, function () {
 		var file = '/components/' + $(this).data('include') + '.html'
 		$(this).load(file)
 	});
+
+
+	$('.slider-cards').slick({
+		nextArrow: '<i class="fa fa-chevron-right slick-next"></i>',
+		prevArrow: '<i class="fa fa-chevron-left slick-prev"></i>',
+		autoplaySpeed: 2500,
+		arrows: true,
+		infinite: true,
+		speed: 500,
+		cssEase: 'linear',
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		responsive: [
+			{
+				breakpoint: 1024,
+				settings: {
+					slidesToShow: 2
+				}
+			},
+			{
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 1
+				}
+			},
+		]
+	});
 });
-jQuery(document).ready(function () { jQuery(".ecommerce-gallery").lightSlider({ gallery: true, item: 1, loop: true, thumbItem: 10, thumbMargin: 12, }); });
+
+
+
+jQuery(document).ready(function () {
+	jQuery(".ecommerce-gallery").lightSlider(
+		{
+			gallery: true,
+			item: 1,
+			loop: true,
+			thumbItem: 10,
+			thumbMargin: 12,
+			share: true,
+			download: true,
+			zoom: true,
+			autoplayControls: true,
+			autoplay: true,
+			videojs: true,
+			controls: true,
+		});
+});
+
+jQuery(document).ready(function () {
+	jQuery("#imageGallery").lightSlider(
+		{
+			gallery: true,
+			item: 1,
+			loop: true,
+			thumbItem: 6,
+			slideMargin: 10,
+			enableDrag: true,
+			currentPagerPosition: 'left',
+			videojs: true,
+			pager: true,
+			onSliderLoad: function (el) {
+				el.lightGallery({
+					selector: '#imageGallery .lslide'
+				});
+			}
+		});
+});
