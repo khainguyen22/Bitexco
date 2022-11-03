@@ -35,6 +35,12 @@ body {
     & * {
         font-family: var(--primary-font);
     }
+
+    .container {
+        max-width: 1440px;
+        margin: auto;
+        padding: 0 60px
+    }
 }
 
 a,
@@ -120,9 +126,9 @@ h6,
 }
 
 img {
-    width: auto;
+    width: 100%;
     height: auto;
-    max-width: 100%;
+    max-width: fit-content;
 }
 
 a {
@@ -139,11 +145,7 @@ ul {
     list-style-type: none;
 }
 
-.container {
-    max-width: 1440px;
-    margin: auto;
-    padding: 0 60px
-}
+
 
 button {
     line-height: 1.5
@@ -569,6 +571,18 @@ span.tag {
     }
 }
 
+.custom-post {
+    margin-bottom: 20px;
+    background-color: #FFFFFF;
+
+    .content {
+        padding: 32px;
+    }
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
 
 
 @import './scss/custom/header';
@@ -584,3 +598,4 @@ span.tag {
 @import './scss/pages/bando.scss';
 @import './scss/pages/chitietbando2';
 @import './scss/pages/duandangphattrien';
+@import './scss/pages/hoatdongsanxuatkinhdoanh';

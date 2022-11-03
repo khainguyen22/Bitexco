@@ -125,7 +125,7 @@ jQuery(document).ready(function ($) {
 
 
 jQuery(document).ready(function () {
-	jQuery(".ecommerce-gallery").lightSlider(
+	jQuery(".gallery").lightSlider(
 		{
 			gallery: true,
 			item: 1,
@@ -139,6 +139,15 @@ jQuery(document).ready(function () {
 			autoplay: true,
 			videojs: true,
 			controls: true,
+			responsive: [
+				{
+					breakpoint: 767,
+					settings: {
+						thumbItem: 5,
+						thumbMargin: 6,
+					}
+				},
+			]
 		});
 });
 
