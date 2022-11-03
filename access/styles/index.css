@@ -2719,6 +2719,7 @@ section.map #content-popup {
     -moz-column-gap: 0;
          column-gap: 0;
     row-gap: 8px;
+    justify-content: left;
   }
   .filter-post-section .filter-post-container .form-filter form .form-filter-search {
     width: 100%;
