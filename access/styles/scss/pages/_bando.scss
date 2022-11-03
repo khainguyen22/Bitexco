@@ -404,12 +404,18 @@ section.projects {
 }
 
 section.map {
-    iframe {
-        min-height: 708px;
-        width: 100%;
-    }
+	iframe {
+		min-height: 708px;
+		width: 100%;
+	}
+	#content-popup {
+		display: flex;
+	}
+}
 
-    #content-popup {
-        display: flex;
-    }
+
+@media (max-width: 374px) {
+	section.banner .container .content p {
+		min-width: 250px;
+	}
 }
