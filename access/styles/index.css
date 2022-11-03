@@ -2581,17 +2581,6 @@ section.map #content-popup {
   width: calc(50% - 9.5px);
   position: relative;
 }
-.filter-post-section .filter-post-container .form-filter form .form-filter-search::after {
-  content: "";
-  width: 8px;
-  height: 8px;
-  border-right: 2px solid #434449;
-  border-bottom: 2px solid #434449;
-  position: absolute;
-  right: 20px;
-  top: 45%;
-  transform: rotate(45deg) translateY(-50%);
-}
 .filter-post-section .filter-post-container .form-filter form .form-filter-search svg {
   margin-right: 7px;
 }
@@ -2770,6 +2759,9 @@ section.map #content-popup {
   display: flex;
   justify-content: center;
   margin-top: 35px;
+}
+.filter-post-section .filter-post-container .filter-navigation nav.mobile {
+  display: none;
 }
 .filter-post-section .filter-post-container .filter-navigation nav ul.custom-pagination li.page-item.pagination-prev {
   min-width: 40px;
