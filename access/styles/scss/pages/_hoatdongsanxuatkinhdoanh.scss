@@ -1,0 +1,184 @@
+.hoat-dong-sx-kd-content {
+
+    .terms-header-top {
+        position: relative;
+        background-image: url("../../../access/images/banner-hd-sx-kd.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 400px;
+
+        div {
+            position: absolute;
+            left: 50%;
+            top: 53%;
+            transform: translateX(-50%);
+
+            span.line-headding {
+                width: 32px;
+                margin: auto;
+                display: block;
+                border-top: 2px solid #daa622;
+            }
+
+            h3 {
+                font-size: 40px;
+                font-weight: 500;
+                color: #fff;
+                display: flex;
+                line-height: 48px;
+                margin-top: 5px;
+            }
+        }
+    }
+
+    .content-container {
+        padding: 60px 100px 10px;
+
+        background: #F6F8FC;
+
+        .news-post {
+            .tin-noi-bat {
+                .img-banner {
+                    position: relative;
+                    margin-top: 10px;
+                    border-radius: 2px;
+
+
+                }
+
+                .content {
+                    position: absolute;
+                    bottom: 27px;
+                    left: 35px;
+                    right: 35px;
+
+                    * {
+                        color: #fff;
+
+                    }
+                }
+
+                @media(max-width:1366px) {
+                    overflow: hidden;
+
+                    .img-banner {
+                        height: 100%;
+                    }
+
+                }
+            }
+
+            .tin-moi-nhat {
+                margin-top: 18px;
+
+                &-item {
+                    margin-bottom: 20px;
+
+                    .img-banner {
+                        border-radius: 2px;
+                        object-fit: cover;
+
+                        @media(max-width:1366px) {
+                            max-width: 215px;
+                            height: 189px;
+                        }
+                    }
+
+                    .content {
+                        margin-left: 20px;
+                        flex-direction: column-reverse;
+                        display: flex;
+                        justify-content: space-between;
+
+                        span.tag .text {
+                            top: 0px;
+                        }
+                    }
+
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+
+        }
+
+        .navigation {
+            margin-top: 72px;
+
+            ul {
+                color: #141518;
+                text-transform: uppercase;
+
+                li {
+                    display: inline-block;
+                    position: relative;
+                    font-weight: 60;
+                    font-size: 14px;
+                    line-height: 1.4;
+                    letter-spacing: 0.04em;
+                    text-transform: uppercase;
+
+                    a {
+                        color: #141518;
+                        text-decoration: none;
+                    }
+
+                    &:hover {
+                        &::after {
+                            width: 100%;
+                        }
+                    }
+
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        height: 2px;
+                        width: 0%;
+                        background: #DAA622;
+                        display: block;
+                        bottom: -4px;
+                    }
+
+                    &.active {
+                        &::after {
+                            width: 100%;
+                            transition: all 1s;
+                        }
+                    }
+
+                    &:hover {
+                        cursor: pointer;
+
+                        &::after {
+                            width: 100%;
+                            background: #DAA622;
+                            transition: width 1s;
+                        }
+                    }
+                }
+
+                li+li {
+                    margin-left: 39px;
+                }
+
+            }
+        }
+
+        @media(max-width:1200px) {
+            .container {
+                padding: 0;
+            }
+        }
+    }
+
+    .lists-post {
+        margin: 32px 0 80px;
+
+        @media(max-width:1200px) {
+            .container {
+                padding: 0 100px;
+            }
+        }
+    }
+}

@@ -52,17 +52,17 @@
 					width: calc(100%/2 - 9.5px);
 					position: relative;
 
-					&::after {
-						content: '';
-						width: 8px;
-						height: 8px;
-						border-right: 2px solid #434449;
-						border-bottom: 2px solid #434449;
-						position: absolute;
-						right: 20px;
-						top: 45%;
-						transform: rotate(45deg) translateY(-50%);
-					}
+					// &::after {
+		// 	content: '';
+		// 	width: 8px;
+		// 	height: 8px;
+		// 	border-right: 2px solid #434449;
+		// 	border-bottom: 2px solid #434449;
+		// 	position: absolute;
+		// 	right: 20px;
+		// 	top: 45%;
+		// 	transform: rotate(45deg) translateY(-50%);
+		// }
 
 					svg {
 						margin-right: 7px;
