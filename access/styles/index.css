@@ -2081,6 +2081,11 @@ section.map #content-popup {
   display: flex;
 }
 
+@media (max-width: 374px) {
+  section.banner .container .content p {
+    min-width: 250px;
+  }
+}
 .chitietbando2-content {
   margin-top: 121px;
 }
@@ -2375,25 +2380,10 @@ section.map #content-popup {
 .chitietbando2-content .gioi-thieu .link-quay-lai span {
   margin-left: 14px;
 }
-.chitietbando2-content .slider-card-wrapper {
-  background: #F6F8FC;
-}
-.chitietbando2-content .slider-card-wrapper .container {
-  padding: 62px 85px;
-}
-.chitietbando2-content .slider-card-wrapper .container h4 {
-  padding: 0 15px;
-}
-.chitietbando2-content .slider-card-wrapper .container .slider-cards {
-  margin-top: 20px;
-}
-.chitietbando2-content .slider-card-wrapper .container .slider-cards .slick-track {
-  display: flex;
-  justify-content: space-between;
-}
 
 .filter-post-section {
-  padding: 60px 0 80px 0;
+  background-color: #E5E5E5;
+  padding: 40px 20px 65px 20px;
 }
 .filter-post-section select {
   -webkit-appearance: none;
@@ -2428,13 +2418,15 @@ section.map #content-popup {
   display: flex;
   flex-wrap: wrap;
   row-gap: 16px;
+  justify-content: space-between;
 }
 .filter-post-section .filter-post-container .form-filter form .form-filter-search {
   border: 1px solid #D1D5DB;
+  background: #fff;
   padding: 10.2px 16px 10.2px 14px;
   border-radius: 2px;
   margin-right: 16px;
-  width: 610px;
+  width: calc(50% - 9.5px);
   position: relative;
 }
 .filter-post-section .filter-post-container .form-filter form .form-filter-search::after {
@@ -2463,9 +2455,10 @@ section.map #content-popup {
 }
 .filter-post-section .filter-post-container .form-filter form .form-filter-type {
   border: 1px solid #D1D5DB;
+  background: #fff;
   padding: 10.2px 16px 10.2px 16px;
   border-radius: 2px;
-  width: 610px;
+  width: calc(50% - 7.5px);
   position: relative;
 }
 .filter-post-section .filter-post-container .form-filter form .form-filter-type::after {
@@ -2492,9 +2485,11 @@ section.map #content-popup {
 }
 .filter-post-section .filter-post-container .form-filter form .form-filter-area {
   border: 1px solid #D1D5DB;
+  background: #fff;
   padding: 10.2px 16px 10.2px 14px;
   border-radius: 2px;
   width: 472px;
+  width: calc(33.3333333333% + 59px);
   margin-right: 15.5px;
   position: relative;
 }
@@ -2522,9 +2517,10 @@ section.map #content-popup {
 }
 .filter-post-section .filter-post-container .form-filter form .form-filter-company {
   border: 1px solid #D1D5DB;
+  background: #fff;
   padding: 10.2px 16px 10.2px 16px;
   border-radius: 2px;
-  width: 472px;
+  width: calc(33.3333333333% + 59px);
   margin-right: 15.5px;
   position: relative;
 }
@@ -2550,12 +2546,20 @@ section.map #content-popup {
 .filter-post-section .filter-post-container .form-filter form .form-filter-company select:hover {
   cursor: pointer;
 }
+.filter-post-section .filter-post-container .form-filter form .button-submit {
+  width: calc(10% + 8.1px);
+  margin-right: 8px;
+}
 .filter-post-section .filter-post-container .form-filter form .button-submit .btn-submit {
   font-weight: 600;
   font-size: 14px;
   line-height: 1.4;
   letter-spacing: 0.04em;
   text-transform: uppercase;
+  width: 100%;
+}
+.filter-post-section .filter-post-container .form-filter form .button-reset {
+  width: calc(9.0909090909% + 0px);
 }
 .filter-post-section .filter-post-container .form-filter form .button-reset .btn-reset {
   font-weight: 600;
@@ -2565,6 +2569,7 @@ section.map #content-popup {
   text-transform: uppercase;
   background: transparent;
   color: #7E8189;
+  width: 100%;
 }
 .filter-post-section .filter-post-container .filter-content {
   margin-top: 40px;
@@ -2575,7 +2580,7 @@ section.map #content-popup {
 }
 .filter-post-section .filter-post-container .filter-content .filter-item {
   width: calc(33.3333333333% - 20px);
-  background: #ccc;
+  background: #fff;
   border-radius: 2px;
 }
 .filter-post-section .filter-post-container .filter-content .filter-item .item-content {
@@ -2612,19 +2617,197 @@ section.map #content-popup {
 .filter-post-section .filter-post-container .filter-navigation {
   display: flex;
   justify-content: center;
-  margin-top: 30px;
+  margin-top: 35px;
 }
-.filter-post-section .filter-post-container .filter-navigation span {
+.filter-post-section .filter-post-container .filter-navigation nav ul.custom-pagination li.page-item.pagination-prev {
+  min-width: 40px;
+  width: 54px;
+}
+.filter-post-section .filter-post-container .filter-navigation nav ul.custom-pagination li.page-item.pagination-prev a.page-link {
+  padding: 5.2px 0 5.2px 8px;
+}
+.filter-post-section .filter-post-container .filter-navigation nav ul.custom-pagination li.page-item.pagination-next {
+  min-width: 40px;
+}
+.filter-post-section .filter-post-container .filter-navigation nav ul.custom-pagination li.page-item.pagination-next a.page-link {
+  padding: 5.2px 0;
+}
+.filter-post-section .filter-post-container .filter-navigation nav ul.custom-pagination li.page-item {
+  background: unset;
+}
+.filter-post-section .filter-post-container .filter-navigation nav ul.custom-pagination li.page-item a.page-link {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.6;
   letter-spacing: 0.01em;
   color: #434449;
   border-radius: 8px;
+  padding: 5.2px 16.7px;
 }
-.filter-post-section .filter-post-container .filter-navigation span + span {
-  margin-left: 12px;
+.filter-post-section .filter-post-container .filter-navigation nav ul.custom-pagination li.page-item.active {
+  background: #FAF6F2;
+  color: #DAA622;
 }
-.filter-post-section .filter-post-container .filter-navigation span.active {
-  background-color: #FAF6F2;
+
+@media (max-width: 1366px) {
+  .filter-post-section {
+    padding: 62px 100px 65px 100px;
+  }
+}
+@media (max-width: 1200px) {
+  .filter-post-section {
+    padding: 62px 80px 65px 80px;
+  }
+  .filter-post-section .filter-post-container .form-filter form .form-filter-type select {
+    width: 100%;
+  }
+  .filter-post-section .filter-post-container .form-filter form .form-filter-company select {
+    width: 100%;
+  }
+  .filter-post-section .filter-post-container .form-filter form .button-submit .btn-submit {
+    padding: 0;
+  }
+  .filter-post-section .filter-post-container .form-filter form .button-reset {
+    width: calc(11.1111111111% + 0px);
+  }
+  .filter-post-section .filter-post-container .form-filter form .button-reset .btn-reset {
+    padding: 0;
+  }
+}
+@media (max-width: 1024px) {
+  .filter-post-section {
+    padding: 62px 64px 65px 64px;
+  }
+  .filter-post-section .filter-post-container .form-filter form .form-filter-type select {
+    width: 100%;
+  }
+  .filter-post-section .filter-post-container .form-filter form .form-filter-company select {
+    width: 100%;
+  }
+  .filter-post-section .filter-post-container .form-filter form .button-submit {
+    width: calc(12.5% + 0px);
+  }
+  .filter-post-section .filter-post-container .filter-content .filter-item {
+    width: calc(50% - 16px);
+  }
+  .filter-post-section .filter-post-container .filter-content .filter-item .filter-image img {
+    width: 100%;
+  }
+}
+@media (max-width: 880px) {
+  .filter-post-section {
+    padding: 62px 48px 65px 48px;
+  }
+  .filter-post-section .filter-post-container .form-filter form .form-filter-type select {
+    width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .filter-post-section {
+    padding: 40px 20px 25px 20px;
+  }
+  .filter-post-section .filter-post-container .title-column {
+    margin-bottom: 27px;
+  }
+  .filter-post-section .filter-post-container .title-column h3 {
+    font-size: 28px;
+  }
+  .filter-post-section .filter-post-container .title-column p {
+    margin: 0 -1px;
+  }
+  .filter-post-section .filter-post-container .form-filter form {
+    -moz-column-gap: 0;
+         column-gap: 0;
+    row-gap: 8px;
+  }
+  .filter-post-section .filter-post-container .form-filter form .form-filter-search {
+    width: 100%;
+    margin: 0;
+  }
+  .filter-post-section .filter-post-container .form-filter form .form-filter-search::after {
+    content: "";
+  }
+  .filter-post-section .filter-post-container .form-filter form .form-filter-type {
+    width: 100%;
+    margin: 0;
+  }
+  .filter-post-section .filter-post-container .form-filter form .form-filter-type::after {
+    content: "";
+  }
+  .filter-post-section .filter-post-container .form-filter form .form-filter-type select {
+    width: 100%;
+  }
+  .filter-post-section .filter-post-container .form-filter form .form-filter-type select:hover {
+    cursor: pointer;
+  }
+  .filter-post-section .filter-post-container .form-filter form .form-filter-area {
+    width: 100%;
+    margin: 0;
+  }
+  .filter-post-section .filter-post-container .form-filter form .form-filter-area::after {
+    content: "";
+  }
+  .filter-post-section .filter-post-container .form-filter form .form-filter-area select:hover {
+    cursor: pointer;
+  }
+  .filter-post-section .filter-post-container .form-filter form .form-filter-company {
+    width: 100%;
+    margin: 0;
+  }
+  .filter-post-section .filter-post-container .form-filter form .form-filter-company::after {
+    content: "";
+  }
+  .filter-post-section .filter-post-container .form-filter form .form-filter-company select {
+    width: 100%;
+  }
+  .filter-post-section .filter-post-container .form-filter form .form-filter-company select:hover {
+    cursor: pointer;
+  }
+  .filter-post-section .filter-post-container .form-filter form .button-submit {
+    width: 124px;
+  }
+  .filter-post-section .filter-post-container .form-filter form .button-submit .btn-submit {
+    height: 40px;
+  }
+  .filter-post-section .filter-post-container .form-filter form .button-reset {
+    width: 113px;
+  }
+  .filter-post-section .filter-post-container .form-filter form .button-reset .btn-reset {
+    height: 40px;
+  }
+  .filter-post-section .filter-post-container .filter-content {
+    row-gap: 22px;
+    margin-top: 28px;
+  }
+  .filter-post-section .filter-post-container .filter-content .filter-item {
+    width: 100%;
+  }
+  .filter-post-section .filter-post-container .filter-content .filter-item .item-content .content-title h6 {
+    font-size: 22px;
+    line-height: 1.3;
+    letter-spacing: 0.01em;
+  }
+  .filter-post-section .filter-post-container .filter-navigation {
+    margin-top: 22px;
+  }
+  .filter-post-section .filter-post-container .filter-navigation nav {
+    display: none;
+  }
+  .filter-post-section .filter-post-container .filter-navigation nav.mobile {
+    display: unset;
+    width: 100%;
+  }
+  .filter-post-section .filter-post-container .filter-navigation nav.mobile ul.custom-pagination {
+    justify-content: space-between !important;
+    padding: 0 5px 0 15px;
+  }
+  .filter-post-section .filter-post-container .filter-navigation nav.mobile ul.custom-pagination li.page-item.pagination-prev {
+    width: unset;
+  }
+  .filter-post-section .filter-post-container .filter-navigation nav.mobile ul.custom-pagination li.page-item.pagination-prev a.page-link {
+    padding: 5.2px 0;
+  }
+  .filter-post-section .filter-post-container .filter-navigation nav.mobile ul.custom-pagination li.page-item {
+    margin: 0;
+  }
 }/*# sourceMappingURL=index.css.map */
