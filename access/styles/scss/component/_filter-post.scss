@@ -276,6 +276,10 @@
 			justify-content: center;
 			margin-top: 35px;
 
+			nav.mobile {
+				display: none;
+			}
+
 			nav {
 				ul.custom-pagination {
 					li.page-item.pagination-prev {

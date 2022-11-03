@@ -2619,6 +2619,9 @@ section.map #content-popup {
   justify-content: center;
   margin-top: 35px;
 }
+.filter-post-section .filter-post-container .filter-navigation nav.mobile {
+  display: none;
+}
 .filter-post-section .filter-post-container .filter-navigation nav ul.custom-pagination li.page-item.pagination-prev {
   min-width: 40px;
   width: 54px;
