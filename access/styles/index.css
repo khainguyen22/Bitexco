@@ -530,6 +530,9 @@ span.tag.tag-file::before {
 .custom-post:last-child {
   margin-bottom: 0;
 }
+.custom-post img {
+  width: auto;
+}
 
 .header .top-header {
   height: 42px;
