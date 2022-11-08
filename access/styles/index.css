@@ -2952,4 +2952,19 @@ section.map #content-popup {
   .filter-post-section .filter-post-container .filter-navigation nav.mobile ul.custom-pagination li.page-item {
     margin: 0;
   }
+}
+.news-detail-container {
+  max-width: 1240px;
+  margin: auto;
+  position: relative;
+}
+
+.medias,
+.breadcrumbs-content {
+  position: absolute;
+}
+
+.article-container {
+  max-width: 921 px;
+  margin: auto;
 }/*# sourceMappingURL=index.css.map */
