@@ -2534,6 +2534,9 @@ section.map #content-popup {
   background-color: #E5E5E5;
   padding: 40px 20px 65px 20px;
 }
+.filter-post-section img {
+  width: auto;
+}
 .filter-post-section select {
   -webkit-appearance: none;
   -moz-appearance: none;
