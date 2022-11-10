@@ -1,7 +1,9 @@
 .filter-post-section {
 	background-color: #E5E5E5;
 	padding: 40px 20px 65px 20px;
-
+	img {
+		width: auto;
+	}
 	select {
 		-webkit-appearance: none;
 		-moz-appearance: none;

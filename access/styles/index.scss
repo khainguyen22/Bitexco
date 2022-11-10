@@ -187,6 +187,7 @@ select.form-select {
     line-height: 160%;
     letter-spacing: 0.01em;
     border: 1px solid #D1D5DB;
+    background: #fff;
     border-radius: 2px;
     outline: none;
 
@@ -382,6 +383,23 @@ button.btn-more {
     }
 }
 
+button.btn-reset {
+    font-weight: 600;
+    font-size: 14px;
+    width: 121px;
+    height: 48px;
+    line-height: 1.4;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    background: transparent;
+    color: #7E8189;
+    width: 100%;
+
+    &:hover {
+        border: 1px solid #DAA622;
+    }
+}
+
 button.btn-detail {
     border: 1px solid #DAA622;
     font-family: var(--primary-font);
@@ -427,44 +445,87 @@ span.tag {
     line-height: 150%;
     justify-content: space-between;
     letter-spacing: 0.04em;
-    text-transform: uppercase;
     color: #434449;
     position: relative;
+    display: block;
 
     .text {
         position: absolute;
         left: 20px;
         width: max-content;
-        top: -8px;
     }
 
     &.tag-calender::before {
-        content: '';
-        width: 20px;
+        content: "";
+        -webkit-mask: url(../icon/Calendar.svg) no-repeat 50% 50%;
+        mask: url(../icon/Calendar.svg) no-repeat 50% 50%;
+        -webkit-mask-size: cover;
+        mask-size: cover;
+        width: 17px;
+        background: #000;
         display: inline-flex;
-        height: 20px;
-        background-image: url('../images/Calendar.png');
+        height: 17px;
     }
 
     &.tag-name::before {
-        content: '';
-        width: 20px;
+        content: "";
+        -webkit-mask: url(../icon/tag.svg) no-repeat 50% 50%;
+        mask: url(../icon/tag.svg) no-repeat 50% 50%;
+        -webkit-mask-size: cover;
+        mask-size: cover;
+        width: 17px;
+        background: #000;
         display: inline-flex;
-        height: 20px;
-        background-repeat: no-repeat;
-        background-image: url('../images/tag.png');
+        height: 17px;
     }
 
     &.tag-file::before {
-        content: '';
-        width: 20px;
+        content: "";
+        -webkit-mask: url(../icon/Paperclip.svg) no-repeat 50% 50%;
+        mask: url(../icon/Paperclip.svg) no-repeat 50% 50%;
+        -webkit-mask-size: cover;
+        mask-size: cover;
+        width: 17px;
+        background: #000;
         display: inline-flex;
-        height: 20px;
-        background-repeat: no-repeat;
-        background-image: url('../images/Vector\ 157.png');
+        height: 17px;
     }
 
+    &.tag-location::before {
+        content: "";
+        -webkit-mask: url(../icon/Location.svg) no-repeat 50% 50%;
+        mask: url(../icon/Location.svg) no-repeat 50% 50%;
+        -webkit-mask-size: cover;
+        mask-size: cover;
+        width: 17px;
+        background: #000;
+        display: inline-flex;
+        height: 17px;
+    }
 
+    &.tag-type::before {
+        content: "";
+        -webkit-mask: url(../icon/type.svg) no-repeat 50% 50%;
+        mask: url(../icon/type.svg) no-repeat 50% 50%;
+        -webkit-mask-size: cover;
+        mask-size: cover;
+        width: 17px;
+        background: #000;
+        display: inline-flex;
+        height: 17px;
+    }
+
+    &.tag-image::before {
+        content: "";
+        -webkit-mask: url(../icon/Image.svg) no-repeat 50% 50%;
+        mask: url(../icon/Image.svg) no-repeat 50% 50%;
+        -webkit-mask-size: cover;
+        mask-size: cover;
+        width: 17px;
+        background: #000;
+        display: inline-flex;
+        height: 17px;
+    }
 }
 
 .custom-pagination {
@@ -475,11 +536,15 @@ span.tag {
         font-size: 16px;
         line-height: 160%;
         letter-spacing: 0.01em;
-        background: #F6F8FC;
+        // background: #F6F8FC;
         border-radius: 6px;
         margin: 0 6px;
 
         .page-link {
+            min-width: 40px;
+            line-height: 27px;
+            text-align: center;
+            height: 36px;
             padding: 5px 14px;
             background-color: unset;
             border: unset;
@@ -503,6 +568,10 @@ span.tag {
             .page-link {
                 color: #DAA622;
             }
+        }
+
+        @media(max-width:767px) {
+            margin: 0;
         }
     }
 }
@@ -576,13 +645,36 @@ span.tag {
 
     .content {
         padding: 32px;
+
+        .title {
+            margin-top: 14px;
+            margin-bottom: 12px;
+        }
+
+        .desc {
+            margin-bottom: 15px;
+        }
     }
 
     &:last-child {
         margin-bottom: 0;
     }
+
+    img {
+        width: auto;
+    }
+
+    @media(max-width:767px) {
+        flex-direction: column;
+
+    }
 }
 
+.text-underline {
+    border-bottom: 2px solid #DAA622;
+    display: block;
+    width: fit-content;
+}
 
 @import './scss/custom/header';
 @import './scss/custom/footer';
@@ -601,3 +693,4 @@ span.tag {
 @import './scss/component/filter-post';
 @import './scss/pages/duandangphattrien';
 @import './scss/pages/tinchitiet';
+@import './scss/pages/thuvienanhanh';
