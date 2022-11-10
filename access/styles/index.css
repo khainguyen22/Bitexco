@@ -778,9 +778,7 @@ select::-ms-expand {
   }
 }
 .form-filter form .form-filter-type {
-  border: 1px solid #D1D5DB;
   background: #fff;
-  padding: 10.2px 16px 10.2px 16px;
   border-radius: 2px;
   width: calc(50% - 7.5px);
   position: relative;
@@ -815,7 +813,6 @@ select::-ms-expand {
   }
 }
 .form-filter form .form-filter-area {
-  border: 1px solid #D1D5DB;
   background: #fff;
   border-radius: 2px;
   width: 472px;
@@ -857,9 +854,7 @@ select::-ms-expand {
   }
 }
 .form-filter form .form-filter-company {
-  border: 1px solid #D1D5DB;
   background: #fff;
-  padding: 10.2px 16px 10.2px 16px;
   border-radius: 2px;
   width: calc(33.3333333333% + 59px);
   margin-right: 15px;
