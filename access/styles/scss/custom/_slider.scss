@@ -127,6 +127,7 @@
                 width: 28px;
                 height: 2px;
                 display: block;
+                transition: width 1s;
             }
 
             &:hover {
@@ -136,7 +137,6 @@
                     width: 100%;
                     background: #DAA622;
                     transition: width 1s;
-                    // transition: width 2s;
                 }
             }
 

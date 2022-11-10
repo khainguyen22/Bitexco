@@ -90,6 +90,7 @@
                     p {
                         font-weight: 300;
                     }
+
                 }
             }
 
@@ -280,8 +281,6 @@
             .form-filter {
                 width: 100%;
 
-
-
                 @media(max-width:1366px) {
                     margin: -8px;
 
@@ -304,6 +303,8 @@
                 }
 
                 .form-filter-company {
+                    width: fit-content;
+
                     .form-select {
                         width: 303px;
                     }
@@ -323,6 +324,8 @@
                 }
 
                 .form-filter-type {
+                    width: fit-content;
+
                     .form-select {
                         width: 251px;
 
