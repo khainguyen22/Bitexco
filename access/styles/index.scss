@@ -813,6 +813,10 @@ span.tag {
     }
 }
 
+select {
+    appearance: none;
+}
+
 select::-ms-expand {
     display: none;
 }
@@ -827,7 +831,6 @@ select::-ms-expand {
         .form-filter-search {
             border: 1px solid #D1D5DB;
             background: #fff;
-            padding: 10.2px 16px 10.2px 14px;
             border-radius: 2px;
             margin-right: 15px;
             width: calc(100%/2 - 9.5px);
@@ -899,7 +902,6 @@ select::-ms-expand {
         .form-filter-area {
             border: 1px solid #D1D5DB;
             background: #fff;
-            padding: 10.2px 16px 10.2px 14px;
             border-radius: 2px;
             width: 472px;
             width: calc(100%/3 + 59px);
