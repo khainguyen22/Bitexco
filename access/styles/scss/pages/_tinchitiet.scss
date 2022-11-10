@@ -10,6 +10,17 @@
 }
 
 .article-container {
-	max-width: 921 px;
+	max-width: 1236px;
 	margin: auto;
+}
+
+section.article  {
+	article {
+		padding-left: 158px;
+	padding-right: 157px;
+	}
+}
+
+section.article-header-section {
+	margin-top: 200px;
 }

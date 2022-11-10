@@ -85,12 +85,8 @@
     <div data-include="footer"></div>
     <script>
         function myMap() {
-
             var styledMapType=new google.maps.StyledMapType([{
-
-                
             }]);
-
             var mapProp = {
                 center: new google.maps.LatLng(51.508742, -0.120850),
                 zoom: 15,
@@ -106,10 +102,6 @@
                 }
             );
             const contentString = `<div id="popup-content"
-                style="
-                    min-height: 420px;
-                    display: flex;
-                "
             >
     <div class="column-1">
         <img src="../access/images/popup-map.png" alt="">
@@ -255,9 +247,8 @@
             });
         }
     </script>
-    
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDIJ9XX2ZvRKCJcFRrl-lRanEtFUow4piM&callback=initMap">
-    // <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBOII67GY8mvXQCQy8rhyApZzPeCA2SBSk&callback=myMap">
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDIJ9XX2ZvRKCJcFRrl-lRanEtFUow4piM&callback=initMap"> -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBOII67GY8mvXQCQy8rhyApZzPeCA2SBSk&callback=myMap">
     </script>
     <script>
 
