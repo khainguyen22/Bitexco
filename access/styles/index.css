@@ -348,7 +348,7 @@ button.btn-custom-4:hover {
 button.btn-search,
 button.btn-more {
   align-items: center;
-  width: 132px;
+  min-width: 100%;
   height: 48px;
   background: #DAA622;
   border-radius: 2px;
@@ -364,7 +364,6 @@ button.btn-more:hover {
 button.btn-reset {
   font-weight: 600;
   font-size: 14px;
-  width: 121px;
   height: 48px;
   line-height: 1.4;
   letter-spacing: 0.04em;
@@ -746,7 +745,7 @@ span.tag.tag-image::before {
   background: #fff;
   padding: 10.2px 16px 10.2px 14px;
   border-radius: 2px;
-  margin-right: 16px;
+  margin-right: 15px;
   width: calc(50% - 9.5px);
   max-height: 48px;
   position: relative;
@@ -763,6 +762,12 @@ span.tag.tag-image::before {
   line-height: 1.6;
   color: #7E8189;
   width: 80%;
+}
+@media (max-width: 767px) {
+  .form-filter form .form-filter-search {
+    width: 100%;
+    margin: 0;
+  }
 }
 .form-filter form .form-filter-type {
   border: 1px solid #D1D5DB;
@@ -795,6 +800,12 @@ span.tag.tag-image::before {
 .form-filter form .form-filter-type select:hover {
   cursor: pointer;
 }
+@media (max-width: 767px) {
+  .form-filter form .form-filter-type {
+    width: 100%;
+    margin: 0;
+  }
+}
 .form-filter form .form-filter-area {
   border: 1px solid #D1D5DB;
   background: #fff;
@@ -802,7 +813,7 @@ span.tag.tag-image::before {
   border-radius: 2px;
   width: 472px;
   width: calc(33.3333333333% + 59px);
-  margin-right: 15.5px;
+  margin-right: 15px;
   position: relative;
 }
 .form-filter form .form-filter-area::after {
@@ -827,13 +838,24 @@ span.tag.tag-image::before {
 .form-filter form .form-filter-area select:hover {
   cursor: pointer;
 }
+@media (max-width: 1024px) {
+  .form-filter form .form-filter-area {
+    width: calc(50% - 7.5px);
+  }
+}
+@media (max-width: 767px) {
+  .form-filter form .form-filter-area {
+    width: 100%;
+    margin: 0;
+  }
+}
 .form-filter form .form-filter-company {
   border: 1px solid #D1D5DB;
   background: #fff;
   padding: 10.2px 16px 10.2px 16px;
   border-radius: 2px;
   width: calc(33.3333333333% + 59px);
-  margin-right: 15.5px;
+  margin-right: 15px;
   position: relative;
 }
 .form-filter form .form-filter-company::after {
@@ -858,30 +880,44 @@ span.tag.tag-image::before {
 .form-filter form .form-filter-company select:hover {
   cursor: pointer;
 }
+@media (max-width: 1024px) {
+  .form-filter form .form-filter-company {
+    margin-right: 0;
+    width: calc(50% - 7.5px);
+  }
+}
+@media (max-width: 767px) {
+  .form-filter form .form-filter-company {
+    width: 100%;
+    margin: 0;
+  }
+}
 .form-filter form .button-submit {
   width: calc(10% + 8.1px);
   margin-right: 8px;
 }
 .form-filter form .button-submit .btn-submit {
-  font-weight: 600;
   font-size: 14px;
   line-height: 1.4;
   letter-spacing: 0.04em;
-  text-transform: uppercase;
   width: 100%;
+}
+@media (max-width: 1024px) {
+  .form-filter form .button-submit {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
 }
 .form-filter form .button-reset {
   width: calc(9.0909090909% + 0px);
 }
-.form-filter form .button-reset .btn-reset {
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 1.4;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  background: transparent;
-  color: #7E8189;
-  width: 100%;
+@media (max-width: 1024px) {
+  .form-filter form .button-reset {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
 }
 
 .animate_underline::after {
