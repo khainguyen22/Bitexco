@@ -4,8 +4,6 @@ jQuery(document).ready(function ($) {
 		$('.navbar').addClass("nav-is-active");
 		$(".search").addClass("is-active");
 		$(".close-button").addClass("is-active");
-
-
 		$('.burger').removeClass("is-active");
 		$(".menu-main-container").removeClass("is-active");
 	});
@@ -20,7 +18,6 @@ jQuery(document).ready(function ($) {
 		$(".search").removeClass("is-active");
 		$('.navbar').removeClass("nav-is-active");
 		$(".close-button").removeClass("is-active");
-
 	});
 
 	// home slider
@@ -28,7 +25,7 @@ jQuery(document).ready(function ($) {
 		nextArrow: '<i class="fas fa-chevron-right slick-next"></i>',
 		prevArrow: '<i class="fas fa-chevron-left slick-prev"></i>',
 		autoplay: true,
-		autoplaySpeed: 2500,
+		autoplaySpeed: 2000,
 		dots: true,
 		vertical: true,
 		arrows: false,
@@ -39,14 +36,14 @@ jQuery(document).ready(function ($) {
 		slidesToShow: 1,
 		slidesToScroll: 1,
 	});
-	$('.home-slide-carousel').on('wheel', (function (e) {
-		e.preventDefault();
-		if (e.originalEvent.deltaY > 0) {
-			$(this).slick('slickNext');
-		} else {
-			$(this).slick('slickPrev');
-		}
-	}));
+	// $('.home-slide-carousel').on('wheel', (function (e) {
+	// 	e.preventDefault();
+	// 	if (e.originalEvent.deltaY > 0) {
+	// 		// $(this).slick('slickNext');
+	// 	} else {
+	// 		$(this).slick('slickPrev');
+	// 	}
+	// }));
 
 	$(document).on('click', '.burger', function () {
 		$('.burger').addClass("is-active");
