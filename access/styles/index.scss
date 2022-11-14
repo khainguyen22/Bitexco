@@ -529,6 +529,7 @@ span.tag {
         display: inline-flex;
         height: 17px;
     }
+
     &.tag-building::before {
         content: "";
         -webkit-mask: url(../icon/icon-cong-ty.svg) no-repeat 50% 50%;
@@ -540,6 +541,7 @@ span.tag {
         display: inline-flex;
         height: 17px;
     }
+
     &.tag-case::before {
         content: "";
         -webkit-mask: url(../icon/Case.svg) no-repeat 50% 50%;
@@ -768,22 +770,22 @@ input[type=date] {
 
 
 
-@import './scss/header';
-@import './scss/footer';
-@import './scss/slider';
-@import './scss/sliderCard';
-@import './scss/dieu-khoan';
-@import './scss/responsive';
-@import './scss/dangki';
-@import './scss/dangnhap';
-@import './scss/quenmatkhau';
-@import './scss/xacnhanquenmatkhau';
-@import './scss/bando.scss';
+@import './scss/bando';
 @import './scss/chitietbando2';
-@import './scss/duandangphattrien';
-@import './scss/hoatdongsanxuatkinhdoanh';
-@import './scss/filter-post';
-@import './scss/duandangphattrien';
-@import './scss/tinchitiet';
-@import './scss/thuvienanhanh';
-@import './scss/thong-tin-moi-thau';
+@import './scss/_dangki';
+@import './scss/_dangnhap';
+@import './scss/_danhsachnhamaythuydien';
+@import './scss/_dieu-khoan';
+@import './scss/_duandangphattrien';
+@import './scss/_filter-post';
+@import './scss/_footer';
+@import './scss/_header';
+@import './scss/_hoatdongsanxuatkinhdoanh';
+@import './scss/_quenmatkhau';
+@import './scss/_slider';
+@import './scss/_sliderCard';
+@import './scss/_small-filter-post';
+@import './scss/_thong-tin-moi-thau';
+@import './scss/_thuvienanhanh';
+@import './scss/_tinchitiet';
+@import './scss/_xacnhanquenmatkhau';
