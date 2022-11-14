@@ -3691,6 +3691,402 @@ section.banner .container .navigation ul li.active::after {
     margin: 0;
   }
 }
+.filter-post-section {
+  background-color: #E5E5E5;
+  padding: 40px 20px 65px 20px;
+}
+.filter-post-section img {
+  width: auto;
+}
+.filter-post-section select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+.filter-post-section .filter-post-container {
+  max-width: 1239px;
+  margin: auto;
+}
+.filter-post-section .filter-post-container .title-column {
+  text-align: center;
+  max-width: 700px;
+  margin: auto;
+  margin-bottom: 40px;
+}
+.filter-post-section .filter-post-container .title-column h3 {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.2;
+  font-family: "Manrope";
+  color: #141518;
+  margin-bottom: 16px;
+}
+.filter-post-section .filter-post-container .title-column p {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 0.01em;
+  color: #434449;
+}
+.filter-post-section .filter-post-container .small-form-filter form {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 16px;
+  justify-content: space-between;
+}
+.filter-post-section .filter-post-container .small-form-filter form .form-filter-search {
+  border: 1px solid #D1D5DB;
+  background: #fff;
+  padding: 10.2px 16px 10.2px 14px;
+  border-radius: 2px;
+  margin-right: 16px;
+  width: calc(33.3333333333% - 20px);
+  position: relative;
+}
+.filter-post-section .filter-post-container .small-form-filter form .form-filter-search svg {
+  margin-right: 7px;
+}
+.filter-post-section .filter-post-container .small-form-filter form .form-filter-search input {
+  border: none;
+  outline: none;
+  font-size: 16px;
+  letter-spacing: 0.01em;
+  font-weight: 300;
+  line-height: 1.6;
+  color: #7E8189;
+  width: 80%;
+}
+.filter-post-section .filter-post-container .small-form-filter form .form-filter-area {
+  border: 1px solid #D1D5DB;
+  background: #fff;
+  padding: 10.2px 16px 10.2px 14px;
+  border-radius: 2px;
+  width: 472px;
+  width: calc(20% - 21.8px);
+  margin-right: 15.5px;
+  position: relative;
+}
+.filter-post-section .filter-post-container .small-form-filter form .form-filter-area::after {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-right: 2px solid #434449;
+  border-bottom: 2px solid #434449;
+  position: absolute;
+  right: 20px;
+  top: 45%;
+  transform: rotate(45deg) translateY(-50%);
+}
+.filter-post-section .filter-post-container .small-form-filter form .form-filter-area select {
+  width: 100%;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.6;
+  letter-spacing: 0.01em;
+  color: #141518;
+}
+.filter-post-section .filter-post-container .small-form-filter form .form-filter-area select:hover {
+  cursor: pointer;
+}
+.filter-post-section .filter-post-container .small-form-filter form .form-filter-company {
+  border: 1px solid #D1D5DB;
+  background: #fff;
+  padding: 10.2px 16px 10.2px 16px;
+  border-radius: 2px;
+  width: calc(25% + 2.25px);
+  margin-right: 15.5px;
+  position: relative;
+}
+.filter-post-section .filter-post-container .small-form-filter form .form-filter-company::after {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-right: 2px solid #434449;
+  border-bottom: 2px solid #434449;
+  position: absolute;
+  right: 20px;
+  top: 45%;
+  transform: rotate(45deg) translateY(-50%);
+}
+.filter-post-section .filter-post-container .small-form-filter form .form-filter-company select {
+  width: 100%;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.6;
+  letter-spacing: 0.01em;
+  color: #141518;
+}
+.filter-post-section .filter-post-container .small-form-filter form .form-filter-company select:hover {
+  cursor: pointer;
+}
+.filter-post-section .filter-post-container .small-form-filter form .button-submit {
+  width: calc(10% + 8.1px);
+  margin-right: 8px;
+}
+.filter-post-section .filter-post-container .small-form-filter form .button-submit .btn-submit {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.4;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  width: 100%;
+}
+.filter-post-section .filter-post-container .small-form-filter form .button-reset {
+  width: calc(9.0909090909% + 0px);
+}
+.filter-post-section .filter-post-container .small-form-filter form .button-reset .btn-reset {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.4;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  background: transparent;
+  color: #7E8189;
+  width: 100%;
+}
+.filter-post-section .filter-post-container .filter-content {
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 30px;
+}
+.filter-post-section .filter-post-container .filter-content .filter-item {
+  width: calc(33.3333333333% - 20px);
+  background: #fff;
+  border-radius: 2px;
+}
+.filter-post-section .filter-post-container .filter-content .filter-item .item-content {
+  padding: 26px 24px 11px 21px;
+}
+.filter-post-section .filter-post-container .filter-content .filter-item .item-content .content-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.filter-post-section .filter-post-container .filter-content .filter-item .item-content .content-title h6 {
+  font-family: "Manrope";
+  font-size: 22px;
+  line-height: 1.3;
+  letter-spacing: 0.01em;
+  color: #141518;
+  margin-bottom: 18px;
+}
+.filter-post-section .filter-post-container .filter-content .filter-item .item-content .content-title p {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 0.01em;
+  color: #141518;
+}
+.filter-post-section .filter-post-container .filter-content .filter-item .item-content .filter-company,
+.filter-post-section .filter-post-container .filter-content .filter-item .item-content .content-hydro-electric,
+.filter-post-section .filter-post-container .filter-content .filter-item .item-content .content-time,
+.filter-post-section .filter-post-container .filter-content .filter-item .item-content .content-location {
+  display: flex;
+  -moz-column-gap: 8.62px;
+       column-gap: 8.62px;
+}
+.filter-post-section .filter-post-container .filter-navigation {
+  display: flex;
+  justify-content: center;
+  margin-top: 35px;
+}
+.filter-post-section .filter-post-container .filter-navigation nav.mobile {
+  display: none;
+}
+.filter-post-section .filter-post-container .filter-navigation nav ul.custom-pagination li.page-item.pagination-prev {
+  min-width: 40px;
+  width: 54px;
+}
+.filter-post-section .filter-post-container .filter-navigation nav ul.custom-pagination li.page-item.pagination-prev a.page-link {
+  padding: 5.2px 0 5.2px 8px;
+}
+.filter-post-section .filter-post-container .filter-navigation nav ul.custom-pagination li.page-item.pagination-next {
+  min-width: 40px;
+}
+.filter-post-section .filter-post-container .filter-navigation nav ul.custom-pagination li.page-item.pagination-next a.page-link {
+  padding: 5.2px 0;
+}
+.filter-post-section .filter-post-container .filter-navigation nav ul.custom-pagination li.page-item {
+  background: unset;
+}
+.filter-post-section .filter-post-container .filter-navigation nav ul.custom-pagination li.page-item a.page-link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 0.01em;
+  color: #434449;
+  border-radius: 8px;
+  padding: 5.2px 16.7px;
+}
+.filter-post-section .filter-post-container .filter-navigation nav ul.custom-pagination li.page-item.active {
+  background: #FAF6F2;
+  color: #DAA622;
+}
+
+@media (max-width: 1366px) {
+  .filter-post-section {
+    padding: 62px 100px 65px 100px;
+  }
+}
+@media (max-width: 1200px) {
+  .filter-post-section {
+    padding: 62px 80px 65px 80px;
+  }
+  .filter-post-section .filter-post-container .form-filter form .form-filter-type select {
+    width: 100%;
+  }
+  .filter-post-section .filter-post-container .form-filter form .form-filter-company select {
+    width: 100%;
+  }
+  .filter-post-section .filter-post-container .form-filter form .button-submit .btn-submit {
+    padding: 0;
+  }
+  .filter-post-section .filter-post-container .form-filter form .button-reset {
+    width: calc(11.1111111111% + 0px);
+  }
+  .filter-post-section .filter-post-container .form-filter form .button-reset .btn-reset {
+    padding: 0;
+  }
+}
+@media (max-width: 1024px) {
+  .filter-post-section {
+    padding: 62px 64px 65px 64px;
+  }
+  .filter-post-section .filter-post-container .form-filter form .form-filter-type select {
+    width: 100%;
+  }
+  .filter-post-section .filter-post-container .form-filter form .form-filter-company select {
+    width: 100%;
+  }
+  .filter-post-section .filter-post-container .form-filter form .button-submit {
+    width: calc(12.5% + 0px);
+  }
+  .filter-post-section .filter-post-container .filter-content .filter-item {
+    width: calc(50% - 16px);
+  }
+  .filter-post-section .filter-post-container .filter-content .filter-item .filter-image img {
+    width: 100%;
+  }
+}
+@media (max-width: 880px) {
+  .filter-post-section {
+    padding: 62px 48px 65px 48px;
+  }
+  .filter-post-section .filter-post-container .form-filter form .form-filter-type select {
+    width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .filter-post-section {
+    padding: 40px 20px 25px 20px;
+  }
+  .filter-post-section .filter-post-container .title-column {
+    margin-bottom: 27px;
+  }
+  .filter-post-section .filter-post-container .title-column h3 {
+    font-size: 28px;
+  }
+  .filter-post-section .filter-post-container .title-column p {
+    margin: 0 -1px;
+  }
+  .filter-post-section .filter-post-container .form-filter form {
+    -moz-column-gap: 0;
+         column-gap: 0;
+    row-gap: 8px;
+    justify-content: left;
+  }
+  .filter-post-section .filter-post-container .form-filter form .form-filter-search {
+    width: 100%;
+    margin: 0;
+  }
+  .filter-post-section .filter-post-container .form-filter form .form-filter-search::after {
+    content: "";
+  }
+  .filter-post-section .filter-post-container .form-filter form .form-filter-type {
+    width: 100%;
+    margin: 0;
+  }
+  .filter-post-section .filter-post-container .form-filter form .form-filter-type::after {
+    content: "";
+  }
+  .filter-post-section .filter-post-container .form-filter form .form-filter-type select {
+    width: 100%;
+  }
+  .filter-post-section .filter-post-container .form-filter form .form-filter-type select:hover {
+    cursor: pointer;
+  }
+  .filter-post-section .filter-post-container .form-filter form .form-filter-area {
+    width: 100%;
+    margin: 0;
+  }
+  .filter-post-section .filter-post-container .form-filter form .form-filter-area::after {
+    content: "";
+  }
+  .filter-post-section .filter-post-container .form-filter form .form-filter-area select:hover {
+    cursor: pointer;
+  }
+  .filter-post-section .filter-post-container .form-filter form .form-filter-company {
+    width: 100%;
+    margin: 0;
+  }
+  .filter-post-section .filter-post-container .form-filter form .form-filter-company::after {
+    content: "";
+  }
+  .filter-post-section .filter-post-container .form-filter form .form-filter-company select {
+    width: 100%;
+  }
+  .filter-post-section .filter-post-container .form-filter form .form-filter-company select:hover {
+    cursor: pointer;
+  }
+  .filter-post-section .filter-post-container .form-filter form .button-submit {
+    width: 124px;
+  }
+  .filter-post-section .filter-post-container .form-filter form .button-submit .btn-submit {
+    height: 40px;
+  }
+  .filter-post-section .filter-post-container .form-filter form .button-reset {
+    width: 113px;
+  }
+  .filter-post-section .filter-post-container .form-filter form .button-reset .btn-reset {
+    height: 40px;
+  }
+  .filter-post-section .filter-post-container .filter-content {
+    row-gap: 22px;
+    margin-top: 28px;
+  }
+  .filter-post-section .filter-post-container .filter-content .filter-item {
+    width: 100%;
+  }
+  .filter-post-section .filter-post-container .filter-content .filter-item .item-content .content-title h6 {
+    font-size: 22px;
+    line-height: 1.3;
+    letter-spacing: 0.01em;
+  }
+  .filter-post-section .filter-post-container .filter-navigation {
+    margin-top: 22px;
+  }
+  .filter-post-section .filter-post-container .filter-navigation nav {
+    display: none;
+  }
+  .filter-post-section .filter-post-container .filter-navigation nav.mobile {
+    display: unset;
+    width: 100%;
+  }
+  .filter-post-section .filter-post-container .filter-navigation nav.mobile ul.custom-pagination {
+    justify-content: space-between !important;
+    padding: 0 5px 0 15px;
+  }
+  .filter-post-section .filter-post-container .filter-navigation nav.mobile ul.custom-pagination li.page-item.pagination-prev {
+    width: unset;
+  }
+  .filter-post-section .filter-post-container .filter-navigation nav.mobile ul.custom-pagination li.page-item.pagination-prev a.page-link {
+    padding: 5.2px 0;
+  }
+  .filter-post-section .filter-post-container .filter-navigation nav.mobile ul.custom-pagination li.page-item {
+    margin: 0;
+  }
+}
 .news-detail-container {
   max-width: 1240px;
   margin: auto;
@@ -3844,6 +4240,92 @@ section.article-header-section {
   color: #434449;
 }
 
+.banner.list {
+  background-image: url("../../../access/images/central-business-district-singapore.png");
+  min-height: 400px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 2;
+}
+.banner.list .container .content {
+  top: calc(50% + 59px);
+  z-index: 2;
+}
+.banner.list .container .content p {
+  max-width: 550px;
+}
+.banner.list .container .navigation {
+  z-index: 2;
+}
+
+.banner.list::after {
+  background: linear-gradient(0deg, rgba(13, 13, 14, 0.81) 28.83%, rgba(13, 13, 14, 0) 100%);
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+section.other-information .other-container .other-content {
+  display: flex;
+}
+section.other-information .other-container .other-content a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 33.3333333333%;
+  min-height: 230px;
+  font-family: "Manrope";
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 1.3;
+  color: #FFF;
+  text-shadow: 0px 1px 2px rgba(9, 8, 43, 0.2);
+  text-decoration: none;
+  background-size: cover;
+}
+section.other-information .other-container .other-content .hydro-electric-news {
+  background-image: url(../../../access/images/hydroelectricnews.png);
+}
+section.other-information .other-container .other-content .production-result {
+  background-image: url(../../../access/images/production-result.png);
+}
+section.other-information .other-container .other-content .bidding-information {
+  background-image: url(../../../access/images/bidding-information.png);
+}
+
+@media (max-width: 880px) {
+  section.other-information .other-container .other-content {
+    flex-wrap: wrap;
+  }
+  section.other-information .other-container .other-content a {
+    min-height: 300px;
+  }
+  section.other-information .other-container .other-content .hydro-electric-news {
+    width: 50%;
+  }
+  section.other-information .other-container .other-content .production-result {
+    width: 50%;
+  }
+  section.other-information .other-container .other-content .bidding-information {
+    width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  section.other-information .other-container .other-content .hydro-electric-news {
+    width: 100%;
+  }
+  section.other-information .other-container .other-content .production-result {
+    width: 100%;
+  }
+  section.other-information .other-container .other-content .bidding-information {
+    width: 100%;
+  }
+}
 .thong-tin-moi-thau .banner {
   min-height: 469px;
   background-image: url("./../../access/images/banner-thong-tin-moi-thau.png");
