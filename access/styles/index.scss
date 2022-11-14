@@ -205,12 +205,16 @@ select.form-select {
         color: #7E8189 !important;
     }
 
-    &.search {
-        background-image: url('../images/Search.png');
-        background-repeat: no-repeat;
-        padding-left: 40px;
-        background-position-y: center;
-        background-position-X: 10px;
+    &.search::before {
+        content: "";
+        -webkit-mask: url(../icon/tag.svg) no-repeat 50% 50%;
+        mask: url(../icon/tag.svg) no-repeat 50% 50%;
+        -webkit-mask-size: cover;
+        mask-size: cover;
+        width: 17px;
+        background: #000;
+        display: inline-flex;
+        height: 17px;
     }
 }
 
@@ -518,6 +522,28 @@ span.tag {
         content: "";
         -webkit-mask: url(../icon/Image.svg) no-repeat 50% 50%;
         mask: url(../icon/Image.svg) no-repeat 50% 50%;
+        -webkit-mask-size: cover;
+        mask-size: cover;
+        width: 17px;
+        background: #000;
+        display: inline-flex;
+        height: 17px;
+    }
+    &.tag-building::before {
+        content: "";
+        -webkit-mask: url(../icon/icon-cong-ty.svg) no-repeat 50% 50%;
+        mask: url(../icon/icon-cong-ty.svg) no-repeat 50% 50%;
+        -webkit-mask-size: cover;
+        mask-size: cover;
+        width: 17px;
+        background: #000;
+        display: inline-flex;
+        height: 17px;
+    }
+    &.tag-case::before {
+        content: "";
+        -webkit-mask: url(../icon/Case.svg) no-repeat 50% 50%;
+        mask: url(../icon/Case.svg) no-repeat 50% 50%;
         -webkit-mask-size: cover;
         mask-size: cover;
         width: 17px;
@@ -1032,22 +1058,65 @@ select::-ms-expand {
     }
 }
 
-@import './scss/custom/header';
-@import './scss/custom/footer';
-@import './scss/custom/slider';
-@import './scss/custom/sliderCard';
-@import './scss/pages/dieu-khoan';
-@import './scss/pages/responsive';
-@import './scss/pages/dangki';
-@import './scss/pages/dangnhap';
-@import './scss/pages/quenmatkhau';
-@import './scss/pages/xacnhanquenmatkhau';
-@import './scss/pages/bando.scss';
-@import './scss/pages/chitietbando2';
-@import './scss/pages/duandangphattrien';
-@import './scss/pages/hoatdongsanxuatkinhdoanh';
-@import './scss/component/filter-post';
-@import './scss/pages/duandangphattrien';
-@import './scss/pages/tinchitiet';
-@import './scss/pages/thuvienanhanh';
-@import './scss/pages/thong-tin-moi-thau';
+
+input[type=date]::-webkit-datetime-edit-text,
+input[type=date]::-webkit-datetime-edit-month-field,
+input[type=date]::-webkit-datetime-edit-day-field,
+input[type=date]::-webkit-datetime-edit-year-field {
+    // -webkit-appearance: none;
+    // display: none;
+}
+
+input[type=date] {
+    position: relative;
+
+    &::-webkit-calendar-picker-indicator {
+        background: transparent;
+        bottom: 0;
+        color: transparent;
+        cursor: pointer;
+        height: auto;
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: auto;
+    }
+
+    &::after {
+        content: "";
+        -webkit-mask: url(../icon/Calendar.svg) no-repeat 50% 50%;
+        mask: url(../icon/Calendar.svg) no-repeat 50% 50%;
+        -webkit-mask-size: cover;
+        mask-size: cover;
+        width: 15px;
+        background: #000;
+        display: inline-flex;
+        height: 17px;
+
+    }
+
+
+}
+
+
+
+@import './scss/header';
+@import './scss/footer';
+@import './scss/slider';
+@import './scss/sliderCard';
+@import './scss/dieu-khoan';
+@import './scss/responsive';
+@import './scss/dangki';
+@import './scss/dangnhap';
+@import './scss/quenmatkhau';
+@import './scss/xacnhanquenmatkhau';
+@import './scss/bando.scss';
+@import './scss/chitietbando2';
+@import './scss/duandangphattrien';
+@import './scss/hoatdongsanxuatkinhdoanh';
+@import './scss/filter-post';
+@import './scss/duandangphattrien';
+@import './scss/tinchitiet';
+@import './scss/thuvienanhanh';
+@import './scss/thong-tin-moi-thau';

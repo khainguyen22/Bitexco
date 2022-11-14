@@ -1,4 +1,4 @@
-section.register {
+.register {
 	.register-box  {
 		.reset-password-notifition {
 			margin-top: 32px;
@@ -29,7 +29,7 @@ section.register {
 }
 
 @media (max-width: 880px) {
-	section.register {
+	.register {
 		.register-box  {
 			.reset-password-notifition {
 				p {

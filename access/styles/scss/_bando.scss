@@ -1,5 +1,5 @@
 section.banner {
-    background: url('../../../access/images/danhmucduanbanner.png');
+    background: url('./../../access/images/danhmucduanbanner.png');
     min-height: 640px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -93,7 +93,7 @@ section.banner {
     }
 }
 
-section.projects {
+.projects {
     padding: 60px 0 80px 0;
 
     .projects-content {
@@ -261,7 +261,7 @@ section.projects {
 }
 
 @media (max-width: 1024px) {
-    section.projects {
+    .projects {
         padding: 60px 20px 80px 20px;
 
         .projects-content {
@@ -325,7 +325,7 @@ section.projects {
         }
     }
 
-    section.projects {
+    .projects {
         padding: 60px 20px 80px 20px;
 
         .projects-content {
@@ -406,7 +406,7 @@ section.projects {
         }
     }
 
-    section.projects {
+    .projects {
         padding: 44px 20px 42px 20px;
 
         .projects-content {

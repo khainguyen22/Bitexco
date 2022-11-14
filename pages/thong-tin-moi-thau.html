@@ -52,43 +52,34 @@
                 </div>
             </div>
         </section>
-        <div class="main container">
+        <div class="main">
             <section class="filter-post-section">
-                <div class="form-filter">
+                <div class="form-filter container">
                     <form action="">
                         <div class="form-filter-search d-flex">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                fill="none">
-                                <circle cx="11" cy="11" r="8" stroke="#7E8189" stroke-width="1.5" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                                <path d="M16.5 16.958L21.5 21.958" stroke="#7E8189" stroke-width="1.5"
-                                    stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
-                            <input type="text" placeholder="Tìm kiếm">
+                            <input type="text" placeholder="Tìm kiếm" class="form-control search">
                         </div>
                         <div class="form-filter-type">
-                            <select name="" id="">
+                            <select name="" id="" class="form-select">
                                 <option value="">Loại hình</option>
                                 <option value="">Loại hình</option>
                                 <option value="">Loại hình</option>
                                 <option value="">Loại hình</option>
                             </select>
                         </div>
-                        <div class="form-filter-area">
-                            <select name="" id="">
+                        <div class="form-filter-field">
+                            <select name="" id="" class="form-select">
                                 <option value="">Khu vực</option>
                                 <option value="">Khu vực</option>
                                 <option value="">Khu vực</option>
                                 <option value="">Khu vực</option>
                             </select>
                         </div>
-                        <div class="form-filter-company">
-                            <select name="" id="">
-                                <option value="">Công ty</option>
-                                <option value="">Công ty</option>
-                                <option value="">Công ty</option>
-                                <option value="">Công ty</option>
-                            </select>
+                        <div class="form-filter-date-start">
+                            <input type="date" class="form-control date-start">
+                        </div>
+                        <div class="form-filter-date-end">
+                            <input type="date" class="form-control date-end">
                         </div>
                         <div class="button-submit">
                             <button class="btn btn-search btn-submit">Tìm kiếm</button>
@@ -99,16 +90,47 @@
                     </form>
                 </div>
             </section>
-            <section class="infomation-list">
-                <div class="list">
+            <section class="infomation-list ">
+                <div class="list container">
                     <div class="item">
-                        <div class="d-flex">
-                            <h6>Nối tuyến trung thế Công ty Điện lực Bình Phú năm 2023</h6>
-                            
+                        <div class="d-flex justify-content-between head">
+                            <h6 class="title">Nối tuyến trung thế Công ty Điện lực Bình Phú năm 2023</h6>
+                            <span class="status status-info">SẮP PHÁT HÀNH</span>
+                        </div>
+                        <div class="content">
+                            <span class="tag tag-building"><strong>Bên mời thầu:</strong> <span>Công ty Điện lực Bình
+                                    Phú</span></span>
+                            <span class="tag tag-calender"><strong>Phát hành:</strong> <span>Từ 24/08/2022 Đến
+                                    09/09/2022</span></span>
+                            <span class="tag tag-case"><strong>Lĩnh vực:</strong> <span>Tư vấn</span></span>
                         </div>
                     </div>
-                    <div class="item"></div>
-                    <div class="item"></div>
+                    <div class="item">
+                        <div class="d-flex justify-content-between head">
+                            <h6 class="title">Nối tuyến trung thế Công ty Điện lực Bình Phú năm 2023</h6>
+                            <span class="status  status-success">đang PHÁT HÀNH</span>
+                        </div>
+                        <div class="content">
+                            <span class="tag tag-building"><strong>Bên mời thầu:</strong> <span>Công ty Điện lực Bình
+                                    Phú</span></span>
+                            <span class="tag tag-calender"><strong>Phát hành:</strong> <span>Từ 24/08/2022 Đến
+                                    09/09/2022</span></span>
+                            <span class="tag tag-case"><strong>Lĩnh vực:</strong> <span>Tư vấn</span></span>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="d-flex justify-content-between head">
+                            <h6 class="title">Nối tuyến trung thế Công ty Điện lực Bình Phú năm 2023</h6>
+                            <span class="status  status-danger">Quá hạn</span>
+                        </div>
+                        <div class="content">
+                            <span class="tag tag-building"><strong>Bên mời thầu:</strong> <span>Công ty Điện lực Bình
+                                    Phú</span></span>
+                            <span class="tag tag-calender"><strong>Phát hành:</strong> <span>Từ 24/08/2022 Đến
+                                    09/09/2022</span></span>
+                            <span class="tag tag-case"><strong>Lĩnh vực:</strong> <span>Tư vấn</span></span>
+                        </div>
+                    </div>
                 </div>
             </section>
         </div>

@@ -1,4 +1,4 @@
-section.register {
+.register {
 	.register-box {
 		display: flex;
 
@@ -171,7 +171,7 @@ section.register {
 }
 
 @media (max-width: 1440px) {
-	section.register {
+	.register {
 		.register-box {
 			justify-content: space-between;
 
@@ -195,7 +195,7 @@ section.register {
 }
 
 @media (max-width: 1200px) {
-	section.register {
+	.register {
 		.register-box {
 			.form-box {
 				padding: 65px 64px 0 64px;
@@ -209,7 +209,7 @@ section.register {
 }
 
 @media (max-width: 880px) {
-	section.register {
+	.register {
 		&::after {
 			position: absolute;
 			content: "";

@@ -1,4 +1,4 @@
-section.register {
+.register {
 	.register-box  {
 		.form-box {
 			.title {
@@ -22,7 +22,7 @@ section.register {
 }
 
 @media (max-width: 880px) {
-	section.register {
+	.register {
 		.register-box  {
 			.notification {
 				p {

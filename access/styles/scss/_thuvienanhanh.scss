@@ -1,6 +1,6 @@
 .thu-vien-hinh-anh {
     section.banner {
-        background-image: url('../../../access/images/banner-thu-vien-hinh-anh.png');
+        background-image: url('./../../access/images/banner-thu-vien-hinh-anh.png');
         min-height: 469px;
     }
 
@@ -34,6 +34,8 @@
                 }
 
                 .form-filter-type {
+                    width: fit-content;
+
                     .form-select {
                         width: 475px;
 
