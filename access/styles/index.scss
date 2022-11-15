@@ -767,6 +767,22 @@ input[type=date] {
 
 
 }
+.banner .navigation ul li{
+    &::after {
+        content: "";
+        position: absolute;
+        height: 2px;
+        width: 0%;
+        background: #DAA622;
+        display: block;
+        bottom: -4px;
+        transition: all 1s;
+    }
+    &:hover::after {
+        width: 100%;
+        transition: all 1s;
+    }
+}
 
 
 

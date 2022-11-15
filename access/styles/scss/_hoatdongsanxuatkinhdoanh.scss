@@ -175,22 +175,6 @@
                         text-decoration: none;
                     }
 
-                    &:hover {
-                        &::after {
-                            width: 100%;
-                        }
-                    }
-
-                    &::after {
-                        content: '';
-                        position: absolute;
-                        height: 2px;
-                        width: 0%;
-                        background: #DAA622;
-                        display: block;
-                        bottom: -4px;
-                    }
-
                     &.active {
                         &::after {
                             width: 100%;
