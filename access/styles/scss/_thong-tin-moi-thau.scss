@@ -22,7 +22,17 @@
                         width: 100%;
                         max-width: 310px;
 
+                        @media(max-width:1024px) {
+                            width: 100%;
+                            max-width: 49%;
+                        }
+
+                        @media(max-width:767px) {
+                            width: 100%;
+                            max-width: 100%;
+                        }
                     }
+
                 }
             }
         }
@@ -60,7 +70,7 @@
                             color: #FFFFFF;
                             padding: 2px 8px;
                             border-radius: 2px;
-                            height: 21px;
+                            height: fit-content;
 
                             &-info {
                                 background: #134FA5;
