@@ -763,7 +763,8 @@ input[type=date] {
 
 }
 
-.banner .navigation ul li {
+.banner .navigation ul li,
+.navigation ul li {
     &::after {
         content: "";
         position: absolute;
@@ -802,3 +803,4 @@ input[type=date] {
 @import './scss/_thuvienanhanh';
 @import './scss/_tinchitiet';
 @import './scss/_xacnhanquenmatkhau';
+@import './scss/tru-so';
