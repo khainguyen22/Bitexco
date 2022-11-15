@@ -1,13 +1,53 @@
 .thong-tin-moi-thau {
     .banner {
-        min-height: 469px;
+        min-height: 400px;
         background-image: url('./../../access/images/banner-thong-tin-moi-thau.png');
+
+        .container {
+            .content {
+                top: calc(50% + 48px);
+
+                @media(max-width:767px) {
+                    top: 48%;
+                    left: 12%;
+                    transform: translate(0%, -25%);
+
+                    h3 {
+                        font-weight: 600;
+                        font-size: 32px;
+                        line-height: 130%
+                    }
+                }
+            }
+
+            .navigation {
+                bottom: 6px;
+                left: 100px;
+                @media(max-width:767px) {
+                    left: 20px;
+                    bottom: 3px;
+                }
+            }
+        }
+
+        @media(max-width:767px) {
+            min-height: 300px;
+        }
     }
 
+
+
     .main {
+        .container {
+            padding: 0 100px;
+
+            @media(max-width:767px) {
+                padding: 0 20px;
+            }
+        }
+
         .filter-post-section {
-            padding-left: 0;
-            padding-right: 0;
+            padding: 32px 0px 32px 0px;
             background-color: #F6F8FC;
 
             .filter-post-container {
@@ -33,6 +73,10 @@
                         }
                     }
 
+                    .btn-reset {
+                        color: #DAA622;
+                    }
+
                 }
             }
         }
@@ -48,6 +92,8 @@
 
 
                     .head {
+
+
                         .title {
                             font-family: var(--secondary-font);
                             font-style: normal;
@@ -84,6 +130,16 @@
                                 background: #DD2027;
                             }
                         }
+
+                        @media(max-width:767px) {
+                            flex-direction: column;
+
+                            .status {
+                                width: fit-content;
+                                margin-top: 2px;
+                                margin-bottom: 18px;
+                            }
+                        }
                     }
 
                     .content {
@@ -101,6 +157,10 @@
 
                             &::before {
                                 margin-right: 8px;
+                            }
+
+                            &:last-child {
+                                margin-bottom: 0;
                             }
                         }
                     }

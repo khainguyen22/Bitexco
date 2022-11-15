@@ -1,4 +1,4 @@
-section.banner {
+.banner {
     background: url('./../../access/images/danhmucduanbanner.png');
     min-height: 640px;
     background-repeat: no-repeat;
@@ -178,10 +178,11 @@ section.banner {
 
 #popup-content {
     display: flex;
+
     .column-2 {
         padding: 30px;
 
-        div + div {
+        div+div {
             margin-top: 16px;
         }
 
@@ -194,9 +195,11 @@ section.banner {
         .title {
             display: flex;
             align-items: center;
+
             svg {
                 margin-right: 8px;
             }
+
             p {
                 margin: 0;
             }
@@ -204,6 +207,7 @@ section.banner {
 
         .title {
             justify-content: space-between;
+
             h6 {
                 font-weight: 600;
                 font-size: 22px;
@@ -455,12 +459,14 @@ section.banner {
     .gm-style-iw.gm-style-iw-c {
         max-height: unset !important;
     }
-    
+
     #popup-content {
-        flex-direction: column; 
+        flex-direction: column;
+
         .column-2 {
             padding: 8px;
-            div + div {
+
+            div+div {
                 margin-top: 8px;
             }
         }
@@ -468,7 +474,7 @@ section.banner {
 }
 
 @media (max-width: 374px) {
-	section.banner .container .content p {
-		min-width: 250px;
-	}
+    section.banner .container .content p {
+        min-width: 250px;
+    }
 }
