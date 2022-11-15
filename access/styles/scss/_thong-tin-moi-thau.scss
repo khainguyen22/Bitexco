@@ -9,9 +9,11 @@
             padding-left: 0;
             padding-right: 0;
             background-color: #F6F8FC;
+
             .filter-post-container {
                 max-width: unset;
-                .form-filter {  
+
+                .form-filter {
 
                     .form-filter-field,
                     .form-filter-field select,
@@ -19,7 +21,7 @@
                     .form-filter-date-end {
                         width: 100%;
                         max-width: 310px;
-    
+
                     }
                 }
             }
@@ -27,6 +29,7 @@
 
         .infomation-list {
             background: #E5E5E5;
+            padding-top: 40px;
 
             .list {
                 .item {
@@ -45,6 +48,7 @@
                             align-items: center;
                             letter-spacing: 0.01em;
                             color: #141518;
+                            margin-bottom: 16px;
                         }
 
                         .status {
@@ -79,6 +83,7 @@
                             line-height: 160%;
                             letter-spacing: 0.01em;
                             color: #141518;
+                            margin-bottom: 10px;
 
                             strong {
                                 font-weight: 500;
