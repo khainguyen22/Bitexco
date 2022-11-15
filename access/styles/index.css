@@ -685,7 +685,8 @@ input[type=date]::after {
   height: 17px;
 }
 
-.banner .navigation ul li::after {
+.banner .navigation ul li::after,
+.navigation ul li::after {
   content: "";
   position: absolute;
   height: 2px;
@@ -695,7 +696,8 @@ input[type=date]::after {
   bottom: -4px;
   transition: all 1s;
 }
-.banner .navigation ul li:hover::after {
+.banner .navigation ul li:hover::after,
+.navigation ul li:hover::after {
   width: 100%;
   transition: all 1s;
 }
@@ -4243,4 +4245,63 @@ section.article-header-section {
   .register .register-box .reset-password-notifition p {
     color: #fff;
   }
+}
+.tru-so .banner {
+  background-image: url("./../../access/images/banner-tru-so.png");
+  min-height: 400px;
+}
+.tru-so .main {
+  padding-top: 45px;
+}
+.tru-so .main .group-tabs .head .nav li {
+  position: relative;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 130%;
+  letter-spacing: 0.01em;
+  color: #141518;
+  margin-right: 40px;
+  padding: 10px 0;
+}
+.tru-so .main .group-tabs .head .nav li::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 0%;
+  background: #DAA622;
+  display: block;
+  transition: all 1s;
+}
+.tru-so .main .group-tabs .head .nav li.active::after {
+  width: 100%;
+}
+.tru-so .main .group-tabs .head .nav li:hover a {
+  color: #47484d;
+}
+.tru-so .main .group-tabs .head .nav li:hover::after {
+  width: 100%;
+  transition: all 1s;
+}
+
+.collapsible-link {
+  width: 100%;
+  position: relative;
+  text-align: left;
+}
+
+.collapsible-link::before {
+  content: "\f107";
+  position: absolute;
+  top: 50%;
+  right: 0.8rem;
+  transform: translateY(-50%);
+  display: block;
+  font-family: "FontAwesome";
+  font-size: 1.1rem;
+}
+
+.collapsible-link[aria-expanded=true]::before {
+  content: "\f106";
 }/*# sourceMappingURL=index.css.map */

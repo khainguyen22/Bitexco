@@ -25,6 +25,7 @@
         href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;600;700;900&family=Roboto&display=swap"
         rel="stylesheet" />
     <script src="../access/js/jquery.min.js"></script>
+    <script src="../access/js/popper.min.js"></script>
     <script src="../access/js/bootstrap.min.js"></script>
     <script src="../access/js/slick.min.js"></script>
     <script src="../access/js/lightslider.js"></script>
@@ -32,30 +33,134 @@
     <script src="../access/js/lightgallery.min.js"></script>
     <script src="../access/js/lightgallery.js"></script>
     <script src="../access/js/functions.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
 <body>
     <div data-include="header"></div>
-    <section class="headquarters">
-        <div class="container">
-            <form>
-                <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Email address</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+    <div class="tru-so">
+        <section class="banner">
+            <div class="container">
+                <div class="content">
+                    <span class="divider"></span>
+                    <h3>Thông tin mời thầu</h3>
                 </div>
-                <div class="mb-3">
-                    <label for="exampleInputPassword1" class="form-label">Password</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+        </section>
+        <div class="main">
+            <div class="container">
+                <div class="group-tabs">
+                    <div class="head d-flex flex-wrap justify-content-between">
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li role="presentation" class="active"><a href="#mien-bac" aria-controls="mien-bac"
+                                    role="tab" data-toggle="tab">Miền Bắc</a></li>
+                            <li role="presentation"><a href="#mien-trung" aria-controls="mien-trung" role="tab"
+                                    data-toggle="tab">Miền Trung</a></li>
+                            <li role="presentation"><a href="#mien-nam" aria-controls="mien-nam" role="tab"
+                                    data-toggle="tab">Miền Nam</a></li>
+                        </ul>
+                        <button class="btn btn-detail">Liên hệ với chúng tôi
+                            <svg width="16" height="10" viewBox="0 0 16 10" fill="#DAA622"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M11.1297 8.66927L14.1482 5.65078C14.5062 5.2928 14.5062 4.7124 14.1482 4.35442L11.1297 1.33594M13.8797 5.0026L1.04639 5.00261"
+                                    stroke="#DAA622" stroke-width="1.5" stroke-linecap="round" />
+                            </svg></button>
+                    </div>
+
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane active row" id="mien-bac">
+                            <div class="col-12 col-md-6">
+                                <div id="accordionExample" class="accordion shadow">
+                                    <div class="card">
+                                        <div id="headingOne" class="card-header bg-white shadow-sm border-0">
+                                            <h2 class="mb-0">
+                                                <button type="button" data-toggle="collapse" data-target="#collapseOne"
+                                                    aria-expanded="true" aria-controls="collapseOne"
+                                                    class="btn btn-link text-dark font-weight-bold text-uppercase collapsible-link">Collapsible
+                                                    Group Item #1</button>
+                                            </h2>
+                                        </div>
+                                        <div id="collapseOne" aria-labelledby="headingOne"
+                                            data-parent="#accordionExample" class="collapse show">
+                                            <div class="card-body p-5">
+                                                <p class="font-weight-light m-0">Anim pariatur cliche
+                                                    reprehenderit, enim eiusmod high life accusamus
+                                                    terry richardson ad squid. 3 wolf moon officia aute, non
+                                                    cupidatat skateboard dolor brunch. Food truck
+                                                    quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
+                                                    tempor, sunt aliqua put a bird on it squid
+                                                    single-origin coffee nulla assumenda shoreditch et.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div id="headingTwo" class="card-header bg-white shadow-sm border-0">
+                                            <h2 class="mb-0">
+                                                <button type="button" data-toggle="collapse" data-target="#collapseTwo"
+                                                    aria-expanded="false" aria-controls="collapseTwo"
+                                                    class="btn btn-link collapsed text-dark font-weight-bold text-uppercase collapsible-link">Collapsible
+                                                    Group Item #2</button>
+                                            </h2>
+                                        </div>
+                                        <div id="collapseTwo" aria-labelledby="headingTwo"
+                                            data-parent="#accordionExample" class="collapse">
+                                            <div class="card-body p-5">
+                                                <p class="font-weight-light m-0">Anim pariatur cliche
+                                                    reprehenderit, enim eiusmod high life accusamus
+                                                    terry richardson ad squid. 3 wolf moon officia aute, non
+                                                    cupidatat skateboard dolor brunch. Food truck
+                                                    quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
+                                                    tempor, sunt aliqua put a bird on it squid
+                                                    single-origin coffee nulla assumenda shoreditch et.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div id="headingThree" class="card-header bg-white shadow-sm border-0">
+                                            <h2 class="mb-0">
+                                                <button type="button" data-toggle="collapse"
+                                                    data-target="#collapseThree" aria-expanded="false"
+                                                    aria-controls="collapseThree"
+                                                    class="btn btn-link collapsed text-dark font-weight-bold text-uppercase collapsible-link">Collapsible
+                                                    Group Item #3</button>
+                                            </h2>
+                                        </div>
+                                        <div id="collapseThree" aria-labelledby="headingThree"
+                                            data-parent="#accordionExample" class="collapse">
+                                            <div class="card-body p-5">
+                                                <p class="font-weight-light m-0">Anim pariatur cliche
+                                                    reprehenderit, enim eiusmod high life accusamus
+                                                    terry richardson ad squid. 3 wolf moon officia aute, non
+                                                    cupidatat skateboard dolor brunch. Food truck
+                                                    quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
+                                                    tempor, sunt aliqua put a bird on it squid
+                                                    single-origin coffee nulla assumenda shoreditch et.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+
+                            </div>
+
+                        </div>
+                        <div role="tabpanel" class="tab-pane row" id="mien-trung">
+                            <div class="col-12 col-md-6">3</div>
+                            <div class="col-12 col-md-6">4</div>
+                        </div>
+                        <div role="tabpanel" class="tab-pane row" id="mien-nam">
+                            <div class="col-12 col-md-6">5</div>
+                            <div class="col-12 col-md-6">6</div>
+                        </div>
+                    </div>
                 </div>
-                <div class="mb-3 form-check">
-                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
+            </div>
         </div>
-    </section>
+    </div>
     <div data-include="footer-second"></div>
 </body>
 
