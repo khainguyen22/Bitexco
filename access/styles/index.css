@@ -430,7 +430,7 @@ span.tag.tag-calender::before {
   -webkit-mask-size: cover;
   mask-size: cover;
   width: 15px;
-  background: #000;
+  background: #7E8189;
   display: inline-flex;
   height: 17px;
 }
@@ -441,9 +441,21 @@ span.tag.tag-name::before {
   -webkit-mask-size: cover;
   mask-size: cover;
   width: 17px;
-  background: #000;
+  background: #7E8189;
   display: inline-flex;
   height: 17px;
+}
+span.tag.tag-mail::before {
+  content: "";
+  -webkit-mask: url(../icon/bytesize_mail.svg) no-repeat 50% 50%;
+  mask: url(../icon/bytesize_mail.svg) no-repeat 50% 50%;
+  -webkit-mask-size: cover;
+  mask-size: cover;
+  width: 17px;
+  background: #7E8189;
+  display: inline-flex;
+  height: 17px;
+  margin-right: 10px;
 }
 span.tag.tag-file::before {
   content: "";
@@ -452,7 +464,7 @@ span.tag.tag-file::before {
   -webkit-mask-size: cover;
   mask-size: cover;
   width: 17px;
-  background: #000;
+  background: #7E8189;
   display: inline-flex;
   height: 17px;
 }
@@ -463,9 +475,22 @@ span.tag.tag-location::before {
   -webkit-mask-size: cover;
   mask-size: cover;
   width: 17px;
-  background: #000;
+  background: #7E8189;
   display: inline-flex;
   height: 17px;
+  margin-right: 10px;
+}
+span.tag.tag-phone::before {
+  content: "";
+  -webkit-mask: url(../icon/Call.svg) no-repeat 50% 50%;
+  mask: url(../icon/Call.svg) no-repeat 50% 50%;
+  -webkit-mask-size: cover;
+  mask-size: cover;
+  width: 17px;
+  background: #7E8189;
+  display: inline-flex;
+  height: 17px;
+  margin-right: 10px;
 }
 span.tag.tag-type::before {
   content: "";
@@ -474,7 +499,7 @@ span.tag.tag-type::before {
   -webkit-mask-size: cover;
   mask-size: cover;
   width: 17px;
-  background: #000;
+  background: #7E8189;
   display: inline-flex;
   height: 17px;
 }
@@ -485,7 +510,7 @@ span.tag.tag-image::before {
   -webkit-mask-size: cover;
   mask-size: cover;
   width: 17px;
-  background: #000;
+  background: #7E8189;
   display: inline-flex;
   height: 17px;
 }
@@ -496,9 +521,10 @@ span.tag.tag-building::before {
   -webkit-mask-size: cover;
   mask-size: cover;
   width: 17px;
-  background: #000;
+  background: #7E8189;
   display: inline-flex;
   height: 17px;
+  margin-right: 10px;
 }
 span.tag.tag-case::before {
   content: "";
@@ -507,7 +533,7 @@ span.tag.tag-case::before {
   -webkit-mask-size: cover;
   mask-size: cover;
   width: 17px;
-  background: #000;
+  background: #7E8189;
   display: inline-flex;
   height: 17px;
 }
@@ -3236,14 +3262,14 @@ header .search .search-bar:hover::after {
   }
 }
 @media (max-width: 1200px) {
+  .hoat-dong-sx-kd-content .lists-post {
+    margin: 20px 0px 80px;
+  }
   .hoat-dong-sx-kd-content .lists-post .container {
     padding: 0 100px;
   }
 }
 @media (max-width: 991px) {
-  .hoat-dong-sx-kd-content .lists-post {
-    margin: 20px 0px 80px;
-  }
   .hoat-dong-sx-kd-content .lists-post .container {
     padding: 20px;
   }
@@ -4284,14 +4310,18 @@ section.article-header-section {
   width: 100%;
   transition: all 1s;
 }
-
-.collapsible-link {
+.tru-so .main .tab-content .accordion * {
+  background: unset;
+}
+.tru-so .main .tab-content .accordion .collapsible-link {
   width: 100%;
   position: relative;
   text-align: left;
 }
-
-.collapsible-link::before {
+.tru-so .main .tab-content .accordion .btn.collapsible-link {
+  text-align: left;
+}
+.tru-so .main .tab-content .accordion .collapsible-link::before {
   content: "\f107";
   position: absolute;
   top: 50%;
@@ -4301,7 +4331,6 @@ section.article-header-section {
   font-family: "FontAwesome";
   font-size: 1.1rem;
 }
-
-.collapsible-link[aria-expanded=true]::before {
+.tru-so .main .tab-content .accordion .collapsible-link[aria-expanded=true]::before {
   content: "\f106";
 }/*# sourceMappingURL=index.css.map */
