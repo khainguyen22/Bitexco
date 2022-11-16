@@ -460,7 +460,7 @@ span.tag {
         -webkit-mask-size: cover;
         mask-size: cover;
         width: 15px;
-        background: #000;
+        background: #7E8189;
         display: inline-flex;
         height: 17px;
     }
@@ -472,9 +472,22 @@ span.tag {
         -webkit-mask-size: cover;
         mask-size: cover;
         width: 17px;
-        background: #000;
+        background: #7E8189;
         display: inline-flex;
         height: 17px;
+    }
+
+    &.tag-mail::before {
+        content: "";
+        -webkit-mask: url(../icon/bytesize_mail.svg) no-repeat 50% 50%;
+        mask: url(../icon/bytesize_mail.svg) no-repeat 50% 50%;
+        -webkit-mask-size: cover;
+        mask-size: cover;
+        width: 17px;
+        background: #7E8189;
+        display: inline-flex;
+        height: 17px;
+        margin-right: 10px;
     }
 
     &.tag-file::before {
@@ -484,7 +497,7 @@ span.tag {
         -webkit-mask-size: cover;
         mask-size: cover;
         width: 17px;
-        background: #000;
+        background: #7E8189;
         display: inline-flex;
         height: 17px;
     }
@@ -496,9 +509,23 @@ span.tag {
         -webkit-mask-size: cover;
         mask-size: cover;
         width: 17px;
-        background: #000;
+        background: #7E8189;
         display: inline-flex;
         height: 17px;
+        margin-right: 10px;
+    }
+
+    &.tag-phone::before {
+        content: "";
+        -webkit-mask: url(../icon/Call.svg) no-repeat 50% 50%;
+        mask: url(../icon/Call.svg) no-repeat 50% 50%;
+        -webkit-mask-size: cover;
+        mask-size: cover;
+        width: 17px;
+        background: #7E8189;
+        display: inline-flex;
+        height: 17px;
+        margin-right: 10px;
     }
 
     &.tag-type::before {
@@ -508,7 +535,7 @@ span.tag {
         -webkit-mask-size: cover;
         mask-size: cover;
         width: 17px;
-        background: #000;
+        background: #7E8189;
         display: inline-flex;
         height: 17px;
     }
@@ -520,7 +547,7 @@ span.tag {
         -webkit-mask-size: cover;
         mask-size: cover;
         width: 17px;
-        background: #000;
+        background: #7E8189;
         display: inline-flex;
         height: 17px;
     }
@@ -532,9 +559,10 @@ span.tag {
         -webkit-mask-size: cover;
         mask-size: cover;
         width: 17px;
-        background: #000;
+        background: #7E8189;
         display: inline-flex;
         height: 17px;
+        margin-right: 10px;
     }
 
     &.tag-case::before {
@@ -544,7 +572,7 @@ span.tag {
         -webkit-mask-size: cover;
         mask-size: cover;
         width: 17px;
-        background: #000;
+        background: #7E8189;
         display: inline-flex;
         height: 17px;
     }
