@@ -1,0 +1,77 @@
+.tru-so {
+    .banner {
+        background-image: url('./../../access/images/banner-tru-so.png');
+        min-height: 400px;
+
+    }
+
+    .main {
+        padding-top: 45px;
+
+        .group-tabs {
+            .head {
+                .nav {
+                    li {
+                        position: relative;
+                        font-family: 'Manrope';
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 22px;
+                        line-height: 130%;
+                        letter-spacing: 0.01em;
+                        color: #141518;
+                        margin-right: 40px;
+                        padding: 10px 0;
+
+                        &::after {
+                            content: "";
+                            position: absolute;
+                            height: 2px;
+                            width: 0%;
+                            background: #DAA622;
+                            display: block;
+                            transition: all 1s;
+                        }
+
+                        &.active {
+                            &::after {
+                                width: 100%;
+                            }
+                        }
+
+                        &:hover {
+                            a {
+                                color: #47484d;
+                            }
+
+                            &::after {
+                                width: 100%;
+                                transition: all 1s;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.collapsible-link {
+  width: 100%;
+  position: relative;
+  text-align: left;
+}
+
+.collapsible-link::before {
+  content: "\f107";
+  position: absolute;
+  top: 50%;
+  right: 0.8rem;
+  transform: translateY(-50%);
+  display: block;
+  font-family: "FontAwesome";
+  font-size: 1.1rem;
+}
+
+.collapsible-link[aria-expanded="true"]::before {
+  content: "\f106";
+}
