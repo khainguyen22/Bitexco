@@ -11,6 +11,8 @@
         .group-tabs {
             .head {
                 .nav-tabs {
+                    border: unset;
+
                     li {
                         position: relative;
                         font-family: 'Manrope';
@@ -67,17 +69,25 @@
                     }
                 }
 
-                @media(max-width:767px) {
-                    .btn.btn-detail {
-                        position: absolute;
-                        bottom: 0;
-                        z-index: 1;
-                        left: 0%;
-                    }
-                }
+
             }
 
+            @media(max-width:767px) {
 
+                position: relative;
+
+                .col-right {
+                    padding: 120px 0 0;
+                }
+
+                .btn.btn-detail {
+                    position: absolute;
+                    bottom: 520px;
+                    z-index: 1;
+                    left: 0%;
+                    width: 100%;
+                }
+            }
         }
 
         .tab-content {
@@ -144,6 +154,24 @@
                 }
 
             }
+
+            .tab-pane {
+                .col-right {
+                    img {
+                        height: 100%;
+                        object-fit: cover;
+
+                        @media(max-width:767px) {
+                            height: 470px !important;
+                        }
+                    }
+
+                }
+            }
+        }
+
+        @media(max-width:767px) {
+            padding: 0;
         }
     }
 }
