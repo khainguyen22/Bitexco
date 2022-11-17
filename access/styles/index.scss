@@ -139,7 +139,7 @@ a {
 
     &:hover {
         text-decoration: none;
-        color: #d8d8d8;
+        color: #9f9f9f;
     }
 }
 
@@ -208,10 +208,11 @@ select.form-select {
     option[value=""] {
         color: #7E8189 !important;
     }
-
-
 }
 
+textarea {
+    border: 1px solid #D1D5DB;
+}
 
 button.btn.button-size-48 {
     max-height: 48px;
@@ -366,8 +367,8 @@ button.btn-custom-4 {
     }
 }
 
-button.btn-search,
-button.btn-more {
+.btn-search,
+.btn-more {
     align-items: center;
     min-width: 100%;
     height: 48px;
@@ -382,7 +383,7 @@ button.btn-more {
     }
 }
 
-button.btn-reset {
+.btn-reset {
     font-weight: 600;
     font-size: 14px;
     height: 48px;
@@ -398,7 +399,7 @@ button.btn-reset {
     }
 }
 
-button.btn-detail {
+.btn-detail {
     border: 1px solid #DAA622;
     font-family: var(--primary-font);
     font-weight: 600;
@@ -463,6 +464,19 @@ span.tag {
         background: #7E8189;
         display: inline-flex;
         height: 17px;
+    }
+
+    &.tag-fax::before {
+        content: "";
+        -webkit-mask: url(../icon/fax.svg) no-repeat 50% 50%;
+        mask: url(../icon/fax.svg) no-repeat 50% 50%;
+        -webkit-mask-size: cover;
+        mask-size: cover;
+        width: 18px;
+        background: #7E8189;
+        display: inline-flex;
+        height: 19px;
+        margin-right: 10px;
     }
 
     &.tag-name::before {
@@ -810,6 +824,13 @@ input[type=date] {
     }
 }
 
+label.required {
+    &::after {
+        content: '*';
+        color: #DD2027;
+        margin-left: 4px
+    }
+}
 
 
 @import './scss/bando';
@@ -832,3 +853,4 @@ input[type=date] {
 @import './scss/_tinchitiet';
 @import './scss/_xacnhanquenmatkhau';
 @import './scss/tru-so';
+@import './scss/lien-he';
