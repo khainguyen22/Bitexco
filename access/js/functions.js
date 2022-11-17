@@ -36,14 +36,15 @@ jQuery(document).ready(function ($) {
 		slidesToShow: 1,
 		slidesToScroll: 1,
 	});
-	// $('.home-slide-carousel').on('wheel', (function (e) {
-	// 	e.preventDefault();
-	// 	if (e.originalEvent.deltaY > 0) {
-	// 		// $(this).slick('slickNext');
-	// 	} else {
-	// 		$(this).slick('slickPrev');
-	// 	}
-	// }));
+	$('.home-slide-carousel').on('wheel', (function (e) {
+		e.preventDefault();
+		console.log(e.originalEvent.deltaY);
+		if (e.originalEvent.deltaY > 0) {
+			$(this).slick('slickNext');
+		} else {
+			$(this).slick('slickPrev');
+		}
+	}));
 
 	$(document).on('click', '.burger', function () {
 		$('.burger').addClass("is-active");

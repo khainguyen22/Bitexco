@@ -6,11 +6,13 @@
     }
 
     .main {
-        padding-top: 45px;
+        padding: 45px 0 90px;
 
         .group-tabs {
             .head {
-                .nav {
+                .nav-tabs {
+                    border: unset;
+
                     li {
                         position: relative;
                         font-family: 'Manrope';
@@ -49,29 +51,127 @@
                                 transition: all 1s;
                             }
                         }
+
+                        @media(max-width:991px) {
+                            margin-right: 20px;
+                        }
+
+                        @media(max-width:767px) {
+                            margin-right: 0px;
+                            font-size: 18px;
+                            line-height: 160%;
+                        }
                     }
+
+                    @media(max-width:767px) {
+                        justify-content: space-between;
+                        width: 100%;
+                    }
+                }
+
+
+            }
+
+            @media(max-width:767px) {
+
+                position: relative;
+
+                .col-right {
+                    padding: 120px 0 0;
+                }
+
+                .btn.btn-detail {
+                    position: absolute;
+                    bottom: 520px;
+                    z-index: 1;
+                    left: 0%;
+                    width: 100%;
                 }
             }
         }
+
+        .tab-content {
+            margin-top: 46px;
+
+            .accordion {
+                .card-body {
+                    padding: 0;
+
+                    * {
+                        font-weight: 300;
+                        font-size: 16px;
+                        line-height: 160%;
+                        letter-spacing: 0.01em;
+                        color: #434449;
+                    }
+
+                    .address,
+                    .phone,
+                    .fax,
+                    .email {
+                        margin-bottom: 16px;
+                    }
+                }
+
+                * {
+                    background: unset;
+
+                }
+
+                .collapsible-link {
+                    width: 100%;
+                    position: relative;
+                    text-align: left;
+                    padding: 20px 0;
+
+                    &[aria-expanded="false"] {
+                        border-bottom: 1px solid #D1D5DB;
+
+                    }
+                }
+
+                .btn.collapsible-link {
+                    text-align: left;
+
+                    &:hover {
+                        text-decoration: none;
+                    }
+                }
+
+                .collapsible-link::before {
+                    content: "\f107";
+                    position: absolute;
+                    top: 50%;
+                    right: 0.8rem;
+                    transform: translateY(-50%);
+                    display: block;
+                    font-family: "FontAwesome";
+                    font-size: 1.1rem;
+                }
+
+                .collapsible-link[aria-expanded="true"]::before {
+                    content: "\f106";
+                }
+
+            }
+
+            .tab-pane {
+                .col-right {
+                    img {
+                        height: 100%;
+                        object-fit: cover;
+
+                        @media(max-width:767px) {
+                            height: 470px !important;
+                        }
+                    }
+
+                }
+            }
+        }
+
+        @media(max-width:767px) {
+            padding: 0;
+        }
     }
-}
-.collapsible-link {
-  width: 100%;
-  position: relative;
-  text-align: left;
-}
-
-.collapsible-link::before {
-  content: "\f107";
-  position: absolute;
-  top: 50%;
-  right: 0.8rem;
-  transform: translateY(-50%);
-  display: block;
-  font-family: "FontAwesome";
-  font-size: 1.1rem;
-}
-
-.collapsible-link[aria-expanded="true"]::before {
-  content: "\f106";
 }
