@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../access/js/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+    <style>
+        .wrapper {
+            width: 80%;
+            display: block;
+            overflow: hidden;
+            margin: 0 auto;
+            padding: 60px 50px;
+            background: #fff;
+            border-radius: 4px;
+        }
+
+        canvas {
+            width: 100%;
+            background: #fff;
+            height: 400px;
+        }
+
+        img {
+            width: 120%;
+            /* max-width: 800px; */
+        }
+
+        .info-mb,
+        .info-mt,
+        .info-mtb,
+        .info-mn {
+            display: none;
+            background-color: cadetblue;
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            top: 0px;
+            right: 0;
+        }
+
+        .col-lg-6 {
+            width: 50%;
+            position: relative;
+            overflow: hidden;
+        }
+
+        @media(max-width:991px) {
+            .col-lg-6 {
+                width: 100%;
+            }
+        }
+
+        .img-tooltip {
+            position: absolute;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="col-lg-6 map" id="container-tooltip">
+        <img name="image-map" id="main-map" src="https://www.npt.com.vn/Theme/npt/img/map/bg_map.jpg"
+            usemap="#image-map" width="120%">
+        <map name="image-map">
+            <area id="img-tooltip1"
+                coords="160,93,170,88,177,71,189,58,202,65,215,71,227,85,240,81,247,67,255,58,267,72,274,62,283,58,300,78,313,59,325,56,333,65,353,50,375,48,362,31,386,22,404,10,424,24,440,36,463,49,482,42,496,50,511,48,526,61,507,82,512,95,515,115,540,131,559,153,589,156,602,156,613,169,593,181,603,216,569,227,523,236,512,273,497,280,468,300,454,316,446,344,442,378,446,397,467,422,491,443,505,465,480,462,456,451,424,465,411,437,393,431,388,398,369,386,340,382,321,365,291,345,314,332,307,319,321,316,336,312,355,318,368,302,371,278,359,268,344,264,329,253,346,242,319,216,298,217,283,229,272,235,238,216,218,199,218,171,221,153,207,146,200,152,187,127,165,109"
+                shape="poly">
+            <area id="img-tooltip2"
+                coords="433,469,450,485,476,508,493,530,504,550,521,580,527,588,550,600,569,609,571,620,551,625,560,643,575,657,580,669,575,690,577,717,573,733,573,740,599,737,616,751,617,764,642,752,655,742,688,737,706,729,806,741,933,733,988,735,1014,699,1018,647,1008,590,971,565,694,496,641,476,506,468,455,454"
+                shape="poly">
+            <area id="img-tooltip3"
+                coords="567,742,567,767,576,798,589,811,585,837,580,859,584,885,585,899,576,908,557,908,562,937,580,967,576,979,583,1003,587,1018,584,1041,596,1050,772,1104,910,1112,1053,1111,1100,1098,1102,1032,1101,974,1077,946,828,838,717,788,707,739,689,735,653,748,615,771,611,748,591,742"
+                shape="poly">
+            <area id="img-tooltip4"
+                coords="550,915,534,924,512,936,487,949,498,963,472,954,451,963,447,976,458,993,468,1006,476,1023,468,1031,447,1019,424,1016,398,1029,375,1037,358,1057,342,1065,311,1061,295,1072,307,1089,329,1093,355,1085,371,1085,391,1090,385,1099,372,1112,375,1130,372,1161,370,1180,376,1200,382,1208,407,1205,429,1166,459,1160,486,1142,509,1124,523,1089,524,1065,547,1060,559,1070,586,1058,592,1052,579,1038,580,1019,577,993,576,965"
+                shape="poly">
+        </map>
+        <div class="info-mb">
+            1
+        </div>
+        <div class="info-mt">
+            2
+        </div>
+        <div class="info-mtb">
+            3
+        </div>
+        <div class="info-mn">
+            4
+        </div>
+    </div>
+    <div class="chartjs">
+        <div class="wrapper">
+            <canvas id="myChart4"></canvas>
+        </div>
+    </div>
+</body>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="../access/js/imageMapResizer.min.js"></script>
+
+<script>
+    function clear() {
+        $('.info-mb').css("display", "none");
+        $('.info-mt').css("display", "none");
+        $('.info-mtb').css("display", "none");
+        $('.info-mn').css("display", "none");
+        $('#main-map').attr("src", "https://www.npt.com.vn/Theme/npt/img/map/bg_map.jpg");
+        $('#img-tooltip1').css(" position", "unset");
+        $('#img-tooltip2').css(" position", "unset");
+        $('#img-tooltip3').css(" position", "unset");
+        $('#img-tooltip4').css(" position", "unset");
+    }
+
+		$('map').imageMapResize();
+
+    $("#img-tooltip1").hover(function () {
+        $('#main-map').attr("src", "https://www.npt.com.vn/Theme/npt/img/map/mb.png");
+        $('#img-tooltip1').css(" position", "relative");
+        $('.info-mb').css("display", "block");
+    }, function () {
+        clear();
+    });
+    $("#img-tooltip2").hover(function () {
+        $('#main-map').attr("src", "https://www.npt.com.vn/Theme/npt/img/map/mt.png");
+        $('#img-tooltip2').css(" position", "relative");
+        $('.info-mt').css("display", "block");
+    }, function () {
+        clear();
+    });
+    $("#img-tooltip3").hover(function () {
+        $('#main-map').attr("src", "https://www.npt.com.vn/Theme/npt/img/map/mtb.png");
+        $('#img-tooltip3').css(" position", "relative");
+
+        $('.info-mtb').css("display", "block");
+    }, function () {
+        clear();
+    });
+    $("#img-tooltip4").hover(function () {
+        $('#main-map').attr("src", "https://www.npt.com.vn/Theme/npt/img/map/mn.png");
+        $('#img-tooltip4').css(" position", "relative");
+
+        $('.info-mn').css("display", "block");
+    }, function () {
+        clear();
+    });
+
+
+    //chartjs\
+    var ctx = document.getElementById("myChart4").getContext('2d');
+    const labels = ["T10 2022", "T11 2022", "T12 2022", "T13 2022", "T14 2022", "T15 2022", "T16 2022", "T17 2022", "T18 2022"];
+    let PTC1 = [112, 59, 45, 56, 58, 52, 59, 87, 45];
+    let PTC2 = [12, 59, 45, 56, 58, 12, 59, 85, 23];
+    let PTC3 = [52, 59, 55, 56, 58, 12, 59, 65, 51];
+    let PTC4 = [72, 59, 25, 56, 58, 66, 59, 12, 74];
+
+
+    var myChart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: labels,
+            datasets: [{
+                label: 'PTC1',
+                backgroundColor: "#caf270",
+                data: PTC1
+            }, {
+                label: 'PTC2',
+                backgroundColor: "#45c490",
+                data: PTC2
+            }, {
+                label: 'PTC3',
+                backgroundColor: "#008d93",
+                data: PTC3
+            }, {
+                label: 'PTC4',
+                backgroundColor: "#2e5468",
+                data: PTC4
+            }],
+        },
+        options: {
+            tooltips: {
+                displayColors: true,
+                callbacks: {
+                    mode: 'x',
+                },
+            },
+            scales: {
+                xAxes: [{
+                    stacked: true,
+                    gridLines: {
+                        display: false,
+                    }
+                }],
+                yAxes: [{
+                    stacked: true,
+                    ticks: {
+                        beginAtZero: true,
+                    },
+                    type: 'linear',
+                }]
+            },
+            responsive: true,
+            maintainAspectRatio: false,
+            legend: { position: 'bottom' },
+        }
+    });
+
+
+</script>
+
+
+
+</html>
