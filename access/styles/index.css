@@ -5074,6 +5074,9 @@ section.related-news .article-container .related-news-content .related-item .ite
     margin: 30px 0 0px;
   }
 }
+.danh-sach-tuyen-dung .main .gui-ho-so .col-left {
+  padding: 0;
+}
 .danh-sach-tuyen-dung .main .gui-ho-so .col-left .content {
   padding-top: 80px;
   max-width: 555px;
@@ -5089,6 +5092,9 @@ section.related-news .article-container .related-news-content .related-item .ite
   letter-spacing: 0.04em;
   color: #FFFFFF;
 }
+.danh-sach-tuyen-dung .main .gui-ho-so .col-right {
+  padding: 0;
+}
 @media (max-width: 767px) {
   .danh-sach-tuyen-dung .main .gui-ho-so .row {
     flex-direction: column;
@@ -5096,8 +5102,5 @@ section.related-news .article-container .related-news-content .related-item .ite
   .danh-sach-tuyen-dung .main .gui-ho-so .row .col-left .content {
     padding-top: 33px;
     padding-bottom: 33px;
-  }
-  .danh-sach-tuyen-dung .main .gui-ho-so .row .col-right {
-    padding: 0;
   }
 }/*# sourceMappingURL=index.css.map */
