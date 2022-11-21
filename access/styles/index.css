@@ -377,7 +377,7 @@ button.btn-custom-4:hover {
   border: 1px solid #DAA622;
 }
 
-.btn-detail {
+.btn.btn-detail {
   border: 1px solid #DAA622;
   font-family: var(--primary-font);
   font-weight: 600;
@@ -390,16 +390,24 @@ button.btn-custom-4:hover {
   text-transform: uppercase;
   color: #DAA622;
 }
-.btn-detail svg {
+.btn.btn-detail svg {
   margin-left: 14px;
 }
-.btn-detail:hover {
+.btn.btn-detail:hover {
   background: #DAA622;
   color: #FFFFFF;
 }
-.btn-detail:hover svg * {
+.btn.btn-detail:hover svg * {
   fill: #FFFFFF;
   stroke: #FFFFFF;
+}
+.btn.btn-detail-icon {
+  background-color: unset;
+}
+@media (max-width: 767px) {
+  .btn.btn-detail {
+    height: 40px;
+  }
 }
 
 span.line-headding {
@@ -4848,6 +4856,7 @@ section.related-news .article-container .related-news-content .related-item .ite
 }
 .tru-so .main .tab-content .tab-pane .col-right img {
   height: 100%;
+  max-height: 470px;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -4955,4 +4964,140 @@ section.related-news .article-container .related-news-content .related-item .ite
 }
 .lien-he .content .col-right .wrap .info .contact-info .phone .so-may * {
   margin-bottom: 2px;
+}
+
+.danh-sach-tuyen-dung .banner {
+  background-image: url("./../../access/images/banner-tru-so.png");
+  min-height: 400px;
+}
+.danh-sach-tuyen-dung .main {
+  background-color: #FFFFFF;
+}
+@media (max-width: 767px) {
+  .danh-sach-tuyen-dung .main .filter-post-section .container {
+    padding: 0 20px;
+  }
+  .danh-sach-tuyen-dung .main .container {
+    padding: 0;
+  }
+}
+.danh-sach-tuyen-dung .main .filter-post-section {
+  padding: 32px 0px 32px 0px;
+  background-color: #F6F8FC;
+}
+.danh-sach-tuyen-dung .main .filter-post-section .filter-post-container {
+  max-width: unset;
+}
+.danh-sach-tuyen-dung .main .filter-post-section .filter-post-container .form-filter .form-filter-field,
+.danh-sach-tuyen-dung .main .filter-post-section .filter-post-container .form-filter .form-filter-field select,
+.danh-sach-tuyen-dung .main .filter-post-section .filter-post-container .form-filter .form-filter-date-start,
+.danh-sach-tuyen-dung .main .filter-post-section .filter-post-container .form-filter .form-filter-date-end {
+  width: 100%;
+  max-width: 310px;
+}
+@media (max-width: 1024px) {
+  .danh-sach-tuyen-dung .main .filter-post-section .filter-post-container .form-filter .form-filter-field,
+.danh-sach-tuyen-dung .main .filter-post-section .filter-post-container .form-filter .form-filter-field select,
+.danh-sach-tuyen-dung .main .filter-post-section .filter-post-container .form-filter .form-filter-date-start,
+.danh-sach-tuyen-dung .main .filter-post-section .filter-post-container .form-filter .form-filter-date-end {
+    width: 100%;
+    max-width: 49%;
+  }
+}
+@media (max-width: 767px) {
+  .danh-sach-tuyen-dung .main .filter-post-section .filter-post-container .form-filter .form-filter-field,
+.danh-sach-tuyen-dung .main .filter-post-section .filter-post-container .form-filter .form-filter-field select,
+.danh-sach-tuyen-dung .main .filter-post-section .filter-post-container .form-filter .form-filter-date-start,
+.danh-sach-tuyen-dung .main .filter-post-section .filter-post-container .form-filter .form-filter-date-end {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+.danh-sach-tuyen-dung .main .filter-post-section .filter-post-container .form-filter .btn-reset {
+  color: #DAA622;
+}
+.danh-sach-tuyen-dung .main .infomation-list {
+  background-color: #FFFFFF;
+  padding-top: 40px;
+}
+.danh-sach-tuyen-dung .main .infomation-list .list .item {
+  border-bottom: 1px solid #D1D5DB;
+  padding: 0 20px;
+}
+.danh-sach-tuyen-dung .main .infomation-list .list .item.disable {
+  background-color: #F6F8FC;
+}
+.danh-sach-tuyen-dung .main .infomation-list .list .item.disable * {
+  color: #7E8189;
+}
+.danh-sach-tuyen-dung .main .infomation-list .list .item .info {
+  max-width: 240px;
+  padding: 30px 0;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 160%;
+  letter-spacing: 0.01em;
+  color: #434449;
+}
+.danh-sach-tuyen-dung .main .infomation-list .list .item .info .label {
+  margin-bottom: 6px;
+}
+.danh-sach-tuyen-dung .main .infomation-list .list .item .info .desc {
+  font-weight: 600;
+  margin-bottom: 0;
+}
+.danh-sach-tuyen-dung .main .infomation-list .list .item .info .btn-detail-icon {
+  transform: translateY(25%);
+}
+@media (max-width: 1366px) {
+  .danh-sach-tuyen-dung .main .infomation-list .list .item .info .btn-detail-icon {
+    transform: translateY(0%);
+  }
+}
+@media (max-width: 767px) {
+  .danh-sach-tuyen-dung .main .infomation-list .list .item .info {
+    padding: 0;
+    max-width: 100%;
+    width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .danh-sach-tuyen-dung .main .infomation-list .list .item {
+    padding: 20px;
+  }
+}
+.danh-sach-tuyen-dung .main .filter-navigation {
+  margin: 30px 0 80px;
+}
+@media (max-width: 767px) {
+  .danh-sach-tuyen-dung .main .filter-navigation {
+    margin: 30px 0 0px;
+  }
+}
+.danh-sach-tuyen-dung .main .gui-ho-so .col-left .content {
+  padding-top: 80px;
+  max-width: 555px;
+  margin: 0 auto;
+}
+.danh-sach-tuyen-dung .main .gui-ho-so .col-left .content .btn.btn-search {
+  max-width: 144px;
+  min-width: unset;
+  padding: 14px 32px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 140%;
+  letter-spacing: 0.04em;
+  color: #FFFFFF;
+}
+@media (max-width: 767px) {
+  .danh-sach-tuyen-dung .main .gui-ho-so .row {
+    flex-direction: column;
+  }
+  .danh-sach-tuyen-dung .main .gui-ho-so .row .col-left .content {
+    padding-top: 33px;
+    padding-bottom: 33px;
+  }
+  .danh-sach-tuyen-dung .main .gui-ho-so .row .col-right {
+    padding: 0;
+  }
 }/*# sourceMappingURL=index.css.map */
