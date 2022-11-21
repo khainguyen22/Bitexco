@@ -159,6 +159,7 @@
                 .col-right {
                     img {
                         height: 100%;
+                        max-height: 470px;
                         object-fit: cover;
 
                         @media(max-width:767px) {

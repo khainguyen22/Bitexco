@@ -399,7 +399,7 @@ button.btn-custom-4 {
     }
 }
 
-.btn-detail {
+.btn.btn-detail {
     border: 1px solid #DAA622;
     font-family: var(--primary-font);
     font-weight: 600;
@@ -428,6 +428,14 @@ button.btn-custom-4 {
         }
     }
 
+    &-icon {
+        background-color: unset;
+
+    }
+
+    @media(max-width:767px) {
+        height: 40px;
+    }
 }
 
 span.line-headding {
@@ -855,3 +863,4 @@ label.required {
 @import './scss/tru-so';
 @import './scss/lien-he';
 @import './scss/tuyendung';
+@import './scss/danh-sach-tuyen-dung';
