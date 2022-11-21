@@ -4955,4 +4955,434 @@ section.related-news .article-container .related-news-content .related-item .ite
 }
 .lien-he .content .col-right .wrap .info .contact-info .phone .so-may * {
   margin-bottom: 2px;
+}
+
+section.recruit {
+  background: url(../../access/images/tuyendungbanner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 3;
+  min-height: 640px;
+  background-position: center center;
+}
+section.recruit::after {
+  background: rgba(0, 0, 0, 0.4);
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+section.recruit .container .content {
+  z-index: 2;
+}
+section.recruit .container .content p {
+  margin-top: 16px;
+  margin-bottom: 40px;
+}
+section.recruit .container .content button.position {
+  text-transform: uppercase;
+}
+
+section.opportunity {
+  background: url(../../access/images/opportunity.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 3;
+  min-height: 400px;
+  background-position: center center;
+}
+section.opportunity::after {
+  background: linear-gradient(84.51deg, rgba(0, 0, 0, 0.4) 7.63%, rgba(0, 0, 0, 0.252) 88.94%), url(image.png);
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+section.opportunity .container .content {
+  z-index: 2;
+}
+section.opportunity .container .content p {
+  margin-top: 16px;
+  margin-bottom: 40px;
+}
+section.opportunity .container .content button.position {
+  text-transform: uppercase;
+}
+
+section.your-privilege {
+  padding: 100px 0;
+}
+section.your-privilege .your-privilege-container {
+  max-width: 1240px;
+  margin: auto;
+}
+section.your-privilege .your-privilege-container .your-privilege-content .content {
+  max-width: 683px;
+  margin: auto;
+  text-align: center;
+}
+section.your-privilege .your-privilege-container .your-privilege-content .content .divider {
+  width: 32px;
+  margin: auto;
+  display: block;
+  border-top: 2px solid #daa622;
+  margin-bottom: 6px;
+}
+section.your-privilege .your-privilege-container .your-privilege-content .content h3 {
+  font-family: "Manrope";
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.2;
+  margin-bottom: 12px;
+}
+section.your-privilege .your-privilege-container .your-privilege-content .content p {
+  max-width: 499px;
+  margin: auto;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.6;
+  letter-spacing: 0.01em;
+}
+section.your-privilege .your-privilege-container .your-privilege-content .services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  row-gap: 60px;
+  margin-top: 60px;
+}
+section.your-privilege .your-privilege-container .your-privilege-content .services .service {
+  width: calc(33.3333333333% - 16px);
+  text-align: center;
+}
+section.your-privilege .your-privilege-container .your-privilege-content .services .service h6 {
+  font-family: "Manrope";
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 1.3;
+  letter-spacing: 0.01em;
+  color: #141518;
+  margin-bottom: 8px;
+  margin-top: 32px;
+}
+section.your-privilege .your-privilege-container .your-privilege-content .services .service p {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.6;
+  letter-spacing: 0.01em;
+  margin: 0;
+}
+
+section.building-dream .building-dream-container .building-dream-content svg:hover {
+  cursor: pointer;
+}
+section.building-dream .building-dream-container .building-dream-content svg.right {
+  right: 36px;
+  z-index: 1;
+}
+section.building-dream .building-dream-container .building-dream-content svg.left {
+  left: 36px;
+  z-index: 1;
+}
+section.building-dream .building-dream-container .building-dream-content .content {
+  display: flex;
+}
+section.building-dream .building-dream-container .building-dream-content .content img {
+  width: 50%;
+}
+section.building-dream .building-dream-container .building-dream-content .content .text {
+  width: 50%;
+  padding: 80px;
+}
+section.building-dream .building-dream-container .building-dream-content .content .text h4 {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 1.3;
+  font-family: "Manrope";
+  margin-bottom: 16px;
+}
+section.building-dream .building-dream-container .building-dream-content .content .text p {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 0.01em;
+  color: #434449;
+}
+section.building-dream .building-dream-container .building-dream-content .slick-dots {
+  margin-top: 24px;
+  display: flex;
+  padding: 0;
+  justify-content: center;
+  -moz-column-gap: 8px;
+       column-gap: 8px;
+  margin-bottom: 0;
+}
+section.building-dream .building-dream-container .building-dream-content .slick-dots li {
+  width: 10px;
+  height: 10px;
+  background-color: #D1D5DB;
+  border-radius: 50%;
+}
+section.building-dream .building-dream-container .building-dream-content .slick-dots li.slick-active {
+  background-color: #DAA622;
+}
+section.building-dream .building-dream-container .building-dream-content .slick-dots li:hover {
+  cursor: pointer;
+}
+section.building-dream .building-dream-container .building-dream-content .slick-dots li button {
+  display: none;
+}
+
+section.life-at-bitexco-section .life-in-bitexco .container {
+  max-width: 1240px;
+  margin: auto;
+  padding: 0;
+}
+section.life-at-bitexco-section .life-in-bitexco .container .lib-button {
+  margin-top: 25px;
+  text-align: center;
+}
+section.life-at-bitexco-section .life-in-bitexco .container .lib-button button {
+  text-transform: uppercase;
+}
+section.life-at-bitexco-section .life-in-bitexco .container .slick-dots {
+  margin-top: 24px;
+  display: flex;
+  padding: 0;
+  justify-content: center;
+  -moz-column-gap: 8px;
+       column-gap: 8px;
+  margin-bottom: 0;
+}
+section.life-at-bitexco-section .life-in-bitexco .container .slick-dots li {
+  width: 10px;
+  height: 10px;
+  background-color: #D1D5DB;
+  border-radius: 50%;
+}
+section.life-at-bitexco-section .life-in-bitexco .container .slick-dots li.slick-active {
+  background-color: #DAA622;
+}
+section.life-at-bitexco-section .life-in-bitexco .container .slick-dots li:hover {
+  cursor: pointer;
+}
+section.life-at-bitexco-section .life-in-bitexco .container .slick-dots li button {
+  display: none;
+}
+section.life-at-bitexco-section .life-in-bitexco .container svg {
+  top: 100px;
+}
+section.life-at-bitexco-section .life-in-bitexco .container svg:hover {
+  cursor: pointer;
+}
+section.life-at-bitexco-section .life-in-bitexco .container svg.right {
+  right: -36px;
+  z-index: 1;
+}
+section.life-at-bitexco-section .life-in-bitexco .container svg.left {
+  left: -36px;
+  z-index: 1;
+}
+section.life-at-bitexco-section .life-in-bitexco .container .life-in-bitexco-content {
+  margin-top: 62px;
+}
+section.life-at-bitexco-section .life-in-bitexco .container .life-in-bitexco-content .content-item {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+section.life-at-bitexco-section .life-in-bitexco .container .life-in-bitexco-content .content-item h6 {
+  font-family: "Manrope";
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 1.3;
+  letter-spacing: 0.01em;
+  color: #141518;
+  margin-top: 12px;
+}
+section.life-at-bitexco-section .life-in-bitexco .container .life-in-bitexco-content .content-item p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 0.01em;
+  color: #434449;
+}
+
+@media (max-width: 1366px) {
+  section.your-privilege {
+    padding: 100px 64px;
+  }
+}
+@media (max-width: 1200px) {
+  section.your-privilege {
+    padding: 100px 100px;
+  }
+}
+@media (max-width: 1024px) {
+  section.your-privilege {
+    padding: 64px;
+  }
+  section.your-privilege .your-privilege-container .your-privilege-content .services {
+    row-gap: 31px;
+  }
+  section.building-dream .building-dream-container .building-dream-content svg.right {
+    right: 20px;
+  }
+  section.building-dream .building-dream-container .building-dream-content svg.left {
+    left: 20px;
+  }
+  section.building-dream .building-dream-container .building-dream-content .content {
+    display: flex;
+  }
+  section.building-dream .building-dream-container .building-dream-content .content img {
+    width: 50%;
+  }
+  section.building-dream .building-dream-container .building-dream-content .content .text {
+    padding: 40px;
+  }
+}
+@media (max-width: 880px) {
+  section.your-privilege {
+    padding: 48px 48px;
+  }
+  section.your-privilege .your-privilege-container .your-privilege-content .services .service {
+    width: calc(50% - 16px);
+  }
+}
+@media (max-width: 767px) {
+  section.your-privilege {
+    padding: 60px 20px;
+  }
+  section.your-privilege .your-privilege-container .your-privilege-content .content h3 {
+    font-size: 28px;
+    line-height: 1.3;
+  }
+  section.your-privilege .your-privilege-container .your-privilege-content .content p {
+    font-size: 16px;
+    line-height: 1.6;
+    letter-spacing: 0.01em;
+  }
+  section.your-privilege .your-privilege-container .your-privilege-content .services {
+    margin-top: 32px;
+    row-gap: 32px;
+  }
+  section.your-privilege .your-privilege-container .your-privilege-content .services .service {
+    width: 100%;
+  }
+  section.your-privilege .your-privilege-container .your-privilege-content .services .service h6 {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 1.3;
+    letter-spacing: 0.01em;
+    margin-top: 20px;
+  }
+  section.your-privilege .your-privilege-container .your-privilege-content .services .service p {
+    font-size: 16px;
+    line-height: 1.6;
+    letter-spacing: 0.01em;
+  }
+  section.building-dream .building-dream-container .building-dream-content svg.right {
+    right: 20px;
+  }
+  section.building-dream .building-dream-container .building-dream-content svg.left {
+    left: 20px;
+  }
+  section.building-dream .building-dream-container .building-dream-content .content {
+    display: flex;
+    flex-direction: column;
+  }
+  section.building-dream .building-dream-container .building-dream-content .content img {
+    width: 100%;
+  }
+  section.building-dream .building-dream-container .building-dream-content .content .text {
+    width: 100%;
+    padding: 20px;
+  }
+  section.building-dream .building-dream-container .building-dream-content .content .text p {
+    margin: 0;
+  }
+  section.building-dream .building-dream-container .building-dream-content .slick-dots {
+    margin-top: 20px;
+  }
+  section.life-at-bitexco-section .life-in-bitexco .container {
+    max-width: 1240px;
+    margin: auto;
+    padding: 0;
+  }
+  section.life-at-bitexco-section .life-in-bitexco .container .lib-button {
+    margin-top: 25px;
+    text-align: center;
+  }
+  section.life-at-bitexco-section .life-in-bitexco .container .lib-button button {
+    text-transform: uppercase;
+  }
+  section.life-at-bitexco-section .life-in-bitexco .container .slick-dots {
+    margin-top: 24px;
+    display: flex;
+    padding: 0;
+    justify-content: center;
+    -moz-column-gap: 8px;
+         column-gap: 8px;
+    margin-bottom: 0;
+  }
+  section.life-at-bitexco-section .life-in-bitexco .container .slick-dots li {
+    width: 10px;
+    height: 10px;
+    background-color: #D1D5DB;
+    border-radius: 50%;
+  }
+  section.life-at-bitexco-section .life-in-bitexco .container .slick-dots li.slick-active {
+    background-color: #DAA622;
+  }
+  section.life-at-bitexco-section .life-in-bitexco .container .slick-dots li:hover {
+    cursor: pointer;
+  }
+  section.life-at-bitexco-section .life-in-bitexco .container .slick-dots li button {
+    display: none;
+  }
+  section.life-at-bitexco-section .life-in-bitexco .container svg {
+    top: 100px;
+  }
+  section.life-at-bitexco-section .life-in-bitexco .container svg:hover {
+    cursor: pointer;
+  }
+  section.life-at-bitexco-section .life-in-bitexco .container svg.right {
+    right: -36px;
+    z-index: 1;
+  }
+  section.life-at-bitexco-section .life-in-bitexco .container svg.left {
+    left: -36px;
+    z-index: 1;
+  }
+  section.life-at-bitexco-section .life-in-bitexco .container .life-in-bitexco-content {
+    margin-top: 62px;
+  }
+  section.life-at-bitexco-section .life-in-bitexco .container .life-in-bitexco-content .content-item {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  section.life-at-bitexco-section .life-in-bitexco .container .life-in-bitexco-content .content-item h6 {
+    font-family: "Manrope";
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 1.3;
+    letter-spacing: 0.01em;
+    color: #141518;
+    margin-top: 12px;
+  }
+  section.life-at-bitexco-section .life-in-bitexco .container .life-in-bitexco-content .content-item p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+    letter-spacing: 0.01em;
+    color: #434449;
+  }
 }/*# sourceMappingURL=index.css.map */
