@@ -5973,4 +5973,158 @@ section.slogan .quote .quote-content .quote-navigation .quote-nav-img[data-numbe
   .danh-sach-tuyen-dung .main .gui-ho-so .row .col-right {
     padding: 0;
   }
+}
+
+.sitemap-banner .terms-header .terms-header-top {
+  text-align: center;
+}
+.sitemap-banner .terms-header .terms-header-top h3 {
+  justify-content: center;
+}
+.sitemap-banner .terms-header .terms-header-top p {
+  max-width: 559px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 0.01em;
+  color: #FFFFFF;
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
+}
+
+section.site-map-content-section {
+  padding: 60px 100px;
+  background-color: #ffffff;
+}
+section.site-map-content-section .site-map-container {
+  max-width: 1240px;
+  margin: auto;
+}
+section.site-map-content-section .site-map-container .tab {
+  border-bottom: 1px solid #D1D5DB;
+  padding-bottom: 24px;
+  padding-top: 24px;
+}
+section.site-map-content-section .site-map-container .tab .tab-title {
+  display: flex;
+  align-items: center;
+}
+section.site-map-content-section .site-map-container .tab .tab-title h2 {
+  margin: 0;
+  margin-left: 10px;
+}
+section.site-map-content-section .site-map-container .tab .tab-title h2 a {
+  font-family: "Manrope";
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 1.3;
+  color: #141518;
+  display: block;
+  text-decoration: underline;
+}
+section.site-map-content-section .site-map-container .tab .flexed-tab {
+  margin-top: 20px;
+  display: flex;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  row-gap: 32px;
+  padding-left: 32px;
+  flex-wrap: wrap;
+}
+section.site-map-content-section .site-map-container .tab .flexed-tab div {
+  min-width: 272.5px;
+}
+section.site-map-content-section .site-map-container .tab .flexed-tab div h3 a {
+  font-family: "Public Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 140%;
+  letter-spacing: 0.04em;
+  color: #141518;
+  display: block;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+section.site-map-content-section .site-map-container .tab .flexed-tab div ul {
+  padding-left: 8px;
+  margin-top: 12px;
+}
+section.site-map-content-section .site-map-container .tab .flexed-tab div ul li + li {
+  margin-top: 8px;
+}
+section.site-map-content-section .site-map-container .tab .flexed-tab div ul li a {
+  font-family: "Public Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 160%;
+  letter-spacing: 0.01em;
+  color: #141518;
+  text-decoration: underline;
+  display: block;
+  text-transform: capitalize;
+}
+section.site-map-content-section .site-map-container .tab.hide .tab-title {
+  display: flex;
+  align-items: center;
+}
+section.site-map-content-section .site-map-container .tab.hide .tab-title svg {
+  transform: rotate(180deg);
+}
+section.site-map-content-section .site-map-container .tab.hide .flexed-tab {
+  display: none;
+}
+section.site-map-content-section .site-map-container .contact-tab .tab-title,
+section.site-map-content-section .site-map-container .electricity-business-tab .tab-title,
+section.site-map-content-section .site-map-container .service-tab .tab-title {
+  align-items: center;
+}
+section.site-map-content-section .site-map-container .contact-tab .tab-title svg,
+section.site-map-content-section .site-map-container .electricity-business-tab .tab-title svg,
+section.site-map-content-section .site-map-container .service-tab .tab-title svg {
+  visibility: hidden;
+}
+
+@media (max-width: 1200px) {
+  section.site-map-content-section .site-map-container .tab .flexed-tab {
+    padding-left: 30px;
+  }
+  section.site-map-content-section .site-map-container .tab .flexed-tab div {
+    min-width: 195.75px;
+  }
+}
+@media (max-width: 1024px) {
+  section.site-map-content-section {
+    padding: 48px;
+  }
+  section.site-map-content-section .site-map-container .tab .flexed-tab {
+    padding-left: 30px;
+  }
+  section.site-map-content-section .site-map-container .tab .flexed-tab div {
+    min-width: 195.75px;
+  }
+}
+@media (max-width: 767px) {
+  .sitemap-banner {
+    background-position: center center;
+  }
+  .sitemap-banner .terms-header .terms-header-top {
+    text-align: center;
+  }
+  .sitemap-banner .terms-header .terms-header-top h3 {
+    justify-content: center;
+  }
+  .sitemap-banner .terms-header .terms-header-top p {
+    display: none;
+  }
+  section.site-map-content-section {
+    padding: 40px 20px;
+  }
+  section.site-map-content-section .site-map-container .tab .flexed-tab {
+    flex-direction: column;
+    row-gap: 30px;
+  }
+  section.site-map-content-section .site-map-container .tab .flexed-tab div {
+    min-width: 195.75px;
+  }
 }/*# sourceMappingURL=index.css.map */
