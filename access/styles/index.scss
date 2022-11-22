@@ -840,6 +840,36 @@ label.required {
     }
 }
 
+.hover-zoom a {
+
+    overflow: hidden;
+    background-size: 100% 100% !important;
+    background-position: center;
+    transition: background-size 0.8s ease-in;
+}
+
+.hover-zoom a:hover {
+
+    position: relative;
+    background-size: 140% 140% !important;
+    transition: background-size 0.8s ease-in;
+
+    &::before {
+        content: '';
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(to right, rgba(43, 38, 22, 0), rgba(37, 19, 2, 0.582));
+        position: absolute;
+        z-index: 1;
+        transition: background-image 0.8s ease-in;
+    }
+
+    .text {
+        z-index: 9;
+    }
+}
+
+
 
 @import './scss/bando';
 @import './scss/chitietbando2';
@@ -862,5 +892,7 @@ label.required {
 @import './scss/_xacnhanquenmatkhau';
 @import './scss/tru-so';
 @import './scss/lien-he';
+@import './scss/danh-sach-tuyen-dung';
+@import './scss/ket-qua-moi-thau';
 @import './scss/tuyendung';
 @import './scss/danh-sach-tuyen-dung';

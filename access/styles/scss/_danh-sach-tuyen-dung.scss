@@ -123,6 +123,8 @@
 
         .gui-ho-so {
             .col-left {
+                padding: 0;
+
                 .content {
                     padding-top: 80px;
                     max-width: 555px;
@@ -141,6 +143,10 @@
                 }
             }
 
+            .col-right {
+                padding: 0;
+            }
+
             @media(max-width:767px) {
                 .row {
                     flex-direction: column;
@@ -152,9 +158,7 @@
                         }
                     }
 
-                    .col-right {
-                        padding: 0;
-                    }
+
                 }
 
             }
