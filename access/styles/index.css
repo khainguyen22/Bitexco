@@ -5475,19 +5475,19 @@ section.related-news .article-container .related-news-content .related-item .ite
 .tuyen-dung .building-dream .building-dream-container .building-dream-content .slick-dots li button {
   display: none;
 }
-.tuyen-dung .life-at-bitexco- .life-in-bitexco .container {
+.tuyen-dung .life-at-bitexco-section .life-in-bitexco .container {
   max-width: 1240px;
   margin: auto;
   padding: 0;
 }
-.tuyen-dung .life-at-bitexco- .life-in-bitexco .container .lib-button {
+.tuyen-dung .life-at-bitexco-section .life-in-bitexco .container .lib-button {
   margin-top: 25px;
   text-align: center;
 }
-.tuyen-dung .life-at-bitexco- .life-in-bitexco .container .lib-button button {
+.tuyen-dung .life-at-bitexco-section .life-in-bitexco .container .lib-button button {
   text-transform: uppercase;
 }
-.tuyen-dung .life-at-bitexco- .life-in-bitexco .container .slick-dots {
+.tuyen-dung .life-at-bitexco-section .life-in-bitexco .container .slick-dots {
   margin-top: 24px;
   display: flex;
   padding: 0;
@@ -5496,44 +5496,43 @@ section.related-news .article-container .related-news-content .related-item .ite
        column-gap: 8px;
   margin-bottom: 0;
 }
-.tuyen-dung .life-at-bitexco- .life-in-bitexco .container .slick-dots li {
+.tuyen-dung .life-at-bitexco-section .life-in-bitexco .container .slick-dots li {
   width: 10px;
   height: 10px;
   background-color: #D1D5DB;
   border-radius: 50%;
 }
-.tuyen-dung .life-at-bitexco- .life-in-bitexco .container .slick-dots li.slick-active {
+.tuyen-dung .life-at-bitexco-section .life-in-bitexco .container .slick-dots li.slick-active {
   background-color: #DAA622;
 }
-.tuyen-dung .life-at-bitexco- .life-in-bitexco .container .slick-dots li:hover {
+.tuyen-dung .life-at-bitexco-section .life-in-bitexco .container .slick-dots li:hover {
   cursor: pointer;
 }
-.tuyen-dung .life-at-bitexco- .life-in-bitexco .container .slick-dots li button {
+.tuyen-dung .life-at-bitexco-section .life-in-bitexco .container .slick-dots li button {
   display: none;
 }
-.tuyen-dung .life-at-bitexco- .life-in-bitexco .container svg {
+.tuyen-dung .life-at-bitexco-section .life-in-bitexco .container svg {
   top: 100px;
 }
-.tuyen-dung .life-at-bitexco- .life-in-bitexco .container svg:hover {
+.tuyen-dung .life-at-bitexco-section .life-in-bitexco .container svg:hover {
   cursor: pointer;
 }
-.tuyen-dung .life-at-bitexco- .life-in-bitexco .container svg.right {
+.tuyen-dung .life-at-bitexco-section .life-in-bitexco .container svg.right {
   right: -36px;
   z-index: 1;
 }
-.tuyen-dung .life-at-bitexco- .life-in-bitexco .container svg.left {
+.tuyen-dung .life-at-bitexco-section .life-in-bitexco .container svg.left {
   left: -36px;
   z-index: 1;
 }
-.tuyen-dung .life-at-bitexco- .life-in-bitexco .container .life-in-bitexco-content {
+.tuyen-dung .life-at-bitexco-section .life-in-bitexco .container .life-in-bitexco-content {
   margin-top: 62px;
 }
-.tuyen-dung .life-at-bitexco- .life-in-bitexco .container .life-in-bitexco-content .content-item {
+.tuyen-dung .life-at-bitexco-section .life-in-bitexco .container .life-in-bitexco-content .content-item {
   padding-left: 15px;
   padding-right: 15px;
 }
-.tuyen-dung .life-at-bitexco- .life-in-bitexco .container .life-in-bitexco-content .content-item h6 {
-  font-family: "Manrope";
+.tuyen-dung .life-at-bitexco-section .life-in-bitexco .container .life-in-bitexco-content .content-item h6 {
   font-weight: 600;
   font-size: 22px;
   line-height: 1.3;
@@ -5541,7 +5540,7 @@ section.related-news .article-container .related-news-content .related-item .ite
   color: #141518;
   margin-top: 12px;
 }
-.tuyen-dung .life-at-bitexco- .life-in-bitexco .container .life-in-bitexco-content .content-item p {
+.tuyen-dung .life-at-bitexco-section .life-in-bitexco .container .life-in-bitexco-content .content-item p {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.6;
@@ -5560,9 +5559,11 @@ section.related-news .article-container .related-news-content .related-item .ite
 }
 .tuyen-dung .slogan .quote .quote-agency .quote-agency-img {
   display: none;
-  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  width: 605px;
+  height: 450px;
+  object-fit: cover;
 }
 .tuyen-dung .slogan .quote .quote-agency .quote-agency-img.active {
   display: block;
@@ -5804,9 +5805,6 @@ section.related-news .article-container .related-news-content .related-item .ite
 @media (max-width: 1024px) {
   .tuyen-dung .your-privilege {
     padding: 64px;
-  }
-  .tuyen-dung .your-privilege .your-privilege-container .your-privilege-content .services {
-    row-gap: 31px;
   }
   .tuyen-dung .building-dream .building-dream-container .building-dream-content svg.right {
     right: 20px;
