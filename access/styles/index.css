@@ -5292,4 +5292,1016 @@ section.related-news .article-container .related-news-content .related-item .ite
   .ket-qua-moi-thau .main .container {
     padding: 0 20px;
   }
+}
+
+section.recruit {
+  background: url(../../access/images/tuyendungbanner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 3;
+  min-height: 640px;
+  background-position: center center;
+}
+section.recruit::after {
+  background: rgba(0, 0, 0, 0.4);
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+section.recruit .container .content {
+  z-index: 2;
+}
+section.recruit .container .content p {
+  margin-top: 16px;
+  margin-bottom: 40px;
+}
+section.recruit .container .content button.position {
+  text-transform: uppercase;
+}
+
+section.opportunity {
+  background: url(../../access/images/opportunity.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 3;
+  min-height: 400px;
+  background-position: center center;
+}
+section.opportunity::after {
+  background: linear-gradient(84.51deg, rgba(0, 0, 0, 0.4) 7.63%, rgba(0, 0, 0, 0.252) 88.94%), url(image.png);
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+section.opportunity .container .content {
+  z-index: 2;
+}
+section.opportunity .container .content p {
+  margin-top: 16px;
+  margin-bottom: 40px;
+}
+section.opportunity .container .content button.position {
+  text-transform: uppercase;
+}
+
+section.your-privilege {
+  padding: 100px 0;
+}
+section.your-privilege .your-privilege-container {
+  max-width: 1240px;
+  margin: auto;
+}
+section.your-privilege .your-privilege-container .your-privilege-content .content {
+  max-width: 683px;
+  margin: auto;
+  text-align: center;
+}
+section.your-privilege .your-privilege-container .your-privilege-content .content .divider {
+  width: 32px;
+  margin: auto;
+  display: block;
+  border-top: 2px solid #daa622;
+  margin-bottom: 6px;
+}
+section.your-privilege .your-privilege-container .your-privilege-content .content h3 {
+  font-family: "Manrope";
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.2;
+  margin-bottom: 12px;
+}
+section.your-privilege .your-privilege-container .your-privilege-content .content p {
+  max-width: 499px;
+  margin: auto;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.6;
+  letter-spacing: 0.01em;
+}
+section.your-privilege .your-privilege-container .your-privilege-content .services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  row-gap: 60px;
+  margin-top: 60px;
+}
+section.your-privilege .your-privilege-container .your-privilege-content .services .service {
+  width: calc(33.3333333333% - 16px);
+  text-align: center;
+}
+section.your-privilege .your-privilege-container .your-privilege-content .services .service h6 {
+  font-family: "Manrope";
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 1.3;
+  letter-spacing: 0.01em;
+  color: #141518;
+  margin-bottom: 8px;
+  margin-top: 32px;
+}
+section.your-privilege .your-privilege-container .your-privilege-content .services .service p {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.6;
+  letter-spacing: 0.01em;
+  margin: 0;
+}
+
+section.building-dream .building-dream-container .building-dream-content svg:hover {
+  cursor: pointer;
+}
+section.building-dream .building-dream-container .building-dream-content svg.right {
+  right: 36px;
+  z-index: 1;
+}
+section.building-dream .building-dream-container .building-dream-content svg.left {
+  left: 36px;
+  z-index: 1;
+}
+section.building-dream .building-dream-container .building-dream-content .content {
+  display: flex;
+}
+section.building-dream .building-dream-container .building-dream-content .content img {
+  width: 50%;
+}
+section.building-dream .building-dream-container .building-dream-content .content .text {
+  width: 50%;
+  padding: 80px;
+}
+section.building-dream .building-dream-container .building-dream-content .content .text h4 {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 1.3;
+  font-family: "Manrope";
+  margin-bottom: 16px;
+}
+section.building-dream .building-dream-container .building-dream-content .content .text p {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 0.01em;
+  color: #434449;
+}
+section.building-dream .building-dream-container .building-dream-content .slick-dots {
+  margin-top: 24px;
+  display: flex;
+  padding: 0;
+  justify-content: center;
+  -moz-column-gap: 8px;
+       column-gap: 8px;
+  margin-bottom: 0;
+}
+section.building-dream .building-dream-container .building-dream-content .slick-dots li {
+  width: 10px;
+  height: 10px;
+  background-color: #D1D5DB;
+  border-radius: 50%;
+}
+section.building-dream .building-dream-container .building-dream-content .slick-dots li.slick-active {
+  background-color: #DAA622;
+}
+section.building-dream .building-dream-container .building-dream-content .slick-dots li:hover {
+  cursor: pointer;
+}
+section.building-dream .building-dream-container .building-dream-content .slick-dots li button {
+  display: none;
+}
+
+section.life-at-bitexco-section .life-in-bitexco .container {
+  max-width: 1240px;
+  margin: auto;
+  padding: 0;
+}
+section.life-at-bitexco-section .life-in-bitexco .container .lib-button {
+  margin-top: 25px;
+  text-align: center;
+}
+section.life-at-bitexco-section .life-in-bitexco .container .lib-button button {
+  text-transform: uppercase;
+}
+section.life-at-bitexco-section .life-in-bitexco .container .slick-dots {
+  margin-top: 24px;
+  display: flex;
+  padding: 0;
+  justify-content: center;
+  -moz-column-gap: 8px;
+       column-gap: 8px;
+  margin-bottom: 0;
+}
+section.life-at-bitexco-section .life-in-bitexco .container .slick-dots li {
+  width: 10px;
+  height: 10px;
+  background-color: #D1D5DB;
+  border-radius: 50%;
+}
+section.life-at-bitexco-section .life-in-bitexco .container .slick-dots li.slick-active {
+  background-color: #DAA622;
+}
+section.life-at-bitexco-section .life-in-bitexco .container .slick-dots li:hover {
+  cursor: pointer;
+}
+section.life-at-bitexco-section .life-in-bitexco .container .slick-dots li button {
+  display: none;
+}
+section.life-at-bitexco-section .life-in-bitexco .container svg {
+  top: 100px;
+}
+section.life-at-bitexco-section .life-in-bitexco .container svg:hover {
+  cursor: pointer;
+}
+section.life-at-bitexco-section .life-in-bitexco .container svg.right {
+  right: -36px;
+  z-index: 1;
+}
+section.life-at-bitexco-section .life-in-bitexco .container svg.left {
+  left: -36px;
+  z-index: 1;
+}
+section.life-at-bitexco-section .life-in-bitexco .container .life-in-bitexco-content {
+  margin-top: 62px;
+}
+section.life-at-bitexco-section .life-in-bitexco .container .life-in-bitexco-content .content-item {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+section.life-at-bitexco-section .life-in-bitexco .container .life-in-bitexco-content .content-item h6 {
+  font-family: "Manrope";
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 1.3;
+  letter-spacing: 0.01em;
+  color: #141518;
+  margin-top: 12px;
+}
+section.life-at-bitexco-section .life-in-bitexco .container .life-in-bitexco-content .content-item p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 0.01em;
+  color: #434449;
+}
+
+section.slogan {
+  background: #F6F8FC;
+}
+section.slogan .quote {
+  display: flex;
+  margin-top: 62px;
+}
+section.slogan .quote .quote-agency {
+  width: 50%;
+}
+section.slogan .quote .quote-agency .quote-agency-img {
+  display: none;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+section.slogan .quote .quote-agency .quote-agency-img.active {
+  display: block;
+}
+section.slogan .quote .quote-content {
+  padding-left: 80px;
+  width: 50%;
+}
+section.slogan .quote .quote-content .quote-navigation {
+  display: flex;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+section.slogan .quote .quote-content .quote-navigation .quote-nav-img:hover {
+  border: 4px solid #DAA622;
+  border-radius: 50%;
+  cursor: pointer;
+}
+section.slogan .quote .quote-content .quote-navigation .quote-nav-img:hover img {
+  width: 60px;
+  height: 60px;
+}
+section.slogan .quote .quote-content .quote-navigation .quote-nav-img.active {
+  border: 4px solid #DAA622;
+  border-radius: 50%;
+}
+section.slogan .quote .quote-content .quote-navigation .quote-nav-img.active:hover {
+  cursor: pointer;
+}
+section.slogan .quote .quote-content .quote-navigation .quote-nav-img.active:hover img {
+  width: 60px;
+  height: 60px;
+}
+section.slogan .quote .quote-content .quote-navigation .quote-nav-img.active img {
+  width: 60px;
+  height: 60px;
+}
+section.slogan .quote .quote-content .quote-text .quote-text-inner {
+  display: none;
+}
+section.slogan .quote .quote-content .quote-text .quote-text-inner svg {
+  margin-top: 40px;
+  margin-bottom: 24px;
+}
+section.slogan .quote .quote-content .quote-text .quote-text-inner .quote-divider {
+  border: 1px solid #DAA622;
+  margin: 24px 0;
+}
+section.slogan .quote .quote-content .quote-text .quote-text-inner h2 {
+  font-family: "Manrope";
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1.3;
+  color: #141518;
+}
+section.slogan .quote .quote-content .quote-text .quote-text-inner p.company-role {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1.4;
+  letter-spacing: 0.04em;
+  color: #434449;
+  margin-bottom: 4px;
+  text-transform: uppercase;
+}
+section.slogan .quote .quote-content .quote-text .quote-text-inner h3.author {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.6;
+  letter-spacing: 0.01em;
+  color: #141518;
+}
+section.slogan .quote .quote-content .quote-text .quote-text-inner.active {
+  display: block;
+}
+
+section.power-enviroment .values {
+  display: flex;
+  margin-top: 61px;
+}
+section.power-enviroment .values .the-values {
+  width: 50%;
+  padding-right: 80px;
+}
+section.power-enviroment .values .the-values .drop-down.active {
+  border-bottom: 1px solid #DAA622;
+}
+section.power-enviroment .values .the-values .drop-down.active h5 {
+  color: #DAA622;
+  position: relative;
+}
+section.power-enviroment .values .the-values .drop-down.active h5::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-right: 1.5px solid #DAA622;
+  border-bottom: 1.5px solid #DAA622;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: matrix(-1, 0, 0, 1, 0, 0) rotate(225deg);
+}
+section.power-enviroment .values .the-values .drop-down.active p {
+  display: block;
+}
+section.power-enviroment .values .the-values .drop-down + .drop-down {
+  padding-top: 20px;
+}
+section.power-enviroment .values .the-values .drop-down {
+  border-bottom: 1px solid #D1D5DB;
+  padding-bottom: 20px;
+}
+section.power-enviroment .values .the-values .drop-down:hover {
+  cursor: pointer;
+}
+section.power-enviroment .values .the-values .drop-down h5 {
+  font-family: "Manrope";
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 1.3;
+  margin-bottom: 8px;
+}
+section.power-enviroment .values .the-values .drop-down p {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 0.01em;
+  color: #0d0d0e;
+  display: none;
+}
+section.power-enviroment .values .the-values-image {
+  width: 50%;
+}
+section.power-enviroment .values .the-values-image img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media (max-width: 1366px) {
+  section.your-privilege {
+    padding: 100px 64px;
+  }
+}
+@media (max-width: 1200px) {
+  section.your-privilege {
+    padding: 100px 100px;
+  }
+  section.slogan .quote {
+    display: flex;
+    margin-top: 62px;
+  }
+  section.slogan .quote .quote-agency {
+    width: 50%;
+  }
+  section.slogan .quote .quote-agency .quote-agency-img {
+    display: none;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  section.slogan .quote .quote-agency .quote-agency-img.active {
+    display: block;
+  }
+  section.slogan .quote .quote-content {
+    padding-left: 80px;
+    width: 50%;
+  }
+  section.slogan .quote .quote-content .quote-navigation {
+    display: flex;
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+  }
+  section.slogan .quote .quote-content .quote-navigation .quote-nav-img:hover {
+    border: 4px solid #DAA622;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  section.slogan .quote .quote-content .quote-navigation .quote-nav-img:hover img {
+    width: 60px;
+    height: 60px;
+  }
+  section.slogan .quote .quote-content .quote-navigation .quote-nav-img.active {
+    border: 4px solid #DAA622;
+    border-radius: 50%;
+  }
+  section.slogan .quote .quote-content .quote-navigation .quote-nav-img.active:hover {
+    cursor: pointer;
+  }
+  section.slogan .quote .quote-content .quote-navigation .quote-nav-img.active:hover img {
+    width: 60px;
+    height: 60px;
+  }
+  section.slogan .quote .quote-content .quote-navigation .quote-nav-img.active img {
+    width: 60px;
+    height: 60px;
+  }
+  section.slogan .quote .quote-content .quote-navigation .quote-nav-img[data-number="6"],
+section.slogan .quote .quote-content .quote-navigation .quote-nav-img[data-number="7"],
+section.slogan .quote .quote-content .quote-navigation .quote-nav-img[data-number="8"] {
+    display: none;
+  }
+  section.slogan .quote .quote-content .quote-text .quote-text-inner {
+    display: none;
+  }
+  section.slogan .quote .quote-content .quote-text .quote-text-inner svg {
+    margin-top: 40px;
+    margin-bottom: 24px;
+  }
+  section.slogan .quote .quote-content .quote-text .quote-text-inner .quote-divider {
+    border: 1px solid #DAA622;
+    margin: 24px 0;
+  }
+  section.slogan .quote .quote-content .quote-text .quote-text-inner h2 {
+    font-family: "Manrope";
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 1.3;
+    color: #141518;
+  }
+  section.slogan .quote .quote-content .quote-text .quote-text-inner p.company-role {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1.4;
+    letter-spacing: 0.04em;
+    color: #434449;
+    margin-bottom: 4px;
+    text-transform: uppercase;
+  }
+  section.slogan .quote .quote-content .quote-text .quote-text-inner h3.author {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.6;
+    letter-spacing: 0.01em;
+    color: #141518;
+  }
+  section.slogan .quote .quote-content .quote-text .quote-text-inner.active {
+    display: block;
+  }
+}
+@media (max-width: 1024px) {
+  section.your-privilege {
+    padding: 64px;
+  }
+  section.your-privilege .your-privilege-container .your-privilege-content .services {
+    row-gap: 31px;
+  }
+  section.building-dream .building-dream-container .building-dream-content svg.right {
+    right: 20px;
+  }
+  section.building-dream .building-dream-container .building-dream-content svg.left {
+    left: 20px;
+  }
+  section.building-dream .building-dream-container .building-dream-content .content {
+    display: flex;
+  }
+  section.building-dream .building-dream-container .building-dream-content .content img {
+    width: 50%;
+  }
+  section.building-dream .building-dream-container .building-dream-content .content .text {
+    padding: 40px;
+  }
+  section.slogan .quote {
+    display: flex;
+    margin-top: 62px;
+  }
+  section.slogan .quote .quote-agency {
+    width: 50%;
+  }
+  section.slogan .quote .quote-agency .quote-agency-img {
+    display: none;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  section.slogan .quote .quote-agency .quote-agency-img.active {
+    display: block;
+  }
+  section.slogan .quote .quote-content {
+    padding-left: 40px;
+    width: 50%;
+  }
+  section.slogan .quote .quote-content .quote-navigation {
+    display: flex;
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+  }
+  section.slogan .quote .quote-content .quote-navigation .quote-nav-img:hover {
+    border: 4px solid #DAA622;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  section.slogan .quote .quote-content .quote-navigation .quote-nav-img:hover img {
+    width: 60px;
+    height: 60px;
+  }
+  section.slogan .quote .quote-content .quote-navigation .quote-nav-img.active {
+    border: 4px solid #DAA622;
+    border-radius: 50%;
+  }
+  section.slogan .quote .quote-content .quote-navigation .quote-nav-img.active:hover {
+    cursor: pointer;
+  }
+  section.slogan .quote .quote-content .quote-navigation .quote-nav-img.active:hover img {
+    width: 60px;
+    height: 60px;
+  }
+  section.slogan .quote .quote-content .quote-navigation .quote-nav-img.active img {
+    width: 60px;
+    height: 60px;
+  }
+  section.slogan .quote .quote-content .quote-navigation .quote-nav-img[data-number="6"],
+section.slogan .quote .quote-content .quote-navigation .quote-nav-img[data-number="7"],
+section.slogan .quote .quote-content .quote-navigation .quote-nav-img[data-number="8"] {
+    display: none;
+  }
+  section.slogan .quote .quote-content .quote-text .quote-text-inner {
+    display: none;
+  }
+  section.slogan .quote .quote-content .quote-text .quote-text-inner svg {
+    margin-top: 40px;
+    margin-bottom: 24px;
+  }
+  section.slogan .quote .quote-content .quote-text .quote-text-inner .quote-divider {
+    border: 1px solid #DAA622;
+    margin: 24px 0;
+  }
+  section.slogan .quote .quote-content .quote-text .quote-text-inner h2 {
+    font-family: "Manrope";
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 1.3;
+    color: #141518;
+  }
+  section.slogan .quote .quote-content .quote-text .quote-text-inner p.company-role {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1.4;
+    letter-spacing: 0.04em;
+    color: #434449;
+    margin-bottom: 4px;
+    text-transform: uppercase;
+  }
+  section.slogan .quote .quote-content .quote-text .quote-text-inner h3.author {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.6;
+    letter-spacing: 0.01em;
+    color: #141518;
+  }
+  section.slogan .quote .quote-content .quote-text .quote-text-inner.active {
+    display: block;
+  }
+}
+@media (max-width: 880px) {
+  section.your-privilege {
+    padding: 48px 48px;
+  }
+  section.your-privilege .your-privilege-container .your-privilege-content .services .service {
+    width: calc(50% - 16px);
+  }
+  section.power-enviroment .values {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  section.power-enviroment .values .the-values {
+    margin-top: 20px;
+    width: 100%;
+    padding-right: 0;
+  }
+  section.power-enviroment .values .the-values .drop-down.active {
+    border-bottom: 1px solid #DAA622;
+  }
+  section.power-enviroment .values .the-values .drop-down.active h5 {
+    color: #DAA622;
+    position: relative;
+  }
+  section.power-enviroment .values .the-values .drop-down.active h5::after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-right: 1.5px solid #DAA622;
+    border-bottom: 1.5px solid #DAA622;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: matrix(-1, 0, 0, 1, 0, 0) rotate(225deg);
+  }
+  section.power-enviroment .values .the-values .drop-down.active p {
+    display: block;
+  }
+  section.power-enviroment .values .the-values .drop-down + .drop-down {
+    padding-top: 20px;
+  }
+  section.power-enviroment .values .the-values .drop-down {
+    border-bottom: 1px solid #D1D5DB;
+    padding-bottom: 20px;
+  }
+  section.power-enviroment .values .the-values .drop-down:hover {
+    cursor: pointer;
+  }
+  section.power-enviroment .values .the-values .drop-down h5 {
+    font-family: "Manrope";
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 1.3;
+    margin-bottom: 8px;
+  }
+  section.power-enviroment .values .the-values .drop-down p {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.6;
+    letter-spacing: 0.01em;
+    color: #0d0d0e;
+    display: none;
+  }
+  section.power-enviroment .values .the-values-image {
+    width: 100%;
+  }
+  section.power-enviroment .values .the-values-image img {
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+@media (max-width: 767px) {
+  section.your-privilege {
+    padding: 60px 20px;
+  }
+  section.your-privilege .your-privilege-container .your-privilege-content .content h3 {
+    font-size: 28px;
+    line-height: 1.3;
+  }
+  section.your-privilege .your-privilege-container .your-privilege-content .content p {
+    font-size: 16px;
+    line-height: 1.6;
+    letter-spacing: 0.01em;
+  }
+  section.your-privilege .your-privilege-container .your-privilege-content .services {
+    margin-top: 32px;
+    row-gap: 32px;
+  }
+  section.your-privilege .your-privilege-container .your-privilege-content .services .service {
+    width: 100%;
+  }
+  section.your-privilege .your-privilege-container .your-privilege-content .services .service h6 {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 1.3;
+    letter-spacing: 0.01em;
+    margin-top: 20px;
+  }
+  section.your-privilege .your-privilege-container .your-privilege-content .services .service p {
+    font-size: 16px;
+    line-height: 1.6;
+    letter-spacing: 0.01em;
+  }
+  section.building-dream .building-dream-container .building-dream-content svg.right {
+    right: 20px;
+  }
+  section.building-dream .building-dream-container .building-dream-content svg.left {
+    left: 20px;
+  }
+  section.building-dream .building-dream-container .building-dream-content .content {
+    display: flex;
+    flex-direction: column;
+  }
+  section.building-dream .building-dream-container .building-dream-content .content img {
+    width: 100%;
+  }
+  section.building-dream .building-dream-container .building-dream-content .content .text {
+    width: 100%;
+    padding: 20px;
+  }
+  section.building-dream .building-dream-container .building-dream-content .content .text p {
+    margin: 0;
+  }
+  section.building-dream .building-dream-container .building-dream-content .slick-dots {
+    margin-top: 20px;
+  }
+  section.life-at-bitexco-section .life-in-bitexco .container {
+    max-width: 1240px;
+    margin: auto;
+    padding: 0;
+  }
+  section.life-at-bitexco-section .life-in-bitexco .container .lib-button {
+    margin-top: 25px;
+    text-align: center;
+  }
+  section.life-at-bitexco-section .life-in-bitexco .container .lib-button button {
+    text-transform: uppercase;
+  }
+  section.life-at-bitexco-section .life-in-bitexco .container .slick-dots {
+    margin-top: 24px;
+    display: flex;
+    padding: 0;
+    justify-content: center;
+    -moz-column-gap: 8px;
+         column-gap: 8px;
+    margin-bottom: 0;
+  }
+  section.life-at-bitexco-section .life-in-bitexco .container .slick-dots li {
+    width: 10px;
+    height: 10px;
+    background-color: #D1D5DB;
+    border-radius: 50%;
+  }
+  section.life-at-bitexco-section .life-in-bitexco .container .slick-dots li.slick-active {
+    background-color: #DAA622;
+  }
+  section.life-at-bitexco-section .life-in-bitexco .container .slick-dots li:hover {
+    cursor: pointer;
+  }
+  section.life-at-bitexco-section .life-in-bitexco .container .slick-dots li button {
+    display: none;
+  }
+  section.life-at-bitexco-section .life-in-bitexco .container svg {
+    top: 100px;
+  }
+  section.life-at-bitexco-section .life-in-bitexco .container svg:hover {
+    cursor: pointer;
+  }
+  section.life-at-bitexco-section .life-in-bitexco .container svg.right {
+    right: -36px;
+    z-index: 1;
+  }
+  section.life-at-bitexco-section .life-in-bitexco .container svg.left {
+    left: -36px;
+    z-index: 1;
+  }
+  section.life-at-bitexco-section .life-in-bitexco .container .life-in-bitexco-content {
+    margin-top: 62px;
+  }
+  section.life-at-bitexco-section .life-in-bitexco .container .life-in-bitexco-content .content-item {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  section.life-at-bitexco-section .life-in-bitexco .container .life-in-bitexco-content .content-item h6 {
+    font-family: "Manrope";
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 1.3;
+    letter-spacing: 0.01em;
+    color: #141518;
+    margin-top: 12px;
+  }
+  section.life-at-bitexco-section .life-in-bitexco .container .life-in-bitexco-content .content-item p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+    letter-spacing: 0.01em;
+    color: #434449;
+  }
+  section.slogan .quote {
+    margin-top: 62px;
+    padding-top: 80px;
+    flex-direction: column;
+    row-gap: 24px;
+    position: relative;
+  }
+  section.slogan .quote .quote-agency {
+    width: 100%;
+  }
+  section.slogan .quote .quote-content {
+    padding-left: 0;
+    width: 100%;
+  }
+  section.slogan .quote .quote-content .quote-navigation {
+    position: absolute;
+    top: 0;
+  }
+  section.slogan .quote .quote-content .quote-navigation .quote-nav-img img {
+    width: 36px;
+    height: 36px;
+  }
+  section.slogan .quote .quote-content .quote-navigation .quote-nav-img:hover {
+    cursor: pointer;
+  }
+  section.slogan .quote .quote-content .quote-navigation .quote-nav-img:hover img {
+    width: 40px;
+    height: 40px;
+  }
+  section.slogan .quote .quote-content .quote-navigation .quote-nav-img.active:hover {
+    cursor: unset;
+  }
+  section.slogan .quote .quote-content .quote-navigation .quote-nav-img.active:hover img {
+    width: 40px;
+    height: 40px;
+  }
+  section.slogan .quote .quote-content .quote-navigation .quote-nav-img.active img {
+    width: 40px;
+    height: 40px;
+  }
+  section.slogan .quote .quote-content .quote-navigation .quote-nav-img[data-number="6"] {
+    display: block;
+  }
+  section.slogan .quote .quote-content .quote-text .quote-text-inner svg {
+    margin-top: 0;
+  }
+}
+.danh-sach-tuyen-dung .banner {
+  background-image: url("./../../access/images/banner-tru-so.png");
+  min-height: 400px;
+}
+.danh-sach-tuyen-dung .main {
+  background-color: #FFFFFF;
+}
+@media (max-width: 767px) {
+  .danh-sach-tuyen-dung .main .filter-post-section .container {
+    padding: 0 20px;
+  }
+  .danh-sach-tuyen-dung .main .container {
+    padding: 0;
+  }
+}
+.danh-sach-tuyen-dung .main .filter-post-section {
+  padding: 32px 0px 32px 0px;
+  background-color: #F6F8FC;
+}
+.danh-sach-tuyen-dung .main .filter-post-section .filter-post-container {
+  max-width: unset;
+}
+.danh-sach-tuyen-dung .main .filter-post-section .filter-post-container .form-filter .form-filter-field,
+.danh-sach-tuyen-dung .main .filter-post-section .filter-post-container .form-filter .form-filter-field select,
+.danh-sach-tuyen-dung .main .filter-post-section .filter-post-container .form-filter .form-filter-date-start,
+.danh-sach-tuyen-dung .main .filter-post-section .filter-post-container .form-filter .form-filter-date-end {
+  width: 100%;
+  max-width: 310px;
+}
+@media (max-width: 1024px) {
+  .danh-sach-tuyen-dung .main .filter-post-section .filter-post-container .form-filter .form-filter-field,
+.danh-sach-tuyen-dung .main .filter-post-section .filter-post-container .form-filter .form-filter-field select,
+.danh-sach-tuyen-dung .main .filter-post-section .filter-post-container .form-filter .form-filter-date-start,
+.danh-sach-tuyen-dung .main .filter-post-section .filter-post-container .form-filter .form-filter-date-end {
+    width: 100%;
+    max-width: 49%;
+  }
+}
+@media (max-width: 767px) {
+  .danh-sach-tuyen-dung .main .filter-post-section .filter-post-container .form-filter .form-filter-field,
+.danh-sach-tuyen-dung .main .filter-post-section .filter-post-container .form-filter .form-filter-field select,
+.danh-sach-tuyen-dung .main .filter-post-section .filter-post-container .form-filter .form-filter-date-start,
+.danh-sach-tuyen-dung .main .filter-post-section .filter-post-container .form-filter .form-filter-date-end {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+.danh-sach-tuyen-dung .main .filter-post-section .filter-post-container .form-filter .btn-reset {
+  color: #DAA622;
+}
+.danh-sach-tuyen-dung .main .infomation-list {
+  background-color: #FFFFFF;
+  padding-top: 40px;
+}
+.danh-sach-tuyen-dung .main .infomation-list .list .item {
+  border-bottom: 1px solid #D1D5DB;
+  padding: 0 20px;
+}
+.danh-sach-tuyen-dung .main .infomation-list .list .item.disable {
+  background-color: #F6F8FC;
+}
+.danh-sach-tuyen-dung .main .infomation-list .list .item.disable * {
+  color: #7E8189;
+}
+.danh-sach-tuyen-dung .main .infomation-list .list .item .info {
+  max-width: 240px;
+  padding: 30px 0;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 160%;
+  letter-spacing: 0.01em;
+  color: #434449;
+}
+.danh-sach-tuyen-dung .main .infomation-list .list .item .info .label {
+  margin-bottom: 6px;
+}
+.danh-sach-tuyen-dung .main .infomation-list .list .item .info .desc {
+  font-weight: 600;
+  margin-bottom: 0;
+}
+.danh-sach-tuyen-dung .main .infomation-list .list .item .info .btn-detail-icon {
+  transform: translateY(25%);
+}
+@media (max-width: 1366px) {
+  .danh-sach-tuyen-dung .main .infomation-list .list .item .info .btn-detail-icon {
+    transform: translateY(0%);
+  }
+}
+@media (max-width: 767px) {
+  .danh-sach-tuyen-dung .main .infomation-list .list .item .info {
+    padding: 0;
+    max-width: 100%;
+    width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .danh-sach-tuyen-dung .main .infomation-list .list .item {
+    padding: 20px;
+  }
+}
+.danh-sach-tuyen-dung .main .filter-navigation {
+  margin: 30px 0 80px;
+}
+@media (max-width: 767px) {
+  .danh-sach-tuyen-dung .main .filter-navigation {
+    margin: 30px 0 0px;
+  }
+}
+.danh-sach-tuyen-dung .main .gui-ho-so .col-left {
+  padding: 0;
+}
+.danh-sach-tuyen-dung .main .gui-ho-so .col-left .content {
+  padding-top: 80px;
+  max-width: 555px;
+  margin: 0 auto;
+}
+.danh-sach-tuyen-dung .main .gui-ho-so .col-left .content .btn.btn-search {
+  max-width: 144px;
+  min-width: unset;
+  padding: 14px 32px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 140%;
+  letter-spacing: 0.04em;
+  color: #FFFFFF;
+}
+.danh-sach-tuyen-dung .main .gui-ho-so .col-right {
+  padding: 0;
+}
+@media (max-width: 767px) {
+  .danh-sach-tuyen-dung .main .gui-ho-so .row {
+    flex-direction: column;
+  }
+  .danh-sach-tuyen-dung .main .gui-ho-so .row .col-left .content {
+    padding-top: 33px;
+    padding-bottom: 33px;
+  }
 }/*# sourceMappingURL=index.css.map */
