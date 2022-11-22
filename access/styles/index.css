@@ -758,6 +758,31 @@ label.required::after {
   margin-left: 4px;
 }
 
+.hover-zoom a {
+  overflow: hidden;
+  background-size: 100% 100% !important;
+  background-position: center;
+  transition: background-size 0.8s ease-in;
+}
+
+.hover-zoom a:hover {
+  position: relative;
+  background-size: 140% 140% !important;
+  transition: background-size 0.8s ease-in;
+}
+.hover-zoom a:hover::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to right, rgba(43, 38, 22, 0), rgba(37, 19, 2, 0.582));
+  position: absolute;
+  z-index: 1;
+  transition: background-image 0.8s ease-in;
+}
+.hover-zoom a:hover .text {
+  z-index: 9;
+}
+
 .banner {
   background: url("./../../access/images/danhmucduanbanner.png");
   min-height: 640px;
@@ -1690,6 +1715,13 @@ section.other-information .other-container .other-content a {
   background-size: cover;
   padding: 73px;
   text-align: center;
+}
+@media (max-width: 767px) {
+  section.other-information .other-container .other-content a {
+    padding: 20px;
+    font-size: 28px;
+    line-height: 130%;
+  }
 }
 section.other-information .other-container .other-content .hydro-electric-news {
   background-image: url(./../../access/images/hydroelectricnews.png);
@@ -5102,5 +5134,162 @@ section.related-news .article-container .related-news-content .related-item .ite
   .danh-sach-tuyen-dung .main .gui-ho-so .row .col-left .content {
     padding-top: 33px;
     padding-bottom: 33px;
+  }
+}
+
+.ket-qua-moi-thau .banner {
+  min-height: 400px;
+  background-image: url("./../../access/images/banner-thong-tin-moi-thau.png");
+}
+.ket-qua-moi-thau .banner .container .content {
+  top: calc(50% + 48px);
+}
+@media (max-width: 767px) {
+  .ket-qua-moi-thau .banner .container .content {
+    top: 48%;
+    left: 0%;
+    transform: translate(0%, 0%);
+  }
+  .ket-qua-moi-thau .banner .container .content h3 {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 130%;
+  }
+  .ket-qua-moi-thau .banner .container .content p {
+    display: none;
+  }
+}
+.ket-qua-moi-thau .banner .container .navigation {
+  bottom: 6px;
+  left: 100px;
+}
+@media (max-width: 767px) {
+  .ket-qua-moi-thau .banner .container .navigation {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .ket-qua-moi-thau .banner {
+    min-height: 300px;
+  }
+}
+.ket-qua-moi-thau .main .information {
+  padding: 80px 0 70px;
+  background: linear-gradient(284.72deg, rgba(218, 166, 34, 0.22) 17.82%, rgba(218, 166, 34, 0) 88.66%);
+}
+.ket-qua-moi-thau .main .information .container .headding {
+  margin-bottom: 60px;
+}
+.ket-qua-moi-thau .main .information .container .headding h4 {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 130%;
+  color: #141518;
+}
+@media (max-width: 767px) {
+  .ket-qua-moi-thau .main .information .container .headding h4 {
+    font-size: 28px;
+  }
+}
+@media (max-width: 767px) {
+  .ket-qua-moi-thau .main .information .container .headding {
+    margin-bottom: 32px;
+  }
+}
+.ket-qua-moi-thau .main .information .container .list .item .label {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 160%;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  color: #141518;
+  margin-bottom: 8px;
+}
+@media (max-width: 767px) {
+  .ket-qua-moi-thau .main .information .container .list .item .label {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 140%;
+    letter-spacing: 0.04em;
+  }
+}
+.ket-qua-moi-thau .main .information .container .list .item .info {
+  font-weight: 600;
+  font-size: 54px;
+  line-height: 115%;
+  color: #DAA622;
+  margin-bottom: 0px;
+}
+@media (max-width: 767px) {
+  .ket-qua-moi-thau .main .information .container .list .item .info {
+    font-weight: 500;
+    font-size: 48px;
+  }
+}
+.ket-qua-moi-thau .main .information .container .list .item .unit {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 160%;
+  letter-spacing: 0.01em;
+  color: #141518;
+  margin-bottom: 0px;
+}
+@media (max-width: 767px) {
+  .ket-qua-moi-thau .main .information .container .list .item .unit {
+    font-weight: 400;
+    font-size: 14px;
+  }
+}
+@media (max-width: 767px) {
+  .ket-qua-moi-thau .main .information {
+    padding: 40px 0 46px;
+  }
+}
+.ket-qua-moi-thau .main .bieu-do .head {
+  margin-top: 80px;
+  margin-bottom: 48px;
+}
+.ket-qua-moi-thau .main .bieu-do .head .headding {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 130%;
+  color: #141518;
+}
+@media (max-width: 767px) {
+  .ket-qua-moi-thau .main .bieu-do .head .headding {
+    font-size: 27px;
+  }
+}
+.ket-qua-moi-thau .main .bieu-do .head .input-date {
+  max-width: 229px;
+  background: #FFFFFF;
+  border: 1px solid #D1D5DB;
+  border-radius: 2px;
+}
+@media (max-width: 767px) {
+  .ket-qua-moi-thau .main .bieu-do .head .input-date {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .ket-qua-moi-thau .main .bieu-do .head {
+    margin-top: 34px;
+    margin-bottom: 32px;
+  }
+}
+.ket-qua-moi-thau .main .bieu-do .bar-chart {
+  margin-bottom: 149px;
+}
+@media (max-width: 767px) {
+  .ket-qua-moi-thau .main .bieu-do .bar-chart {
+    margin-bottom: 41px;
+  }
+}
+.ket-qua-moi-thau .main .container {
+  padding: 0 100px;
+}
+@media (max-width: 767px) {
+  .ket-qua-moi-thau .main .container {
+    padding: 0 20px;
   }
 }/*# sourceMappingURL=index.css.map */
