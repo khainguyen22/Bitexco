@@ -13,15 +13,15 @@ jQuery(document).ready(function($) {
 		mobileFirst: true,//add this one
 		responsive: [
 			{
-				breakpoint: 767,
+				breakpoint: 768,
 				settings: {
 					slidesToShow: 3,
-					arrows: false,
+					arrows: true,
 					slidesToScroll: 1
 				}
 			},
 			{
-				breakpoint: 320,
+				breakpoint: 321,
 				settings: {
 					slidesToShow: 1,
 					arrows: false,
