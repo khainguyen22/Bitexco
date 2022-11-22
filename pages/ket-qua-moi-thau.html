@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../access/styles/index.css" />
+    <link rel="stylesheet" href="../access/css/bootstrap.css" />
+    <link rel="stylesheet" href="../access/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="../access/css/slick.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="../access/css/lightgallery.css" />
+    <link href="../access/css/lightslider.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@500&family=Public+Sans:wght@300;400;600;700;900&family=Roboto&display=swap"
+        rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0.5/dist/fancybox.css" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;600;700;900&family=Roboto&display=swap"
+        rel="stylesheet" />
+    <script src="../access/js/jquery.min.js"></script>
+    <script src="../access/js/bootstrap.min.js"></script>
+    <script src="../access/js/slick.min.js"></script>
+    <script src="../access/js/lightslider.js"></script>
+    <script src="../access/js/fancybox.umd.js"></script>
+    <script src="../access/js/lightgallery.min.js"></script>
+    <script src="../access/js/lightgallery.js"></script>
+    <script src="../access/js/functions.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+
+</head>
+
+<body>
+    <div data-include="header"></div>
+
+    <div class="ket-qua-moi-thau">
+        <section class="banner">
+            <div class="container">
+                <div class="content">
+                    <span class="divider"></span>
+                    <h3>Kết quả sản xuất thuỷ điện</h3>
+                    <p>Chúng tôi hướng tới phát triển ngành năng lượng xanh bền vững, khai thác nguồn tài nguyên sạch
+                        như năng lượng gió, năng lượng mặt trời.</p>
+                </div>
+                <div class="navigation">
+                    <ul>
+                        <li><a href="#">Các nhà máy thuỷ điện</a></li>
+                        <li><a href="#">Tin tức thuỷ điện</a></li>
+                        <li class="active"><a href="#">kết quả lựa chọn nhà thầu</a></li>
+                        <li><a href="#">Thông tin mời thầu</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <div class="main">
+            <section class="information">
+                <div class="container">
+                    <div class="headding">
+                        <h4>Sản lượng luỹ kế thuỷ điện năm 2022</h4>
+                    </div>
+                    <div class="row list">
+                        <div class="col-12 col-md-4 item">
+                            <p class="label">Sản lượng ngày 21</p>
+                            <h1 class="info">11.37 </h1>
+                            <p class="unit">Triệu kWh </p>
+                        </div>
+                        <div class="col-12 col-md-4 item">
+                            <p class="label">Sản lượng tháng 11</p>
+                            <h1 class="info">164.86</h1>
+                            <p class="unit">Triệu kWh </p>
+                        </div>
+                        <div class="col-12 col-md-4 item">
+                            <p class="label">Sản lượng lũy kế năm</p>
+                            <h1 class="info">1,779.54</h1>
+                            <p class="unit">Triệu kWh </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="bieu-do">
+                <div class="container">
+                    <div class="d-flex head flex-wrap justify-content-between">
+                        <h4 class="headding">Biểu đồ tổng sản lượng của Bitexco Power theo năm</h4>
+                        <input type="date" name="date" class="input-date form-control">
+                    </div>
+                    <canvas id="myChart4" class="bar-chart"></canvas>
+                </div>
+            </section>
+            <section class="other-information">
+                <div class="other-container">
+                    <div class="other-content hover-zoom">
+                        <a href="#" class="hydro-electric-news"><span class="text">Hoạt động sản xuất kinh
+                                doanh</span></a>
+                        <a href="#" class="production-result"><span class="text"> Thông cáo báo chí</span></a>
+                        <a href="#" class="bidding-information"><span class="text"> Quan hệ cổ đông</span></a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <div data-include="footer-three"></div>
+</body>
+<script>
+
+    const labels = ["2013", "2014", "2015", "2016", "2017", "2018", "2019", "2020", "2021", "2022",];
+    let Data1 = [112, 59, 45, 56, 58, 52, 59, 87, 45, 20];
+    let Data2 = [0, 0, 0, 0, 0, 0, 0, 0, 0, 10];
+    let Data3 = [0, 0, 0, 0, 0, 0, 0, 0, 0, 30];
+    //chartjs\
+    var ctx = document.getElementById("myChart4").getContext('2d');
+    var myChart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: labels,
+            datasets: [{
+                label: 'Data1',
+                backgroundColor: "#6296E4B2",
+                data: Data1
+            }, {
+                label: 'Data2',
+                backgroundColor: "#61DDAA",
+                data: Data2
+            }, {
+                label: 'Data3',
+                backgroundColor: "#9C4909",
+                data: Data3
+            }],
+        },
+        options: {
+            animation: {
+                duration: 10,
+            },
+            legend: {
+                display: true
+            },
+            tooltips: {
+                displayColors: true,
+                mode: 'label',
+                callbacks: {
+                    label: function (tooltipItem, data) {
+                        return "  " + data.datasets[tooltipItem.datasetIndex].label + " : " + numberWithCommas(tooltipItem.yLabel);
+                    }
+                }
+            },
+
+            scales: {
+                xAxes: [{
+                    scaleLabel: {
+                        display: true,
+                        labelString: 'Năm',
+                        // callback: v => v == 0.5 ? ['Horizontal', 'Label'] : undefined
+
+                    },
+                    stacked: true,
+                    // barThickness: 71,
+                    maxBarThickness: 71,
+                    barPercentage: 0.5,
+                    gridLines: {
+                        display: false,
+                    },
+                }
+                ],
+                yAxes: [{
+                    scaleLabel: {
+                        display: true,
+                        labelString: 'Sản Lượng',
+                    },
+                    stacked: true,
+                    ticks: {
+                        beginAtZero: true,
+                    },
+                    type: 'linear',
+                }]
+            },
+            responsive: true,
+            maintainAspectRatio: true,
+            legend: { display: false },
+        }
+    });
+    var numberWithCommas = function (x) {
+        return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    };
+</script>
+
+</html>
