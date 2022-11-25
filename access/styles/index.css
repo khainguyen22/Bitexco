@@ -5646,6 +5646,7 @@ section.slogan .quote .quote-content .quote-text .quote-text-inner.active {
 section.power-enviroment .values {
   display: flex;
   margin-top: 61px;
+  min-height: 549px;
 }
 section.power-enviroment .values .the-values {
   width: 50%;
@@ -6457,5 +6458,355 @@ section.site-map-content-section .site-map-container .service-tab .tab-title svg
   }
   section.site-map-content-section .site-map-container .tab .flexed-tab div {
     min-width: 195.75px;
+  }
+}
+section.service {
+  background: url("../../access/images/servicebanner.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 640px;
+}
+section.service .container .content {
+  top: calc(50% + 64px);
+}
+
+section.other-information.other-information-service .other-container .other-content .hydro-electric-news {
+  background: url(../../access/images/other3.png);
+  background-position: center center;
+}
+section.other-information.other-information-service .other-container .other-content .production-result {
+  background: url(../../access/images/other1.png);
+  background-position: center center;
+}
+section.other-information.other-information-service .other-container .other-content .bidding-information {
+  background: url(../../access/images/other2.png);
+  background-position: center center;
+}
+
+section.contact-section .contact-section-content .cwt-content {
+  display: flex;
+  margin-top: 60px;
+}
+section.contact-section .contact-section-content .cwt-content .cwt-content-img img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+section.contact-section .contact-section-content .cwt-content .cwu-content-text {
+  padding-left: 80px;
+}
+section.contact-section .contact-section-content .cwt-content .cwu-content-text h5 {
+  margin-bottom: 32px;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 130%;
+  color: #141518;
+}
+section.contact-section .contact-section-content .cwt-content .cwu-content-text .contact-info + .contact-info {
+  margin-top: 16px;
+}
+section.contact-section .contact-section-content .cwt-content .cwu-content-text .contact-info.address {
+  align-items: flex-start;
+}
+section.contact-section .contact-section-content .cwt-content .cwu-content-text .contact-info {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 8px;
+       column-gap: 8px;
+}
+section.contact-section .contact-section-content .cwt-content .cwu-content-text .contact-info p {
+  margin: 0;
+  font-family: "Public Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 160%;
+  letter-spacing: 0.01em;
+  color: #434449;
+}
+section.contact-section .contact-section-content .cwt-content .cwu-content-text .contact-info p span.phone-divider {
+  height: 26px;
+  border-left: 1px solid #7E8189;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+section.service-packages .service-packages-content {
+  margin-top: 60px;
+}
+section.service-packages .button-more-infor {
+  margin-top: 40px;
+  text-align: center;
+}
+section.service-packages .button-more-infor button.btn-custom-1.btn-custom-1-l {
+  padding: 14px 32px;
+  font-family: "Public Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 140%;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+section.service-packages .button-more-infor button.btn-custom-1.btn-custom-1-l:hover {
+  color: #141518;
+}
+section.service-packages .service-package + .service-package {
+  margin-top: 80px;
+}
+section.service-packages .testing-service .fixing-service-content {
+  padding-right: 49px;
+}
+section.service-packages .testing-service img {
+  padding-left: 31px;
+}
+section.service-packages .service-package {
+  display: flex;
+}
+section.service-packages .service-package ul {
+  margin-top: 20px;
+}
+section.service-packages .service-package .service-content {
+  padding-left: 80px;
+}
+section.service-packages .service-package h5 {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 130%;
+  display: flex;
+  align-items: center;
+  color: #141518;
+}
+section.service-packages .service-package li {
+  list-style-type: disc;
+  font-family: "Public Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 160%;
+  letter-spacing: 0.01em;
+  color: #434449;
+}
+
+@media (max-width: 1200px) {
+  section.service-packages .service-packages-content {
+    margin-top: 60px;
+  }
+  section.service-packages img {
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  section.service-packages .button-more-infor {
+    margin-top: 40px;
+    text-align: center;
+  }
+  section.service-packages .service-package + .service-package {
+    margin-top: 24px;
+  }
+  section.service-packages .testing-service .fixing-service-content {
+    padding-right: 0;
+  }
+  section.service-packages .testing-service img {
+    padding-left: 0;
+  }
+  section.service-packages .service-package {
+    flex-direction: column;
+  }
+  section.service-packages .service-package ul {
+    margin-top: 20px;
+  }
+  section.service-packages .service-package .service-content {
+    padding-left: 0;
+  }
+  section.service-packages .service-package h5 {
+    margin-top: 20px;
+  }
+  section.service-packages .service-package li {
+    list-style-type: disc;
+    font-family: "Public Sans";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 160%;
+    letter-spacing: 0.01em;
+    color: #434449;
+  }
+  section.service-packages .testing-service {
+    flex-direction: column-reverse;
+  }
+}
+@media (max-width: 1024px) {
+  section.contact-section .contact-section-content .cwt-content {
+    display: flex;
+    margin-top: 60px;
+  }
+  section.contact-section .contact-section-content .cwt-content .cwt-content-img img {
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  section.contact-section .contact-section-content .cwt-content .cwu-content-text {
+    padding-left: 40px;
+  }
+  section.contact-section .contact-section-content .cwt-content .cwu-content-text h5 {
+    margin-bottom: 32px;
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 130%;
+    color: #141518;
+  }
+  section.contact-section .contact-section-content .cwt-content .cwu-content-text .contact-info + .contact-info {
+    margin-top: 16px;
+  }
+  section.contact-section .contact-section-content .cwt-content .cwu-content-text .contact-info.address {
+    align-items: flex-start;
+  }
+  section.contact-section .contact-section-content .cwt-content .cwu-content-text .contact-info {
+    display: flex;
+    align-items: center;
+    -moz-column-gap: 8px;
+         column-gap: 8px;
+  }
+  section.contact-section .contact-section-content .cwt-content .cwu-content-text .contact-info p {
+    margin: 0;
+    font-family: "Public Sans";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 160%;
+    letter-spacing: 0.01em;
+    color: #434449;
+  }
+  section.contact-section .contact-section-content .cwt-content .cwu-content-text .contact-info p span.phone-divider {
+    height: 26px;
+    border-left: 1px solid #7E8189;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+@media (max-width: 767px) {
+  section.service-packages .service-packages-content {
+    margin-top: 60px;
+  }
+  section.service-packages img {
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  section.service-packages .button-more-infor {
+    margin-top: 40px;
+    text-align: center;
+  }
+  section.service-packages .button-more-infor button.btn-custom-1.btn-custom-1-l {
+    padding: 14px 32px;
+    font-family: "Public Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 140%;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+  }
+  section.service-packages .button-more-infor button.btn-custom-1.btn-custom-1-l:hover {
+    color: #141518;
+  }
+  section.service-packages .service-package + .service-package {
+    margin-top: 24px;
+  }
+  section.service-packages .testing-service .fixing-service-content {
+    padding-right: 0;
+  }
+  section.service-packages .testing-service img {
+    padding-left: 0;
+  }
+  section.service-packages .service-package {
+    display: flex;
+  }
+  section.service-packages .service-package ul {
+    margin-top: 20px;
+  }
+  section.service-packages .service-package .service-content {
+    padding-left: 0;
+  }
+  section.service-packages .service-package h5 {
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 130%;
+    display: flex;
+    align-items: center;
+    color: #141518;
+  }
+  section.service-packages .service-package li {
+    list-style-type: disc;
+    font-family: "Public Sans";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 160%;
+    letter-spacing: 0.01em;
+    color: #434449;
+  }
+  section.contact-section .contact-section-content .cwt-content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+  }
+  section.contact-section .contact-section-content .cwt-content .cwt-content-img img {
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  section.contact-section .contact-section-content .cwt-content .cwu-content-text {
+    margin-top: 24px;
+    padding-left: 0;
+  }
+  section.contact-section .contact-section-content .cwt-content .cwu-content-text h5 {
+    margin-bottom: 32px;
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 130%;
+    color: #141518;
+  }
+  section.contact-section .contact-section-content .cwt-content .cwu-content-text .contact-info + .contact-info {
+    margin-top: 16px;
+  }
+  section.contact-section .contact-section-content .cwt-content .cwu-content-text .contact-info.address {
+    align-items: flex-start;
+  }
+  section.contact-section .contact-section-content .cwt-content .cwu-content-text .contact-info {
+    display: flex;
+    align-items: center;
+    -moz-column-gap: 8px;
+         column-gap: 8px;
+  }
+  section.contact-section .contact-section-content .cwt-content .cwu-content-text .contact-info p {
+    margin: 0;
+    font-family: "Public Sans";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 160%;
+    letter-spacing: 0.01em;
+    color: #434449;
+  }
+  section.contact-section .contact-section-content .cwt-content .cwu-content-text .contact-info p span.phone-divider {
+    height: 26px;
+    border-left: 1px solid #7E8189;
+    margin-left: 10px;
+    margin-right: 10px;
   }
 }/*# sourceMappingURL=index.css.map */
