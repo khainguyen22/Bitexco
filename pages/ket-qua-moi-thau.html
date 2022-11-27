@@ -154,11 +154,9 @@
                     scaleLabel: {
                         display: true,
                         labelString: 'Năm',
-                        // callback: v => v == 0.5 ? ['Horizontal', 'Label'] : undefined
-
                     },
                     stacked: true,
-                    // barThickness: 71,
+                    barThickness: 71,
                     maxBarThickness: 71,
                     barPercentage: 0.5,
                     gridLines: {
@@ -180,12 +178,13 @@
             },
             responsive: true,
             maintainAspectRatio: true,
-            legend: { display: false },
+            legend: { display: true },
         }
     });
     var numberWithCommas = function (x) {
         return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
     };
+
 </script>
 
 </html>
