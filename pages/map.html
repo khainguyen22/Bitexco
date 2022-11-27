@@ -239,14 +239,22 @@
             legend: {
                 display: true
             },
-            tooltips: {
-                displayColors: true,
-                mode: 'label',
-                callbacks: {
-                    label: function (tooltipItem, data) {
-                        return "  " + data.datasets[tooltipItem.datasetIndex].label + " : " + numberWithCommas(tooltipItem.yLabel);
-                    }
-                }
+            // tooltips: {
+            //     displayColors: true,
+            //     mode: 'label',
+            //     callbacks: {
+            //         label: function (tooltipItem, data) {
+            //             return "  " + data.datasets[tooltipItem.datasetIndex].label + " : " + numberWithCommas(tooltipItem.yLabel);
+            //         }
+            //     }
+            // },
+            onClick: (data, e, activeEls) => {
+                let datasetIndex = activeEls[0].datasetIndex;
+                let dataIndex = activeEls[0].index;
+                let datasetLabel = e.chart.data.datasets[datasetIndex].label;
+                let value = e.chart.data.datasets[datasetIndex].data[dataIndex];
+                let label = e.chart.data.labels[dataIndex];
+                console.log("In click", datasetLabel, label, value);
             },
             scales: {
                 xAxes: [{
@@ -276,6 +284,17 @@
     });
     var numberWithCommas = function (x) {
         return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    };
+
+    document.getElementById("myChart4").onclick = function (evt) {
+        var activePoints = myChart.getElementsAtEventForMode(evt, 'point', myChart.options);
+        var firstPoint = activePoints[0];
+        var label = myChart.data.labels[firstPoint._index];
+        var value = myChart.data.datasets[firstPoint._datasetIndex].data[firstPoint._index];
+
+        console.log(label + ": " + value);
+        // alert(label + ": " + value);
+        window.open('https://www.google.com/' + label + "/" + value, "_blank");
     };
 </script>
 
