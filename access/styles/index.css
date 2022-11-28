@@ -8151,4 +8151,145 @@ section.service-packages .service-package li {
 }
 .cac-cong-ti-thanh-vien .main .filter-post-section .filter-post-container .filter-content .filter-item .item-content span.tag {
   margin-bottom: 10px;
+}
+
+.tru-so .banner {
+  background-image: url("./../../access/images/banner-tru-so.png");
+  min-height: 400px;
+}
+.tru-so .main {
+  padding: 45px 0 90px;
+}
+.tru-so .main .group-tabs .head .nav-tabs {
+  border: unset;
+}
+.tru-so .main .group-tabs .head .nav-tabs li {
+  position: relative;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 130%;
+  letter-spacing: 0.01em;
+  color: #141518;
+  margin-right: 40px;
+  padding: 10px 0;
+}
+.tru-so .main .group-tabs .head .nav-tabs li::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 0%;
+  background: #DAA622;
+  display: block;
+  transition: all 1s;
+}
+.tru-so .main .group-tabs .head .nav-tabs li.active::after {
+  width: 100%;
+}
+.tru-so .main .group-tabs .head .nav-tabs li:hover a {
+  color: #47484d;
+}
+.tru-so .main .group-tabs .head .nav-tabs li:hover::after {
+  width: 100%;
+  transition: all 1s;
+}
+@media (max-width: 991px) {
+  .tru-so .main .group-tabs .head .nav-tabs li {
+    margin-right: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .tru-so .main .group-tabs .head .nav-tabs li {
+    margin-right: 0px;
+    font-size: 18px;
+    line-height: 160%;
+  }
+}
+@media (max-width: 767px) {
+  .tru-so .main .group-tabs .head .nav-tabs {
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .tru-so .main .group-tabs {
+    position: relative;
+  }
+  .tru-so .main .group-tabs .col-right {
+    padding: 120px 0 0;
+  }
+  .tru-so .main .group-tabs .btn.btn-detail {
+    position: absolute;
+    bottom: 520px;
+    z-index: 1;
+    left: 0%;
+    width: 100%;
+  }
+}
+.tru-so .main .tab-content {
+  margin-top: 46px;
+}
+.tru-so .main .tab-content .accordion .card-body {
+  padding: 0;
+}
+.tru-so .main .tab-content .accordion .card-body * {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 160%;
+  letter-spacing: 0.01em;
+  color: #434449;
+}
+.tru-so .main .tab-content .accordion .card-body .address,
+.tru-so .main .tab-content .accordion .card-body .phone,
+.tru-so .main .tab-content .accordion .card-body .fax,
+.tru-so .main .tab-content .accordion .card-body .email {
+  margin-bottom: 16px;
+}
+.tru-so .main .tab-content .accordion * {
+  background: unset;
+}
+.tru-so .main .tab-content .accordion .collapsible-link {
+  width: 100%;
+  position: relative;
+  text-align: left;
+  padding: 20px 0;
+}
+.tru-so .main .tab-content .accordion .collapsible-link[aria-expanded=false] {
+  border-bottom: 1px solid #D1D5DB;
+}
+.tru-so .main .tab-content .accordion .btn.collapsible-link {
+  text-align: left;
+}
+.tru-so .main .tab-content .accordion .btn.collapsible-link:hover {
+  text-decoration: none;
+}
+.tru-so .main .tab-content .accordion .collapsible-link::before {
+  content: "\f107";
+  position: absolute;
+  top: 50%;
+  right: 0.8rem;
+  transform: translateY(-50%);
+  display: block;
+  font-family: "FontAwesome";
+  font-size: 1.1rem;
+}
+.tru-so .main .tab-content .accordion .collapsible-link[aria-expanded=true]::before {
+  content: "\f106";
+}
+.tru-so .main .tab-content .tab-pane .col-right img {
+  height: 100%;
+  max-height: 470px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (max-width: 767px) {
+  .tru-so .main .tab-content .tab-pane .col-right img {
+    height: 470px !important;
+  }
+}
+@media (max-width: 767px) {
+  .tru-so .main {
+    padding: 0;
+  }
 }/*# sourceMappingURL=index.css.map */
