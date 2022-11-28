@@ -771,16 +771,6 @@ span.tag {
     width: fit-content;
 }
 
-
-
-input[type=date]::-webkit-datetime-edit-text,
-input[type=date]::-webkit-datetime-edit-month-field,
-input[type=date]::-webkit-datetime-edit-day-field,
-input[type=date]::-webkit-datetime-edit-year-field {
-    // -webkit-appearance: none;
-    // display: none;
-}
-
 input[type=date] {
     position: relative;
 
@@ -899,3 +889,4 @@ label.required {
 @import './scss/sitemap';
 @import './scss/dichvu';
 @import './scss/danh-sach-ket-qua-dau-thau';
+@import './scss/bitexco_brand';
