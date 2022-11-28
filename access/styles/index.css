@@ -516,6 +516,22 @@ span.tag.tag-phone::before {
   height: 17px;
   margin-right: 10px;
 }
+span.tag.tag-phone a {
+  text-decoration: none;
+  color: unset;
+}
+span.tag.tag-wattage::before {
+  content: "";
+  -webkit-mask: url(../icon/wattage.svg) no-repeat 50% 50%;
+  mask: url(../icon/wattage.svg) no-repeat 50% 50%;
+  -webkit-mask-size: cover;
+  mask-size: cover;
+  width: 17px;
+  background: #7E8189;
+  display: inline-flex;
+  height: 17px;
+  margin-right: 10px;
+}
 span.tag.tag-type::before {
   content: "";
   -webkit-mask: url(../icon/type.svg) no-repeat 50% 50%;
@@ -8082,4 +8098,57 @@ section.service-packages .service-package li {
     -o-object-fit: cover;
        object-fit: cover;
   }
+}
+.cac-cong-ti-thanh-vien .banner {
+  background-image: url("./../../access/images/banner-tru-so.png");
+  min-height: 400px;
+}
+.cac-cong-ti-thanh-vien .main {
+  background: #FFFFFF;
+}
+.cac-cong-ti-thanh-vien .main .filter-post-section .filter-post-container .form-filter form .form-filter-search {
+  width: 100%;
+  max-width: 619px;
+}
+.cac-cong-ti-thanh-vien .main .filter-post-section .filter-post-container .form-filter form .form-filter-area {
+  width: 100%;
+  max-width: 328px;
+}
+.cac-cong-ti-thanh-vien .main .filter-post-section .filter-post-container .form-filter form .button-submit .btn-submit {
+  background: #DAA622;
+  border-radius: 2px;
+  color: #ffffff;
+}
+.cac-cong-ti-thanh-vien .main .filter-post-section .filter-post-container .form-filter form .button-submit .btn-submit:hover {
+  background-color: unset;
+  border: 1px solid #DAA622;
+  color: #000;
+}
+@media (max-width: 1366px) {
+  .cac-cong-ti-thanh-vien .main .filter-post-section .filter-post-container .form-filter form .form-filter-area,
+.cac-cong-ti-thanh-vien .main .filter-post-section .filter-post-container .form-filter form .form-filter-search {
+    width: 33%;
+    max-width: unset;
+  }
+}
+@media (max-width: 767px) {
+  .cac-cong-ti-thanh-vien .main .filter-post-section .filter-post-container .form-filter form .form-filter-area,
+.cac-cong-ti-thanh-vien .main .filter-post-section .filter-post-container .form-filter form .form-filter-search {
+    width: 100%;
+    max-width: unset;
+  }
+}
+.cac-cong-ti-thanh-vien .main .filter-post-section .filter-post-container .filter-content .filter-item {
+  background: #FFFFFF;
+  border: 1px solid #EAEDF3;
+  border-radius: 2px;
+}
+.cac-cong-ti-thanh-vien .main .filter-post-section .filter-post-container .filter-content .filter-item img {
+  width: 100%;
+}
+.cac-cong-ti-thanh-vien .main .filter-post-section .filter-post-container .filter-content .filter-item .item-content {
+  padding: 24px 20px 40px;
+}
+.cac-cong-ti-thanh-vien .main .filter-post-section .filter-post-container .filter-content .filter-item .item-content span.tag {
+  margin-bottom: 10px;
 }/*# sourceMappingURL=index.css.map */

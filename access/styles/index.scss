@@ -537,10 +537,31 @@ span.tag {
         margin-right: 10px;
     }
 
-    &.tag-phone::before {
+    &.tag-phone {
+        &::before {
+            content: "";
+            -webkit-mask: url(../icon/Call.svg) no-repeat 50% 50%;
+            mask: url(../icon/Call.svg) no-repeat 50% 50%;
+            -webkit-mask-size: cover;
+            mask-size: cover;
+            width: 17px;
+            background: #7E8189;
+            display: inline-flex;
+            height: 17px;
+            margin-right: 10px;
+
+        }
+
+        a {
+            text-decoration: none;
+            color: unset;
+        }
+    }
+
+    &.tag-wattage::before {
         content: "";
-        -webkit-mask: url(../icon/Call.svg) no-repeat 50% 50%;
-        mask: url(../icon/Call.svg) no-repeat 50% 50%;
+        -webkit-mask: url(../icon/wattage.svg) no-repeat 50% 50%;
+        mask: url(../icon/wattage.svg) no-repeat 50% 50%;
         -webkit-mask-size: cover;
         mask-size: cover;
         width: 17px;
@@ -548,6 +569,8 @@ span.tag {
         display: inline-flex;
         height: 17px;
         margin-right: 10px;
+
+
     }
 
     &.tag-type::before {
@@ -902,3 +925,4 @@ label.required {
 @import './scss/dichvu';
 @import './scss/danh-sach-ket-qua-dau-thau';
 @import './scss/bitexco_brand';
+@import './scss/cac-cong-ti-thanh-vien';
