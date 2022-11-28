@@ -561,6 +561,17 @@ span.tag.tag-case::before {
   display: inline-flex;
   height: 17px;
 }
+span.tag.tag-price::before {
+  content: "";
+  -webkit-mask: url(../icon/Price.svg) no-repeat 50% 50%;
+  mask: url(../icon/Price.svg) no-repeat 50% 50%;
+  -webkit-mask-size: cover;
+  mask-size: cover;
+  width: 17px;
+  background: #7E8189;
+  display: inline-flex;
+  height: 17px;
+}
 
 .custom-pagination li.page-item {
   border-radius: 8px;
@@ -6949,7 +6960,19 @@ section.service-packages .service-package li {
   border-bottom: 1px solid #D1D5DB;
   padding: 30px 0;
 }
-.danh-sach-ket-qua-dau-thau .main .infomation-list .list .item .head .title {
+.danh-sach-ket-qua-dau-thau .main .infomation-list .list .item .info-date {
+  margin-right: 32px;
+}
+.danh-sach-ket-qua-dau-thau .main .infomation-list .list .item .info-date .date {
+  width: 91px;
+  height: 102px;
+  background: #DAA622;
+  border-radius: 2px;
+  color: #fff;
+  text-align: center;
+  padding: 12px;
+}
+.danh-sach-ket-qua-dau-thau .main .infomation-list .list .item .info-content .head .title {
   font-family: var(--secondary-font);
   font-style: normal;
   font-weight: 600;
@@ -6961,41 +6984,12 @@ section.service-packages .service-package li {
   color: #141518;
   margin-bottom: 16px;
 }
-.danh-sach-ket-qua-dau-thau .main .infomation-list .list .item .head .status {
-  font-weight: 500;
-  font-size: 11px;
-  line-height: 150%;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  color: #FFFFFF;
-  padding: 2px 8px;
-  border-radius: 2px;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-}
-.danh-sach-ket-qua-dau-thau .main .infomation-list .list .item .head .status-info {
-  background: #134FA5;
-}
-.danh-sach-ket-qua-dau-thau .main .infomation-list .list .item .head .status-success {
-  background: #3CAE69;
-}
-.danh-sach-ket-qua-dau-thau .main .infomation-list .list .item .head .status-danger {
-  background: #DD2027;
-}
 @media (max-width: 767px) {
-  .danh-sach-ket-qua-dau-thau .main .infomation-list .list .item .head {
+  .danh-sach-ket-qua-dau-thau .main .infomation-list .list .item .info-content .head {
     flex-direction: column;
   }
-  .danh-sach-ket-qua-dau-thau .main .infomation-list .list .item .head .status {
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-    margin-top: 2px;
-    margin-bottom: 18px;
-  }
 }
-.danh-sach-ket-qua-dau-thau .main .infomation-list .list .item .content span {
+.danh-sach-ket-qua-dau-thau .main .infomation-list .list .item .info-content .content span {
   font-weight: 300;
   font-size: 16px;
   line-height: 160%;
@@ -7003,14 +6997,20 @@ section.service-packages .service-package li {
   color: #141518;
   margin-bottom: 10px;
 }
-.danh-sach-ket-qua-dau-thau .main .infomation-list .list .item .content span strong {
+.danh-sach-ket-qua-dau-thau .main .infomation-list .list .item .info-content .content span strong {
   font-weight: 500;
 }
-.danh-sach-ket-qua-dau-thau .main .infomation-list .list .item .content span::before {
+.danh-sach-ket-qua-dau-thau .main .infomation-list .list .item .info-content .content span::before {
+  margin-top: 3px;
   margin-right: 8px;
 }
-.danh-sach-ket-qua-dau-thau .main .infomation-list .list .item .content span:last-child {
+.danh-sach-ket-qua-dau-thau .main .infomation-list .list .item .info-content .content span:last-child {
   margin-bottom: 0;
+}
+@media (max-width: 767px) {
+  .danh-sach-ket-qua-dau-thau .main .infomation-list .list .item {
+    flex-wrap: wrap;
+  }
 }
 .danh-sach-ket-qua-dau-thau .main .filter-navigation {
   margin: 30px 0 80px;
