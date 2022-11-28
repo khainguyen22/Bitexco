@@ -5700,6 +5700,69 @@ section.related-news .article-container .related-news-content .related-item .ite
   -o-object-fit: cover;
      object-fit: cover;
 }
+.tuyen-dung section.power-enviroment .values {
+  display: flex;
+  margin-top: 61px;
+  min-height: 549px;
+}
+.tuyen-dung section.power-enviroment .values .the-values {
+  width: 50%;
+  padding-right: 80px;
+}
+.tuyen-dung section.power-enviroment .values .the-values .drop-down.active {
+  border-bottom: 1px solid #DAA622;
+}
+.tuyen-dung section.power-enviroment .values .the-values .drop-down.active h5 {
+  color: #DAA622;
+  position: relative;
+}
+.tuyen-dung section.power-enviroment .values .the-values .drop-down.active h5::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-right: 1.5px solid #DAA622;
+  border-bottom: 1.5px solid #DAA622;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: matrix(-1, 0, 0, 1, 0, 0) rotate(225deg);
+}
+.tuyen-dung section.power-enviroment .values .the-values .drop-down.active p {
+  display: block;
+}
+.tuyen-dung section.power-enviroment .values .the-values .drop-down + .drop-down {
+  padding-top: 20px;
+}
+.tuyen-dung section.power-enviroment .values .the-values .drop-down {
+  border-bottom: 1px solid #D1D5DB;
+  padding-bottom: 20px;
+}
+.tuyen-dung section.power-enviroment .values .the-values .drop-down:hover {
+  cursor: pointer;
+}
+.tuyen-dung section.power-enviroment .values .the-values .drop-down h5 {
+  font-family: "Manrope";
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 1.3;
+  margin-bottom: 8px;
+}
+.tuyen-dung section.power-enviroment .values .the-values .drop-down p {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 0.01em;
+  color: #0d0d0e;
+  display: none;
+}
+.tuyen-dung section.power-enviroment .values .the-values-image {
+  width: 50%;
+}
+.tuyen-dung section.power-enviroment .values .the-values-image img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 
 @media (max-width: 1366px) {
   .tuyen-dung .your-privilege {
@@ -5833,7 +5896,6 @@ section.related-news .article-container .related-news-content .related-item .ite
     height: 100%;
     -o-object-fit: cover;
        object-fit: cover;
-    width: 100%;
   }
   .tuyen-dung .slogan .quote .quote-agency .quote-agency-img.active {
     display: block;
@@ -6802,6 +6864,158 @@ section.service-packages .service-package li {
     margin-right: 10px;
   }
 }
+.danh-sach-ket-qua-dau-thau .banner {
+  min-height: 400px;
+  background-image: url("./../../access/images/banner-thong-tin-moi-thau.png");
+}
+.danh-sach-ket-qua-dau-thau .banner .container .content {
+  top: calc(50% + 48px);
+}
+@media (max-width: 767px) {
+  .danh-sach-ket-qua-dau-thau .banner .container .content {
+    top: 48%;
+    left: 12%;
+    transform: translate(0%, -25%);
+  }
+  .danh-sach-ket-qua-dau-thau .banner .container .content h3 {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 130%;
+  }
+}
+.danh-sach-ket-qua-dau-thau .banner .container .navigation {
+  bottom: 6px;
+  left: 100px;
+}
+@media (max-width: 767px) {
+  .danh-sach-ket-qua-dau-thau .banner .container .navigation {
+    left: 20px;
+    bottom: 3px;
+  }
+}
+@media (max-width: 767px) {
+  .danh-sach-ket-qua-dau-thau .banner {
+    min-height: 300px;
+  }
+}
+.danh-sach-ket-qua-dau-thau .main .container {
+  padding: 0 100px;
+}
+@media (max-width: 767px) {
+  .danh-sach-ket-qua-dau-thau .main .container {
+    padding: 0 20px;
+  }
+}
+.danh-sach-ket-qua-dau-thau .main .filter-post-section {
+  padding: 32px 0px 32px 0px;
+  background-color: #F6F8FC;
+}
+.danh-sach-ket-qua-dau-thau .main .filter-post-section .filter-post-container {
+  max-width: unset;
+}
+.danh-sach-ket-qua-dau-thau .main .filter-post-section .filter-post-container .form-filter .form-filter-field,
+.danh-sach-ket-qua-dau-thau .main .filter-post-section .filter-post-container .form-filter .form-filter-field select,
+.danh-sach-ket-qua-dau-thau .main .filter-post-section .filter-post-container .form-filter .form-filter-date-start,
+.danh-sach-ket-qua-dau-thau .main .filter-post-section .filter-post-container .form-filter .form-filter-date-end {
+  width: 100%;
+  max-width: 310px;
+}
+@media (max-width: 1024px) {
+  .danh-sach-ket-qua-dau-thau .main .filter-post-section .filter-post-container .form-filter .form-filter-field,
+.danh-sach-ket-qua-dau-thau .main .filter-post-section .filter-post-container .form-filter .form-filter-field select,
+.danh-sach-ket-qua-dau-thau .main .filter-post-section .filter-post-container .form-filter .form-filter-date-start,
+.danh-sach-ket-qua-dau-thau .main .filter-post-section .filter-post-container .form-filter .form-filter-date-end {
+    width: 100%;
+    max-width: 49%;
+  }
+}
+@media (max-width: 767px) {
+  .danh-sach-ket-qua-dau-thau .main .filter-post-section .filter-post-container .form-filter .form-filter-field,
+.danh-sach-ket-qua-dau-thau .main .filter-post-section .filter-post-container .form-filter .form-filter-field select,
+.danh-sach-ket-qua-dau-thau .main .filter-post-section .filter-post-container .form-filter .form-filter-date-start,
+.danh-sach-ket-qua-dau-thau .main .filter-post-section .filter-post-container .form-filter .form-filter-date-end {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+.danh-sach-ket-qua-dau-thau .main .filter-post-section .filter-post-container .form-filter .btn-reset {
+  color: #DAA622;
+}
+.danh-sach-ket-qua-dau-thau .main .infomation-list {
+  background: #E5E5E5;
+  padding-top: 40px;
+}
+.danh-sach-ket-qua-dau-thau .main .infomation-list .list .item {
+  border-bottom: 1px solid #D1D5DB;
+  padding: 30px 0;
+}
+.danh-sach-ket-qua-dau-thau .main .infomation-list .list .item .head .title {
+  font-family: var(--secondary-font);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 130%;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.01em;
+  color: #141518;
+  margin-bottom: 16px;
+}
+.danh-sach-ket-qua-dau-thau .main .infomation-list .list .item .head .status {
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  padding: 2px 8px;
+  border-radius: 2px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.danh-sach-ket-qua-dau-thau .main .infomation-list .list .item .head .status-info {
+  background: #134FA5;
+}
+.danh-sach-ket-qua-dau-thau .main .infomation-list .list .item .head .status-success {
+  background: #3CAE69;
+}
+.danh-sach-ket-qua-dau-thau .main .infomation-list .list .item .head .status-danger {
+  background: #DD2027;
+}
+@media (max-width: 767px) {
+  .danh-sach-ket-qua-dau-thau .main .infomation-list .list .item .head {
+    flex-direction: column;
+  }
+  .danh-sach-ket-qua-dau-thau .main .infomation-list .list .item .head .status {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-top: 2px;
+    margin-bottom: 18px;
+  }
+}
+.danh-sach-ket-qua-dau-thau .main .infomation-list .list .item .content span {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 160%;
+  letter-spacing: 0.01em;
+  color: #141518;
+  margin-bottom: 10px;
+}
+.danh-sach-ket-qua-dau-thau .main .infomation-list .list .item .content span strong {
+  font-weight: 500;
+}
+.danh-sach-ket-qua-dau-thau .main .infomation-list .list .item .content span::before {
+  margin-right: 8px;
+}
+.danh-sach-ket-qua-dau-thau .main .infomation-list .list .item .content span:last-child {
+  margin-bottom: 0;
+}
+.danh-sach-ket-qua-dau-thau .main .filter-navigation {
+  margin: 30px 0 80px;
+}
+
 .bitxeco-brand-page section.bitexco-brand {
   background: url(../../access/images/meeting-with-business-partners.jpg);
   background-size: cover;
