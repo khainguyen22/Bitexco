@@ -598,6 +598,18 @@ span.tag {
         display: inline-flex;
         height: 17px;
     }
+
+    &.tag-price::before {
+        content: "";
+        -webkit-mask: url(../icon/Price.svg) no-repeat 50% 50%;
+        mask: url(../icon/Price.svg) no-repeat 50% 50%;
+        -webkit-mask-size: cover;
+        mask-size: cover;
+        width: 17px;
+        background: #7E8189;
+        display: inline-flex;
+        height: 17px;
+    }
 }
 
 .custom-pagination {
