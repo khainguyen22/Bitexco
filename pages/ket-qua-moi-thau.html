@@ -33,7 +33,7 @@
     <script src="../access/js/lightgallery.js"></script>
     <script src="../access/js/functions.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
-
+    <script src="https://unpkg.com/chart.js-plugin-labels-dv/dist/chartjs-plugin-labels.min.js"></script>
 </head>
 
 <body>
@@ -83,13 +83,35 @@
                     </div>
                 </div>
             </section>
-            <section class="bieu-do">
+            <div class="divider-section"></div>
+            <section class="bieu-do-san-luong">
                 <div class="container">
                     <div class="d-flex head flex-wrap justify-content-between">
                         <h4 class="headding">Biểu đồ tổng sản lượng của Bitexco Power theo năm</h4>
                         <input type="date" name="date" class="input-date form-control">
                     </div>
-                    <canvas id="myChart4" class="bar-chart"></canvas>
+                    <canvas id="myChartBar" class="bar-chart"></canvas>
+                </div>
+            </section>
+            <div class="divider-section"></div>
+            <section class="bieu-do-ti-trong">
+                <div class="container">
+                    <h4 class="title">Tỷ trọng công suất theo loại hình phát điện của Bitexco Power</h4>
+                    <div class="row bieu-do">
+                        <div class="col-12 col-md-6">
+                            <div class="content">
+                                <p>Tổng công suất của <strong>Bitexco Power</strong> đạt</p>
+                                <div class="d-flex">
+                                    <h2>3%</h2>
+                                    <p>công suất</p>
+                                </div>
+                                <p><strong>Hệ thống điện quốc gia</strong></p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <canvas id="myChartPie" class="pie-chart"></canvas>
+                        </div>
+                    </div>
                 </div>
             </section>
             <section class="other-information">
@@ -113,21 +135,21 @@
     let Data2 = [0, 0, 0, 0, 0, 0, 0, 0, 0, 10];
     let Data3 = [0, 0, 0, 0, 0, 0, 0, 0, 0, 30];
     //chartjs\
-    var ctx = document.getElementById("myChart4").getContext('2d');
-    var myChart = new Chart(ctx, {
+    var ctxBar = document.getElementById("myChartBar").getContext('2d');
+    var myChartBar = new Chart(ctxBar, {
         type: 'bar',
         data: {
             labels: labels,
             datasets: [{
-                label: 'Data1',
-                backgroundColor: "#6296E4B2",
+                label: 'PTC1',
+                backgroundColor: "#6296E4",
                 data: Data1
             }, {
-                label: 'Data2',
+                label: 'PTC2',
                 backgroundColor: "#61DDAA",
                 data: Data2
             }, {
-                label: 'Data3',
+                label: 'PTC3',
                 backgroundColor: "#9C4909",
                 data: Data3
             }],
@@ -139,51 +161,85 @@
             legend: {
                 display: true
             },
-            tooltips: {
-                displayColors: true,
-                mode: 'label',
-                callbacks: {
-                    label: function (tooltipItem, data) {
-                        return "  " + data.datasets[tooltipItem.datasetIndex].label + " : " + numberWithCommas(tooltipItem.yLabel);
-                    }
-                }
-            },
-
             scales: {
                 xAxes: [{
-                    scaleLabel: {
-                        display: true,
-                        labelString: 'Năm',
-                    },
                     stacked: true,
                     barThickness: 71,
-                    maxBarThickness: 71,
                     barPercentage: 0.5,
                     gridLines: {
                         display: false,
                     },
-                }
-                ],
-                yAxes: [{
                     scaleLabel: {
                         display: true,
-                        labelString: 'Sản Lượng',
+                        labelString: 'Năm',
                     },
+                }],
+                yAxes: [{
                     stacked: true,
                     ticks: {
                         beginAtZero: true,
+                    },
+                    scaleLabel: {
+                        display: true,
+                        labelString: 'Sản lượng (Triệu kWh)',
                     },
                     type: 'linear',
                 }]
             },
             responsive: true,
             maintainAspectRatio: true,
-            legend: { display: true },
+            legend: { display: false },
         }
     });
-    // var numberWithCommas = function (x) {
-    //     return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-    // };
+    var numberWithCommas = function (x) {
+        return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    };
+    var ctxPie = document.getElementById("myChartPie").getContext('2d');
+    var myChartPie = new Chart(ctxPie, {
+        type: 'pie',
+        data: {
+            labels: [
+                'Thủy điện',
+                'Điện mặt trời',
+            ],
+            datasets: [{
+                data: [900, 100],
+                backgroundColor: [
+                    '#5C91FA',
+                    '#80B55C',
+                ],
+                hoverOffset: 4
+            }],
+        },
+        options: {
+            tooltips: {
+                displayColors: true,
+                mode: 'label',
+            },
+            animation: {
+                duration: 10,
+            },
+            plugins: {
+                labels: {
+                    render: 'percentage',
+                    fontColor: function (data) {
+                        var rgb = hexToRgb(data.dataset.backgroundColor[data.index]);
+                        var threshold = 140;
+                        var luminance = 0.299 * rgb.r + 0.587 * rgb.g + 0.114 * rgb.b;
+                        return luminance > threshold ? 'black' : 'white';
+                    },
+                    precision: 2
+                }
+            },
+            legend: {
+                display: true
+            },
+
+            responsive: true,
+            maintainAspectRatio: true,
+            legend: { display: false },
+        }
+    });
 
 </script>
 
