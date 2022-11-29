@@ -8164,6 +8164,14 @@ section.service-packages .service-package li {
 .ban-lanh-dao .main {
   padding: 60px 0 80px;
 }
+.ban-lanh-dao .main .container {
+  padding: 0 100px;
+}
+@media (max-width: 767px) {
+  .ban-lanh-dao .main .container {
+    padding: 0 20px;
+  }
+}
 .ban-lanh-dao .main .wrap-head {
   max-width: 666px;
   margin: 0 auto 20px;
