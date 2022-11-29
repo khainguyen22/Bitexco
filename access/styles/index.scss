@@ -55,6 +55,10 @@ input {
     padding: 0;
 }
 
+p:last-child {
+    margin-bottom: 0;
+}
+
 select {
     background: unset;
     border: unset;
@@ -537,10 +541,31 @@ span.tag {
         margin-right: 10px;
     }
 
-    &.tag-phone::before {
+    &.tag-phone {
+        &::before {
+            content: "";
+            -webkit-mask: url(../icon/Call.svg) no-repeat 50% 50%;
+            mask: url(../icon/Call.svg) no-repeat 50% 50%;
+            -webkit-mask-size: cover;
+            mask-size: cover;
+            width: 17px;
+            background: #7E8189;
+            display: inline-flex;
+            height: 17px;
+            margin-right: 10px;
+
+        }
+
+        a {
+            text-decoration: none;
+            color: unset;
+        }
+    }
+
+    &.tag-wattage::before {
         content: "";
-        -webkit-mask: url(../icon/Call.svg) no-repeat 50% 50%;
-        mask: url(../icon/Call.svg) no-repeat 50% 50%;
+        -webkit-mask: url(../icon/wattage.svg) no-repeat 50% 50%;
+        mask: url(../icon/wattage.svg) no-repeat 50% 50%;
         -webkit-mask-size: cover;
         mask-size: cover;
         width: 17px;
@@ -548,6 +573,8 @@ span.tag {
         display: inline-flex;
         height: 17px;
         margin-right: 10px;
+
+
     }
 
     &.tag-type::before {
@@ -591,6 +618,18 @@ span.tag {
         content: "";
         -webkit-mask: url(../icon/Case.svg) no-repeat 50% 50%;
         mask: url(../icon/Case.svg) no-repeat 50% 50%;
+        -webkit-mask-size: cover;
+        mask-size: cover;
+        width: 17px;
+        background: #7E8189;
+        display: inline-flex;
+        height: 17px;
+    }
+
+    &.tag-price::before {
+        content: "";
+        -webkit-mask: url(../icon/Price.svg) no-repeat 50% 50%;
+        mask: url(../icon/Price.svg) no-repeat 50% 50%;
         -webkit-mask-size: cover;
         mask-size: cover;
         width: 17px;
@@ -771,16 +810,6 @@ span.tag {
     width: fit-content;
 }
 
-
-
-input[type=date]::-webkit-datetime-edit-text,
-input[type=date]::-webkit-datetime-edit-month-field,
-input[type=date]::-webkit-datetime-edit-day-field,
-input[type=date]::-webkit-datetime-edit-year-field {
-    // -webkit-appearance: none;
-    // display: none;
-}
-
 input[type=date] {
     position: relative;
 
@@ -898,4 +927,7 @@ label.required {
 @import './scss/danh-sach-tuyen-dung';
 @import './scss/sitemap';
 @import './scss/dichvu';
+@import './scss/danh-sach-ket-qua-dau-thau';
 @import './scss/bitexco_brand';
+@import './scss/cac-cong-ti-thanh-vien';
+@import './scss/ban-lanh-dao';
