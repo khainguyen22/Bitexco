@@ -315,20 +315,96 @@
 	}
 
 	section.core-value {
+		padding: 27px 0 0 0;
+
 		.core-value-container {
 			.core-value-content {
 				display: flex;
 				position: relative;
 
 				.value {
-					width: calc(100%/5 - 26px);
-					position: absolute;
 					min-height: 530px;
-					z-index: 1;
+					height: 530px;
+					width: 12.9%;
 					background: rgba(13, 13, 14, 0.4);
 					backdrop-filter: blur(6px);
 					background-repeat: no-repeat;
-					padding: 428px 100px 0 20px;
+					flex-direction: column;
+					justify-content: flex-end;
+					margin: 0;
+					border-radius: unset;
+					flex: unset;
+					padding: 40px 20px 40px 20px;
+					transition: width 0.3s;
+
+					&.active {
+						background: linear-gradient(360deg, rgba(0, 0, 0, 0.5) 45.16%, rgba(0, 0, 0, 0) 100%), url(image.png);
+						backdrop-filter: unset;
+						padding: 0;
+						background-repeat: no-repeat;
+						flex: unset;
+						width: 49.5%;
+						padding: 40px 106px 40px 100px;
+
+						@keyframes fade-in {
+							0% {
+								opacity: 0;
+							}
+
+							100% {
+								opacity: 1;
+							}
+						}
+
+						.numberical-order {
+							animation: fade-in 0.5s ease-in;
+						}
+
+						h3.title {
+							margin-top: 4px;
+							margin-bottom: 40px;
+							font-size: 40px;
+							animation: fade-in 0.5s ease-in;
+						}
+
+						p.desc {
+							visibility: visible;
+							height: unset;
+							max-width: 499px;
+							transition: visibility 0.3s;
+							transition-delay: 0.3s;
+							animation: fade-in 0.4s ease-in;
+						}
+
+
+					}
+
+					&.resources {
+						background-image: url(../../access/images/people.jpg);
+						background-size: cover;
+						left: 0;
+					}
+
+					&.grow {
+						background-image: url(../../access/images/grow.png);
+						background-size: cover;
+					}
+
+					&.responsibility {
+						background-image: url(../../access/images/people.jpg);
+						background-size: cover;
+					}
+
+					&.enviroment {
+						background-image: url(../../access/images/people.jpg);
+						background-size: cover;
+					}
+
+					&.customers {
+						background-image: url(../../access/images/people.jpg);
+						background-size: cover;
+					}
+
 					h6.numberical-order {
 						font-family: 'Manrope';
 						font-style: normal;
@@ -347,6 +423,7 @@
 						line-height: 120%;
 						color: #FFFFFF;
 						font-size: 22px;
+						margin: 0;
 					}
 
 					p.desc {
@@ -358,53 +435,117 @@
 						text-align: justify;
 						letter-spacing: 0.01em;
 						color: #FFFFFF;
-						display: none;
+						margin: 0;
+						visibility: hidden;
+						height: 0;
+					}
+				}
+			}
+
+			.content {
+				max-width: 1240px;
+				margin: auto;
+				text-align: center;
+				margin-bottom: 60px;
+
+				.divider {
+					width: 32px;
+					border: 2px solid #DAA622;
+					margin: auto;
+				}
+
+				h3 {
+					font-family: 'Manrope';
+					font-style: normal;
+					font-weight: 500;
+					font-size: 40px;
+					line-height: 120%;
+					color: #141518;
+					margin-top: 8px;
+					margin-bottom: 16px;
+				}
+
+				p {
+					font-family: 'Public Sans';
+					font-style: normal;
+					font-weight: 300;
+					font-size: 16px;
+					line-height: 160%;
+					letter-spacing: 0.01em;
+					color: #434449;
+					max-width: 668px;
+					margin: auto;
+				}
+			}
+		}
+	}
+
+	section.about-bitexco {
+		padding: 97px 100px 116px 100px;
+
+		.about-bitexco-container {
+			max-width: 1240px;
+			margin: auto;
+
+			.about-bitexco-content {
+				display: flex;
+
+				.about-bitexco-column {
+					width: 50%;
+
+					.divider {
+						border: 2px solid #DAA622;
+						width: 32px;
 					}
 
-					&.active {
-						width: 48.958%;
-						background: linear-gradient(360deg, rgba(0, 0, 0, 0.5) 45.16%, rgba(0, 0, 0, 0) 100%), url(image.png);
-						backdrop-filter: unset;
-						z-index: 2;
-						padding: 239px 106px 40px 100px;
-						background-repeat: no-repeat;
-						h3.title {
-							margin-top: 4px;
-							margin-bottom: 40px;
-							font-size: 40px;
-						}
-
-						p.desc {
-							display: block;
-						}
+					h3 {
+						font-family: 'Manrope';
+						font-style: normal;
+						font-weight: 500;
+						font-size: 40px;
+						line-height: 120%;
+						color: #141518;
+						margin-top: 8px;
+						margin-bottom: 16px;
 					}
 
-					&.resources {
-						background-image: url(../../access/images/people.jpg);
-						left: 0;
+					p {
+						font-family: 'Public Sans';
+						font-style: normal;
+						font-weight: 300;
+						font-size: 16px;
+						line-height: 160%;
+						letter-spacing: 0.01em;
+						color: #434449;
 					}
 
-					&.grow {
-						background-image: url(../../access/images/grow.png);
-						left: calc(48.958%);
+					p+p {
+						margin-top: 16px;
 					}
 
-					&.responsibility {
-						background-image: url(../../access/images/people.jpg);
-						left: calc(48.958% + 185px);
-
+					button {
+						font-family: 'Public Sans';
+						font-style: normal;
+						font-weight: 600;
+						font-size: 14px;
+						line-height: 140%;
+						letter-spacing: 0.04em;
+						text-transform: uppercase;
+						margin-top: 27px;
 					}
+				}
 
-					&.enviroment {
-						background-image: url(../../access/images/people.jpg);
-						left: calc(48.958% + 185px * 2);
-					}
+				.text {
+					padding-right: 50px;
+				}
 
-					&.customers {
-						background-image: url(../../access/images/people.jpg);
+				.map {
+					display: flex;
+					justify-content: center;
+					align-items: center;
 
-						left: calc(48.958% + 185px * 3);
-
+					img {
+						width: 400.31px;
 					}
 				}
 			}
@@ -412,7 +553,7 @@
 	}
 }
 
-@media (max-width: 14426px) {
+@media (max-width: 1440px) {
 	.bitxeco-brand-page {
 		section.bitexco-brand {
 			&::after {
@@ -645,6 +786,48 @@
 				}
 			}
 		}
+
+		section.core-value {
+			padding: 57px 0 0 0;
+
+			.core-value-container {
+				.core-value-content {
+					.value {
+						width: 9.53%;
+						padding: 40px 20px 40px 20px;
+
+						&.active {
+							width: 63.1%;
+							padding: 40px 106px 40px 100px;
+						}
+					}
+				}
+			}
+		}
+
+		section.about-bitexco {
+			padding: 100px;
+
+			.about-bitexco-container {
+
+				.about-bitexco-content {
+
+					.about-bitexco-column {
+						p+p {
+							margin-top: 21px;
+						}
+					}
+
+					.text {
+						padding-right: 18px;
+					}
+
+					.map {
+						padding-left: 60px;
+					}
+				}
+			}
+		}
 	}
 
 }
@@ -853,6 +1036,37 @@
 								line-height: 160%;
 								letter-spacing: 0.01em;
 							}
+						}
+					}
+				}
+			}
+		}
+
+		section.core-value {
+			.core-value-container {
+				.core-value-content {
+					.value {
+						width: 15%;
+						padding: 40px 20px 40px 20px;
+
+						&.active {
+							width: 63.1%;
+							padding: 40px 106px 40px 100px;
+						}
+					}
+				}
+			}
+		}
+
+		section.about-bitexco {
+			padding: 64px;
+
+			.about-bitexco-container {
+
+				.about-bitexco-content {
+					.map {
+						img {
+							width: 357px;
 						}
 					}
 				}
@@ -1104,6 +1318,39 @@
 							}
 						}
 					}
+				}
+			}
+		}
+
+		section.core-value {
+			.core-value-container {
+				.core-value-content {
+					display: flex;
+					position: relative;
+
+					.value {
+						width: 15%;
+						padding: 40px 20px 40px 20px;
+
+						&.active {
+							width: 63.1%;
+							padding: 40px 20px 40px 20px;
+						}
+					}
+				}
+			}
+		}
+
+		section.about-bitexco {
+			padding: 48px;
+
+			.about-bitexco-container {
+				.about-bitexco-content {
+					.text {
+						padding: 0;
+					}
+
+
 				}
 			}
 		}
@@ -1396,6 +1643,160 @@
 								line-height: 160%;
 								letter-spacing: 0.01em;
 							}
+						}
+					}
+				}
+			}
+		}
+
+		section.core-value {
+			margin-top: -29px;
+			padding: 0;
+			.core-value-container {
+				.core-value-content {
+					display: flex;
+					position: relative;
+
+					.slick-dots {
+						position: absolute;
+						bottom: 34px;
+						display: flex;
+						width: 100%;
+						justify-content: center;
+						padding-left: 0;
+						column-gap: 8px;
+						margin: 0;
+
+						li {
+							width: 10px;
+							height: 10px;
+							background: #D1D5DB;
+							border-radius: 50%;
+
+							&.slick-active {
+								background: #DAA622;
+							}
+
+							button {
+								display: none;
+							}
+						}
+					}
+
+					.value {
+						transform: translateX(0);
+						width: 100vw !important;
+						display: flex;
+
+						&.slick-active,
+						&.active {
+							padding: 20px 24px;
+							transform: translateX(0);
+
+							.numberical-order {
+								animation: unset;
+							}
+
+							h3.title {
+								margin-top: 4px;
+								margin-bottom: 40px;
+								font-size: 40px;
+								animation: unset;
+							}
+
+							p.desc {
+								height: unset;
+								transition: unset;
+								transition-delay: unset;
+								animation: unset;
+							}
+						}
+
+						h3.title {
+							line-height: 130%;
+							font-size: 32px;
+						}
+
+						p.desc {
+							visibility: visible;
+							height: unset;
+						}
+					}
+				}
+				.content {
+					padding: 0 20px;
+					margin-bottom: 32px;
+					h3 {
+						font-size: 32px;
+						line-height: 1.3;
+						margin-bottom: 12px;
+					}
+	
+					p {
+					font-size: 16px;
+					line-height: 1.6;
+					letter-spacing: 0.01em;
+					}
+				}
+			}
+		}
+
+		section.about-bitexco {
+			padding: 60px 20px;
+
+			.about-bitexco-container {
+
+				.about-bitexco-content {
+					flex-direction: column;
+
+					.about-bitexco-column {
+						width: 100%;
+						text-align: center;
+
+						.divider {
+							margin: auto;
+						}
+
+						h3 {
+							font-size: 32px;
+							line-height: 1.3;
+							margin-bottom: 12px;
+						}
+
+						p {
+							font-size: 16px;
+							line-height: 1.6;
+							letter-spacing: 0.01em;
+
+						}
+
+						p+p {
+							margin-top: 12px;
+						}
+
+						button {
+							font-size: 14px;
+							letter-spacing: 0.04em;
+							line-height: 1.4;
+							margin-top: 14px;
+							padding-left: 21px;
+
+							span {
+								width: max-content;
+							}
+						}
+					}
+
+					.text {
+						padding: 0;
+					}
+
+					.map {
+						margin-top: 40px;
+						padding: 0;
+
+						img {
+							width: 100%;
 						}
 					}
 				}
