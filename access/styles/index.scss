@@ -55,6 +55,10 @@ input {
     padding: 0;
 }
 
+p:last-child {
+    margin-bottom: 0;
+}
+
 select {
     background: unset;
     border: unset;
@@ -926,3 +930,4 @@ label.required {
 @import './scss/danh-sach-ket-qua-dau-thau';
 @import './scss/bitexco_brand';
 @import './scss/cac-cong-ti-thanh-vien';
+@import './scss/ban-lanh-dao';
