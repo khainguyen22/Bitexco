@@ -7037,20 +7037,95 @@ section.service-packages .service-package li {
   line-height: 160%;
   letter-spacing: 0.01em;
 }
+.bitxeco-brand-page section.core-value {
+  padding: 27px 0 0 0;
+}
 .bitxeco-brand-page section.core-value .core-value-container .core-value-content {
   display: flex;
   position: relative;
 }
 .bitxeco-brand-page section.core-value .core-value-container .core-value-content .value {
-  width: calc(20% - 26px);
-  position: absolute;
   min-height: 530px;
-  z-index: 1;
+  height: 530px;
+  width: 12.9%;
   background: rgba(13, 13, 14, 0.4);
   -webkit-backdrop-filter: blur(6px);
           backdrop-filter: blur(6px);
   background-repeat: no-repeat;
-  padding: 428px 100px 0 20px;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin: 0;
+  border-radius: unset;
+  flex: unset;
+  padding: 40px 20px 40px 20px;
+  transition: width 0.3s;
+}
+.bitxeco-brand-page section.core-value .core-value-container .core-value-content .value.active {
+  background: linear-gradient(360deg, rgba(0, 0, 0, 0.5) 45.16%, rgba(0, 0, 0, 0) 100%), url(image.png);
+  -webkit-backdrop-filter: unset;
+          backdrop-filter: unset;
+  padding: 0;
+  background-repeat: no-repeat;
+  flex: unset;
+  width: 49.5%;
+  padding: 40px 106px 40px 100px;
+}
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.bitxeco-brand-page section.core-value .core-value-container .core-value-content .value.active .numberical-order {
+  -webkit-animation: fade-in 0.5s ease-in;
+          animation: fade-in 0.5s ease-in;
+}
+.bitxeco-brand-page section.core-value .core-value-container .core-value-content .value.active h3.title {
+  margin-top: 4px;
+  margin-bottom: 40px;
+  font-size: 40px;
+  -webkit-animation: fade-in 0.5s ease-in;
+          animation: fade-in 0.5s ease-in;
+}
+.bitxeco-brand-page section.core-value .core-value-container .core-value-content .value.active p.desc {
+  visibility: visible;
+  height: unset;
+  max-width: 499px;
+  transition: visibility 0.3s;
+  transition-delay: 0.3s;
+  -webkit-animation: fade-in 0.4s ease-in;
+          animation: fade-in 0.4s ease-in;
+}
+.bitxeco-brand-page section.core-value .core-value-container .core-value-content .value.resources {
+  background-image: url(../../access/images/people.jpg);
+  background-size: cover;
+  left: 0;
+}
+.bitxeco-brand-page section.core-value .core-value-container .core-value-content .value.grow {
+  background-image: url(../../access/images/grow.png);
+  background-size: cover;
+}
+.bitxeco-brand-page section.core-value .core-value-container .core-value-content .value.responsibility {
+  background-image: url(../../access/images/people.jpg);
+  background-size: cover;
+}
+.bitxeco-brand-page section.core-value .core-value-container .core-value-content .value.enviroment {
+  background-image: url(../../access/images/people.jpg);
+  background-size: cover;
+}
+.bitxeco-brand-page section.core-value .core-value-container .core-value-content .value.customers {
+  background-image: url(../../access/images/people.jpg);
+  background-size: cover;
 }
 .bitxeco-brand-page section.core-value .core-value-container .core-value-content .value h6.numberical-order {
   font-family: "Manrope";
@@ -7068,6 +7143,7 @@ section.service-packages .service-package li {
   line-height: 120%;
   color: #FFFFFF;
   font-size: 22px;
+  margin: 0;
 }
 .bitxeco-brand-page section.core-value .core-value-container .core-value-content .value p.desc {
   font-family: "Public Sans";
@@ -7078,47 +7154,104 @@ section.service-packages .service-package li {
   text-align: justify;
   letter-spacing: 0.01em;
   color: #FFFFFF;
-  display: none;
+  margin: 0;
+  visibility: hidden;
+  height: 0;
 }
-.bitxeco-brand-page section.core-value .core-value-container .core-value-content .value.active {
-  width: 48.958%;
-  background: linear-gradient(360deg, rgba(0, 0, 0, 0.5) 45.16%, rgba(0, 0, 0, 0) 100%), url(image.png);
-  -webkit-backdrop-filter: unset;
-          backdrop-filter: unset;
-  z-index: 2;
-  padding: 239px 106px 40px 100px;
-  background-repeat: no-repeat;
+.bitxeco-brand-page section.core-value .core-value-container .content {
+  max-width: 1240px;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 60px;
 }
-.bitxeco-brand-page section.core-value .core-value-container .core-value-content .value.active h3.title {
-  margin-top: 4px;
-  margin-bottom: 40px;
+.bitxeco-brand-page section.core-value .core-value-container .content .divider {
+  width: 32px;
+  border: 2px solid #DAA622;
+  margin: auto;
+}
+.bitxeco-brand-page section.core-value .core-value-container .content h3 {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 500;
   font-size: 40px;
+  line-height: 120%;
+  color: #141518;
+  margin-top: 8px;
+  margin-bottom: 16px;
 }
-.bitxeco-brand-page section.core-value .core-value-container .core-value-content .value.active p.desc {
-  display: block;
+.bitxeco-brand-page section.core-value .core-value-container .content p {
+  font-family: "Public Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 160%;
+  letter-spacing: 0.01em;
+  color: #434449;
+  max-width: 668px;
+  margin: auto;
 }
-.bitxeco-brand-page section.core-value .core-value-container .core-value-content .value.resources {
-  background-image: url(../../access/images/people.jpg);
-  left: 0;
+.bitxeco-brand-page section.about-bitexco {
+  padding: 97px 100px 116px 100px;
 }
-.bitxeco-brand-page section.core-value .core-value-container .core-value-content .value.grow {
-  background-image: url(../../access/images/grow.png);
-  left: 48.958%;
+.bitxeco-brand-page section.about-bitexco .about-bitexco-container {
+  max-width: 1240px;
+  margin: auto;
 }
-.bitxeco-brand-page section.core-value .core-value-container .core-value-content .value.responsibility {
-  background-image: url(../../access/images/people.jpg);
-  left: calc(48.958% + 185px);
+.bitxeco-brand-page section.about-bitexco .about-bitexco-container .about-bitexco-content {
+  display: flex;
 }
-.bitxeco-brand-page section.core-value .core-value-container .core-value-content .value.enviroment {
-  background-image: url(../../access/images/people.jpg);
-  left: calc(48.958% + 370px);
+.bitxeco-brand-page section.about-bitexco .about-bitexco-container .about-bitexco-content .about-bitexco-column {
+  width: 50%;
 }
-.bitxeco-brand-page section.core-value .core-value-container .core-value-content .value.customers {
-  background-image: url(../../access/images/people.jpg);
-  left: calc(48.958% + 555px);
+.bitxeco-brand-page section.about-bitexco .about-bitexco-container .about-bitexco-content .about-bitexco-column .divider {
+  border: 2px solid #DAA622;
+  width: 32px;
+}
+.bitxeco-brand-page section.about-bitexco .about-bitexco-container .about-bitexco-content .about-bitexco-column h3 {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 120%;
+  color: #141518;
+  margin-top: 8px;
+  margin-bottom: 16px;
+}
+.bitxeco-brand-page section.about-bitexco .about-bitexco-container .about-bitexco-content .about-bitexco-column p {
+  font-family: "Public Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 160%;
+  letter-spacing: 0.01em;
+  color: #434449;
+}
+.bitxeco-brand-page section.about-bitexco .about-bitexco-container .about-bitexco-content .about-bitexco-column p + p {
+  margin-top: 16px;
+}
+.bitxeco-brand-page section.about-bitexco .about-bitexco-container .about-bitexco-content .about-bitexco-column button {
+  font-family: "Public Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 140%;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-top: 27px;
+}
+.bitxeco-brand-page section.about-bitexco .about-bitexco-container .about-bitexco-content .text {
+  padding-right: 50px;
+}
+.bitxeco-brand-page section.about-bitexco .about-bitexco-container .about-bitexco-content .map {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bitxeco-brand-page section.about-bitexco .about-bitexco-container .about-bitexco-content .map img {
+  width: 400.31px;
 }
 
-@media (max-width: 14426px) {
+@media (max-width: 1440px) {
   .bitxeco-brand-page section.bitexco-brand {
     min-height: 640px;
   }
@@ -7279,6 +7412,29 @@ section.service-packages .service-package li {
     line-height: 160%;
     letter-spacing: 0.01em;
   }
+  .bitxeco-brand-page section.core-value {
+    padding: 57px 0 0 0;
+  }
+  .bitxeco-brand-page section.core-value .core-value-container .core-value-content .value {
+    width: 9.53%;
+    padding: 40px 20px 40px 20px;
+  }
+  .bitxeco-brand-page section.core-value .core-value-container .core-value-content .value.active {
+    width: 63.1%;
+    padding: 40px 106px 40px 100px;
+  }
+  .bitxeco-brand-page section.about-bitexco {
+    padding: 100px;
+  }
+  .bitxeco-brand-page section.about-bitexco .about-bitexco-container .about-bitexco-content .about-bitexco-column p + p {
+    margin-top: 21px;
+  }
+  .bitxeco-brand-page section.about-bitexco .about-bitexco-container .about-bitexco-content .text {
+    padding-right: 18px;
+  }
+  .bitxeco-brand-page section.about-bitexco .about-bitexco-container .about-bitexco-content .map {
+    padding-left: 60px;
+  }
 }
 @media (max-width: 1024px) {
   .bitxeco-brand-page section.bitexco-brand {
@@ -7437,6 +7593,20 @@ section.service-packages .service-package li {
     font-size: 16px;
     line-height: 160%;
     letter-spacing: 0.01em;
+  }
+  .bitxeco-brand-page section.core-value .core-value-container .core-value-content .value {
+    width: 15%;
+    padding: 40px 20px 40px 20px;
+  }
+  .bitxeco-brand-page section.core-value .core-value-container .core-value-content .value.active {
+    width: 63.1%;
+    padding: 40px 106px 40px 100px;
+  }
+  .bitxeco-brand-page section.about-bitexco {
+    padding: 64px;
+  }
+  .bitxeco-brand-page section.about-bitexco .about-bitexco-container .about-bitexco-content .map img {
+    width: 357px;
   }
 }
 @media (max-width: 880px) {
@@ -7625,6 +7795,24 @@ section.service-packages .service-package li {
     font-size: 16px;
     line-height: 160%;
     letter-spacing: 0.01em;
+  }
+  .bitxeco-brand-page section.core-value .core-value-container .core-value-content {
+    display: flex;
+    position: relative;
+  }
+  .bitxeco-brand-page section.core-value .core-value-container .core-value-content .value {
+    width: 15%;
+    padding: 40px 20px 40px 20px;
+  }
+  .bitxeco-brand-page section.core-value .core-value-container .core-value-content .value.active {
+    width: 63.1%;
+    padding: 40px 20px 40px 20px;
+  }
+  .bitxeco-brand-page section.about-bitexco {
+    padding: 48px;
+  }
+  .bitxeco-brand-page section.about-bitexco .about-bitexco-container .about-bitexco-content .text {
+    padding: 0;
   }
 }
 @media (max-width: 767px) {
@@ -7845,6 +8033,134 @@ section.service-packages .service-package li {
     font-size: 16px;
     line-height: 160%;
     letter-spacing: 0.01em;
+  }
+  .bitxeco-brand-page section.core-value {
+    margin-top: -29px;
+    padding: 0;
+  }
+  .bitxeco-brand-page section.core-value .core-value-container .core-value-content {
+    display: flex;
+    position: relative;
+  }
+  .bitxeco-brand-page section.core-value .core-value-container .core-value-content .slick-dots {
+    position: absolute;
+    bottom: 34px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding-left: 0;
+    -moz-column-gap: 8px;
+         column-gap: 8px;
+    margin: 0;
+  }
+  .bitxeco-brand-page section.core-value .core-value-container .core-value-content .slick-dots li {
+    width: 10px;
+    height: 10px;
+    background: #D1D5DB;
+    border-radius: 50%;
+  }
+  .bitxeco-brand-page section.core-value .core-value-container .core-value-content .slick-dots li.slick-active {
+    background: #DAA622;
+  }
+  .bitxeco-brand-page section.core-value .core-value-container .core-value-content .slick-dots li button {
+    display: none;
+  }
+  .bitxeco-brand-page section.core-value .core-value-container .core-value-content .value {
+    transform: translateX(0);
+    width: 100vw !important;
+    display: flex;
+  }
+  .bitxeco-brand-page section.core-value .core-value-container .core-value-content .value.slick-active, .bitxeco-brand-page section.core-value .core-value-container .core-value-content .value.active {
+    padding: 20px 24px;
+    transform: translateX(0);
+  }
+  .bitxeco-brand-page section.core-value .core-value-container .core-value-content .value.slick-active .numberical-order, .bitxeco-brand-page section.core-value .core-value-container .core-value-content .value.active .numberical-order {
+    -webkit-animation: unset;
+            animation: unset;
+  }
+  .bitxeco-brand-page section.core-value .core-value-container .core-value-content .value.slick-active h3.title, .bitxeco-brand-page section.core-value .core-value-container .core-value-content .value.active h3.title {
+    margin-top: 4px;
+    margin-bottom: 40px;
+    font-size: 40px;
+    -webkit-animation: unset;
+            animation: unset;
+  }
+  .bitxeco-brand-page section.core-value .core-value-container .core-value-content .value.slick-active p.desc, .bitxeco-brand-page section.core-value .core-value-container .core-value-content .value.active p.desc {
+    height: unset;
+    transition: unset;
+    transition-delay: unset;
+    -webkit-animation: unset;
+            animation: unset;
+  }
+  .bitxeco-brand-page section.core-value .core-value-container .core-value-content .value h3.title {
+    line-height: 130%;
+    font-size: 32px;
+  }
+  .bitxeco-brand-page section.core-value .core-value-container .core-value-content .value p.desc {
+    visibility: visible;
+    height: unset;
+  }
+  .bitxeco-brand-page section.core-value .core-value-container .content {
+    padding: 0 20px;
+    margin-bottom: 32px;
+  }
+  .bitxeco-brand-page section.core-value .core-value-container .content h3 {
+    font-size: 32px;
+    line-height: 1.3;
+    margin-bottom: 12px;
+  }
+  .bitxeco-brand-page section.core-value .core-value-container .content p {
+    font-size: 16px;
+    line-height: 1.6;
+    letter-spacing: 0.01em;
+  }
+  .bitxeco-brand-page section.about-bitexco {
+    padding: 60px 20px;
+  }
+  .bitxeco-brand-page section.about-bitexco .about-bitexco-container .about-bitexco-content {
+    flex-direction: column;
+  }
+  .bitxeco-brand-page section.about-bitexco .about-bitexco-container .about-bitexco-content .about-bitexco-column {
+    width: 100%;
+    text-align: center;
+  }
+  .bitxeco-brand-page section.about-bitexco .about-bitexco-container .about-bitexco-content .about-bitexco-column .divider {
+    margin: auto;
+  }
+  .bitxeco-brand-page section.about-bitexco .about-bitexco-container .about-bitexco-content .about-bitexco-column h3 {
+    font-size: 32px;
+    line-height: 1.3;
+    margin-bottom: 12px;
+  }
+  .bitxeco-brand-page section.about-bitexco .about-bitexco-container .about-bitexco-content .about-bitexco-column p {
+    font-size: 16px;
+    line-height: 1.6;
+    letter-spacing: 0.01em;
+  }
+  .bitxeco-brand-page section.about-bitexco .about-bitexco-container .about-bitexco-content .about-bitexco-column p + p {
+    margin-top: 12px;
+  }
+  .bitxeco-brand-page section.about-bitexco .about-bitexco-container .about-bitexco-content .about-bitexco-column button {
+    font-size: 14px;
+    letter-spacing: 0.04em;
+    line-height: 1.4;
+    margin-top: 14px;
+    padding-left: 21px;
+  }
+  .bitxeco-brand-page section.about-bitexco .about-bitexco-container .about-bitexco-content .about-bitexco-column button span {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+  }
+  .bitxeco-brand-page section.about-bitexco .about-bitexco-container .about-bitexco-content .text {
+    padding: 0;
+  }
+  .bitxeco-brand-page section.about-bitexco .about-bitexco-container .about-bitexco-content .map {
+    margin-top: 40px;
+    padding: 0;
+  }
+  .bitxeco-brand-page section.about-bitexco .about-bitexco-container .about-bitexco-content .map img {
+    width: 100%;
   }
 }
 @media (max-width: 375px) {
