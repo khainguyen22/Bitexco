@@ -62,6 +62,7 @@ p:last-child {
 select {
   background: unset;
   border: unset;
+  outline: none;
 }
 select:focus {
   border: unset;
@@ -350,20 +351,22 @@ button.btn-custom-4:hover {
   color: #434449;
 }
 
-.btn-search,
+button.btn-search,
 .btn-more {
   align-items: center;
   min-width: 100%;
   height: 48px;
-  background: #DAA622;
+  background-color: #DAA622;
   border-radius: 2px;
   color: #FFFFFF;
   text-transform: uppercase;
   font-weight: 600;
 }
-.btn-search:hover,
+button.btn-search:hover,
 .btn-more:hover {
   border-color: #DAA622;
+  background: unset;
+  color: #000;
 }
 
 .btn-reset {
@@ -1991,7 +1994,6 @@ section.other-information .other-container .other-content .bidding-information {
 .filter-post-section .filter-post-container .form-filter form .form-filter-type {
   border: 1px solid #D1D5DB;
   background: #fff;
-  padding: 10.2px 16px 10.2px 16px;
   border-radius: 2px;
   width: calc(50% - 7.5px);
   position: relative;
@@ -2010,6 +2012,7 @@ section.other-information .other-container .other-content .bidding-information {
 }
 .filter-post-section .filter-post-container .form-filter form .form-filter-type select {
   width: 100%;
+  padding: 10.2px 16px 10.2px 16px;
   font-size: 16px;
   font-weight: 300;
   line-height: 1.6;
@@ -2022,7 +2025,6 @@ section.other-information .other-container .other-content .bidding-information {
 .filter-post-section .filter-post-container .form-filter form .form-filter-field {
   border: 1px solid #D1D5DB;
   background: #fff;
-  padding: 10.2px 16px 10.2px 16px;
   border-radius: 2px;
   width: calc(50% - 7.5px);
   position: relative;
@@ -2041,6 +2043,7 @@ section.other-information .other-container .other-content .bidding-information {
 }
 .filter-post-section .filter-post-container .form-filter form .form-filter-field select {
   width: 100%;
+  padding: 10.2px 16px 10.2px 16px;
   font-size: 16px;
   font-weight: 300;
   line-height: 1.6;
@@ -2053,7 +2056,6 @@ section.other-information .other-container .other-content .bidding-information {
 .filter-post-section .filter-post-container .form-filter form .form-filter-area {
   border: 1px solid #D1D5DB;
   background: #fff;
-  padding: 10.2px 16px 10.2px 14px;
   border-radius: 2px;
   width: 472px;
   width: calc(33.3333333333% + 59px);
@@ -2073,6 +2075,7 @@ section.other-information .other-container .other-content .bidding-information {
   transform: rotate(45deg) translateY(-50%);
 }
 .filter-post-section .filter-post-container .form-filter form .form-filter-area select {
+  padding: 10.2px 16px 10.2px 14px;
   width: 100%;
   font-size: 16px;
   font-weight: 300;
@@ -2086,7 +2089,6 @@ section.other-information .other-container .other-content .bidding-information {
 .filter-post-section .filter-post-container .form-filter form .form-filter-company {
   border: 1px solid #D1D5DB;
   background: #fff;
-  padding: 10.2px 16px 10.2px 16px;
   border-radius: 2px;
   width: calc(33.3333333333% + 59px);
   margin-right: 15.5px;
@@ -2106,6 +2108,7 @@ section.other-information .other-container .other-content .bidding-information {
 }
 .filter-post-section .filter-post-container .form-filter form .form-filter-company select {
   width: 100%;
+  padding: 10.2px 16px 10.2px 16px;
   font-size: 16px;
   font-weight: 300;
   line-height: 1.6;
@@ -3351,6 +3354,10 @@ header .search .search-bar:hover::after {
     width: 100%;
   }
 }
+.hoat-dong-sx-kd-content .lists-post .row.fillter .form-filter .button-submit,
+.hoat-dong-sx-kd-content .lists-post .row.fillter .form-filter .button-reset {
+  width: calc(10% + 8.1px);
+}
 @media (max-width: 1366px) {
   .hoat-dong-sx-kd-content .lists-post .row.fillter .form-filter .button-submit,
 .hoat-dong-sx-kd-content .lists-post .row.fillter .form-filter .button-reset {
@@ -3709,7 +3716,6 @@ header .search .search-bar:hover::after {
 .filter-post-section .filter-post-container .small-form-filter form .form-filter-area {
   border: 1px solid #D1D5DB;
   background: #fff;
-  padding: 10.2px 16px 10.2px 14px;
   border-radius: 2px;
   width: 472px;
   width: calc(20% - 21.8px);
@@ -3729,6 +3735,7 @@ header .search .search-bar:hover::after {
 }
 .filter-post-section .filter-post-container .small-form-filter form .form-filter-area select {
   width: 100%;
+  padding: 10.2px 16px 10.2px 14px;
   font-size: 16px;
   font-weight: 300;
   line-height: 1.6;
@@ -3741,7 +3748,6 @@ header .search .search-bar:hover::after {
 .filter-post-section .filter-post-container .small-form-filter form .form-filter-company {
   border: 1px solid #D1D5DB;
   background: #fff;
-  padding: 10.2px 16px 10.2px 16px;
   border-radius: 2px;
   width: calc(25% + 2.25px);
   margin-right: 15.5px;
@@ -3760,6 +3766,7 @@ header .search .search-bar:hover::after {
 }
 .filter-post-section .filter-post-container .small-form-filter form .form-filter-company select {
   width: 100%;
+  padding: 10.2px 16px 10.2px 16px;
   font-size: 16px;
   font-weight: 300;
   line-height: 1.6;

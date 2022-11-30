@@ -62,6 +62,7 @@ p:last-child {
 select {
     background: unset;
     border: unset;
+    outline: none;
 
     &:focus {
 
@@ -371,12 +372,13 @@ button.btn-custom-4 {
     }
 }
 
-.btn-search,
+
+button.btn-search,
 .btn-more {
     align-items: center;
     min-width: 100%;
     height: 48px;
-    background: #DAA622;
+    background-color: #DAA622;
     border-radius: 2px;
     color: #FFFFFF;
     text-transform: uppercase;
@@ -384,6 +386,8 @@ button.btn-custom-4 {
 
     &:hover {
         border-color: #DAA622;
+        background: unset;
+        color: #000;
     }
 }
 
