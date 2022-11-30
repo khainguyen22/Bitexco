@@ -8278,4 +8278,373 @@ section.service-packages .service-package li {
   .ban-lanh-dao .other-information .other-container .other-content a {
     min-height: 180px;
   }
+}
+
+.thong-tin-co-dong .banner {
+  background-image: url("./../../access/images/banner-tru-so.png");
+  min-height: 400px;
+}
+.thong-tin-co-dong .main {
+  padding: 60px 0 80px;
+}
+.thong-tin-co-dong .main .container {
+  padding: 0 100px;
+}
+@media (max-width: 767px) {
+  .thong-tin-co-dong .main .container {
+    padding: 0 20px;
+  }
+}
+.thong-tin-co-dong .main .wrap-head {
+  max-width: 666px;
+  margin: 0 auto 20px;
+  text-align: center;
+}
+.thong-tin-co-dong .main .wrap-head .title {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 120%;
+  color: #141518;
+}
+@media (max-width: 767px) {
+  .thong-tin-co-dong .main .wrap-head .title {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 130%;
+  }
+}
+.thong-tin-co-dong .main .wrap-head .description {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 160%;
+  letter-spacing: 0.01em;
+  color: #434449;
+}
+.thong-tin-co-dong .main .content .person {
+  width: 50%;
+}
+.thong-tin-co-dong .main .content .person .image {
+  width: 240px;
+  height: 240px;
+}
+.thong-tin-co-dong .main .content .person .image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.thong-tin-co-dong .main .content .person .info {
+  margin-left: 20px;
+}
+.thong-tin-co-dong .main .content .person .info .position {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 140%;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #434449;
+  margin-bottom: 12px;
+}
+.thong-tin-co-dong .main .content .person .info .name {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 130%;
+  letter-spacing: 0.01em;
+  color: #141518;
+}
+@media (max-width: 1366px) {
+  .thong-tin-co-dong .main .content .person {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+}
+@media (max-width: 767px) {
+  .thong-tin-co-dong .main .content .person {
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  .thong-tin-co-dong .main .content .person .info {
+    padding-top: 20px;
+  }
+}
+.thong-tin-co-dong .main .content .wraper-member .title {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 130%;
+  color: #141518;
+  margin-bottom: 20px;
+}
+.thong-tin-co-dong .main .content .wraper-member .member {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.thong-tin-co-dong .main .content .wraper-member .member .person {
+  padding: 20px 0;
+}
+.thong-tin-co-dong .main .divider-section {
+  max-width: 1240px;
+  height: 1px;
+  background: #D1D5DB;
+  border-radius: 2px;
+  width: 100%;
+  margin: 40px auto;
+  display: block;
+}
+@media (max-width: 767px) {
+  .thong-tin-co-dong .main {
+    padding: 40px 0;
+  }
+}
+@media (max-width: 767px) {
+  .thong-tin-co-dong .other-information .other-container .other-content a {
+    min-height: 180px;
+  }
+}
+
+.bao-cao-tai-chinh .banner {
+  background-image: url("./../../access/images/banner-tru-so.png");
+  min-height: 400px;
+}
+.bao-cao-tai-chinh .main {
+  padding: 60px 0 80px;
+}
+.bao-cao-tai-chinh .main .container {
+  padding: 0 100px;
+}
+@media (max-width: 767px) {
+  .bao-cao-tai-chinh .main .container {
+    padding: 0 20px;
+  }
+}
+.bao-cao-tai-chinh .main .wrap-head {
+  max-width: 666px;
+  margin: 0 auto 20px;
+  text-align: center;
+}
+.bao-cao-tai-chinh .main .wrap-head .title {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 120%;
+  color: #141518;
+}
+@media (max-width: 767px) {
+  .bao-cao-tai-chinh .main .wrap-head .title {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 130%;
+  }
+}
+.bao-cao-tai-chinh .main .wrap-head .description {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 160%;
+  letter-spacing: 0.01em;
+  color: #434449;
+}
+.bao-cao-tai-chinh .main .content .person {
+  width: 50%;
+}
+.bao-cao-tai-chinh .main .content .person .image {
+  width: 240px;
+  height: 240px;
+}
+.bao-cao-tai-chinh .main .content .person .image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.bao-cao-tai-chinh .main .content .person .info {
+  margin-left: 20px;
+}
+.bao-cao-tai-chinh .main .content .person .info .position {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 140%;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #434449;
+  margin-bottom: 12px;
+}
+.bao-cao-tai-chinh .main .content .person .info .name {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 130%;
+  letter-spacing: 0.01em;
+  color: #141518;
+}
+@media (max-width: 1366px) {
+  .bao-cao-tai-chinh .main .content .person {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+}
+@media (max-width: 767px) {
+  .bao-cao-tai-chinh .main .content .person {
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  .bao-cao-tai-chinh .main .content .person .info {
+    padding-top: 20px;
+  }
+}
+.bao-cao-tai-chinh .main .content .wraper-member .title {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 130%;
+  color: #141518;
+  margin-bottom: 20px;
+}
+.bao-cao-tai-chinh .main .content .wraper-member .member {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.bao-cao-tai-chinh .main .content .wraper-member .member .person {
+  padding: 20px 0;
+}
+.bao-cao-tai-chinh .main .divider-section {
+  max-width: 1240px;
+  height: 1px;
+  background: #D1D5DB;
+  border-radius: 2px;
+  width: 100%;
+  margin: 40px auto;
+  display: block;
+}
+@media (max-width: 767px) {
+  .bao-cao-tai-chinh .main {
+    padding: 40px 0;
+  }
+}
+@media (max-width: 767px) {
+  .bao-cao-tai-chinh .other-information .other-container .other-content a {
+    min-height: 180px;
+  }
+}
+
+.bao-cao-thuong-nien .banner {
+  background-image: url("./../../access/images/banner-tru-so.png");
+  min-height: 400px;
+}
+.bao-cao-thuong-nien .main {
+  padding: 60px 0 80px;
+}
+.bao-cao-thuong-nien .main .container {
+  padding: 0 100px;
+}
+@media (max-width: 767px) {
+  .bao-cao-thuong-nien .main .container {
+    padding: 0 20px;
+  }
+}
+.bao-cao-thuong-nien .main .wrap-head {
+  max-width: 666px;
+  margin: 0 auto 20px;
+  text-align: center;
+}
+.bao-cao-thuong-nien .main .wrap-head .title {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 120%;
+  color: #141518;
+}
+@media (max-width: 767px) {
+  .bao-cao-thuong-nien .main .wrap-head .title {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 130%;
+  }
+}
+.bao-cao-thuong-nien .main .wrap-head .description {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 160%;
+  letter-spacing: 0.01em;
+  color: #434449;
+}
+.bao-cao-thuong-nien .main .content .person {
+  width: 50%;
+}
+.bao-cao-thuong-nien .main .content .person .image {
+  width: 240px;
+  height: 240px;
+}
+.bao-cao-thuong-nien .main .content .person .image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.bao-cao-thuong-nien .main .content .person .info {
+  margin-left: 20px;
+}
+.bao-cao-thuong-nien .main .content .person .info .position {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 140%;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #434449;
+  margin-bottom: 12px;
+}
+.bao-cao-thuong-nien .main .content .person .info .name {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 130%;
+  letter-spacing: 0.01em;
+  color: #141518;
+}
+@media (max-width: 1366px) {
+  .bao-cao-thuong-nien .main .content .person {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+}
+@media (max-width: 767px) {
+  .bao-cao-thuong-nien .main .content .person {
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  .bao-cao-thuong-nien .main .content .person .info {
+    padding-top: 20px;
+  }
+}
+.bao-cao-thuong-nien .main .content .wraper-member .title {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 130%;
+  color: #141518;
+  margin-bottom: 20px;
+}
+.bao-cao-thuong-nien .main .content .wraper-member .member {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.bao-cao-thuong-nien .main .content .wraper-member .member .person {
+  padding: 20px 0;
+}
+.bao-cao-thuong-nien .main .divider-section {
+  max-width: 1240px;
+  height: 1px;
+  background: #D1D5DB;
+  border-radius: 2px;
+  width: 100%;
+  margin: 40px auto;
+  display: block;
+}
+@media (max-width: 767px) {
+  .bao-cao-thuong-nien .main {
+    padding: 40px 0;
+  }
+}
+@media (max-width: 767px) {
+  .bao-cao-thuong-nien .other-information .other-container .other-content a {
+    min-height: 180px;
+  }
 }/*# sourceMappingURL=index.css.map */
