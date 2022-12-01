@@ -7267,6 +7267,11 @@ section.service-packages .service-package li {
 .bitxeco-brand-page section.achievement .your-privilege-container .your-privilege-content .achievement-figures .figure svg {
   margin-right: 20px;
 }
+.bitxeco-brand-page section.achievement .your-privilege-container .your-privilege-content .achievement-figures .figure img {
+  margin-right: 20px;
+  max-width: 80px;
+  max-height: 80px;
+}
 .bitxeco-brand-page section.achievement .your-privilege-container .your-privilege-content .achievement-figures .figure p {
   margin: 0;
 }
