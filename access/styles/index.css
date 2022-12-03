@@ -8556,6 +8556,8 @@ section.service-packages .service-package li {
 .historical-grow-page section.banner {
   background: url(../../access/images/lichsuphattrien.png);
   background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
 .historical-grow-page section.banner::before {
   content: "";
@@ -8897,10 +8899,10 @@ section.service-packages .service-package li {
     width: 42.9799%;
   }
   .historical-grow-page section.period-grow .container .historical-period .period-line .year:nth-child(2n+1) .content {
-    transform: translateX(-50px);
+    transform: translateX(-30px);
   }
   .historical-grow-page section.period-grow .container .historical-period .period-line .year:nth-child(2n) .content {
-    transform: translateX(50px);
+    transform: translateX(30px);
   }
   .historical-grow-page section.period-grow .container .historical-period .period-line .year.active .content {
     transform: translateX(0);
@@ -8926,6 +8928,18 @@ section.service-packages .service-package li {
   }
 }
 @media (max-width: 767px) {
+  .historical-grow-page section.banner .container .content {
+    top: calc(50% - 20px);
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .historical-grow-page section.banner .container .content h3 {
+    font-size: 24px;
+  }
+  .historical-grow-page section.banner .container .content p {
+    font-size: 13px;
+    max-width: 345px;
+  }
   .historical-grow-page section.period-section {
     padding: 27px 0 31px 0;
   }
