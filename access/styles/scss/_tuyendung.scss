@@ -349,6 +349,15 @@
                     column-gap: 20px;
 
                     .quote-nav-img {
+                        height: fit-content;
+                        img {
+                            width: 47.42px;
+                            height: 47.42px;
+                            border-radius: 50%;
+                        }
+                    }
+
+                    .quote-nav-img {
                         &:hover {
                             border: 4px solid #DAA622;
                             border-radius: 50%;

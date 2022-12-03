@@ -5630,6 +5630,16 @@ section.related-news .article-container .related-news-content .related-item .ite
   -moz-column-gap: 20px;
        column-gap: 20px;
 }
+.tuyen-dung .slogan .quote .quote-content .quote-navigation .quote-nav-img {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.tuyen-dung .slogan .quote .quote-content .quote-navigation .quote-nav-img img {
+  width: 47.42px;
+  height: 47.42px;
+  border-radius: 50%;
+}
 .tuyen-dung .slogan .quote .quote-content .quote-navigation .quote-nav-img:hover {
   border: 4px solid #DAA622;
   border-radius: 50%;
@@ -8545,6 +8555,7 @@ section.service-packages .service-package li {
 
 .historical-grow-page section.banner {
   background: url(../../access/images/lichsuphattrien.png);
+  background-repeat: no-repeat;
 }
 .historical-grow-page section.banner::before {
   content: "";
@@ -8552,6 +8563,7 @@ section.service-packages .service-package li {
   width: 100%;
   height: 100%;
   top: 0;
+  left: 0;
   background: rgba(0, 0, 0, 0.4);
 }
 .historical-grow-page section.banner .container .content {
@@ -8561,7 +8573,7 @@ section.service-packages .service-package li {
   max-width: 533px;
 }
 .historical-grow-page section.period-section {
-  padding-bottom: 100px;
+  padding: 31px 0 100px 0;
   background: #fff;
 }
 .historical-grow-page section.period-section .container .content {
@@ -8573,7 +8585,6 @@ section.service-packages .service-package li {
   border-bottom: 1px solid #D1D5DB;
 }
 .historical-grow-page section.period-section .container .content .period {
-  padding-top: 19px;
   position: relative;
 }
 .historical-grow-page section.period-section .container .content .period h5 {
@@ -8584,6 +8595,7 @@ section.service-packages .service-package li {
   line-height: 160%;
   letter-spacing: 0.01em;
   color: #7E8189;
+  margin-bottom: 1px;
 }
 .historical-grow-page section.period-section .container .content .period.active h5 {
   font-family: "Manrope";
@@ -8592,6 +8604,7 @@ section.service-packages .service-package li {
   font-size: 28px;
   line-height: 130%;
   color: #141518;
+  margin-bottom: 3px;
 }
 .historical-grow-page section.period-section .container .content .period.active::after {
   width: 100%;
@@ -8609,11 +8622,39 @@ section.service-packages .service-package li {
   width: 0%;
   background: #DAA622;
   display: block;
-  bottom: -4px;
+  bottom: -2px;
   transition: all 1s;
 }
 .historical-grow-page section.period-grow {
   background-color: #fff;
+  display: none;
+}
+.historical-grow-page section.period-grow.active {
+  display: block;
+  -webkit-animation: buble 0.3s ease-in;
+          animation: buble 0.3s ease-in;
+}
+@-webkit-keyframes buble {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes buble {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 .historical-grow-page section.period-grow .container .grow-content h6 {
   font-family: "Manrope";
@@ -8621,9 +8662,10 @@ section.service-packages .service-package li {
   font-weight: 600;
   font-size: 22px;
   line-height: 130%;
-  text-align: center;
   letter-spacing: 0.01em;
   color: #141518;
+  margin-bottom: 16px;
+  text-align: center;
 }
 .historical-grow-page section.period-grow .container .grow-content p {
   font-family: "Public Sans";
@@ -8631,11 +8673,11 @@ section.service-packages .service-package li {
   font-weight: 300;
   font-size: 16px;
   line-height: 160%;
-  text-align: center;
-  letter-spacing: 0.01em;
   color: #434449;
+  letter-spacing: 0.01em;
   max-width: 1000px;
   margin: auto;
+  text-align: center;
 }
 .historical-grow-page section.period-grow .container .historical-period {
   margin-top: 60px;
@@ -8647,19 +8689,63 @@ section.service-packages .service-package li {
   display: flex;
   flex-wrap: wrap;
   row-gap: 60px;
-  justify-content: space-between;
+  justify-content: center;
+  -moz-column-gap: 132px;
+       column-gap: 132px;
 }
 .historical-grow-page section.period-grow .container .historical-period .period-line::before {
   content: "";
   position: absolute;
-  width: 1px;
+  width: 3px;
   height: 100%;
   background-color: #D1D5DB;
   left: 50%;
   transform: translateX(-50%);
+  max-height: 100%;
+}
+.historical-grow-page section.period-grow .container .historical-period .period-line::after {
+  content: "";
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 28%;
+  background-color: #fff;
+  left: 50%;
+  transform: translateX(-50%);
+  max-height: 1440px;
+  bottom: 0;
 }
 .historical-grow-page section.period-grow .container .historical-period .period-line .year {
   width: 38.54%;
+}
+.historical-grow-page section.period-grow .container .historical-period .period-line .year .content {
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.6s;
+}
+.historical-grow-page section.period-grow .container .historical-period .period-line .year .content .text {
+  border: 1px solid #D1D5DB;
+  padding: 20px;
+  border-radius: 2px 2px 0px 0px;
+}
+.historical-grow-page section.period-grow .container .historical-period .period-line .year .content .text h5 {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 130%;
+  color: #141518;
+  margin-bottom: 9px;
+}
+.historical-grow-page section.period-grow .container .historical-period .period-line .year .content .text p {
+  margin: 0;
+  font-family: "Public Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 160%;
+  letter-spacing: 0.01em;
+  color: #434449;
 }
 .historical-grow-page section.period-grow .container .historical-period .period-line .year .number {
   position: absolute;
@@ -8695,7 +8781,7 @@ section.service-packages .service-package li {
   transform: translateY(-50%);
 }
 .historical-grow-page section.period-grow .container .historical-period .period-line .year:nth-child(2n+1) .content {
-  transform: translateX(-150px);
+  transform: translateX(-100px);
 }
 .historical-grow-page section.period-grow .container .historical-period .period-line .year:nth-child(2n) .number::after {
   content: "";
@@ -8708,7 +8794,7 @@ section.service-packages .service-package li {
   transform: translateY(-50%);
 }
 .historical-grow-page section.period-grow .container .historical-period .period-line .year:nth-child(2n) .content {
-  transform: translateX(150px);
+  transform: translateX(100px);
 }
 .historical-grow-page section.period-grow .container .historical-period .period-line .year:nth-child(2) {
   margin-top: 150px;
@@ -8716,61 +8802,34 @@ section.service-packages .service-package li {
 .historical-grow-page section.period-grow .container .historical-period .period-line .year:nth-child(3), .historical-grow-page section.period-grow .container .historical-period .period-line .year:nth-child(5) {
   margin-top: -150px;
 }
-.historical-grow-page section.period-grow .container .historical-period .period-line .year .content {
-  visibility: hidden;
-  opacity: 0;
-}
-.historical-grow-page section.period-grow .container .historical-period .period-line .year .content .text {
-  border: 1px solid #D1D5DB;
-  padding: 20px;
-  border-radius: 2px 2px 0px 0px;
-}
-.historical-grow-page section.period-grow .container .historical-period .period-line .year .content .text h5 {
-  font-family: "Manrope";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 28px;
-  line-height: 130%;
-  color: #141518;
-  margin-bottom: 9px;
-}
-.historical-grow-page section.period-grow .container .historical-period .period-line .year .content .text p {
-  margin: 0;
-  font-family: "Public Sans";
-  font-style: normal;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 160%;
-  letter-spacing: 0.01em;
-  color: #434449;
-}
-.historical-grow-page section.period-grow .container .historical-period .period-line .year.active .number::before {
+.historical-grow-page section.period-grow .container .historical-period .period-line .year.active .number {
   background-color: #DAA622;
+}
+.historical-grow-page section.period-grow .container .historical-period .period-line .year.active .number span {
   color: #fff;
 }
 .historical-grow-page section.period-grow .container .historical-period .period-line .year.active .content {
   visibility: visible;
   transform: translateX(0);
   opacity: 1;
-  transition: transform 0.6s;
-  -webkit-animation: custom_opacity 0.6s;
-          animation: custom_opacity 0.6s;
 }
-@-webkit-keyframes custom_opacity {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+.historical-grow-page section.period-grow .container .historical-period .period-line .new-line {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 3px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #DAA622;
 }
-@keyframes custom_opacity {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+.historical-grow-page section.period-grow .container .historical-period .yellow-line::after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  background-color: #DAA622;
+  right: 50%;
+  transform: translateX(-50%);
+  max-height: 1477px;
 }
 .historical-grow-page section.period-grow .container .historical-period .navigation {
   display: flex;
@@ -8799,6 +8858,195 @@ section.service-packages .service-package li {
   color: #DAA622;
 }
 
+@media (max-width: 1200px) {
+  .historical-grow-page section.period-grow {
+    background-color: #fff;
+    display: none;
+  }
+  .historical-grow-page section.period-grow .container .historical-period .period-line {
+    justify-content: space-between;
+    -moz-column-gap: unset;
+         column-gap: unset;
+  }
+  .historical-grow-page section.period-grow .container .historical-period .period-line .year {
+    width: 42.9799%;
+  }
+  .historical-grow-page section.period-grow .container .historical-period .period-line .year:nth-child(2n+1) .content {
+    transform: translateX(-80px);
+  }
+  .historical-grow-page section.period-grow .container .historical-period .period-line .year:nth-child(2n) .content {
+    transform: translateX(80px);
+  }
+  .historical-grow-page section.period-grow .container .historical-period .period-line .year.active .content {
+    transform: translateX(0);
+  }
+  .historical-grow-page section.period-grow .container .historical-period .navigation .nav:hover {
+    cursor: pointer;
+  }
+}
+@media (max-width: 1024px) {
+  .historical-grow-page section.period-grow .container {
+    padding: 0 64px;
+  }
+  .historical-grow-page section.period-grow .container .historical-period .period-line {
+    justify-content: space-between;
+    -moz-column-gap: unset;
+         column-gap: unset;
+  }
+  .historical-grow-page section.period-grow .container .historical-period .period-line .year {
+    width: 42.9799%;
+  }
+  .historical-grow-page section.period-grow .container .historical-period .period-line .year:nth-child(2n+1) .content {
+    transform: translateX(-50px);
+  }
+  .historical-grow-page section.period-grow .container .historical-period .period-line .year:nth-child(2n) .content {
+    transform: translateX(50px);
+  }
+  .historical-grow-page section.period-grow .container .historical-period .period-line .year.active .content {
+    transform: translateX(0);
+  }
+  .historical-grow-page section.period-grow .container .historical-period .navigation .nav:hover {
+    cursor: pointer;
+  }
+}
+@media (max-width: 880px) {
+  .historical-grow-page section.period-grow .container {
+    padding: 0 48px;
+  }
+  .historical-grow-page section.period-grow .container .historical-period .period-line {
+    justify-content: space-between;
+    -moz-column-gap: unset;
+         column-gap: unset;
+  }
+  .historical-grow-page section.period-grow .container .historical-period .period-line .year {
+    width: 42.9799%;
+  }
+  .historical-grow-page section.period-grow .container .historical-period .navigation .nav:hover {
+    cursor: pointer;
+  }
+}
+@media (max-width: 767px) {
+  .historical-grow-page section.period-section {
+    padding: 27px 0 31px 0;
+  }
+  .historical-grow-page section.period-section .container .content {
+    border-bottom: 1px solid #D1D5DB;
+    margin: 0 -20px;
+  }
+  .historical-grow-page section.period-section .container .content .period h5 {
+    font-weight: 600;
+    font-size: 12px;
+    margin-bottom: 1px;
+  }
+  .historical-grow-page section.period-section .container .content .period.active h5 {
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 130%;
+    color: #141518;
+    margin-bottom: 3px;
+  }
+  .historical-grow-page section.period-section .container .content .period.active::after {
+    width: 100%;
+  }
+  .historical-grow-page section.period-section .container .content .period:hover {
+    cursor: pointer;
+  }
+  .historical-grow-page section.period-section .container .content .period:hover::after {
+    width: 100%;
+  }
+  .historical-grow-page section.period-grow .container {
+    padding: 0 20px;
+  }
+  .historical-grow-page section.period-grow .container .grow-content p {
+    font-size: 13px;
+    font-weight: 300;
+  }
+  .historical-grow-page section.period-grow .container .historical-period {
+    margin-top: 88px;
+    padding-bottom: 39px;
+  }
+  .historical-grow-page section.period-grow .container .historical-period .period-line {
+    justify-content: flex-start;
+    -moz-column-gap: unset;
+         column-gap: unset;
+    flex-direction: column;
+    padding-left: 49px;
+    margin-right: -10px;
+    row-gap: 24px;
+  }
+  .historical-grow-page section.period-grow .container .historical-period .period-line::before {
+    left: 14px;
+    transform: translateX(0);
+  }
+  .historical-grow-page section.period-grow .container .historical-period .period-line::after {
+    content: "";
+    height: 15%;
+    background-color: #fff;
+    left: 14px;
+    transform: translateX(0);
+  }
+  .historical-grow-page section.period-grow .container .historical-period .period-line .year {
+    width: 100%;
+  }
+  .historical-grow-page section.period-grow .container .historical-period .period-line .year .content .text h5 {
+    font-size: 22px;
+  }
+  .historical-grow-page section.period-grow .container .historical-period .period-line .year .content .text p {
+    font-size: 13px;
+  }
+  .historical-grow-page section.period-grow .container .historical-period .period-line .year .number {
+    width: 48px;
+    height: 48px;
+    left: 14px;
+  }
+  .historical-grow-page section.period-grow .container .historical-period .period-line .year .number span {
+    font-size: 14px;
+  }
+  .historical-grow-page section.period-grow .container .historical-period .period-line .year:nth-child(2n+1) .number::before {
+    width: 10px;
+    right: -10px;
+    left: unset;
+  }
+  .historical-grow-page section.period-grow .container .historical-period .period-line .year:nth-child(2n+1) .content {
+    transform: translateX(10px);
+  }
+  .historical-grow-page section.period-grow .container .historical-period .period-line .year:nth-child(2n) .number::after {
+    width: 10px;
+    right: -10px;
+  }
+  .historical-grow-page section.period-grow .container .historical-period .period-line .year:nth-child(2n) .content {
+    transform: translateX(10px);
+  }
+  .historical-grow-page section.period-grow .container .historical-period .period-line .year:nth-child(2) {
+    margin: 0;
+  }
+  .historical-grow-page section.period-grow .container .historical-period .period-line .year:nth-child(3), .historical-grow-page section.period-grow .container .historical-period .period-line .year:nth-child(5) {
+    margin: 0;
+  }
+  .historical-grow-page section.period-grow .container .historical-period .period-line .year.active .content {
+    transform: translateX(0);
+  }
+  .historical-grow-page section.period-grow .container .historical-period .period-line .new-line {
+    left: 14px;
+    transform: translateX(0);
+  }
+  .historical-grow-page section.period-grow .container .historical-period .navigation {
+    margin-top: 36px;
+    -moz-column-gap: unset;
+         column-gap: unset;
+    justify-content: space-between;
+  }
+  .historical-grow-page section.period-grow .container .historical-period .navigation .nav:hover {
+    cursor: pointer;
+  }
+  .historical-grow-page section.period-grow .container .historical-period .navigation .nav span {
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+  }
+}
 .thong-tin-co-dong .banner {
   background-image: url("./../../access/images/banner-tru-so.png");
   min-height: 400px;
