@@ -629,6 +629,7 @@
 @media (max-width: 767px) {
 	.historical-grow-page {
 		section.banner {
+			min-height: 419px;
 			.container {
 				.content {
 					top: calc(50% - 20px);

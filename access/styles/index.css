@@ -862,6 +862,7 @@ label.required::after {
   position: absolute;
   bottom: 3px;
   left: 71px;
+  z-index: 1;
 }
 .banner .container .navigation ul {
   color: #fff;
@@ -1973,8 +1974,7 @@ section.other-information .other-container .other-content .bidding-information {
   background: #fff;
   padding: 10.2px 16px 10.2px 14px;
   border-radius: 2px;
-  margin-right: 16px;
-  width: calc(50% - 9.5px);
+  width: 18.45%;
   position: relative;
   max-height: 48px;
 }
@@ -1995,7 +1995,7 @@ section.other-information .other-container .other-content .bidding-information {
   border: 1px solid #D1D5DB;
   background: #fff;
   border-radius: 2px;
-  width: calc(50% - 7.5px);
+  width: 18.47%;
   position: relative;
   max-height: 48px;
 }
@@ -2026,7 +2026,7 @@ section.other-information .other-container .other-content .bidding-information {
   border: 1px solid #D1D5DB;
   background: #fff;
   border-radius: 2px;
-  width: calc(50% - 7.5px);
+  width: 18.47%;
   position: relative;
   max-height: 48px;
 }
@@ -2058,8 +2058,7 @@ section.other-information .other-container .other-content .bidding-information {
   background: #fff;
   border-radius: 2px;
   width: 472px;
-  width: calc(33.3333333333% + 59px);
-  margin-right: 15.5px;
+  width: 18.47%;
   position: relative;
   max-height: 48px;
 }
@@ -2090,8 +2089,7 @@ section.other-information .other-container .other-content .bidding-information {
   border: 1px solid #D1D5DB;
   background: #fff;
   border-radius: 2px;
-  width: calc(33.3333333333% + 59px);
-  margin-right: 15.5px;
+  width: 18.47%;
   position: relative;
   max-height: 48px;
 }
@@ -2119,8 +2117,7 @@ section.other-information .other-container .other-content .bidding-information {
   cursor: pointer;
 }
 .filter-post-section .filter-post-container .form-filter form .button-submit {
-  width: calc(10% + 8.1px);
-  margin-right: 8px;
+  width: 10.65%;
 }
 .filter-post-section .filter-post-container .form-filter form .button-submit .btn-submit {
   font-weight: 600;
@@ -2131,7 +2128,7 @@ section.other-information .other-container .other-content .bidding-information {
   width: 100%;
 }
 .filter-post-section .filter-post-container .form-filter form .button-reset {
-  width: calc(9.0909090909% + 0px);
+  width: 9.76%;
 }
 .filter-post-section .filter-post-container .form-filter form .button-reset .btn-reset {
   font-weight: 600;
@@ -8928,6 +8925,9 @@ section.service-packages .service-package li {
   }
 }
 @media (max-width: 767px) {
+  .historical-grow-page section.banner {
+    min-height: 419px;
+  }
   .historical-grow-page section.banner .container .content {
     top: calc(50% - 20px);
     left: 50%;
@@ -9063,10 +9063,37 @@ section.service-packages .service-package li {
 }
 .thong-tin-co-dong .banner {
   background-image: url("./../../access/images/banner-tru-so.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
   min-height: 400px;
 }
-.thong-tin-co-dong .main {
-  padding: 60px 0 80px;
+.thong-tin-co-dong .banner::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.4);
+}
+.thong-tin-co-dong .banner::after {
+  content: "";
+  width: 100%;
+  height: 96px;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  background: linear-gradient(0deg, rgba(13, 13, 14, 0.81) 28.83%, rgba(13, 13, 14, 0) 100%);
+}
+.thong-tin-co-dong .banner .content {
+  top: calc(50% + 46px);
+}
+.thong-tin-co-dong .banner .content h3 {
+  margin-bottom: 8px;
+}
+.thong-tin-co-dong .banner .content p {
+  max-width: 526px;
 }
 .thong-tin-co-dong .main .container {
   padding: 0 100px;
@@ -9173,17 +9200,314 @@ section.service-packages .service-package li {
   margin: 40px auto;
   display: block;
 }
+.thong-tin-co-dong .main .calender {
+  display: flex;
+  -moz-column-gap: 8px;
+       column-gap: 8px;
+  align-items: center;
+}
+.thong-tin-co-dong .main .calender .text a {
+  font-size: 14px;
+  letter-spacing: 0.01em;
+  font-family: "Public Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 160%;
+  letter-spacing: 0.01em;
+  color: #7E8189;
+  text-decoration: none;
+}
+@media (max-width: 767px) {
+  .thong-tin-co-dong .main .calender .text a {
+    font-size: 14px;
+    letter-spacing: 0.01em;
+  }
+}
+.thong-tin-co-dong .main .download {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+.thong-tin-co-dong .main .download span {
+  font-family: "Public Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #DAA622;
+}
 @media (max-width: 767px) {
   .thong-tin-co-dong .main {
     padding: 40px 0;
   }
 }
+.thong-tin-co-dong section.notification {
+  padding-top: 60px;
+  background: linear-gradient(180deg, #F1F5FB 30.89%, rgba(246, 248, 252, 0) 95.98%);
+}
+.thong-tin-co-dong section.notification .container .notification-content {
+  display: flex;
+  justify-content: space-between;
+  -moz-column-gap: 80px;
+       column-gap: 80px;
+  border-bottom: 1px solid #D1D5DB;
+  padding-bottom: 60px;
+}
+.thong-tin-co-dong section.notification .container .notification-content .image img {
+  width: 400px;
+}
+.thong-tin-co-dong section.notification .container .notification-content .text-content h5 {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 130%;
+  color: #141518;
+  letter-spacing: 0.01em;
+}
+.thong-tin-co-dong section.notification .container .notification-content .text-content .calender {
+  margin: 16px 0 16px 0;
+}
+.thong-tin-co-dong section.notification .container .notification-content .text-content .calender .text a {
+  font-family: "Public Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 160%;
+  letter-spacing: 0.01em;
+  color: #7E8189;
+  text-decoration: none;
+}
+.thong-tin-co-dong section.shareholder-info {
+  margin-top: 60px;
+}
+.thong-tin-co-dong section.shareholder-info .container .shareholder-content .title {
+  margin-bottom: 32px;
+}
+.thong-tin-co-dong section.shareholder-info .container .shareholder-content .title h3 {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 120%;
+  color: #141518;
+}
+.thong-tin-co-dong section.shareholder-info .container .shareholder-content .search-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.thong-tin-co-dong section.shareholder-info .container .shareholder-content .search-bar .form-control {
+  width: 77.66%;
+  margin: 0 !important;
+}
+.thong-tin-co-dong section.shareholder-info .container .shareholder-content .search-bar .btn {
+  width: 10.65%;
+  min-width: unset;
+}
+.thong-tin-co-dong section.shareholder-info .container .shareholder-content .search-bar .reset {
+  width: 9.76%;
+  height: 48px;
+  text-transform: uppercase;
+  background: #fff;
+  color: #DAA622;
+  border: unset;
+}
+.thong-tin-co-dong section.shareholder-info .container .shareholder-content .shareholder-items {
+  margin-top: 70px;
+}
+.thong-tin-co-dong section.shareholder-info .container .shareholder-content .shareholder-items .shareholder-item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  justify-content: space-between;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  border-bottom: 1px solid #D1D5DB;
+  padding-bottom: 30px;
+}
+.thong-tin-co-dong section.shareholder-info .container .shareholder-content .shareholder-items .shareholder-item + .shareholder-item {
+  padding-top: 29px;
+}
+.thong-tin-co-dong section.shareholder-info .container .shareholder-content .shareholder-items .shareholder-item .shareholder-title {
+  flex: 1;
+}
+.thong-tin-co-dong section.shareholder-info .container .shareholder-content .shareholder-items .shareholder-item .shareholder-title .name-and-time {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 7px;
+}
+.thong-tin-co-dong section.shareholder-info .container .shareholder-content .shareholder-items .shareholder-item .shareholder-title .name-and-time h6 {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 130%;
+  color: #141518;
+  letter-spacing: 0.01em;
+}
+.thong-tin-co-dong section.shareholder-info .container .shareholder-content .typography {
+  margin-top: 30px;
+}
+.thong-tin-co-dong section.shareholder-info .container .shareholder-content .typography .pagination-prev,
+.thong-tin-co-dong section.shareholder-info .container .shareholder-content .typography .pagination-next {
+  display: flex;
+  align-items: center;
+}
+.thong-tin-co-dong section.shareholder-info .container .shareholder-content .typography .pagination-prev a.page-link,
+.thong-tin-co-dong section.shareholder-info .container .shareholder-content .typography .pagination-next a.page-link {
+  font-family: "Public Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  letter-spacing: 0.01em;
+  color: #7E8189;
+}
+
+@media (max-width: 1200px) {
+  .thong-tin-co-dong section.banner .content {
+    top: calc(50% + 58px);
+  }
+  .thong-tin-co-dong section.banner .content h3 {
+    margin-bottom: 8px;
+  }
+  .thong-tin-co-dong section.banner .content p {
+    max-width: 540px;
+  }
+  .thong-tin-co-dong section.notification .container .notification-content .image img {
+    width: 371px;
+    height: 280px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .thong-tin-co-dong section.notification .container .notification-content .text-content h5 {
+    letter-spacing: 0;
+  }
+  .thong-tin-co-dong section.notification .container .notification-content .text-content .calender {
+    margin: 16px 0 14px 0;
+  }
+  .thong-tin-co-dong section.shareholder-info .container .shareholder-content .search-bar .form-control {
+    width: 70.32%;
+  }
+  .thong-tin-co-dong section.shareholder-info .container .shareholder-content .search-bar .btn {
+    width: 14.15%;
+  }
+  .thong-tin-co-dong section.shareholder-info .container .shareholder-content .search-bar .reset {
+    width: 12.97%;
+  }
+}
+@media (max-width: 1024px) {
+  .thong-tin-co-dong section.banner .content {
+    top: 50%;
+  }
+  .thong-tin-co-dong section.banner .content h3 {
+    margin-bottom: 8px;
+  }
+  .thong-tin-co-dong section.banner .content p {
+    max-width: 540px;
+  }
+  .thong-tin-co-dong section.notification .container {
+    padding: 0 48px;
+  }
+  .thong-tin-co-dong section.notification .container .notification-content {
+    -moz-column-gap: 40px;
+         column-gap: 40px;
+  }
+  .thong-tin-co-dong section.shareholder-info .container {
+    padding: 0 48px;
+  }
+  .thong-tin-co-dong section.shareholder-info .container .shareholder-content .search-bar .form-control {
+    width: 70.32%;
+  }
+  .thong-tin-co-dong section.shareholder-info .container .shareholder-content .search-bar .btn {
+    width: 14.15%;
+  }
+  .thong-tin-co-dong section.shareholder-info .container .shareholder-content .search-bar .reset {
+    width: 12.97%;
+  }
+}
+@media (max-width: 880px) {
+  .thong-tin-co-dong section.banner .container ul li + li {
+    margin-left: 20px;
+  }
+  .thong-tin-co-dong section.shareholder-info .container {
+    padding: 0 48px;
+  }
+  .thong-tin-co-dong section.shareholder-info .container .shareholder-content .search-bar .form-control {
+    width: 67%;
+  }
+  .thong-tin-co-dong section.shareholder-info .container .shareholder-content .search-bar .btn {
+    width: 15%;
+  }
+  .thong-tin-co-dong section.shareholder-info .container .shareholder-content .search-bar .reset {
+    width: 15%;
+  }
+}
 @media (max-width: 767px) {
-  .thong-tin-co-dong .other-information .other-container .other-content a {
+  .thong-tin-co-dong section.banner {
+    min-height: 300px;
+  }
+  .thong-tin-co-dong section.banner .container ul li + li {
+    margin-left: 20px;
+  }
+  .thong-tin-co-dong section.banner .container .content {
+    top: calc(50% + 15px);
+  }
+  .thong-tin-co-dong section.banner .container .content h3 {
+    font-size: 24px;
+  }
+  .thong-tin-co-dong section.banner .container .content p {
+    font-size: 16px;
+    letter-spacing: 0.01em;
+    font-weight: 400;
+    padding: 0 10px;
+  }
+  .thong-tin-co-dong section.notification {
+    margin-top: -20px;
+  }
+  .thong-tin-co-dong section.notification .container {
+    padding: 0 20px;
+  }
+  .thong-tin-co-dong section.notification .container .notification-content {
+    -moz-column-gap: unset;
+         column-gap: unset;
+    row-gap: 20px;
+    flex-direction: column;
+  }
+  .thong-tin-co-dong section.notification .container .notification-content .image img {
+    width: 100%;
+    height: 190px;
+  }
+  .thong-tin-co-dong section.notification .container .notification-content .text-content h5 {
+    font-size: 24px;
+  }
+  .thong-tin-co-dong section.shareholder-info .container {
+    padding: 0 20px;
+  }
+  .thong-tin-co-dong section.shareholder-info .container .shareholder-content .search-bar {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    row-gap: 16px;
+  }
+  .thong-tin-co-dong section.shareholder-info .container .shareholder-content .search-bar .form-control {
+    width: 100%;
+  }
+  .thong-tin-co-dong section.shareholder-info .container .shareholder-content .search-bar .btn {
+    width: 36.72%;
+  }
+  .thong-tin-co-dong section.shareholder-info .container .shareholder-content .search-bar .reset {
+    width: 33.73%;
+  }
+  .other-information .other-container .other-content a {
     min-height: 180px;
   }
 }
-
 .bao-cao-tai-chinh .banner {
   background-image: url("./../../access/images/banner-tru-so.png");
   min-height: 400px;
