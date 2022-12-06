@@ -2,7 +2,8 @@
 	section.banner {
 		background: url(../../access/images/lichsuphattrien.png);
 		background-repeat: no-repeat;
-
+		background-size: cover;
+		background-position: center center;
 		&::before {
 			content: "";
 			position: absolute;
@@ -492,7 +493,7 @@
 									}
 								}
 								.content {
-									transform: translateX(-50px);
+									transform: translateX(-30px);
 								}
 							}
 							&:nth-child(2n) {
@@ -501,7 +502,7 @@
 									}
 								}
 								.content {
-									transform: translateX(50px);
+									transform: translateX(30px);
 								}
 							}
 							&:nth-child(2) {
@@ -627,6 +628,23 @@
 
 @media (max-width: 767px) {
 	.historical-grow-page {
+		section.banner {
+			min-height: 419px;
+			.container {
+				.content {
+					top: calc(50% - 20px);
+					left: 50%;
+					transform: translateX(-50%);
+					h3 {
+						font-size: 24px;
+					}
+					p {
+						font-size: 13px;
+						max-width: 345px;
+					}
+				}
+			}
+		}
 		section.period-section {
 			padding: 27px 0 31px 0;
 			.container {
