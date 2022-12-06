@@ -565,7 +565,18 @@ span.tag {
             color: unset;
         }
     }
-
+    &.tag-factory::before {
+        content: "";
+        -webkit-mask: url(../icon/wattage.svg) no-repeat 50% 50%;
+        mask: url(../icon/wattage.svg) no-repeat 50% 50%;
+        -webkit-mask-size: cover;
+        mask-size: cover;
+        width: 17px;
+        background: #7E8189;
+        display: inline-flex;
+        height: 17px;
+        margin-right: 10px;
+    }
     &.tag-wattage::before {
         content: "";
         -webkit-mask: url(../icon/wattage.svg) no-repeat 50% 50%;
@@ -577,8 +588,6 @@ span.tag {
         display: inline-flex;
         height: 17px;
         margin-right: 10px;
-
-
     }
 
     &.tag-type::before {
@@ -935,6 +944,7 @@ label.required {
 @import './scss/bitexco_brand';
 @import './scss/cac-cong-ti-thanh-vien';
 @import './scss/ban-lanh-dao';
+@import './scss/lichsuphattrien';
 @import './scss/thong-tin-co-dong';
 @import './scss/bao-cao-tai-chinh';
 @import './scss/bao-cao-thuong-nien';

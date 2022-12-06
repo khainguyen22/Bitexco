@@ -95,6 +95,10 @@ jQuery(document).ready(function ($) {
 		if (!$(this).hasClass('active')) {
 			$('.drop-down.active').removeClass('active')
 			$(this).toggleClass('active')
+			const img_active = $(this).attr('data-number');
+			console.log($('img-'+img_active));
+			$('.highlight-img.active').removeClass('active');
+			$('.img-'+img_active).addClass('active');
 			return
 		}
 		if ($(this).hasClass('active')) {
