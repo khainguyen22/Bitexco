@@ -244,6 +244,29 @@
                         letter-spacing: 0.01em;
                     }
 
+                    .tag-and-date {
+                        display: flex;
+                        justify-content: space-between;
+                    }
+
+                    .tag {
+                        display: flex;
+                        align-items: center;
+                        column-gap: 8px;
+                        .text {
+                            a {
+                                font-family: 'Public Sans';
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 14px;
+                                line-height: 160%;
+                                letter-spacing: 0.01em;
+                                color: #7E8189;
+                                text-decoration: none;
+                            }
+                        }
+                    }
+
                     .calender {
                         margin: 16px 0 16px 0;
 
