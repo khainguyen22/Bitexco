@@ -9532,6 +9532,26 @@ section.service-packages .service-package li {
   color: #141518;
   letter-spacing: 0.01em;
 }
+.thong-tin-co-dong section.notification .container .notification-content .text-content .tag-and-date {
+  display: flex;
+  justify-content: space-between;
+}
+.thong-tin-co-dong section.notification .container .notification-content .text-content .tag {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 8px;
+       column-gap: 8px;
+}
+.thong-tin-co-dong section.notification .container .notification-content .text-content .tag .text a {
+  font-family: "Public Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 160%;
+  letter-spacing: 0.01em;
+  color: #7E8189;
+  text-decoration: none;
+}
 .thong-tin-co-dong section.notification .container .notification-content .text-content .calender {
   margin: 16px 0 16px 0;
 }
@@ -9988,4 +10008,198 @@ section.other-information .other-container .other-content .production-result {
 }
 section.other-information .other-container .other-content .bidding-information {
   background-image: url(./../../access/images/thongtinmoithau.jpg);
+}
+
+.thong-tin-bao-chi section.banner {
+  min-height: 640px;
+}
+.thong-tin-bao-chi section.notification .container .notification-content .image img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.thong-tin-bao-chi section.shareholder-info .container .shareholder-content .search-bar .box-input {
+  width: 25%;
+  position: relative;
+}
+.thong-tin-bao-chi section.shareholder-info .container .shareholder-content .search-bar .box-input svg {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 16px;
+}
+.thong-tin-bao-chi section.shareholder-info .container .shareholder-content .search-bar .box-input input {
+  width: 100%;
+  padding-left: 50px;
+}
+.thong-tin-bao-chi section.shareholder-info .container .shareholder-content .search-bar .type {
+  width: 25%;
+  padding: 12.5px 16px;
+  border: 1px solid #D1D5DB;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.thong-tin-bao-chi section.shareholder-info .container .shareholder-content .search-bar .type select {
+  font-family: "Public Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.01em;
+  color: #141518;
+}
+.thong-tin-bao-chi section.shareholder-info .container .shareholder-content .search-bar .time {
+  padding: 10.3px 16px;
+  width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #D1D5DB;
+  border-radius: 2px;
+}
+.thong-tin-bao-chi section.shareholder-info .container .shareholder-content .search-bar .time p {
+  margin-bottom: 0;
+  font-family: "Public Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 160%;
+  letter-spacing: 0.01em;
+  color: #141518;
+}
+.thong-tin-bao-chi section.shareholder-info .container .shareholder-content .shareholder-items .shareholder-item {
+  position: relative;
+}
+.thong-tin-bao-chi section.shareholder-info .container .shareholder-content .shareholder-items .shareholder-item::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  height: 2px;
+  width: 0%;
+  background-color: #DAA622;
+  transition: width 0.3s;
+}
+.thong-tin-bao-chi section.shareholder-info .container .shareholder-content .shareholder-items .shareholder-item:hover .shareholder-title .name-and-time h6 {
+  text-decoration: underline;
+}
+.thong-tin-bao-chi section.shareholder-info .container .shareholder-content .shareholder-items .shareholder-item:hover::after {
+  width: 100%;
+}
+.thong-tin-bao-chi section.shareholder-info .container .shareholder-content .shareholder-items .shareholder-item .shareholder-title .tag-and-calendar {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+.thong-tin-bao-chi section.shareholder-info .container .shareholder-content .shareholder-items .shareholder-item .shareholder-title .tag-and-calendar .tag {
+  -moz-column-gap: 8px;
+       column-gap: 8px;
+  display: flex;
+  align-items: center;
+}
+.thong-tin-bao-chi section.shareholder-info .container .shareholder-content .shareholder-items .shareholder-item .shareholder-title .tag-and-calendar .tag p {
+  font-family: "Public Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 150%;
+  /* identical to box height, or 16px */
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  /* Neutral/Medium Emphasis */
+  color: #434449;
+}
+.thong-tin-bao-chi section.shareholder-info .container .shareholder-content .shareholder-items .shareholder-item .shareholder-title .download {
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+.thong-tin-bao-chi section.shareholder-info .container .shareholder-content .shareholder-items .shareholder-item .shareholder-title .download span {
+  font-family: "Public Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  /* identical to box height, or 21px */
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  /* Main Color/Primary */
+  color: #DAA622;
+}
+.thong-tin-bao-chi section.shareholder-info .container .shareholder-content .typography {
+  margin-top: 102px;
+  margin-bottom: 95px;
+}
+@media (max-width: 1200px) {
+  .thong-tin-bao-chi section.shareholder-info .container .shareholder-content .search-bar {
+    justify-content: flex-start;
+    -moz-column-gap: 8px;
+         column-gap: 8px;
+    row-gap: 8px;
+  }
+  .thong-tin-bao-chi section.shareholder-info .container .shareholder-content .search-bar .box-input {
+    width: 22.29%;
+  }
+  .thong-tin-bao-chi section.shareholder-info .container .shareholder-content .search-bar .type {
+    width: 22.29%;
+  }
+  .thong-tin-bao-chi section.shareholder-info .container .shareholder-content .search-bar button[type=submit].btn-search {
+    width: 14.15%;
+  }
+  .thong-tin-bao-chi section.shareholder-info .container .shareholder-content .search-bar button[type=text].reset {
+    width: 12.97%;
+  }
+  .thong-tin-bao-chi section.shareholder-info .container .shareholder-content .search-bar .time {
+    width: 22.29%;
+  }
+  .thong-tin-bao-chi section.shareholder-info .container .shareholder-content .typography {
+    margin-top: 30px;
+    margin-bottom: 60px;
+  }
+}
+@media (max-width: 880px) {
+  .thong-tin-bao-chi section.shareholder-info .container .shareholder-content .search-bar {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    -moz-column-gap: 8px;
+         column-gap: 8px;
+    row-gap: 8px;
+  }
+  .thong-tin-bao-chi section.shareholder-info .container .shareholder-content .search-bar .box-input {
+    width: calc(33.3333333333% - 8px);
+  }
+  .thong-tin-bao-chi section.shareholder-info .container .shareholder-content .search-bar .type {
+    width: calc(33.3333333333% - 8px);
+  }
+  .thong-tin-bao-chi section.shareholder-info .container .shareholder-content .search-bar .time {
+    width: calc(33.3333333333% - 8px);
+  }
+}
+@media (max-width: 767px) {
+  .thong-tin-bao-chi section.shareholder-info .container .shareholder-content .search-bar {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    -moz-column-gap: 8px;
+         column-gap: 8px;
+    row-gap: 8px;
+  }
+  .thong-tin-bao-chi section.shareholder-info .container .shareholder-content .search-bar .box-input {
+    width: 100%;
+  }
+  .thong-tin-bao-chi section.shareholder-info .container .shareholder-content .search-bar .type {
+    width: 100%;
+  }
+  .thong-tin-bao-chi section.shareholder-info .container .shareholder-content .search-bar .time {
+    width: 100%;
+  }
+  .thong-tin-bao-chi section.shareholder-info .container .shareholder-content .search-bar button[type=submit].btn-search {
+    width: 36.72%;
+  }
+  .thong-tin-bao-chi section.shareholder-info .container .shareholder-content .search-bar button[type=text].reset {
+    width: 33.73%;
+  }
+  .thong-tin-bao-chi section.shareholder-info .container .shareholder-content .typography {
+    margin-top: 50px;
+    margin-bottom: 0px;
+  }
 }/*# sourceMappingURL=index.css.map */
