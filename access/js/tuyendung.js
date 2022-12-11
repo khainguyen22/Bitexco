@@ -66,12 +66,14 @@ jQuery(document).ready(function ($) {
 	})
 
 	$pause = true;
+	
 	$interval = setInterval(() => {
+		const childElement = document.querySelector('.quote-navigation').childElementCount
 		if ($pause) {
 			$element_active = $('.quote-nav-img.active').attr('data-number')
 			$element_active = parseInt($element_active)
-			if ($element_active == 8) {
-				$element_active = 0;
+			if ($element_active == childElement - 1) {
+				$element_active = -1;
 			}
 			$next_elemenet = $element_active + 1;
 			$('.quote-nav-img.active').removeClass('active')
