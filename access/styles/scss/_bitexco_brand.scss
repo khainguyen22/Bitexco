@@ -272,7 +272,11 @@
 						svg {
 							margin-right: 20px;
 						}
-
+						img {
+							margin-right: 20px;
+							max-width: 80px;
+							max-height: 80px;
+						}
 						p {
 							margin: 0;
 						}
@@ -1151,7 +1155,7 @@
 						background-image: url(../../access/images/Frame-shore.png);
 						padding: 48px;
 						position: relative;
-
+						background-size: cover;
 						svg {
 							position: absolute;
 							top: 0;
